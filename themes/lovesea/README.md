@@ -1,6 +1,6 @@
-# RED Starter
+# Love Sea Wedding Photography
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+Wordpress site for Love Sea Wedding Photography. We are making a site!
 
 ## Installation
 
