@@ -1,6 +1,6 @@
 # Love Sea Wedding Photography
 
-Wordpress site for Love Sea Wedding Photography.
+Wordpress site for Love Sea Wedding Photography. We are making a site!
 
 ## Installation
 
