@@ -26,9 +26,9 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 function lovesea_login_logo() {
 	echo '<style type="text/css">                                                                   
 			#login h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/lovesea_logo_text.svg) !important; 
-			background-size: 280px 280px;
-			height: 300px;
-			width: 280px;
+			background-size: 250px 270px;
+			height: 270px;
+			width: 250px;
 		}                            
 	</style>';
 }
