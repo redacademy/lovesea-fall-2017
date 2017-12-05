@@ -32,7 +32,7 @@
     <a class="toggle-nav" href="#">&#9776;</a>
 
 		<ul class="active">
-        <li class="menu-item"><a href="<?php echo get_template_directory_uri(front-page); ?>">Home</a></li>
+        <li class="menu-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
         <li class="menu-item"><a href="<?php echo get_template_directory_uri(); ?> ?>">Weddings</a></li>
         <li class="menu-item"><a href="<?php echo get_template_directory_uri(); ?> ?>">About</a></li>
         <li class="menu-item"><a href="<?php echo get_template_directory_uri(); ?> ?>">Connect</a></li>
