@@ -498,8 +498,8 @@ a {
     outline: 0; }
 
 /* Menus */
-.active {
-  display: hidden; }
+.desktop-menu {
+  display: none; }
 
 .main-navigation {
   clear: both;
