@@ -26,6 +26,21 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
+
+				<nav class="menu">
+ 
+    <a class="toggle-nav" href="#">&#9776;</a>
+
+		<ul class="active">
+        <li class="menu-item"><a href="<?php echo get_template_directory_uri(front-page); ?>">Home</a></li>
+        <li class="menu-item"><a href="<?php echo get_template_directory_uri(); ?> ?>">Weddings</a></li>
+        <li class="menu-item"><a href="<?php echo get_template_directory_uri(); ?> ?>">About</a></li>
+        <li class="menu-item"><a href="<?php echo get_template_directory_uri(); ?> ?>">Connect</a></li>
+    </ul>
+ 
+</nav>
+
+
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

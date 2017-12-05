@@ -26,6 +26,10 @@ a {
 
 /* Menus */
 
+.active {
+	display: hidden;
+}
+
 .main-navigation {
 	clear: both;
 	display: block;
