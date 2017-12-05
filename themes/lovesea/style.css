@@ -457,19 +457,19 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #415468; }
   a:visited {
-    color: purple; }
+    color: #415468; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #232d38; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
 
 /* Menus */
-.active {
-  display: hidden; }
+.desktop-menu {
+  display: none; }
 
 .main-navigation {
   clear: both;
