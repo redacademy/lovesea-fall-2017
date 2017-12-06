@@ -19,9 +19,9 @@ get_header(); ?>
               $props = CFS()->get_field_info( 'who_we_are' );
               echo $props['label'];
               ?></h2>
-              <?php
-              echo CFS()->get( 'my_file' ); 
-              ?>
+              <img class="who-we-are-image"> <?php
+              echo CFS()->get( 'who_we_are_image' ); 
+              ?></img>
               <?php 
               echo CFS()->get( 'who_we_are_text' ); 
               ?>
