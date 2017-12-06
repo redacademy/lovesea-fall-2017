@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
+ * @package lovesea
  */
 
-if ( ! function_exists( 'red_starter_setup' ) ) :
+if ( ! function_exists( 'lovesea_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
-function red_starter_setup() {
+function lovesea_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -37,17 +37,17 @@ function red_starter_setup() {
 
 }
 endif; // red_starter_setup
-add_action( 'after_setup_theme', 'red_starter_setup' );
+add_action( 'after_setup_theme', 'lovesea_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * @global int $content_width
  */
-function red_starter_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'red_starter_content_width', 640 );
+function lovesea_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'lovesea_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
+add_action( 'after_setup_theme', 'lovesea_content_width', 0 );
 
 /**
  * Register widget area.

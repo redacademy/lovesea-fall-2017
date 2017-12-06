@@ -17,7 +17,10 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+  </div><!-- #primary -->
+  
+  <!-- TODO create a function similar to inhabitent extras.php for inline style -->
+  <div style="min-height:300px;background:url(<?php echo CFS()->get('connect_hero_image');?>);"></div>
 
 
 <?php get_footer(); ?>
