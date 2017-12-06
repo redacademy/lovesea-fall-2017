@@ -44,14 +44,12 @@ $image = CFS()->get( 'about_header_image' );
 if (! $image ) {
 	return;
 }
-$hero_css = ".entry-header.custom-hero {
+$hero_css = ".entry-header .custom-hero {
 	height: 100vh;
 	width: auto;
-	background:
-		url({$image}) no-repeat center bottom;
-	background-size: cover; 
 }";
 wp_add_inline_style( 'red-starter-style', $hero_css );
-	}
+}
+
 add_action( 'wp_enqueue_scripts', 'lovesea_dynamic_css' );
 	
