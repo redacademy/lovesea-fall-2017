@@ -13,8 +13,11 @@ get_header(); ?>
 
         <div class="container">
           <div class="entry-content">
-            <h2>Our Story</h2>
-						<h3>who we are</h3>
+						<ul>
+            <li>who we are</li>
+						<li>what we do</li>
+						<li>what to expect</li>
+						</ul>
           </div>
         </div>
       </article>
