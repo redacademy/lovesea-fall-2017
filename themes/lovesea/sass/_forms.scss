@@ -8,12 +8,14 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-background-color: $color__text-main;
-border-style: none;
-color: $color__background-body;
-font-style: italic;
 width: 180px;
 height: 50px;
+background-color: $color__text-main;
+color: $color__background-body;
+border-style: none;
+font-style: italic;
+font-size: 24px;
+letter-spacing: 2px;
 	}	
 }
 /* Fields */
@@ -44,12 +46,30 @@ textarea {
 
 // input fields on desktop
 
+label {
+	color: $color__text-main;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
 .first-name-last {
 	display: flex;
 	align-items: baseline;
+	label {
+		width: 50%;
+	}
 }
 
 .wedding-date-venue {
 	display: flex;
 	align-items: baseline;
+}
+.wpcf7-form-control.wpcf7-text {
+	width: 100%;
+}
+.submit {
+	display: flex;
+	justify-content: center;
+	margin: 3% 0 2% 0;
 }

@@ -423,12 +423,14 @@ table {
 .page-id-61 input[type="button"],
 .page-id-61 input[type="reset"],
 .page-id-61 input[type="submit"] {
-  background-color: #415468;
-  border-style: none;
-  color: #FFFFFF;
-  font-style: italic;
   width: 180px;
-  height: 50px; }
+  height: 50px;
+  background-color: #415468;
+  color: #FFFFFF;
+  border-style: none;
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: 2px; }
 
 /* Fields */
 input[type="text"],
@@ -452,6 +454,12 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+label {
+  color: #415468;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px; }
+
 .first-name-last {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,6 +467,8 @@ textarea {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline; }
+  .first-name-last label {
+    width: 50%; }
 
 .wedding-date-venue {
   display: -webkit-box;
@@ -467,6 +477,18 @@ textarea {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline; }
+
+.wpcf7-form-control.wpcf7-text {
+  width: 100%; }
+
+.submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3% 0 2% 0; }
 
 /*--------------------------------------------------------------
 # Navigation
