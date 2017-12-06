@@ -1,14 +1,20 @@
 <?php
 /**
  * The template for displaying all pages.
+ * Template Name: front-page
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
 
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+		<!-- <img class="front-center-logo" src='/images/Lovesea_logo_text.svg' alt="cool" > -->
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
