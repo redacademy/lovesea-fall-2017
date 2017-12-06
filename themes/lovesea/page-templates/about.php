@@ -13,11 +13,9 @@ get_header(); ?>
 
         <div class="container">
           <div class="entry-content">
-						<ul>
-            <li>who we are</li>
-						<li>what we do</li>
-						<li>what to expect</li>
-						</ul>
+						<h3><?php echo CFS()->get( 'who_we_are' ); ?></h3>
+						<h3><?php echo CFS()->get( 'what_we_do' ); ?></h3>
+						<h3><?php echo CFS()->get( 'what_to_expect' ); ?></h3>
           </div>
         </div>
       </article>
