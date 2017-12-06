@@ -1,5 +1,5 @@
 <?php
-/** Template Name: About Page */
+/** Template Name: about */
 
 get_header(); ?>
   <div id="primary" class="content-area">
