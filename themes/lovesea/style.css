@@ -469,6 +469,8 @@ label {
           align-items: baseline; }
   .first-name-last label {
     width: 50%; }
+  .first-name-last p {
+    width: 40%; }
 
 .wedding-date-venue {
   display: -webkit-box;
