@@ -452,7 +452,7 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-.first-name-last-name {
+.first-name-last {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,3 +726,17 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* Connect page */
+.page-id-61 .entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 800px;
+  margin: 0 auto; }
