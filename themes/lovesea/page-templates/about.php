@@ -20,7 +20,7 @@ get_header(); ?>
               echo $props['label'];
               ?></h2>
               <?php
-              echo CFS()->get( 'my_file' ); 
+              echo CFS()->get( 'who_we_are_image' ); 
               ?>
               <?php 
               echo CFS()->get( 'who_we_are_text' ); 
