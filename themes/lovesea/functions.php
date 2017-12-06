@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package lovesea
+ * @package lovesea_Theme
  */
 
 if ( ! function_exists( 'lovesea_setup' ) ) :
@@ -36,7 +36,7 @@ function lovesea_setup() {
 	) );
 
 }
-endif; // red_starter_setup
+endif; // lovesea
 add_action( 'after_setup_theme', 'lovesea_setup' );
 
 /**
@@ -54,7 +54,7 @@ add_action( 'after_setup_theme', 'lovesea_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function red_starter_widgets_init() {
+function lovesea_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html( 'Sidebar' ),
 		'id'            => 'sidebar-1',
@@ -65,33 +65,33 @@ function red_starter_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'red_starter_widgets_init' );
+add_action( 'widgets_init', 'lovesea_widgets_init' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
-function red_starter_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
+function lovesea_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
 		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
 	}
 
 	return $stylesheet_uri;
 }
-add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
+add_filter( 'stylesheet_uri', 'lovesea_minified_css', 10, 2 );
 
 /**
  * Enqueue scripts and styles.
  */
-function red_starter_scripts() {
-	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+function lovesea() {
+	wp_enqueue_style( 'lovesea', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'lovesea-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+add_action( 'wp_enqueue_scripts', 'lovesea' );
 
 /**
  * Custom template tags for this theme.
