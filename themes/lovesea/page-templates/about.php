@@ -23,9 +23,11 @@ get_header(); ?>
                 <img src="<?php
                 echo CFS()->get( 'who_we_are_image' ); 
                 ?>" alt="" class="who-we-are-image"></img>
+                <div class="who-we-are-text">
                 <?php 
                 echo CFS()->get( 'who_we_are_text' ); 
                 ?>
+                </div>
               </div>
             </div>
           </div>
