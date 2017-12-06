@@ -3,10 +3,16 @@
  * The template for displaying all pages.
  * Template Name: front-page
  *
- * @package RED_Starter_Theme
+ * @package lovesea
  */
 
 get_header(); ?>
+<div class="hero">
+<?php           
+echo 'style="background: url(<? echo CFS()-> ?>);"'
+
+?>
+</div>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -23,19 +29,20 @@ get_header(); ?>
 				<div id="storyteller" class="storyteller">
 	<h1>We are story tellers.</h1>
 	<p>With a photojournalistic style, we capture both the story and romance of your wedding.</p>
-	<button class="browse-wedding"></button> 
+	<!-- <img src="/../../images/Lovesea_logo_full.png" alt="cool"> -->
+	<button class="browse-weddings">Browse Weddings</button> 
 </div>
 
 <div class="observer">
 	<h1>We are observers.</h1>
 	<p>We work in the background, capturing even the tiniest of details, to tell your story.</p>
-	<button class="aboutus"></button>
+	<button class="about-us">About Us</button>
 </div>
 
 <div class="friend">
 	<h1>We are your friend.</h1>
 	<p>We get to know you and your story to perfectly document what’s important to you.</p>
-	<button class="connect"></button>
+	<button class="connect">Let's Talk</button>
 </div>
 
 <div class="instagram-carousel-container"> 
