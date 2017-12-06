@@ -13,9 +13,20 @@ get_header(); ?>
 
         <div class="container">
           <div class="entry-content">
-						<?php echo CFS()->get( 'who_we_are' ); ?>
-						<h3><?php echo CFS()->get( 'what_we_do' ); ?></h3>
-						<h3><?php echo CFS()->get( 'what_to_expect' ); ?></h3>
+            <div class="who-we-are-tab">
+
+            <h2><?php
+              $props = CFS()->get_field_info( 'who_we_are' );
+              echo $props['label'];
+              ?></h2>
+              <?php
+              echo CFS()->get( 'my_file' ); 
+              ?>
+              <?php 
+              echo CFS()->get( 'who_we_are_text' ); 
+              ?>
+            </div>
+
           </div>
         </div>
       </article>
