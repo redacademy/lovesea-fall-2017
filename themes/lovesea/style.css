@@ -764,3 +764,6 @@ object {
           align-items: center;
   width: 800px;
   margin: 0 auto; }
+
+.hero {
+  height: 100vh; }

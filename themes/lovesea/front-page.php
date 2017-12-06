@@ -8,13 +8,12 @@
 
 get_header(); ?>
 <div class="hero">
-<?php           
-echo 'style="background: url(<? echo CFS()-> ?>);"'
 
-?>
+	<div style="min-height:90vh;background:url(<?php echo CFS()->get('front_header_image');?>);"></div>
+
 </div>
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 
 
 	<div id="primary" class="content-area">
