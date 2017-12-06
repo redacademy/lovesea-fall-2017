@@ -13,7 +13,7 @@ get_header(); ?>
 
         <div class="container">
           <div class="entry-content">
-						<h3><?php echo CFS()->get( 'who_we_are' ); ?></h3>
+						<?php echo CFS()->get( 'who_we_are' ); ?>
 						<h3><?php echo CFS()->get( 'what_we_do' ); ?></h3>
 						<h3><?php echo CFS()->get( 'what_to_expect' ); ?></h3>
           </div>
