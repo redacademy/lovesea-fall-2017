@@ -767,3 +767,23 @@ object {
 
 .hero {
   height: 100vh; }
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.who-we-are-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1065px;
+  margin-left: auto;
+  margin-right: auto; }
+  .who-we-are-wrapper .who-we-are-image {
+    margin-right: 2rem; }
+    .who-we-are-wrapper .who-we-are-image img {
+      max-width: 45%;
+      height: auto; }
+
+.who-we-are-text {
+  max-width: 45%;
+  margin: 1rem; }

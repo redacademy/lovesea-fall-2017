@@ -20,9 +20,10 @@ get_header(); ?>
               echo $props['label'];
               ?></h2>
               <div class="who-we-are-wrapper">
-                <img src="<?php
+                <div class="who-are-we-image"><img src="<?php
                 echo CFS()->get( 'who_we_are_image' ); 
                 ?>" alt="" class="who-we-are-image"></img>
+                </div>
                 <div class="who-we-are-text">
                 <?php 
                 echo CFS()->get( 'who_we_are_text' ); 
