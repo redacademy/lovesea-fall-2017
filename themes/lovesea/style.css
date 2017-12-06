@@ -419,16 +419,16 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border-radius: 0px;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6rem 1rem .4rem; }
+.page-id-61 button,
+.page-id-61 input[type="button"],
+.page-id-61 input[type="reset"],
+.page-id-61 input[type="submit"] {
+  background-color: #415468;
+  border-style: none;
+  color: #FFFFFF;
+  font-style: italic;
+  width: 180px;
+  height: 50px; }
 
 /* Fields */
 input[type="text"],
@@ -437,9 +437,9 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
   background-color: #E4E2E2;
-  border-radius: 0px; }
+  border-radius: 0px;
+  border-style: none; }
 
 input[type="text"],
 input[type="email"],
@@ -451,6 +451,22 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.first-name-last-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+
+.wedding-date-venue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
 
 /*--------------------------------------------------------------
 # Navigation

@@ -3,20 +3,19 @@
 --------------------------------------------------------------*/
 
 /* Buttons */
-
+.page-id-61 {
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border-radius: 0px;
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
-	line-height: 1;
-	padding: .6rem 1rem .4rem;
+background-color: $color__text-main;
+border-style: none;
+color: $color__background-body;
+font-style: italic;
+width: 180px;
+height: 50px;
+	}	
 }
-
-
-
 /* Fields */
 
 input[type="text"],
@@ -25,11 +24,9 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
   background-color: $color__background-input;
 	border-radius: 0px;
-
-
+	border-style: none;
 }
 
 input[type="text"],
@@ -43,4 +40,16 @@ input[type="search"] {
 textarea {
 	padding-left: 3px;
 	width: 100%;
+}
+
+// input fields on desktop
+
+.first-name-last-name {
+	display: flex;
+	align-items: baseline;
+}
+
+.wedding-date-venue {
+	display: flex;
+	align-items: baseline;
 }
