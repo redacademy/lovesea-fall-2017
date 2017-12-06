@@ -19,14 +19,15 @@ get_header(); ?>
               $props = CFS()->get_field_info( 'who_we_are' );
               echo $props['label'];
               ?></h2>
-              <img class="who-we-are-image"> <?php
-              echo CFS()->get( 'who_we_are_image' ); 
-              ?></img>
-              <?php 
-              echo CFS()->get( 'who_we_are_text' ); 
-              ?>
+              <div class="who-we-are-wrapper">
+                <img src="<?php
+                echo CFS()->get( 'who_we_are_image' ); 
+                ?>" alt="" class="who-we-are-image"></img>
+                <?php 
+                echo CFS()->get( 'who_we_are_text' ); 
+                ?>
+              </div>
             </div>
-
           </div>
         </div>
       </article>
