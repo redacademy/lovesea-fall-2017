@@ -418,7 +418,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-/* Buttons */
+/* Submit Button */
 .page-id-61 button,
 .page-id-61 input[type="button"],
 .page-id-61 input[type="reset"],
@@ -432,7 +432,7 @@ table {
   font-size: 24px;
   letter-spacing: 2px; }
 
-/* Fields */
+/* Email submit Fields */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -452,6 +452,13 @@ input[type="password"],
 input[type="search"] {
   padding: 3px; }
 
+form.wpcf7-form {
+  width: 100vw;
+  padding: 2em; }
+  @media (min-width: 600px) {
+    form.wpcf7-form {
+      width: 620px; } }
+
 label {
   color: #415468;
   font-size: 14px;
@@ -461,21 +468,11 @@ label {
 .wpcf7-form-control.wpcf7-text {
   height: 50px; }
 
-.first-name-last {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline; }
+.first-name-last .wpcf7-form-control.wpcf7-text {
+  width: 50%; }
 
-.wedding-date-venue {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline; }
+.wedding-date-venue .wpcf7-form-control.wpcf7-text {
+  width: 50%; }
 
 .email .wpcf7-form-control.wpcf7-text {
   width: 100%; }
@@ -749,6 +746,9 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 /* Connect page */
+.page-id-61 header.site-header {
+  background-position-y: initial; }
+
 .page-id-61 .entry-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,24 +760,43 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 800px;
+  width: 100vw;
   margin: 0 auto; }
 
 .page-id-61 h2 {
   color: #BF8472;
   font-size: 64px;
-  font-weight: 500; }
+  font-weight: 500;
+  font-style: italic;
+  margin: 8% 0 1% 0; }
 
-.page-id-61 p.congrats {
+.page-id-61 .congrats {
   font-size: 24px;
   letter-spacing: 1px;
   font-weight: 500;
   color: #415468;
   text-align: center; }
 
-.page-id-61 p.hear-from-you {
+.page-id-61 .hear-from-you {
   font-size: 18px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 2em;
+  margin: 0; }
+
+.page-id-61 .required {
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin: 3% 0 1% 0; }
+
+@media (min-width: 600px) {
+  .entry-content {
+    width: 620px; }
+  .hear-from-you {
+    height: 62px;
+    width: 620px;
+    margin-bottom: 4%; } }
 
 .home .hero .front-center-logo {
   top: 34%;
@@ -857,7 +876,7 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 1065px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto; }
     .who-we-are-tab .who-we-are-wrapper .who-we-are-image {
@@ -868,7 +887,12 @@ object {
         margin: auto;
         width: 90%; }
     .who-we-are-tab .who-we-are-wrapper .who-we-are-text {
-      text-align: justify; }
+      text-align: justify;
+      max-width: 90%;
+      margin: auto; }
+      @media (min-width: 600px) {
+        .who-we-are-tab .who-we-are-wrapper .who-we-are-text {
+          text-align: left; } }
 
 .who-we-are-text {
   max-width: 90%;

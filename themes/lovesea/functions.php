@@ -103,3 +103,14 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
+// adding masonry into wordpress
+if (! function_exists('slug_scripts_masonry') ) :
+	if ( ! is_admin() ) :
+	function slug_scripts_masonry() {
+			wp_enqueue_script('masonry');
+			wp_enqueue_style('masonry', get_template_directory_uri().'/build/css/style.min.css');
+	}
+	add_action( 'wp_enqueue_scripts', 'slug_scripts_masonry' );
+	endif; //! is_admin()
+	endif; //! slug_scripts_masonry exists
+
