@@ -9,11 +9,9 @@
 get_header(); ?>
 <div class="hero">
 
-	<div style="min-height:90vh;background:url(<?php echo CFS()->get('front_header_image');?>);"></div>
-
+	<div class="hero-background" style="min-height:90vh;background:url(<?php echo CFS()->get('front_header_image');?>);"></div>
+	<img class="front-center-logo"  src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_text.svg' ?>>;
 </div>
-
-
 
 
 	<div id="primary" class="content-area">
@@ -26,29 +24,28 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 				<div id="storyteller" class="storyteller">
-	<h1>We are story tellers.</h1>
-	<p>With a photojournalistic style, we capture both the story and romance of your wedding.</p>
-	<!-- <img src="/../../images/Lovesea_logo_full.png" alt="cool"> -->
-	<button class="browse-weddings">Browse Weddings</button> 
-</div>
+					<h1>We are story tellers.</h1>
+					<p>With a photojournalistic style, we capture both the story and romance of your wedding.</p>
+					<button class="browse-weddings">Browse Weddings</button> 
+				</div>
 
-<div class="observer">
-	<h1>We are observers.</h1>
-	<p>We work in the background, capturing even the tiniest of details, to tell your story.</p>
-	<button class="about-us">About Us</button>
-</div>
+				<div class="observer">
+					<h1>We are observers.</h1>
+					<p>We work in the background, capturing even the tiniest of details, to tell your story.</p>
+					<button class="about-us">About Us</button>
+				</div>
 
-<div class="friend">
-	<h1>We are your friend.</h1>
-	<p>We get to know you and your story to perfectly document what’s important to you.</p>
-	<button class="connect">Let's Talk</button>
-</div>
+				<div class="friend">
+					<h1>We are your friend.</h1>
+					<p>We get to know you and your story to perfectly document what’s important to you.</p>
+					<button class="connect">Let's Talk</button>
+				</div>
 
-<div class="instagram-carousel-container"> 
-	<h2>follow along on <span class="instagram"> Instagram</span> </h2>
-	<div class="instagram-carousel">
-	</div>
-</div>
+				<div class="instagram-carousel-container"> 
+					<h2>follow along on <span class="instagram"> Instagram</span> </h2>
+					<div class="instagram-carousel">
+					</div>
+				</div>
 
 			<?php endwhile; // End of the loop. ?>
 

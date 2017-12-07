@@ -37,18 +37,20 @@ add_action('login_head', 'lovesea_login_logo');
 // About hero image
 function lovesea_dynamic_css() {
 	
-if ( ! is_page_template( 'about.php') ) {
+if ( ! is_page_template( 'page-templates/about.php') ) {
 	return;
 }
 $image = CFS()->get( 'about_header_image' );
 if (! $image ) {
 	return;
 }
-$hero_css = ".entry-header .custom-hero {
+$hero_css = ".page-template-about .custom-hero {
+	background: url({$image});
+	background-size: auto 100vh;
 	height: 100vh;
 	width: auto;
 }";
-wp_add_inline_style( 'red-starter-style', $hero_css );
+wp_add_inline_style( 'lovesea-style', $hero_css );
 }
 
 add_action( 'wp_enqueue_scripts', 'lovesea_dynamic_css' );

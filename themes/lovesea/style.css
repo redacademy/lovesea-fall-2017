@@ -778,5 +778,45 @@ object {
   font-size: 18px;
   letter-spacing: 1px; }
 
-.hero {
+.home .hero .front-center-logo {
+  top: 34%;
+  left: 27vw;
+  position: absolute;
+  width: 50%; }
+  @media (min-width: 600px) {
+    .home .hero .front-center-logo {
+      width: 350px;
+      top: 21%;
+      left: 42vw; } }
+
+.home .hero .hero-background {
+  height: 50vh; }
+  @media (min-width: 600px) {
+    .home .hero .hero-background {
+      height: 90vh; } }
+
+.home .storyteller {
   height: 100vh; }
+  @media (min-width: 600px) {
+    .home .storyteller {
+      height: 50vh; } }
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.who-we-are-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1065px;
+  margin-left: auto;
+  margin-right: auto; }
+  .who-we-are-wrapper .who-we-are-image {
+    margin-right: 2rem; }
+    .who-we-are-wrapper .who-we-are-image img {
+      max-width: 45%;
+      height: auto; }
+
+.who-we-are-text {
+  max-width: 45%;
+  margin: 1rem; }
