@@ -94,7 +94,7 @@ if ( ! $image ) {
 	return;
 }
 // TODO add div and class around the image so that it can be styled later ..remove background-position-y for mobile
-$connect_hero_css = ".page-template-connect  {
+$connect_hero_css = ".page-template-connect .site-header {
 	background-image: url({$image});
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -791,9 +791,9 @@ object {
   margin: 3% 0 1% 0; }
 
 @media (min-width: 600px) {
-  .entry-content {
+  .page-id-61 .entry-content {
     width: 620px; }
-  .hear-from-you {
+  .page-id-61 .hear-from-you {
     height: 62px;
     width: 620px;
     margin-bottom: 4%; } }
@@ -876,34 +876,53 @@ object {
 .page-id-54 .site-content .content-area .entry-title {
   text-align: center; }
 
-.who-we-are-tab {
-  text-align: center; }
-  .who-we-are-tab .who-we-are-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto; }
-    .who-we-are-tab .who-we-are-wrapper .who-we-are-image {
-      margin: 1.5rem; }
-      .who-we-are-tab .who-we-are-wrapper .who-we-are-image img {
-        max-width: 600px;
+.who-we-are-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 600px) {
+    .who-we-are-wrapper {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 90%;
+      max-width: 1060px; } }
+  .who-we-are-wrapper .who-we-are-image {
+    margin-left: auto; }
+    @media (min-width: 600px) {
+      .who-we-are-wrapper .who-we-are-image {
+        max-height: 516px;
+        max-width: 400px;
         height: auto;
-        margin: auto;
-        width: 90%; }
-    .who-we-are-tab .who-we-are-wrapper .who-we-are-text {
-      text-align: justify;
-      max-width: 90%;
-      margin: auto; }
-      @media (min-width: 600px) {
-        .who-we-are-tab .who-we-are-wrapper .who-we-are-text {
-          text-align: left; } }
+        width: auto; } }
+    .who-we-are-wrapper .who-we-are-image img {
+      max-width: 600px;
+      height: auto;
+      margin: 0 auto;
+      width: 90%; }
+  .who-we-are-wrapper .who-we-are-text {
+    text-align: justify;
+    margin: 0 auto; }
+    @media (min-width: 600px) {
+      .who-we-are-wrapper .who-we-are-text {
+        text-align: left;
+        max-width: 594px;
+        max-height: 529px;
+        width: auto;
+        height: auto; } }
 
-.who-we-are-text {
-  max-width: 90%;
-  margin: auto; }
+.about-sub-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
