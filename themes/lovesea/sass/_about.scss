@@ -14,7 +14,7 @@
 
 .who-we-are-tab {
   text-align: center;
-  
+
   .who-we-are-wrapper {
     display: flex;
     flex-direction: column;
@@ -26,11 +26,16 @@
       margin: 1.5rem;
 
       img {
-        max-width: 90%;
+        max-width: $desktop-width;
         height: auto;
         margin: auto;
+        width: 90%;
       }
     }
+    .who-we-are-text {
+      text-align: left;
+    }
+
   }
 }
 

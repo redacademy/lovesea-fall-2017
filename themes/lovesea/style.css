@@ -823,9 +823,12 @@ object {
     .who-we-are-tab .who-we-are-wrapper .who-we-are-image {
       margin: 1.5rem; }
       .who-we-are-tab .who-we-are-wrapper .who-we-are-image img {
-        max-width: 90%;
+        max-width: 600px;
         height: auto;
-        margin: auto; }
+        margin: auto;
+        width: 90%; }
+    .who-we-are-tab .who-we-are-wrapper .who-we-are-text {
+      text-align: left; }
 
 .who-we-are-text {
   max-width: 90%;
