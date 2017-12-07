@@ -507,6 +507,7 @@ a {
 
 .main-navigation {
   width: 100%;
+  height: 5rem;
   position: fixed;
   top: 4rem;
   left: 3rem; }
@@ -790,9 +791,9 @@ object {
   margin: 3% 0 1% 0; }
 
 @media (min-width: 600px) {
-  .entry-content {
+  .page-id-61 .entry-content {
     width: 620px; }
-  .hear-from-you {
+  .page-id-61 .hear-from-you {
     height: 62px;
     width: 620px;
     margin-bottom: 4%; } }
@@ -840,7 +841,24 @@ object {
 
 .home .instagram-carousel-container {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 10rem 0; }
+
+.home .instagram-pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  .home .instagram-pics li {
+    list-style: none; }
 
 /*--------------------------------------------------------------
 # About
