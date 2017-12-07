@@ -27,7 +27,6 @@
 
     @include desktop {
       flex-direction: row;
-      width: 90%;
       max-width: 1060px;
       align-items: center;
     }
@@ -54,10 +53,11 @@
       margin: 0 auto;
       color: $color__text-main;
       letter-spacing: 1.1px;
-      font-weight: normal;
+      font-weight: lighter;
+      line-height: 120%;
 
       @include desktop {
-        max-width: 594px;
+        max-width: 600px;
         max-height: 529px;
         width: auto;
         height: auto;
