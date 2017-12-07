@@ -29,6 +29,8 @@ textarea {
   background-color: $color__background-input;
 	border-radius: 0px;
 	border-style: none;
+	height: 50px;
+	min-width: 100%;
 }
 
 input[type="text"],
@@ -39,11 +41,6 @@ input[type="search"] {
 	padding: 3px;
 }
 
-textarea {
-	padding-left: 3px;
-	width: 100%;
-}
-
 // input fields on desktop
 
 label {
@@ -52,25 +49,26 @@ label {
 	font-weight: 600;
 	letter-spacing: 1px;
 }
+.wpcf7-form-control.wpcf7-text {
+	height: 50px;
+}
 
 .first-name-last {
 	display: flex;
 	align-items: baseline;
-	label {
-		width: 50%;
-	}
-	p {
-		width: 40%;
-	}
-}
 
+}
 .wedding-date-venue {
 	display: flex;
 	align-items: baseline;
 }
-.wpcf7-form-control.wpcf7-text {
-	width: 100%;
+
+.email {
+	.wpcf7-form-control.wpcf7-text {
+		width: 100%;
+	}
 }
+
 .submit {
 	display: flex;
 	justify-content: center;
