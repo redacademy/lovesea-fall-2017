@@ -17,6 +17,8 @@
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
+		<script src="jquery.min.js"></script>
+		<script src="owlcarousel/owl.carousel.min.js"></script>
 
 	</body>
 </html>

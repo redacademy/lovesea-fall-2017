@@ -45,6 +45,22 @@ get_header(); ?>
 
 				<div class="instagram-carousel-container"> 
 					<h2>follow along on <span class="instagram"> Instagram</span> </h2>
+
+					<div class="owl-carousel">
+  <div> Your Content </div>
+  <div> Your Content </div>
+  <div> Your Content </div>
+  <div> Your Content </div>
+  <div> Your Content </div>
+  <div> Your Content </div>
+  <div> Your Content </div>
+</div>
+
+</php $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+}); ?>
+
+
 					<div class="instagram-carousel">
 					</div>
 				</div>
@@ -53,5 +69,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<?php get_sidebar();?>
 
 <?php get_footer(); ?>
