@@ -804,23 +804,28 @@ object {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.who-we-are-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 1065px;
-  margin-left: auto;
-  margin-right: auto; }
-  .who-we-are-wrapper .who-we-are-image {
-    margin: 1.5rem; }
-    .who-we-are-wrapper .who-we-are-image img {
-      max-width: 90%;
-      height: auto;
-      margin: auto; }
+.page-id-54 .site-content .content-area .entry-title {
+  text-align: center; }
+
+.who-we-are-tab {
+  text-align: center; }
+  .who-we-are-tab .who-we-are-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 1065px;
+    margin-left: auto;
+    margin-right: auto; }
+    .who-we-are-tab .who-we-are-wrapper .who-we-are-image {
+      margin: 1.5rem; }
+      .who-we-are-tab .who-we-are-wrapper .who-we-are-image img {
+        max-width: 90%;
+        height: auto;
+        margin: auto; }
 
 .who-we-are-text {
   max-width: 90%;
