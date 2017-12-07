@@ -52,7 +52,16 @@
 
   .instagram-carousel-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
     margin: 10rem 0;
   }
+  .instagram-pics {
+    display: flex;
+    justify-content: space-evenly;    
+    li{
+      list-style: none;
+    }
 
+}
 }
