@@ -47,18 +47,13 @@ get_header(); ?>
 					<h2>follow along on <span class="instagram"> Instagram</span> </h2>
 
 					<div class="owl-carousel">
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-</div>
 
-</php $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-}); ?>
+						<div> Instagram </div>
+						<div> Your Content </div>
+						<div> Your Content </div>
+						<div> Your Content </div>
+	
+					</div>
 
 
 					<div class="instagram-carousel">

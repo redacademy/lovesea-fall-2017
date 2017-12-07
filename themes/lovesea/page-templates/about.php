@@ -6,19 +6,24 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header class="entry-header custom-hero">
-          <div class ="container">
-            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-          </div>
         </header>
-
         <div class="container">
           <div class="entry-content">
-            <div class="who-we-are-tab">
-
-            <h2><?php
+          <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            <ul class="about-sub-pages">
+              <li><?php
               $props = CFS()->get_field_info( 'who_we_are' );
               echo $props['label'];
-              ?></h2>
+              ?></li>
+               <li><?php
+              $props = CFS()->get_field_info( 'what_we_do' );
+              echo $props['label'];
+              ?></li>
+               <li><?php
+              $props = CFS()->get_field_info( 'what_to_expect' );
+              echo $props['label'];
+              ?></li>
+            </ul>
               <div class="who-we-are-wrapper">
                 <div class="who-are-we-image"><img src="<?php
                 echo CFS()->get( 'who_we_are_image' ); 
@@ -30,7 +35,6 @@ get_header(); ?>
                 ?>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </article>

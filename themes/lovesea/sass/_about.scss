@@ -7,45 +7,81 @@
     .content-area {
       .entry-title {
         text-align: center;
+        @include desktop {
+          font-size: 64px;
+          color: $color__text-secondary;
+          font-weight: 500;
+          font-style: italic;
+          letter-spacing: 2px;
+        }
       }
     }
   }
 }
-
-.who-we-are-tab {
-  text-align: center;
-
   .who-we-are-wrapper {
     display: flex;
     flex-direction: column;
-    width: $desktop-width;
+    max-width: $desktop-width;
     margin-left: auto;
     margin-right: auto;
 
+    @include desktop {
+      flex-direction: row;
+      max-width: 1060px;
+      align-items: center;
+    }
+
     .who-we-are-image {
-      margin: 1.5rem;
+      margin-left: auto;
+
+      @include desktop {
+        max-height: 516px;
+        max-width: 400px;
+        height: auto;
+        width: auto;
+      }
 
       img {
         max-width: $desktop-width;
         height: auto;
-        margin: auto;
+        margin: 0 auto;
         width: 90%;
       }
     }
     .who-we-are-text {
       text-align: justify;
-      max-width: 90%;
-      margin: auto;
+      margin: 0 auto;
+      color: $color__text-main;
+      letter-spacing: 1.1px;
+      font-weight: lighter;
+      line-height: 120%;
 
       @include desktop {
-        text-align: left;
+        max-width: 600px;
+        max-height: 529px;
+        width: auto;
+        height: auto;
+        font-size: 18px;
       }
     }
   }
-}
 
-.who-we-are-text {
-  max-width: 90%;
-  margin: auto;
+  .about-sub-pages {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 89px;
 
-}
+      li {
+        padding: 0 1.25rem;
+        font-style: italic;
+        font-weight: lighter;
+        letter-spacing: 1.2px;
+        @include desktop {
+          font-size: 20px;
+          letter-spacing: 1.2px;
+        }
+      }
+    }
