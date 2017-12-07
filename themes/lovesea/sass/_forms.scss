@@ -2,23 +2,24 @@
 # Forms
 --------------------------------------------------------------*/
 
-/* Buttons */
+/* Submit Button */
 .page-id-61 {
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-width: 180px;
-height: 50px;
-background-color: $color__text-main;
-color: $color__background-body;
-border-style: none;
-font-style: italic;
-font-size: 24px;
-letter-spacing: 2px;
-	}	
-}
-/* Fields */
+		button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"] {
+		width: 180px;
+		height: 50px;
+		background-color: $color__text-main;
+		color: $color__background-body;
+		border-style: none;
+		font-style: italic;
+		font-size: 24px;
+		letter-spacing: 2px;
+			}	
+	}
+
+/* Email submit Fields */
 
 input[type="text"],
 input[type="email"],
@@ -41,7 +42,14 @@ input[type="search"] {
 	padding: 3px;
 }
 
-// input fields on desktop
+// input fields on desktop connect page
+form.wpcf7-form {
+	width: 100vw;
+	padding: 2em;
+ 	@include desktop {
+		 width: 620px;
+	 }	 
+}
 
 label {
 	color: $color__text-main;
@@ -54,13 +62,14 @@ label {
 }
 
 .first-name-last {
-	display: flex;
-	align-items: baseline;
-
+	.wpcf7-form-control.wpcf7-text {
+		width: 50%;
+	}
 }
 .wedding-date-venue {
-	display: flex;
-	align-items: baseline;
+	.wpcf7-form-control.wpcf7-text {
+		width: 50%;
+	}
 }
 
 .email {

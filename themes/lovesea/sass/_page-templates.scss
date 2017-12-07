@@ -7,27 +7,62 @@
 /* Connect page */
 
 .page-id-61 {
+  header.site-header {
+   background-position-y: initial;
+  }
   .entry-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 800px;
+    width: 100vw;
     margin: 0 auto;
+    
   }
   h2 {
     color: $color__text-secondary;
     font-size: 64px;
     font-weight: 500;
+    font-style: italic;
+    margin: 8% 0 1% 0;
   }
-  p.congrats {
+  .congrats {
     font-size: 24px;
     letter-spacing: $font_letter_spacing_main;
     font-weight: 500;
     color: $color__text-main;
     text-align: center;
   }
-  p.hear-from-you {
+  .hear-from-you {
     font-size: 18px;
     letter-spacing: $font_letter_spacing_main;
+    text-align: center;
+    padding: 2em;
+    margin: 0;
+  }
+  .required {
+    font-size: 14px;	
+    font-style: italic;
+    letter-spacing: $font_letter_spacing_main;
+    margin: 3% 0 1% 0;
   }
 }
+
+ @include desktop {
+  .entry-content {
+    width: 620px;
+ }
+  h2 {
+   
+  }
+  p.congrats {
+
+  }
+  .hear-from-you {
+    height: 62px;
+    width: 620px;
+    margin-bottom: 4%;
+  }
+  p.required {
+  }
+}
+
