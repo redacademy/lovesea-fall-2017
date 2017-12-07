@@ -47,11 +47,7 @@ if ( ! $image ) {
 	return;
 }
 
-<<<<<<< HEAD
-$front_page_hero_css = ".home .hero {
-=======
 $front_page_hero_css = ".home .site-content {
->>>>>>> d6cb6e14e0350d822fcf27daf5e319c7986c5833
 	background-image: url({$image});
 	background-repeat: no-repeat;
 	background-size: cover;
