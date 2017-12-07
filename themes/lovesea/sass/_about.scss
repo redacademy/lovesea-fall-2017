@@ -26,14 +26,14 @@
       img {
         max-width: $desktop-width;
         height: auto;
-        margin: auto;
+        margin: 0 auto;
         width: 90%;
       }
     }
     .who-we-are-text {
       text-align: justify;
       max-width: 90%;
-      margin: auto;
+      margin: 0 auto;
 
       @include desktop {
         text-align: left;

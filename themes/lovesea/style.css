@@ -882,12 +882,12 @@ object {
     .who-we-are-wrapper .who-we-are-image img {
       max-width: 600px;
       height: auto;
-      margin: auto;
+      margin: 0 auto;
       width: 90%; }
   .who-we-are-wrapper .who-we-are-text {
     text-align: justify;
     max-width: 90%;
-    margin: auto; }
+    margin: 0 auto; }
     @media (min-width: 600px) {
       .who-we-are-wrapper .who-we-are-text {
         text-align: left; } }
