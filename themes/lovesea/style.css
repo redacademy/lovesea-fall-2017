@@ -441,7 +441,9 @@ input[type="search"],
 textarea {
   background-color: #E4E2E2;
   border-radius: 0px;
-  border-style: none; }
+  border-style: none;
+  height: 50px;
+  min-width: 100%; }
 
 input[type="text"],
 input[type="email"],
@@ -450,15 +452,14 @@ input[type="password"],
 input[type="search"] {
   padding: 3px; }
 
-textarea {
-  padding-left: 3px;
-  width: 100%; }
-
 label {
   color: #415468;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px; }
+
+.wpcf7-form-control.wpcf7-text {
+  height: 50px; }
 
 .first-name-last {
   display: -webkit-box;
@@ -467,10 +468,6 @@ label {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline; }
-  .first-name-last label {
-    width: 50%; }
-  .first-name-last p {
-    width: 40%; }
 
 .wedding-date-venue {
   display: -webkit-box;
@@ -480,7 +477,7 @@ label {
       -ms-flex-align: baseline;
           align-items: baseline; }
 
-.wpcf7-form-control.wpcf7-text {
+.email .wpcf7-form-control.wpcf7-text {
   width: 100%; }
 
 .submit {
@@ -764,6 +761,22 @@ object {
           align-items: center;
   width: 800px;
   margin: 0 auto; }
+
+.page-id-61 h2 {
+  color: #BF8472;
+  font-size: 64px;
+  font-weight: 500; }
+
+.page-id-61 p.congrats {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #415468;
+  text-align: center; }
+
+.page-id-61 p.hear-from-you {
+  font-size: 18px;
+  letter-spacing: 1px; }
 
 .hero {
   height: 100vh; }

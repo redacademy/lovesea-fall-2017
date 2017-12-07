@@ -52,4 +52,28 @@ wp_add_inline_style( 'red-starter-style', $hero_css );
 }
 
 add_action( 'wp_enqueue_scripts', 'lovesea_dynamic_css' );
+
+// Connect hero image
+
+function lovesea_load_connect_hero_css() {
+	if (! is_page_template('page-templates/about.php' ) ) {
+		return;
+	}
+
+
+$image = CFS()->get('connect_hero_image');
+
+if ( ! $image ) {
+	return;
+}
+
+$connect_hero_css = ".page-template-connect .site-main {
+	background-image: url({$image});
+	background-repeat: no-repeat;
+	background-size: cover;
+}";
+
+wp_add_inline_style( 'connect-style', $connect_hero_css);
+}
+add_action( 'wp_enqueue_scripts', 'lovesea_load_connect_hero_css' );
 	

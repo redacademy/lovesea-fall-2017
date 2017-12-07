@@ -14,4 +14,20 @@
     width: 800px;
     margin: 0 auto;
   }
+  h2 {
+    color: $color__text-secondary;
+    font-size: 64px;
+    font-weight: 500;
+  }
+  p.congrats {
+    font-size: 24px;
+    letter-spacing: $font_letter_spacing_main;
+    font-weight: 500;
+    color: $color__text-main;
+    text-align: center;
+  }
+  p.hear-from-you {
+    font-size: 18px;
+    letter-spacing: $font_letter_spacing_main;
+  }
 }
