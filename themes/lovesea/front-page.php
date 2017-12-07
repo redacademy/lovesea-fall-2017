@@ -9,9 +9,10 @@
 get_header(); ?>
 <div class="hero">
 
-	<div class="hero-background" style="min-height:90vh;background:url(<?php echo CFS()->get('front_header_image');?>);"></div>
+	
 	<img class="front-center-logo"  src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_text.svg' ?>>;
 </div>
+
 
 
 	<div id="primary" class="content-area">
