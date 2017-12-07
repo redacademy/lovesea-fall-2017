@@ -782,10 +782,10 @@ object {
     .home .hero .hero-background {
       height: 90vh; } }
 
-.home .storyteller {
+.home .storyteller, .home .observer, .home .friend {
   height: 100vh; }
   @media (min-width: 600px) {
-    .home .storyteller {
+    .home .storyteller, .home .observer, .home .friend {
       height: 50vh; } }
 
 /*--------------------------------------------------------------
