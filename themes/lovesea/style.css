@@ -865,6 +865,13 @@ object {
 --------------------------------------------------------------*/
 .page-id-54 .site-content .content-area .entry-title {
   text-align: center; }
+  @media (min-width: 600px) {
+    .page-id-54 .site-content .content-area .entry-title {
+      font-size: 64px;
+      color: #BF8472;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: 2px; } }
 
 .who-we-are-wrapper {
   display: -webkit-box;
@@ -884,7 +891,10 @@ object {
           -ms-flex-direction: row;
               flex-direction: row;
       width: 90%;
-      max-width: 1060px; } }
+      max-width: 1060px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .who-we-are-wrapper .who-we-are-image {
     margin-left: auto; }
     @media (min-width: 600px) {
@@ -900,14 +910,17 @@ object {
       width: 90%; }
   .who-we-are-wrapper .who-we-are-text {
     text-align: justify;
-    margin: 0 auto; }
+    margin: 0 auto;
+    color: #415468;
+    letter-spacing: 1.1px;
+    font-weight: normal; }
     @media (min-width: 600px) {
       .who-we-are-wrapper .who-we-are-text {
-        text-align: left;
         max-width: 594px;
         max-height: 529px;
         width: auto;
-        height: auto; } }
+        height: auto;
+        font-size: 18px; } }
 
 .about-sub-pages {
   display: -webkit-box;
@@ -915,4 +928,15 @@ object {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 89px; }
+  .about-sub-pages li {
+    padding: 0 1.25rem;
+    font-style: italic;
+    font-weight: lighter; }
+    @media (min-width: 600px) {
+      .about-sub-pages li {
+        font-size: 20px; } }
