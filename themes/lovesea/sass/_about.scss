@@ -4,22 +4,24 @@
 
 .who-we-are-wrapper {
   display: flex;
+  flex-direction: column;
   width: 1065px;
   margin-left: auto;
   margin-right: auto;
 
   .who-we-are-image {
-    margin-right: 2rem;
+    margin: 1.5rem;
 
     img {
-      max-width: 45%;
+      max-width: 90%;
       height: auto;
-
+      margin: auto;
     }
   }
 }
 
 .who-we-are-text {
-  max-width: 45%;
-  margin: 1rem;
+  max-width: 90%;
+  margin: auto;
+
 }

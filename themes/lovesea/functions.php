@@ -84,6 +84,7 @@ add_filter( 'stylesheet_uri', 'lovesea_minified_css', 10, 2 );
  */
 function lovesea() {
 	wp_enqueue_style( 'lovesea', get_stylesheet_uri() );
+	wp_enqueue_style( 'connect-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'lovesea-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 

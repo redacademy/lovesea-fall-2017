@@ -441,7 +441,9 @@ input[type="search"],
 textarea {
   background-color: #E4E2E2;
   border-radius: 0px;
-  border-style: none; }
+  border-style: none;
+  height: 50px;
+  min-width: 100%; }
 
 input[type="text"],
 input[type="email"],
@@ -450,15 +452,14 @@ input[type="password"],
 input[type="search"] {
   padding: 3px; }
 
-textarea {
-  padding-left: 3px;
-  width: 100%; }
-
 label {
   color: #415468;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px; }
+
+.wpcf7-form-control.wpcf7-text {
+  height: 50px; }
 
 .first-name-last {
   display: -webkit-box;
@@ -467,10 +468,6 @@ label {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline; }
-  .first-name-last label {
-    width: 50%; }
-  .first-name-last p {
-    width: 40%; }
 
 .wedding-date-venue {
   display: -webkit-box;
@@ -480,7 +477,7 @@ label {
       -ms-flex-align: baseline;
           align-items: baseline; }
 
-.wpcf7-form-control.wpcf7-text {
+.email .wpcf7-form-control.wpcf7-text {
   width: 100%; }
 
 .submit {
@@ -765,6 +762,22 @@ object {
   width: 800px;
   margin: 0 auto; }
 
+.page-id-61 h2 {
+  color: #BF8472;
+  font-size: 64px;
+  font-weight: 500; }
+
+.page-id-61 p.congrats {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #415468;
+  text-align: center; }
+
+.page-id-61 p.hear-from-you {
+  font-size: 18px;
+  letter-spacing: 1px; }
+
 .home .hero .front-center-logo {
   top: 34%;
   left: 27vw;
@@ -795,15 +808,20 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 1065px;
   margin-left: auto;
   margin-right: auto; }
   .who-we-are-wrapper .who-we-are-image {
-    margin-right: 2rem; }
+    margin: 1.5rem; }
     .who-we-are-wrapper .who-we-are-image img {
-      max-width: 45%;
-      height: auto; }
+      max-width: 90%;
+      height: auto;
+      margin: auto; }
 
 .who-we-are-text {
-  max-width: 45%;
-  margin: 1rem; }
+  max-width: 90%;
+  margin: auto; }

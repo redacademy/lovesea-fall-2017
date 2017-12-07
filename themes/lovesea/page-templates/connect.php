@@ -10,7 +10,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+    <!-- <div style="min-height:500px;background:url(<?php echo CFS()->get('connect_hero_image');?>);"></div> -->
+      
+    <?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
@@ -20,7 +22,7 @@ get_header(); ?>
   </div><!-- #primary -->
   
   <!-- TODO create a function similar to inhabitent extras.php for inline style -->
-  <div style="min-height:300px;background:url(<?php echo CFS()->get('connect_hero_image');?>);"></div>
+  
 
 
 <?php get_footer(); ?>
