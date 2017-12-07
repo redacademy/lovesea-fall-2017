@@ -765,5 +765,25 @@ object {
   width: 800px;
   margin: 0 auto; }
 
-.hero {
+.home .hero .front-center-logo {
+  top: 34%;
+  left: 27vw;
+  position: absolute;
+  width: 50%; }
+  @media (min-width: 600px) {
+    .home .hero .front-center-logo {
+      width: 350px;
+      top: 21%;
+      left: 42vw; } }
+
+.home .hero .hero-background {
+  height: 50vh; }
+  @media (min-width: 600px) {
+    .home .hero .hero-background {
+      height: 90vh; } }
+
+.home .storyteller {
   height: 100vh; }
+  @media (min-width: 600px) {
+    .home .storyteller {
+      height: 50vh; } }

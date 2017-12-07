@@ -1,0 +1,28 @@
+.home{
+  .hero {
+    .front-center-logo {
+      top: 34%;
+      left: 27vw;
+    position: absolute;
+    width: 50%;
+    @include desktop {
+      width: 350px;
+    top: 21%;
+    left: 42vw;
+  
+    }
+  }
+    .hero-background{
+      height: 50vh;
+      @include desktop {
+      height:90vh;
+      }
+    }
+  }
+  .storyteller {
+    height: 100vh;
+    @include desktop {
+      height: 50vh;
+    }
+  }
+}
