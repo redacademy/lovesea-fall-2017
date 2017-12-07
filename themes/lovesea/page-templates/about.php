@@ -13,12 +13,20 @@ get_header(); ?>
 
         <div class="container">
           <div class="entry-content">
-            <div class="who-we-are-tab">
-
-            <h2><?php
+            <div class="about-sub-pages">
+              <h2><?php
               $props = CFS()->get_field_info( 'who_we_are' );
               echo $props['label'];
               ?></h2>
+               <h2><?php
+              $props = CFS()->get_field_info( 'what_we_do' );
+              echo $props['label'];
+              ?></h2>
+               <h2><?php
+              $props = CFS()->get_field_info( 'what_to_expect' );
+              echo $props['label'];
+              ?></h2>
+            </div>
               <div class="who-we-are-wrapper">
                 <div class="who-are-we-image"><img src="<?php
                 echo CFS()->get( 'who_we_are_image' ); 
@@ -30,7 +38,6 @@ get_header(); ?>
                 ?>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </article>
