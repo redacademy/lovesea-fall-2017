@@ -819,7 +819,8 @@ object {
     margin: 1.5rem; }
     .who-we-are-wrapper .who-we-are-image img {
       max-width: 90%;
-      height: auto; }
+      height: auto;
+      margin: auto; }
 
 .who-we-are-text {
   max-width: 90%;
