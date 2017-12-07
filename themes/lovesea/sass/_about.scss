@@ -2,21 +2,41 @@
 # About
 --------------------------------------------------------------*/
 
-.who-we-are-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 1065px;
-  margin-left: auto;
-  margin-right: auto;
-
-  .who-we-are-image {
-    margin: 1.5rem;
-
-    img {
-      max-width: 90%;
-      height: auto;
-      margin: auto;
+.page-id-54 {
+  .site-content {
+    .content-area {
+      .entry-title {
+        text-align: center;
+      }
     }
+  }
+}
+
+.who-we-are-tab {
+  text-align: center;
+
+  .who-we-are-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1065px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .who-we-are-image {
+      margin: 1.5rem;
+
+      img {
+        max-width: $desktop-width;
+        height: auto;
+        margin: auto;
+        width: 90%;
+      }
+    }
+    .who-we-are-text {
+      text-align: justify;
+    }
+
+
   }
 }
 
