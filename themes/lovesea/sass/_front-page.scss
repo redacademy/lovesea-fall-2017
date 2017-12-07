@@ -3,26 +3,56 @@
     .front-center-logo {
       top: 34%;
       left: 27vw;
-    position: absolute;
-    width: 50%;
-    @include desktop {
-      width: 350px;
-    top: 21%;
-    left: 42vw;
-  
-    }
-  }
-    .hero-background{
-      height: 50vh;
+      position: absolute;
+      width: 50%;
       @include desktop {
-      height:90vh;
+      width: 350px;
+      top: 21%;
+      left: 42vw;
+      }
+    }
+    .hero {
+      // min-height: 50vh;
+      @include desktop {
+      min-height:90vh;
       }
     }
   }
-  .storyteller, .observer, .friend {
-    height: 100vh;
+  .introduction-container {
+    height: 100%;
+    width: 65vw;
+    margin: 0 auto;
     @include desktop {
+      .storyteller, .friend {
+        text-align: left;
+        width: 23rem;
+        margin-left: 30rem;
+        
+      }
+      .observer{
       height: 50vh;
+      width: 29.5rem;
+      text-align: right;
+      }      
     }
   }
+  .storyteller {
+    margin-top: 90vh;
+  }
+
+  button {
+    width: 300px;
+    height: 100px;
+    font-size: 1.3rem;
+    background-color: $color__accent;
+    outline: $border__white-solid;
+    outline-offset: -14px;  
+    color: $color__background-body;
+  }
+
+  .instagram-carousel-container {
+    text-align: center;
+    margin: 10rem 0;
+  }
+
 }

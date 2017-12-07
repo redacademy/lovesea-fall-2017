@@ -31,10 +31,10 @@ a {
 }
 
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
 	width: 100%;
+	position: fixed;
+	top: 4rem;
+	left: 3rem;
 
 	ul {
 		display: none;

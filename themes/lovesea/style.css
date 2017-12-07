@@ -509,10 +509,10 @@ a {
   display: none; }
 
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  top: 4rem;
+  left: 3rem; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -789,17 +789,39 @@ object {
       top: 21%;
       left: 42vw; } }
 
-.home .hero .hero-background {
-  height: 50vh; }
-  @media (min-width: 600px) {
-    .home .hero .hero-background {
-      height: 90vh; } }
+@media (min-width: 600px) {
+  .home .hero .hero {
+    min-height: 90vh; } }
 
-.home .storyteller, .home .observer, .home .friend {
-  height: 100vh; }
+.home .introduction-container {
+  height: 100%;
+  width: 65vw;
+  margin: 0 auto; }
   @media (min-width: 600px) {
-    .home .storyteller, .home .observer, .home .friend {
-      height: 50vh; } }
+    .home .introduction-container .storyteller, .home .introduction-container .friend {
+      text-align: left;
+      width: 23rem;
+      margin-left: 30rem; }
+    .home .introduction-container .observer {
+      height: 50vh;
+      width: 29.5rem;
+      text-align: right; } }
+
+.home .storyteller {
+  margin-top: 90vh; }
+
+.home button {
+  width: 300px;
+  height: 100px;
+  font-size: 1.3rem;
+  background-color: #CC9785;
+  outline: 2px solid #FFFFFF;
+  outline-offset: -14px;
+  color: #FFFFFF; }
+
+.home .instagram-carousel-container {
+  text-align: center;
+  margin: 10rem 0; }
 
 /*--------------------------------------------------------------
 # About
