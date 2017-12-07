@@ -47,11 +47,7 @@ if ( ! $image ) {
 	return;
 }
 
-<<<<<<< HEAD
-$front_page_hero_css = ".home .hero {
-=======
 $front_page_hero_css = ".home .site-content {
->>>>>>> d6cb6e14e0350d822fcf27daf5e319c7986c5833
 	background-image: url({$image});
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -97,7 +93,7 @@ $image = CFS()->get('connect_hero_image');
 if ( ! $image ) {
 	return;
 }
-// TODO add div and class around the image so that it can be styled later ..remove background-position-y for mobile
+
 $connect_hero_css = ".page-template-connect .site-header {
 	background-image: url({$image});
 	background-repeat: no-repeat;
@@ -109,4 +105,30 @@ $connect_hero_css = ".page-template-connect .site-header {
 wp_add_inline_style( 'lovesea', $connect_hero_css);
 }
 add_action( 'wp_enqueue_scripts', 'lovesea_load_connect_hero_css' );
-	
+
+// wedding page hero image
+
+
+function wedding_hero_css() {
+	if (! is_page_template('page-templates/connect.php' ) ) {
+		return;
+	}
+
+
+$image = CFS()->get('wedding_hero_image');
+
+if ( ! $image ) {
+	return;
+}
+
+$wedding_hero_css = ".page-template-wedding .site-header {
+	background-image: url({$image});
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 350px;
+	background-position-y: -350px;
+}";
+
+wp_add_inline_style( 'lovesea', $wedding_hero_css);
+}
+add_action( 'wp_enqueue_scripts', 'wedding_hero_css' );
