@@ -34,13 +34,13 @@
     }
     .who-we-are-text {
       text-align: justify;
+      max-width: 90%;
+      margin: auto;
 
       @include desktop {
         text-align: left;
       }
     }
-
-
   }
 }
 

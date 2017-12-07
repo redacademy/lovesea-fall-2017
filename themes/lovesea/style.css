@@ -858,7 +858,7 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 1065px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto; }
     .who-we-are-tab .who-we-are-wrapper .who-we-are-image {
@@ -869,7 +869,12 @@ object {
         margin: auto;
         width: 90%; }
     .who-we-are-tab .who-we-are-wrapper .who-we-are-text {
-      text-align: justify; }
+      text-align: justify;
+      max-width: 90%;
+      margin: auto; }
+      @media (min-width: 600px) {
+        .who-we-are-tab .who-we-are-wrapper .who-we-are-text {
+          text-align: left; } }
 
 .who-we-are-text {
   max-width: 90%;
