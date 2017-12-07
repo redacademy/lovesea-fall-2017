@@ -869,7 +869,7 @@ object {
         margin: auto;
         width: 90%; }
     .who-we-are-tab .who-we-are-wrapper .who-we-are-text {
-      text-align: left; }
+      text-align: justify; }
 
 .who-we-are-text {
   max-width: 90%;
