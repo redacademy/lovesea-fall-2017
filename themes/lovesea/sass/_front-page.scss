@@ -1,4 +1,4 @@
-.home{
+.home {
   .hero {
     .front-center-logo {
       top: 34%;
@@ -19,7 +19,7 @@
       }
     }
   }
-  .storyteller {
+  .storyteller, .observer, .friend {
     height: 100vh;
     @include desktop {
       height: 50vh;
