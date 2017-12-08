@@ -43,8 +43,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-ul.wedding-tab-links li {
-  list-style: none; }
+ul.wedding-tab-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  ul.wedding-tab-links li {
+    list-style: none; }
+    ul.wedding-tab-links li a {
+      text-decoration: none; }
+
+.weddings {
+  display: grid; }
+  .weddings li.wedding-album {
+    list-style: none; }
 
 html {
   font-family: sans-serif;
