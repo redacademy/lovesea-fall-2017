@@ -11,7 +11,7 @@ get_header(); ?>
           <div class="entry-content">
           <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
             <ul class="about-sub-pages">
-              <li><?php
+              <li><a href=''><?php
               $props = CFS()->get_field_info( 'who_we_are' );
               echo $props['label'];
               ?></li>
