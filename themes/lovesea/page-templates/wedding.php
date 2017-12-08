@@ -10,7 +10,7 @@ get_header(); ?>
 
 
 		<header class="page-header">
-							
+		
 			
 		</header><!-- .page-header -->
 
@@ -19,7 +19,7 @@ get_header(); ?>
 				<li><a href="#portraits">portraits</a></li>
 				<li><a href="#details">details</a></li>
 			</ul><!-- .tab-links -->
-
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			<div class="gallery-wrapper">
 				<ul id="weddings" class="weddings" class="active">
 					<?php $wedding_gallery_args = array( 'posts_per_page' => 6, 
@@ -33,11 +33,8 @@ get_header(); ?>
 							
 								<li class="wedding-album">
 									<a href="<?php the_permalink(); ?>">
-								
-								
-								
-									<?php if ( has_post_thumbnail() ) : ?>
-										<?php the_post_thumbnail( 'large' ); ?>
+								  <?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail( 'large' ); ?>
 									<?php endif; ?>
 									<?php the_title(); ?>
 									<?php the_content();?>
@@ -51,6 +48,10 @@ get_header(); ?>
 							wp_reset_postdata();
 						 ?>
 				</ul><!-- .weddings  -->
+
+			<div class="wedding-hero">	
+				<?php echo CFS()->get( 'wedding_hero_image' );	?>
+			</div>
 
 				<div id="portraits" class="portraits"></div>
 				<div id="details" class="details"></div>	

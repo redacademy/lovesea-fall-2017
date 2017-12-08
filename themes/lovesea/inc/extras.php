@@ -110,10 +110,9 @@ add_action( 'wp_enqueue_scripts', 'lovesea_load_connect_hero_css' );
 
 function wedding_hero_css() {
 
-	if (! is_page_template('page-templates/connect.php' ) ) {
+	if (! is_page_template('page-templates/wedding.php' ) ) {
 		return;
 	}
-
 
 $image = CFS()->get('wedding_hero_image');
 
@@ -121,12 +120,9 @@ if ( ! $image ) {
 	return;
 }
 
-$wedding_hero_css = ".page-template-wedding .site-header {
+$wedding_hero_css = ".page-template-wedding .site-content {
 	background-image: url({$image});
-	background-repeat: no-repeat;
-	background-size: cover;
 	min-height: 350px;
-	background-position-y: -350px;
 }";
 
 wp_add_inline_style( 'lovesea', $wedding_hero_css);
