@@ -35,7 +35,6 @@ function lovesea_login_logo() {
 add_action('login_head', 'lovesea_login_logo');
 
 
-
 function front_page_hero_css() {
 	if (! is_front_page('front-page.php' ) ) {
 		return;
