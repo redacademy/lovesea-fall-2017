@@ -9,37 +9,40 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 
-			<header class="page-header">
+		<header class="page-header">
 							
-				<ul>
-					<li>Weddings</li>
-					<li>Portraits</li>
-					<li>Details</li>
-				</ul>
+			
+		</header><!-- .page-header -->
 
-			</header><!-- .page-header -->
-
+		<ul class="wedding-tab-links">
+				<li class="active"><a href="#galleries">galleries</a></li>
+				<li><a href="#portraits">portraits</a></li>
+				<li><a href="#details">details</a></li>
+			</ul><!-- .tab-links -->
 
 			<div class="gallery-wrapper">
-				<div id="weddings" class="weddings">
-							<?php
-							$wedding_gallery_args = array( 'posts_per_page' => 5, 'post_type' => 'gallery' );
+				<ul id="weddings" class="weddings" class="active">
+					<?php $wedding_gallery_args = array( 'posts_per_page' => 6, 
+																							 'post_type' => 'gallery', 
+																							 'order' => 'ASC' );
 							
 							$wedding_gallery = get_posts( $wedding_gallery_args );
+
 							foreach ( $wedding_gallery as $post ) : setup_postdata( $post ); ?>
 
 							
-								<li>
+								<li class="wedding-album">
 									<a href="<?php the_permalink(); ?>">
-									<?php the_title(); ?>
+								
 								
 								
 									<?php if ( has_post_thumbnail() ) : ?>
 										<?php the_post_thumbnail( 'large' ); ?>
 									<?php endif; ?>
-								
+									<?php the_title(); ?>
+									<?php the_content();?>
 								</a>
-								</li>
+</li>
 
 						
 
@@ -47,7 +50,7 @@ get_header(); ?>
 							endforeach; 
 							wp_reset_postdata();
 						 ?>
-				</div><!-- .weddings  -->
+				</ul><!-- .weddings  -->
 
 				<div id="portraits" class="portraits"></div>
 				<div id="details" class="details"></div>	

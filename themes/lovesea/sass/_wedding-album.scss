@@ -1,0 +1,18 @@
+// Style for wedding page tabs
+ul.wedding-tab-links {
+   display: flex;
+   justify-content: space-evenly;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+// Style for wedding page album gallery
+.weddings {
+  display: grid;
+  li.wedding-album {
+    list-style: none;
+  }
+}

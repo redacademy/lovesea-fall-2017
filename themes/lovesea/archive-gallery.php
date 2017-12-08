@@ -20,7 +20,7 @@ get_header(); ?>
 
 
 <ul>
-	<li>Weddings</li>
+	<li>Galleries</li>
 	<li>Portraits</li>
 	<li>Details</li>
 </ul>
