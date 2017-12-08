@@ -942,7 +942,7 @@ h2 {
       width: 90%; }
   .who-we-are-wrapper .who-we-are-text {
     text-align: justify;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
     color: #415468;
     letter-spacing: 1.1px;
     font-weight: lighter;
