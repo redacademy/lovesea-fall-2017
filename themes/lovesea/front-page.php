@@ -9,7 +9,7 @@
 get_header(); ?>
 <div class="hero">
 	
-	<img class="front-center-logo"  src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_text.svg' ?>>
+	<img class="front-center-logo"  src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
 </div>
 
 	<div id="primary" class="content-area">

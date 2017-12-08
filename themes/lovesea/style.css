@@ -832,7 +832,9 @@ object {
       .home .hero .front-center-logo {
         width: 350px;
         top: 21%;
-        left: 42vw; } }
+        left: 42vw;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; } }
 
 .home .introduction-container {
   height: 100%;
@@ -893,6 +895,13 @@ h2 {
     height: 200px;
     width: 200px; }
 
+.home .shrink {
+  max-width: 50px;
+  position: fixed;
+  top: 5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -942,7 +951,7 @@ h2 {
       width: 90%; }
   .who-we-are-wrapper .who-we-are-text {
     text-align: justify;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
     color: #415468;
     letter-spacing: 1.1px;
     font-weight: lighter;

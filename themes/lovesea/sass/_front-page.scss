@@ -17,10 +17,10 @@
       width: 350px;
       top: 21%;
       left: 42vw;
+      transition: all 0.4s ease-in-out;      
       }
     }
   }
- 
   
   .introduction-container {
     height: 100%;
@@ -85,3 +85,13 @@
 
   }
 
+  // .front-center-logo.shrink {
+  //   // min-height: 35px;
+  // }
+
+  .home .shrink {
+    max-width: 50px;
+    position: fixed;
+    top: 5rem;
+    transition: all 0.4s ease-in-out;
+  }

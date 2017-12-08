@@ -46,14 +46,14 @@ if ( ! $image ) {
 	return;
 }
 
-$front_page_hero_css = ".home .hero {
+$front_hero_css = ".home .hero {
 	background-image: url({$image});
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 90vh;
 }";
 
-wp_add_inline_style( 'connect-style', $front_page_hero_css);
+wp_add_inline_style( 'lovesea', $front_hero_css);
 }
 add_action( 'wp_enqueue_scripts', 'front_page_hero_css' );
 	
