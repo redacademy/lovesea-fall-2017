@@ -84,7 +84,16 @@ add_filter( 'stylesheet_uri', 'lovesea_minified_css', 10, 2 );
  */
 function lovesea() {
 	wp_enqueue_style( 'lovesea', get_stylesheet_uri() );
+	wp_enqueue_style( 'lovesea-owl', 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css');
 
+	wp_enqueue_script( 'jquery');
+
+	wp_enqueue_script( 'lovesea-spectra', 'https://cdnjs.cloudflare.com/ajax/libs/spectragram/1.0.3/spectragram.min.js', array('jquery'), false, false );
+	wp_enqueue_script( 'lovesea-owl', 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js', array('jquery', 'lovesea-spectra'), false, true );
+	
+	wp_enqueue_script( 'lovesea-instagram', get_template_directory_uri() . '/build/js/ls-instagram.min.js', array('jquery', 'lovesea-spectra', 'lovesea-owl',), false, true );
+
+	
 	wp_enqueue_script( 'lovesea-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
