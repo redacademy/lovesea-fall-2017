@@ -54,7 +54,7 @@ $front_page_hero_css = ".home .hero {
 }";
 
 wp_add_inline_style( 'connect-style', $front_page_hero_css);
-
+}
 add_action( 'wp_enqueue_scripts', 'front_page_hero_css' );
 	
 
@@ -109,6 +109,7 @@ add_action( 'wp_enqueue_scripts', 'lovesea_load_connect_hero_css' );
 
 
 function wedding_hero_css() {
+
 	if (! is_page_template('page-templates/connect.php' ) ) {
 		return;
 	}
@@ -129,5 +130,7 @@ $wedding_hero_css = ".page-template-wedding .site-header {
 }";
 
 wp_add_inline_style( 'lovesea', $wedding_hero_css);
-}
+
+}// wedding_hero_css
+
 add_action( 'wp_enqueue_scripts', 'wedding_hero_css' );
