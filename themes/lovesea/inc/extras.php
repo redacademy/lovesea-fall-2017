@@ -47,7 +47,7 @@ if ( ! $image ) {
 	return;
 }
 
-$front_page_hero_css = ".home .site-content {
+$front_page_hero_css = ".home .hero {
 	background-image: url({$image});
 	background-repeat: no-repeat;
 	background-size: cover;

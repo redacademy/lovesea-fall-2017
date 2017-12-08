@@ -41,7 +41,6 @@ get_header(); ?>
 						<button class="connect">Let's Talk</button>
 					</div>
 
-				</section>
 
 				<div class="instagram-carousel-container"> 
 					<h2>follow along on <span class="instagram"> Instagram</span> </h2>
@@ -52,6 +51,7 @@ get_header(); ?>
 
 
 				</div>
+				</section>
 
 			<?php endwhile; // End of the loop. ?>
 

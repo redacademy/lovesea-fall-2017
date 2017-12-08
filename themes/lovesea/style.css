@@ -798,27 +798,32 @@ object {
     width: 620px;
     margin-bottom: 4%; } }
 
-.home .hero .front-center-logo {
-  top: 34%;
-  left: 27vw;
-  position: absolute;
-  width: 50%; }
-  @media (min-width: 600px) {
-    .home .hero .front-center-logo {
-      width: 350px;
-      top: 21%;
-      left: 42vw; } }
+.home .site-content {
+  text-align: center; }
 
-@media (min-width: 600px) {
-  .home .hero .hero {
-    min-height: 90vh; } }
+.home .hero {
+  min-height: 50vh; }
+  @media (min-width: 600px) {
+    .home .hero {
+      min-height: 90vh; } }
+  .home .hero .front-center-logo {
+    top: 34%;
+    left: 27vw;
+    position: absolute;
+    width: 50%; }
+    @media (min-width: 600px) {
+      .home .hero .front-center-logo {
+        width: 350px;
+        top: 21%;
+        left: 42vw; } }
 
 .home .introduction-container {
   height: 100%;
   width: 65vw;
   margin: 0 auto; }
   @media (min-width: 600px) {
-    .home .introduction-container .storyteller, .home .introduction-container .friend {
+    .home .introduction-container .storyteller,
+    .home .introduction-container .friend {
       text-align: left;
       width: 23rem;
       margin-left: 30rem; }
@@ -826,9 +831,6 @@ object {
       height: 50vh;
       width: 29.5rem;
       text-align: right; } }
-
-.home .storyteller {
-  margin-top: 90vh; }
 
 .home button {
   width: 300px;
@@ -838,6 +840,41 @@ object {
   outline: 2px solid #FFFFFF;
   outline-offset: -14px;
   color: #FFFFFF; }
+
+.owl-wrapper {
+  width: 30rem; }
+
+.site-main .instagram-carousel-container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center; }
+
+.owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  .owl-item img {
+    padding: 8px;
+    height: 200px;
+    width: 200px; }
 
 /*--------------------------------------------------------------
 # About
