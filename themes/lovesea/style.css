@@ -43,6 +43,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+ul.wedding-tab-links li {
+  list-style: none; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;

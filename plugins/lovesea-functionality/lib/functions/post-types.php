@@ -42,7 +42,7 @@ function custom_post_type() {
     );
     $args = array(
       'label'                 => __( 'gallery', 'text_domain' ),
-      'description'           => __( 'A gallery post type for hipster camping.', 'text_domain' ),
+      'description'           => __( '', 'text_domain' ),
       'labels'                => $labels,
       'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
       'hierarchical'          => false,

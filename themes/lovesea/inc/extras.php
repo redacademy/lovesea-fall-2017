@@ -36,27 +36,27 @@ add_action('login_head', 'lovesea_login_logo');
 
 //Front page hero image
 
-function front_page_hero_css() {
-	if (! is_front_page('front-page.php' ) ) {
-		return;
-	}
+// function front_page_hero_css() {
+// 	if (! is_front_page('front-page.php' ) ) {
+// 		return;
+// 	}
 	
-$image = CFS()->get('front_header_image');
+// $image = CFS()->get('front_header_image');
 
-if ( ! $image ) {
-	return;
-}
+// if ( ! $image ) {
+// 	return;
+// }
 
-$front_page_hero_css = ".home .site-content {
-	background-image: url({$image});
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 90vh;
-}";
+// $front_page_hero_css = ".home .site-content {
+// 	background-image: url({$image});
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// 	min-height: 90vh;
+// }";
 
-wp_add_inline_style( 'connect-style', $front_page_hero_css);
-}
-add_action( 'wp_enqueue_scripts', 'front_page_hero_css' );
+// wp_add_inline_style( 'connect-style', $front_page_hero_css);
+// }
+// add_action( 'wp_enqueue_scripts', 'front_page_hero_css' );
 	
 
 // About hero image
