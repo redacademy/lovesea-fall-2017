@@ -1,5 +1,13 @@
 .home {
+  .site-content {
+    text-align: center;
+  }
   .hero {
+    min-height: 50vh;
+    @include desktop {
+    min-height:90vh;
+    }
+  
     .front-center-logo {
       top: 34%;
       left: 27vw;
@@ -11,33 +19,27 @@
       left: 42vw;
       }
     }
-    .hero {
-      // min-height: 50vh;
-      @include desktop {
-      min-height:90vh;
-      }
-    }
   }
+ 
+  
   .introduction-container {
     height: 100%;
     width: 65vw;
     margin: 0 auto;
     @include desktop {
-      .storyteller, .friend {
+      .storyteller, 
+      .friend {
         text-align: left;
         width: 23rem;
         margin-left: 30rem;
         
       }
-      .observer{
+      .observer {
       height: 50vh;
       width: 29.5rem;
       text-align: right;
       }      
     }
-  }
-  .storyteller {
-    margin-top: 90vh;
   }
 
   button {
@@ -49,25 +51,37 @@
     outline-offset: -14px;  
     color: $color__background-body;
   }
+}
+  .owl-wrapper {
+    width: 30rem;
+  }
 
-  .instagram-carousel-container {
-    text-align: center;
+  .site-main .instagram-carousel-container {
+    margin: 0 auto;
+    // text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 5rem auto;
-    width: 60vw;    
-    margin: 10rem 0;
+    // margin: 0 auto;
+    // margin: 5rem auto; 
+    // margin: 10rem 0;
+    // width: 33rem;
+  }
     h2 {
       display: flex;
       flex-direction: column;
+      text-align: center;
     }
-  }
-  .instagram-pics {
+  
+  
+  .owl-item {
     display: flex;
     justify-content: space-evenly;    
-    li{
-      list-style: none;
+    img {
+      padding: 8px;
+      height: 200px;
+      width: 200px;
+      // box-sizing: initial;
     }
 
-}
-}
+  }
+

@@ -41,24 +41,17 @@ get_header(); ?>
 						<button class="connect">Let's Talk</button>
 					</div>
 
-				</section>
 
 				<div class="instagram-carousel-container"> 
 					<h2>follow along on <span class="instagram"> Instagram</span> </h2>
 
 					<div class="owl-carousel">
-
-						<div> Instagram </div>
-						<div> Your Content </div>
-						<div> Your Content </div>
-						<div> Your Content </div>
 	
 					</div>
 
 
-					<div class="instagram-carousel">
-					</div>
 				</div>
+				</section>
 
 			<?php endwhile; // End of the loop. ?>
 
