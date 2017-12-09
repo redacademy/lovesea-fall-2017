@@ -14,15 +14,15 @@ get_header(); ?>
               <li><a href=''><?php
               $props = CFS()->get_field_info( 'who_we_are' );
               echo $props['label'];
-              ?></li>
-               <li><?php
+              ?></a></li>
+               <li><a href=''><?php
               $props = CFS()->get_field_info( 'what_we_do' );
               echo $props['label'];
-              ?></li>
-               <li><?php
+              ?></a></li>
+               <li><a href=''><?php
               $props = CFS()->get_field_info( 'what_to_expect' );
               echo $props['label'];
-              ?></li>
+              ?></a></li>
             </ul>
               <div class="who-we-are-wrapper">
                 <div class="who-are-we-image"><img src="<?php
