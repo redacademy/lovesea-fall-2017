@@ -832,7 +832,9 @@ object {
       .home .hero .front-center-logo {
         width: 350px;
         top: 21%;
-        left: 42vw; } }
+        left: 42vw;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; } }
 
 .home .introduction-container {
   height: 100%;
@@ -892,6 +894,13 @@ h2 {
     padding: 8px;
     height: 200px;
     width: 200px; }
+
+.home .shrink {
+  max-width: 50px;
+  position: fixed;
+  top: 5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
 
 /*--------------------------------------------------------------
 # About
