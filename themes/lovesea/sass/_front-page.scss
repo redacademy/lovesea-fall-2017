@@ -5,17 +5,25 @@
   .hero {
     min-height: 50vh;
     @include desktop {
+      display: flex;
+      flex-direction: column;
     min-height:90vh;
     }
     .front-center-text {
-      width: 10rem;
+      position: absolute;
+      top: 53vh;
+      left: 34rem;
+      height: 200px;
+      width: 350px;
+      // margin: 5rem auto;
+      
     }
   
     .front-center-logo {
-      top: 34%;
-      left: 27vw;
-      position: absolute;
-      width: 50%;
+      
+      width: 125px;
+      height: 205px;
+      margin: 5rem auto;
       @include desktop {
       width: 350px;
       top: 21%;
@@ -45,7 +53,9 @@
     }
   }
 
-  button {
+  .browse-weddings,
+  .about-us,
+  .connect {
     width: 300px;
     height: 100px;
     font-size: 1.3rem;
@@ -59,22 +69,33 @@
     width: 30rem;
   }
 
+  .instagram-carousel-container {
+    width: 750px;
+  }
+
   .site-main .instagram-carousel-container {
     margin: 0 auto;
     // text-align: center;
     display: flex;
     flex-direction: column;
+
     // margin: 0 auto;
     // margin: 5rem auto; 
     // margin: 10rem 0;
-    // width: 33rem;
+    width: 100%;
   }
     h2 {
       display: flex;
       flex-direction: column;
       text-align: center;
+      width: 100%;
     }
   
+  .owl-carousel {
+    // text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
   
   .owl-item {
     display: flex;
@@ -92,9 +113,10 @@
   //   // min-height: 35px;
   // }
 
-  .home .shrink {
+  .home .hero .shrink {
     max-width: 50px;
     position: fixed;
-    top: 5rem;
-    transition: all 0.4s ease-in-out;
+    top: -7rem;
+    left: 43.5rem;
+    // transition: all 0.4s ease-in-out;
   }
