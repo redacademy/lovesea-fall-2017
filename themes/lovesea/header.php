@@ -35,12 +35,12 @@
 		 ?>
 
 
-		<!-- <ul class="desktop-menu">
-        <li class="menu-item"><a href="<?php echo get_template_directory_uri(front-page); ?>">Home</a></li>
+		<ul class="desktop-menu">
+        <li class="menu-item"><a href="<?php echo get_template_directory_uri(); ?>">Home</a></li>
         <li class="menu-item"><a href="<?php echo get_template_directory_uri(); ?> ?>">Weddings</a></li>
         <li class="menu-item"><a href="<?php echo get_template_directory_uri(); ?> ?>">About</a></li>
         <li class="menu-item"><a href="<?php echo get_template_directory_uri(); ?> ?>">Connect</a></li>
-    </ul> -->
+    </ul>
  
 </nav>
 
@@ -51,5 +51,6 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
+			
 
 			<div id="content" class="site-content">

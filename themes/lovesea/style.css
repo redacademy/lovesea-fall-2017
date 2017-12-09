@@ -823,6 +823,8 @@ object {
   @media (min-width: 600px) {
     .home .hero {
       min-height: 90vh; } }
+  .home .hero .front-center-text {
+    width: 10rem; }
   .home .hero .front-center-logo {
     top: 34%;
     left: 27vw;
