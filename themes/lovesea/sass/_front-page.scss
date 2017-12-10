@@ -11,12 +11,18 @@
     }
     .front-center-text {
       position: absolute;
-      top: 53vh;
-      left: 34rem;
+      height: 200px;
+      width: 350px;
+      top: 35%;
+      left: 0%;
+      @include desktop {
+        
+      top: 44%;
+      left: 30%;
       height: 200px;
       width: 350px;
       // margin: 5rem auto;
-      
+      }
     }
   
     .front-center-logo {
@@ -116,7 +122,7 @@
   .home .hero .shrink {
     max-width: 50px;
     position: fixed;
-    top: -7rem;
-    left: 43.5rem;
+    top: -20%;
+    left: 47%;
     // transition: all 0.4s ease-in-out;
   }

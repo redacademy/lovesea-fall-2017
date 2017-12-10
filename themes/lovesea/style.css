@@ -832,10 +832,16 @@ object {
       min-height: 90vh; } }
   .home .hero .front-center-text {
     position: absolute;
-    top: 53vh;
-    left: 34rem;
     height: 200px;
-    width: 350px; }
+    width: 350px;
+    top: 35%;
+    left: 0%; }
+    @media (min-width: 800px) {
+      .home .hero .front-center-text {
+        top: 44%;
+        left: 30%;
+        height: 200px;
+        width: 350px; } }
   .home .hero .front-center-logo {
     width: 125px;
     height: 205px;
@@ -921,8 +927,8 @@ h2 {
 .home .hero .shrink {
   max-width: 50px;
   position: fixed;
-  top: -7rem;
-  left: 43.5rem; }
+  top: -20%;
+  left: 47%; }
 
 /*--------------------------------------------------------------
 # About
