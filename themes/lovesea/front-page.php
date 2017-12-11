@@ -83,8 +83,9 @@ get_header(); ?>
 
 
 					<div class="instagram-carousel-container"> 
-						<h2>follow along on <span class="instagram"> Instagram</span> </h2>
-
+						<div class="follow-instagram-header">
+							<h2 class="follow-instagram">follow along on <span class="instagram"> Instagram</span> </h2>
+						</div>
 						<div class="owl-carousel">
 		
 						</div>

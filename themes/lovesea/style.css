@@ -886,7 +886,7 @@ object {
   width: 750px; }
 
 .site-main .instagram-carousel-container {
-  margin: 0 auto;
+  margin: 10rem auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -896,16 +896,21 @@ object {
           flex-direction: column;
   width: 100%; }
 
-h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.instagram-carousel-container {
+  position: relative; }
+
+.follow-instagram-header {
+  width: 100%;
+  height: 2.5rem; }
+
+.follow-instagram {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  width: 100%; }
+  width: 23%;
+  margin: 0 auto;
+  background-color: blue; }
 
 .owl-carousel {
   width: 80%;
@@ -928,7 +933,7 @@ h2 {
 .home .hero .shrink {
   max-width: 50px;
   position: fixed;
-  top: -13%;
+  top: -38%;
   left: 47%; }
 
 .scroll-arrow {
