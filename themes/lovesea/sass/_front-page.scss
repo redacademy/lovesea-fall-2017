@@ -111,8 +111,11 @@
     // text-align: center;
     width: 80%;
     margin: 0 auto;
+    padding-top: 5rem;    
     border-top: $border__main-solid;
-    padding-top: 5rem;
+    border-bottom: $border__main-solid;
+    padding-bottom: 4rem;
+    margin-bottom: 1rem;
   }
   
   .owl-item {

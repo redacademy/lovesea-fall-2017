@@ -915,8 +915,11 @@ object {
 .owl-carousel {
   width: 80%;
   margin: 0 auto;
+  padding-top: 5rem;
   border-top: 1px solid #CC9785;
-  padding-top: 5rem; }
+  border-bottom: 1px solid #CC9785;
+  padding-bottom: 4rem;
+  margin-bottom: 1rem; }
 
 .owl-item {
   display: -webkit-box;
@@ -1026,3 +1029,8 @@ object {
       .about-sub-pages li {
         font-size: 20px;
         letter-spacing: 1.2px; } }
+
+.site-footer {
+  text-align: center; }
+  .site-footer .site-info p {
+    color: #CC9785; }
