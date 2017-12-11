@@ -76,8 +76,8 @@ get_header(); ?>
 									<div class="we-are-story-tellers"><img class="storytellers-image" src="<?php	echo $row['we_are_story_tellers_image']; ?>" alt="">
 								</div>	<!-- .wedding-gallery-image -->
 								<?php
-			endforeach;
-			?>
+								endforeach;
+									?>
 
 
 
