@@ -63,6 +63,24 @@ get_header(); ?>
 				<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
 					<div id="storyteller" class="storyteller">
+
+
+									<?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail( 'large' ); ?>
+									<?php endif; ?>
+
+									<?php
+									$loop = CFS()->get( 'we_are_story_tellers' );
+									foreach ( $loop as $row ) :
+									?> 
+									<div class="we-are-story-tellers"><img class="storytellers-image" src="<?php	echo $row['we_are_story_tellers_image']; ?>" alt="">
+								</div>	<!-- .wedding-gallery-image -->
+								<?php
+								endforeach;
+									?>
+
+
+
 						<h1>We are story tellers.</h1>
 						<p>With a photojournalistic style, we capture both the story and romance of your wedding.</p>
 						<button class="browse-weddings"><a href = "<?php echo esc_url(get_permalink());?>">Browse Weddings</a></button> 

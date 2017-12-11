@@ -7,10 +7,26 @@ jQuery(document).ready(function($) {
 //   });
 
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
+  if ($(document).scrollTop() > 3) {
     $('.front-center-logo').addClass('shrink');
   } else {
     $('.front-center-logo').removeClass('shrink');
   }
+});
+});
+
+//About Page Functionality
+
+jQuery( document ).ready(function($) {
+  $('.tabs .about-sub-pages a').on('click', function(e)  {
+    var currentAttrValue = jQuery(this).attr('href');
+
+    // Show/Hide Tabs
+    $('.tabs ' + currentAttrValue).show().siblings().hide();
+
+    // Change/remove current tab to active
+    $(this).parent('li').addClass('active').siblings().removeClass('active');
+
+    e.preventDefault();
 });
 });

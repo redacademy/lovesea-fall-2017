@@ -1,4 +1,8 @@
 .site-footer {
+  border-top: $border__main-solid;
+  width: 66vw;
+  margin: 0 auto;
+  
   text-align: center;
   .site-info p {
   color: $color__accent;
