@@ -839,7 +839,7 @@ object {
     @media (min-width: 800px) {
       .home .hero .front-center-text {
         top: 44%;
-        left: 30%;
+        left: 38%;
         height: 200px;
         width: 350px; } }
   .home .hero .front-center-logo {
@@ -849,8 +849,7 @@ object {
     @media (min-width: 800px) {
       .home .hero .front-center-logo {
         width: 350px;
-        top: 21%;
-        left: 42vw;
+        margin: 10% auto;
         -webkit-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out; } }
 
@@ -910,7 +909,9 @@ h2 {
 
 .owl-carousel {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border-top: 1px solid #CC9785;
+  padding-top: 5rem; }
 
 .owl-item {
   display: -webkit-box;
@@ -927,8 +928,16 @@ h2 {
 .home .hero .shrink {
   max-width: 50px;
   position: fixed;
-  top: -20%;
+  top: -13%;
   left: 47%; }
+
+.scroll-arrow {
+  position: absolute;
+  top: 80vh;
+  left: 48%; }
+  .scroll-arrow .scroll {
+    background-color: transparent;
+    border: none; }
 
 /*--------------------------------------------------------------
 # About
