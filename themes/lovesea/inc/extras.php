@@ -120,9 +120,11 @@ if ( ! $image ) {
 	return;
 }
 
-$wedding_hero_css = ".page-template-wedding .site-content {
+$wedding_hero_css = ".page-template-wedding .page-header {
 	background-image: url({$image});
 	min-height: 350px;
+	background-position: center;
+	background-size: cover;
 }";
 
 wp_add_inline_style( 'lovesea', $wedding_hero_css);

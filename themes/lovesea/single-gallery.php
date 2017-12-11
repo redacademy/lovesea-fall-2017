@@ -10,20 +10,23 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<div class="single-album-hero-image"><?php echo CFS()->get( 'single_wedding_hero_image' ); ?></div>
+		
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
+		<div class="wedding-album-gallery-pages">	
 			<?php
-			$gallery_images = CFS()->get( 'wedding_albums_images' );
-			foreach ( $gallery_images as $image ) :
-			?>
-			<img class="" src="<?php	echo $image['wedding_album_single_image']; ?>" alt="">	
+			$loop = CFS()->get( 'wedding_albums_images' );
+			foreach ( $loop as $row ) :
+			?> 
+			<div class="wedding-gallery-image"><img class="wedding-photo" src="<?php	echo $row['wedding_album_single_image']; ?>" alt="">
+		 </div>	<!-- .wedding-gallery-image -->
 			<?php
 			endforeach;
 			?>
-
-
+    </div>
 
 			<?php the_post_navigation(); ?>
 
