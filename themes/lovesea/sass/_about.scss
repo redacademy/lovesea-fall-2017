@@ -31,6 +31,10 @@
       align-items: center;
     }
 
+    .who-we-are-wrapper.active {
+      display: flex;
+    }
+
     .who-we-are-image {
       margin-left: auto;
 

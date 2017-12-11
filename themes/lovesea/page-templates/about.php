@@ -8,8 +8,9 @@ get_header(); ?>
         <header class="entry-header custom-hero">
         </header>
         <div class="container">
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
           <div class="entry-content">
-          <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+          <div class='tabs'>
             <ul class="about-sub-pages">
               <li><a href=''><?php
               $props = CFS()->get_field_info( 'who_we_are' );
@@ -33,8 +34,9 @@ get_header(); ?>
                 <?php 
                 echo CFS()->get( 'who_we_are_text' ); 
                 ?>
-                </div>
               </div>
+            </div>
+          </div>
           </div>
         </div>
       </article>
