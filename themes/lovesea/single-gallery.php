@@ -27,7 +27,11 @@ get_header(); ?>
 			endforeach;
 			?>
     </div>
-
+		<button class="about-us">
+			<a href ="<?php get_permalink(); ?>" rel="About Us">About us</a>
+		</button>
+   <!-- .about-us button -->
+		
 			<?php the_post_navigation(); ?>
 
 		<?php endwhile; // End of the loop. ?>
