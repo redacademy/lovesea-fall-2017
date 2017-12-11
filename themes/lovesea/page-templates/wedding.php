@@ -10,7 +10,9 @@ get_header(); ?>
 
 
 		<header class="page-header">
-		
+	
+				<?php echo CFS()->get( 'wedding_hero_image' );	?>
+	
 			
 		</header><!-- .page-header -->
 
@@ -20,7 +22,12 @@ get_header(); ?>
 				<li><a href="#details">details</a></li>
 			</ul><!-- .tab-links -->
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			
+			<div class="wedding-logo">
+				<img class="wedding-page-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
+     </div> <!-- .wedding-logo -->
 			<div class="gallery-wrapper">
+				
 				<ul id="weddings" class="weddings" class="active">
 					<?php $wedding_gallery_args = array( 'posts_per_page' => 6, 
 																							 'post_type' => 'gallery', 
@@ -32,13 +39,14 @@ get_header(); ?>
 
 							
 								<li class="wedding-album">
-									<a href="<?php the_permalink(); ?>">
+									<div><a href="<?php the_permalink(); ?>">
 								  <?php if ( has_post_thumbnail() ) : ?>
-									<?php the_post_thumbnail( 'large' ); ?>
+									<?php the_post_thumbnail( 'large' ); ?></div>
 									<?php endif; ?>
-									<?php the_title(); ?>
-									<?php the_content();?>
-								</a>
+									</a> <!-- .wedding-album -->
+								<?php the_title('<p class="album-name">', '</p>'); ?>
+				        <?php the_content('<p class="album-location">', '</p>'); ?>
+							
 </li>
 
 						
@@ -49,14 +57,14 @@ get_header(); ?>
 						 ?>
 				</ul><!-- .weddings  -->
 
-			<div class="wedding-hero">	
-				<?php echo CFS()->get( 'wedding_hero_image' );	?>
-			</div>
+
 
 				<div id="portraits" class="portraits"></div>
 				<div id="details" class="details"></div>	
 			</div><!-- .gallery-wrapper -->
-
+			<div class="wedding-logo">
+				<img class="wedding-page-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
+     </div> <!-- .wedding-logo -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
