@@ -19,7 +19,7 @@ $(window).scroll(function() {
 
 jQuery( document ).ready(function($) {
   $('.tabs .about-sub-pages a').on('click', function(e)  {
-    var currentAttrValue = jQuery(this).attr('href');
+    var currentAttrValue = $(this).attr('href');
 
     // Show/Hide Tabs
     $('.tabs ' + currentAttrValue).show().siblings().hide();
