@@ -87,6 +87,7 @@ function lovesea() {
 	
 /**
  * Allow SVG's
+ * http://razreye.com/blog/2014/09/15/using-svg-images-wordpress/
  */
 	wp_enqueue_style( 'upload_mimes', get_stylesheet_uri() );
 

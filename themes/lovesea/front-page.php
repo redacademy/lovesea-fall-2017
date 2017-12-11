@@ -9,10 +9,10 @@
 get_header(); ?>
 <div class="hero">
 	
-	<img class="front-center-logo"  src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
-	<img class="front-center-text"  src=<?php echo get_template_directory_uri() . '/images/lovesea-logo-text.svg' ?>>
+	<img class="front-center-logo"  src="<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>">
+	<img class="front-center-text"  src="<?php echo get_template_directory_uri() . '/images/lovesea-logo-text.svg' ?>">
 	<div class="scroll-arrow">
-					<button class="scroll"><h1><a href="#storyteller">╲╱</h1></button>
+					<button class="scroll"><h1><a href="#storyteller">╲╱</a></h1></button>
 							</div>
 
 </div>
@@ -54,11 +54,6 @@ get_header(); ?>
 
 
 
-
-
-			
-			
-
 				<section class="introduction-container">
 				<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
@@ -71,9 +66,15 @@ get_header(); ?>
 
 									<?php
 									$loop = CFS()->get( 'we_are_story_tellers' );
+
+									// d($loop);
+
 									foreach ( $loop as $row ) :
 									?> 
 									<div class="we-are-story-tellers"><img class="storytellers-image" src="<?php	echo $row['we_are_story_tellers_image']; ?>" alt="">
+
+									<?php echo $row['we_are_story_tellers_title']; ?>
+									
 								</div>	<!-- .wedding-gallery-image -->
 								<?php
 								endforeach;
