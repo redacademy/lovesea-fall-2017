@@ -1,6 +1,9 @@
 .home {
   .site-content {
     text-align: center;
+    a {
+      text-decoration: none;
+    }
   }
 
   .hero {
@@ -28,13 +31,20 @@
       height: 205px;
       margin: 5rem auto;
       @include desktop {
+        // width: 350px;
+        // margin: 10% auto;
+        // transition: all 0.4s ease-in-out;   
+        transform: translate(-50%, -50%);
         width: 350px;
-        margin: 10% auto;
-        transition: all 0.4s ease-in-out;      
+        margin-top: 150px;
+        transition: all .4s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 50%;   
       }
     }
   }
-  
+
   .introduction-container {
     height: 100%;
     width: 65vw;
@@ -107,7 +117,6 @@
   margin: 0 auto;
   padding-top: 5rem;    
   border-top: $border__main-solid;
-  border-bottom: $border__main-solid;
   padding-bottom: 4rem;
   margin-bottom: 1rem;
 }
@@ -125,8 +134,7 @@
 .home .hero .shrink {
   max-width: 50px;
   position: fixed;
-  top: -20%;
-  left: 47%;
+  margin: 5% 0;
 }
 
 .scroll-arrow {

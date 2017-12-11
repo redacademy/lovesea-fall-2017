@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 //   });
 
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
+  if ($(document).scrollTop() > 3) {
     $('.front-center-logo').addClass('shrink');
   } else {
     $('.front-center-logo').removeClass('shrink');

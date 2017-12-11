@@ -817,6 +817,8 @@ object {
 
 .home .site-content {
   text-align: center; }
+  .home .site-content a {
+    text-decoration: none; }
 
 .home .hero {
   min-height: 50vh; }
@@ -848,10 +850,15 @@ object {
     margin: 5rem auto; }
     @media (min-width: 800px) {
       .home .hero .front-center-logo {
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
         width: 350px;
-        margin: 10% auto;
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out; } }
+        margin-top: 150px;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 50%; } }
 
 .home .introduction-container {
   height: 100%;
@@ -926,7 +933,6 @@ object {
   margin: 0 auto;
   padding-top: 5rem;
   border-top: 1px solid #CC9785;
-  border-bottom: 1px solid #CC9785;
   padding-bottom: 4rem;
   margin-bottom: 1rem; }
 
@@ -945,8 +951,7 @@ object {
 .home .hero .shrink {
   max-width: 50px;
   position: fixed;
-  top: -20%;
-  left: 47%; }
+  margin: 5% 0; }
 
 .scroll-arrow {
   position: absolute;
@@ -1040,6 +1045,9 @@ object {
         letter-spacing: 1.2px; } }
 
 .site-footer {
+  border-top: 1px solid #CC9785;
+  width: 66vw;
+  margin: 0 auto;
   text-align: center; }
   .site-footer .site-info p {
     color: #CC9785; }
