@@ -84,6 +84,12 @@ add_filter( 'stylesheet_uri', 'lovesea_minified_css', 10, 2 );
  */
 function lovesea() {
 	wp_enqueue_style( 'lovesea', get_stylesheet_uri() );
+	
+/**
+ * Allow SVG's
+ */
+	wp_enqueue_style( 'upload_mimes', get_stylesheet_uri() );
+
 	wp_enqueue_style( 'lovesea-owl', 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css');
 
 	wp_enqueue_script( 'jquery');
@@ -131,4 +137,8 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 
-
+function cc_mime_types( $mimes ){
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+	}
+	add_filter( 'upload_mimes', 'cc_mime_types' );
