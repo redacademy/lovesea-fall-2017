@@ -545,10 +545,12 @@ a {
         display: -ms-flexbox;
         display: flex;
         width: 100vw;
-        margin: 1.5rem 0;
-        padding: 0 15vw;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
+        margin: 0;
+        padding: 1.5rem 10rem;
+        background-color: rgba(230, 230, 230, 0.65);
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
         .desktop-menu ul.menu-items li, .desktop-menu ul.menu-items a {
           text-decoration: none;
           list-style-type: none; } }
@@ -866,21 +868,27 @@ object {
   .home .hero .front-center-text {
     height: 200px;
     width: 350px;
-    margin: 20% auto; }
+    margin: 0 auto;
+    text-align: center; }
+    @media (min-width: 800px) {
+      .home .hero .front-center-text {
+        margin: 24% auto 0;
+        position: inherit; } }
   .home .hero .front-center-logo {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
     width: 125px;
     height: 205px;
     margin: 5rem auto; }
     @media (min-width: 800px) {
       .home .hero .front-center-logo {
-        -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
+        margin: 5rem auto;
         width: 350px;
         margin-top: 150px;
-        -webkit-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
         position: absolute;
-        top: 0;
+        top: 7rem;
         left: 50%; } }
 
 .home .introduction-container {
@@ -974,7 +982,7 @@ object {
 .home .hero .shrink {
   max-width: 50px;
   position: fixed;
-  margin: 5% 0; }
+  margin: -3% 0; }
 
 .scroll-arrow {
   position: absolute;
@@ -1079,6 +1087,19 @@ object {
 .single-gallery .entry-content {
   text-align: center;
   font-size: 18px; }
+
+.portraits {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  width: 70vw;
+  margin: 0 auto; }
+
+.portrait-gallery-image {
+  display: inline-block;
+  margin: 0.25rem;
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # About
