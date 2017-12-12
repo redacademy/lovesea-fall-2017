@@ -975,6 +975,9 @@ object {
     height: 200px;
     width: 350px;
     margin: 0 auto;
+    position: absolute;
+    top: 18rem;
+    right: 20%;
     text-align: center; }
     @media (min-width: 800px) {
       .home .hero .front-center-text {
@@ -987,7 +990,9 @@ object {
     transition: all .4s ease-in-out;
     width: 125px;
     height: 205px;
-    margin: 5rem auto; }
+    margin: 10rem auto;
+    position: absolute;
+    left: 50%; }
     @media (min-width: 800px) {
       .home .hero .front-center-logo {
         margin: 5rem auto;
@@ -1088,7 +1093,7 @@ object {
 .home .hero .shrink {
   max-width: 50px;
   position: fixed;
-  margin: -3% 0; }
+  margin: 3rem 0; }
 
 .scroll-arrow {
   position: absolute;
