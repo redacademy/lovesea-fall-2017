@@ -43,6 +43,9 @@ get_header(); ?>
             <div class="what-we-do-title">
                 <?php echo CFS()->get( 'what_we_do_title' ); ?>
               </div>
+              <div class="what-we-do-text">
+                <?php echo CFS()->get( 'what_we_do_text' ); ?>
+              </div>
               <div class="what-we-do-image-one"><img src="<?php
               echo CFS()->get( 'what_we_do_image_one' ); 
               ?>" alt="girl blowing confetti" class="what-we-do-image"></img>
@@ -59,10 +62,6 @@ get_header(); ?>
               echo CFS()->get( 'what_we_do_image_four' ); 
               ?>" alt="a wooden just married sign rests on the bow of a canoe." class="what-we-do-image-four"></img>
               </div>
-              <div class="what-we-do-text">
-                <?php echo CFS()->get( 'what_we_do_text' ); ?>
-              </div>
-
 
             </div>
    
