@@ -44,6 +44,7 @@ get_header(); ?>
 									<?php the_post_thumbnail( 'large' ); ?></div>
 									<?php endif; ?>
 									</a> <!-- .wedding-album -->
+									
 								<?php the_title('<p class="album-name">', '</p>'); ?>
 				        <?php the_content('<p class="album-location">', '</p>'); ?>
 							
@@ -59,12 +60,38 @@ get_header(); ?>
 
 
 
-				<div id="portraits" class="portraits"></div>
-				<div id="details" class="details"></div>	
+				<div id="portraits" class="portraits">
+     <?php
+			$loop = CFS()->get( 'portraits_album' );
+			foreach ( $loop as $row ) :
+			?> 
+			<div class="portrait-gallery-image">
+				<img class="portrait-photo" src="<?php	echo $row['portrait_photo']; ?>" alt="">
+		 </div>	<!-- .portrait-gallery-image -->
+			<?php
+			endforeach;
+			?>
+       </div> <!-- .portraits  -->
+
+				<div id="details" class="details">
+				<?php
+			$loop = CFS()->get( 'details_album' );
+			foreach ( $loop as $row ) :
+			?> 
+			<div class="detail-gallery-image">
+				<img class="detail-photo" src="<?php	echo $row['detail_photo']; ?>" alt="">
+		 </div>	<!-- .portrait-gallery-image -->
+			<?php
+			endforeach;
+			?>
+			</div>	<!-- .details  -->
+
 			</div><!-- .gallery-wrapper -->
+			
 			<div class="wedding-logo">
 				<img class="wedding-page-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
-     </div> <!-- .wedding-logo -->
+		 </div> <!-- .wedding-logo -->
+		 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
