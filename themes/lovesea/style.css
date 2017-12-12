@@ -639,9 +639,8 @@ a {
         width: 100vw;
         margin: 1.5rem 0;
         padding: 0 15vw;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; }
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
         .desktop-menu ul.menu-items li, .desktop-menu ul.menu-items a {
           text-decoration: none;
           list-style-type: none; } }
