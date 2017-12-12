@@ -35,22 +35,26 @@
 		 ?>
 
 <nav class="desktop-menu">
-    <ul class="menu-items">
-        <li class="current-item"><a href="<?php echo get_home_url(); ?>">Home</a></li>
-        <li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">Weddings</a></li>
-        <li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">About</a></li>
-        <li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">Connect</a></li>
-    </ul>
-		</nav>
+  <ul class="menu-items">
+    <li class="current-item"><a href="<?php echo get_home_url(); ?>">Home</a></li>
+    <li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">Weddings</a></li>
+    <li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">About</a></li>
+    <li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">Connect</a></li>
+  </ul>
+</nav>
 
-		<a class="mobile-nav" href="#">&#9776;</a>
-		<ul class="mobile-menu-items">
+<input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+<nav id="navigation1" class="navigation">
+
+<nav class="mobile-menu">
+		<!-- <button class="toggle-mobile-menu">&#9776;</button> -->
+		<ul id="mobile-menu-items" class="mobile-menu-items">
         <li class="mobile-item"><a href="<?php echo get_home_url(); ?>">Home</a></li>
         <li class="mobile-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">Weddings</a></li>
         <li class="mobile-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">About</a></li>
         <li class="mobile-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">Connect</a></li>
-    </ul>
-
+    </ul>	
+</nav>
 
 
 				<!-- <nav id="site-navigation" class="main-navigation" role="navigation"> -->

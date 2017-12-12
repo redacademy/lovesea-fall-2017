@@ -98,12 +98,11 @@ if ( ! $image ) {
 	return;
 }
 
-$connect_hero_css = ".page-template-connect .site-header {
+$connect_hero_css = ".page-template-connect .connect-hero {
 	background-image: url({$image});
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto;
 	min-height: 350px;
-	background-position-y: -350px;
 }";
 
 wp_add_inline_style( 'lovesea', $connect_hero_css);

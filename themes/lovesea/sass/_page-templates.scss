@@ -7,9 +7,16 @@
 /* Connect page */
 
 .page-id-61 {
-  header.site-header {
-   background-position-y: initial;
+  .connect-hero {
+    width: 100vw;
+
+    @include desktop {
+      background-position-y: initial;
+      width: 100vw;
+      height: 10rem;
+    }
   }
+
   .entry-content {
     display: flex;
     flex-direction: column;
