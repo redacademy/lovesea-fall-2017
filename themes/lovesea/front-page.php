@@ -60,45 +60,92 @@ get_header(); ?>
 					<div id="storyteller" class="storyteller">
 
 
-									<?php if ( has_post_thumbnail() ) : ?>
-									<?php the_post_thumbnail( 'large' ); ?>
-									<?php endif; ?>
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'large' ); ?>
+						<?php endif; ?>
 
-									<?php
-									$loop = CFS()->get( 'we_are_story_tellers' );
+						<?php
+							$loop = CFS()->get( 'we_are_story_tellers' );
 
-									// d($loop);
+							foreach ( $loop as $row ) :
+						?> 
+						<div class="we-are-story-tellers"><img class="storytellers-image" src="<?php	echo $row['we_are_story_tellers_image']; ?>" alt="">
 
-									foreach ( $loop as $row ) :
-									?> 
-									<div class="we-are-story-tellers"><img class="storytellers-image" src="<?php	echo $row['we_are_story_tellers_image']; ?>" alt="">
+							<h1>	<?php echo $row['we_are_story_tellers_title']; ?> </h1>
+							<?php echo $row['we_are_story_tellers_link']; ?> 
+						</div>
 
-									<?php echo $row['we_are_story_tellers_title']; ?>
-									
-								</div>	<!-- .wedding-gallery-image -->
-								<?php
-								endforeach;
-									?>
-
-
-
-						<h1>We are story tellers.</h1>
-						<p>With a photojournalistic style, we capture both the story and romance of your wedding.</p>
-						<button class="browse-weddings"><a href = "<?php echo esc_url(get_permalink());?>">Browse Weddings</a></button> 
-						
+						<?php
+							endforeach;
+						?>
+						<button class="browse-weddings"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">
+						<?php echo $row['we_are_story_tellers_link']; ?>Browse Weddings</a></button> 
 					</div>
+
+
 
 					<div class="observer">
-						<h1>We are observers.</h1>
-						<p>We work in the background, capturing even the tiniest of details, to tell your story.</p>
-						<button class="about-us"><a href = "<?php echo esc_url(get_permalink());?>">About Us</a></button>
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'large' ); ?>
+						<?php endif; ?>
+
+						<?php
+							$loop = CFS()->get( 'we_are_observers' );
+							foreach ( $loop as $row ) :
+						?> 
+
+						<div class="we-are-observer"><img class="observer-image" src="<?php	echo $row['we_are_observers_image']; ?>" alt="">
+							<h1>	<?php echo $row['we_are_observers_title']; ?> </h1>
+							<?php echo $row['we_are_observers_link']; ?> 
+						</div>	
+
+						<?php
+							endforeach;
+						?>
+
+						<button class="about-us"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">
+						<?php echo $row['we_are_observers_link']; ?>About Us</a></button> 
 					</div>
 
+
+
+
+
+
+
+
 					<div class="friend">
-						<h1>We are your friend.</h1>
-						<p>We get to know you and your story to perfectly document what’s important to you.</p>
-						<button class="connect"><a href = "http://localhost:3000/lovesea/connect/">Let's Talk</a></button>
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'large' ); ?>
+						<?php endif; ?>
+
+						<?php
+							$loop = CFS()->get( 'we_are_your_friend' );
+							foreach ( $loop as $row ) :
+						?> 
+
+						<div class="we-are-your-friend"><img class="friend-image" src="<?php echo $row['we_are_your_friend_image']; ?>" alt="">
+							<h1>	<?php echo $row['we_are_your_friend_title']; ?> </h1>
+							<?php echo $row['we_are_your_friend_link']; ?> 
+						</div>	
+
+						<?php
+							endforeach;
+						?>
+
+						<button class="connect"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">
+						<?php echo $row['we_are_your_friend_link']; ?>Let's Talk</a></button> 
 					</div>
+
+
+
+
+
+
+
+
+
+
 
 
 					<div class="instagram-carousel-container"> 
