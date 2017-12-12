@@ -552,6 +552,8 @@ a {
             -ms-flex-pack: justify;
                 justify-content: space-between; }
         .desktop-menu ul.menu-items li, .desktop-menu ul.menu-items a {
+          font-family: "EB Garamond", Courier, serif;
+          font-weight: 500;
           text-decoration: none;
           list-style-type: none; } }
 
@@ -988,6 +990,9 @@ object {
   max-width: 50px;
   position: fixed;
   margin: 3rem 0; }
+  @media (min-width: 800px) {
+    .home .hero .shrink {
+      margin: -3rem 0; } }
 
 .scroll-arrow {
   position: absolute;

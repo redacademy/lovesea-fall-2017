@@ -146,6 +146,9 @@
   max-width: 50px;
   position: fixed;
   margin: 3rem 0;
+  @include desktop {    
+    margin: -3rem 0;
+  }    
 }
 
 .scroll-arrow {
