@@ -34,6 +34,7 @@ function lovesea_login_logo() {
 }
 add_action('login_head', 'lovesea_login_logo');
 
+//Front page Hero Image
 
 function front_page_hero_css() {
 	if (! is_front_page('front-page.php' ) ) {
@@ -59,25 +60,29 @@ add_action( 'wp_enqueue_scripts', 'front_page_hero_css' );
 	
 
 // About hero image
-function lovesea_dynamic_css() {
+function about_header_image() {
+	if (! is_page_template('page-templates/about.php' ) ) {
+			return;
+		}
 	
-if ( ! is_page_template( 'page-templates/about.php') ) {
-	return;
-}
-$image = CFS()->get( 'about_header_image' );
-if (! $image ) {
-	return;
-}
-$hero_css = ".page-template-about .custom-hero {
-	background: url({$image});
-	background-size: auto 100vh;
-	height: 100vh;
-	width: auto;
-}";
-wp_add_inline_style( 'lovesea-style', $hero_css );
-}
-
-add_action( 'wp_enqueue_scripts', 'lovesea_dynamic_css' );
+	$image = CFS()->get('about_header_image');
+	
+	if ( ! $image ) {
+		return;
+	}
+	
+	$about_header_css = ".page-template-about .page-header {
+		background-image: url({$image});
+		min-height: 350px;
+		background-position: center;
+		background-size: cover;
+	}";
+	
+	wp_add_inline_style( 'lovesea', $about_header_css);
+	
+	}
+	
+	add_action( 'wp_enqueue_scripts', 'about_header_image' );
 
 // Connect hero image
 

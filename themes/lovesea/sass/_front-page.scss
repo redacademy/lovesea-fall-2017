@@ -14,32 +14,41 @@
       min-height:90vh;
     }
     .front-center-text {
-      position: absolute;
+      // position: absolute;
       height: 200px;
       width: 350px;
-      top: 35%;
-      left: 0%;
+      margin: 0 auto;
+      // position: absolute;
+      // top: 18rem;
+      // right: 50%;
+      text-align: center;
+      // top: 35%;
+      // left: 0%;
       @include desktop { 
-        top: 44%;
-        left: 38%;
-        height: 200px;
-        width: 350px;
+        margin: 24% auto 0;
+        position: inherit;
+        // top: 44%;
+        // left: 38%;
+        // height: 200px;
+        // width: 350px;
       }
     }
     .front-center-logo {
+      transform: translate(-50%, -50%);      
+      transition: all .4s ease-in-out;
       width: 125px;
       height: 205px;
       margin: 5rem auto;
+      
       @include desktop {
         // width: 350px;
         // margin: 10% auto;
-        // transition: all 0.4s ease-in-out;   
-        transform: translate(-50%, -50%);
+        // transition: all 0.4s ease-in-out; 
+        margin: 5rem auto;
         width: 350px;
         margin-top: 150px;
-        transition: all .4s ease-in-out;
         position: absolute;
-        top: 0;
+        top: 7rem;
         left: 50%;   
       }
     }
@@ -134,7 +143,7 @@
 .home .hero .shrink {
   max-width: 50px;
   position: fixed;
-  margin: 5% 0;
+  margin: -3% 0;
 }
 
 .scroll-arrow {
@@ -144,5 +153,10 @@
   .scroll {
     background-color: transparent;
     border: none;
+    h1 {
+      margin: 0 auto;
+      width: 64px;
+    }
   }
 }
+
