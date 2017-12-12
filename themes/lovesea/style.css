@@ -1137,6 +1137,7 @@ object {
   text-align: center;
   font-style: italic;
   font-size: 20px;
-  letter-spacing: 1.2px; }
+  letter-spacing: 1.2px;
+  font-weight: 400; }
   .site-footer .site-info p {
     color: #CC9785; }
