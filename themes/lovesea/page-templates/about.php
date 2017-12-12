@@ -40,8 +40,30 @@ get_header(); ?>
               </div>
 
             <div id="tab2" class="tab">
-              <p>Tab #2 content goes here!</p>
-              <p>Yuccie offal pickled, pok pok authentic lumbersexual chicharrones raw denim vaporware glossier. Scenester readymade pinterest four dollar toast tumeric plaid yr tacos occupy photo booth shabby chic health goth leggings. Lo-fi taiyaki helvetica pop-up adaptogen sartorial. Live-edge listicle yuccie lomo lumbersexual.</p>
+            <div class="what-we-do-title">
+                <?php echo CFS()->get( 'what_we_do_title' ); ?>
+              </div>
+              <div class="what-we-do-image-one"><img src="<?php
+              echo CFS()->get( 'what_we_do_image_one' ); 
+              ?>" alt="girl blowing confetti" class="what-we-do-image"></img>
+              </div>
+              <div class="what-we-do-image-two"><img src="<?php
+              echo CFS()->get( 'what_we_do_image_two' ); 
+              ?>" alt="bridesmaids approach a wedding" class="what-we-do-image-two"></img>
+              </div>
+              <div class="what-we-do-image-three"><img src="<?php
+              echo CFS()->get( 'what_we_do_image_three' ); 
+              ?>" alt="Newly married couple standing on a dock, the girl is holding a canoe." class="what-we-do-image-three"></img>
+              </div>
+              <div class="what-we-do-image-four"><img src="<?php
+              echo CFS()->get( 'what_we_do_image_four' ); 
+              ?>" alt="a wooden just married sign rests on the bow of a canoe." class="what-we-do-image-four"></img>
+              </div>
+              <div class="what-we-do-text">
+                <?php echo CFS()->get( 'what_we_do_text' ); ?>
+              </div>
+
+
             </div>
    
           <div id="tab3" class="tab">
