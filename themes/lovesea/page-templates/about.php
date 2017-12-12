@@ -40,12 +40,12 @@ get_header(); ?>
 
             <div id="tab2" class="tab">
               <p>Tab #2 content goes here!</p>
-              <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac.</p>
+              <p>Yuccie offal pickled, pok pok authentic lumbersexual chicharrones raw denim vaporware glossier. Scenester readymade pinterest four dollar toast tumeric plaid yr tacos occupy photo booth shabby chic health goth leggings. Lo-fi taiyaki helvetica pop-up adaptogen sartorial. Live-edge listicle yuccie lomo lumbersexual.</p>
             </div>
    
           <div id="tab3" class="tab">
               <p>Tab #3 content goes here!</p>
-              <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac.</p>
+              <p>Af fashion axe artisan, tattooed etsy umami offal narwhal bicycle rights banh mi post-ironic iceland. Swag franzen sartorial listicle 90's master cleanse portland try-hard cred humblebrag blue bottle four dollar toast. Art party master cleanse cornhole, vice actually 8-bit man braid scenester beard humblebrag chia helvetica.</p>
           </div>
   
           </div>

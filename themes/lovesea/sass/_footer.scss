@@ -2,8 +2,10 @@
   border-top: $border__main-solid;
   width: 66vw;
   margin: 0 auto;
-  
   text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 1.2px;
   .site-info p {
   color: $color__accent;
   }
