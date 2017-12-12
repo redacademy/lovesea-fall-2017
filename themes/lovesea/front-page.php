@@ -107,13 +107,6 @@ get_header(); ?>
 						<?php echo $row['we_are_observers_link']; ?>About Us</a></button> 
 					</div>
 
-
-
-
-
-
-
-
 					<div class="friend">
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'large' ); ?>
@@ -136,17 +129,6 @@ get_header(); ?>
 						<button class="connect"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">
 						<?php echo $row['we_are_your_friend_link']; ?>Let's Talk</a></button> 
 					</div>
-
-
-
-
-
-
-
-
-
-
-
 
 					<div class="instagram-carousel-container"> 
 						<div class="follow-instagram-header">
