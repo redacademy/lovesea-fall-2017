@@ -136,6 +136,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   text-align: center;
   font-size: 18px; }
 
+.portraits {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  width: 70vw;
+  margin: 0 auto; }
+
+.portrait-gallery-image {
+  display: inline-block;
+  margin: 0.25rem;
+  width: 100%; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;

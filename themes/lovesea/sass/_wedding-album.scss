@@ -108,3 +108,22 @@
     font-size: $font__base-size;
   }
 }
+
+// portrait styling
+
+.portraits {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em; 
+  width: 70vw;
+  margin: 0 auto;
+}
+.portrait-gallery-image {
+  display: inline-block;
+  margin:  0.25rem;
+  width:  100%; 
+}
+
+// pop up modal styling
+

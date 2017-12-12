@@ -19,13 +19,26 @@ get_header(); ?>
 		<div class="wedding-album-gallery-pages">	
 			<?php
 			$loop = CFS()->get( 'wedding_albums_images' );
-			foreach ( $loop as $row ) :
+			if(isset($loop)):
+				foreach ( $loop as $row ) :
 			?> 
-			<div class="wedding-gallery-image"><img class="wedding-photo" src="<?php	echo $row['wedding_album_single_image']; ?>" alt="">
-		 </div>	<!-- .wedding-gallery-image -->
-			<?php
-			endforeach;
+
+		<div class="wedding-gallery-image">
+
+			<a href="#openModal">	
+			<div id="openModal" class="modalDialog">	
+			<img class="wedding-photo"  src="<?php echo $row['wedding_album_single_image']; ?>" alt="">
+			</a> 
+			<a href="#close" title="Close" class="close">X</a>
+			</div> <!-- .modalDialog -->
+		</div>	<!-- .wedding-gallery-image -->
+		
+		<?php
+				endforeach;
+			endif;
 			?>
+
+
     </div>
 		<button class="about-us">
 			<a href ="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
