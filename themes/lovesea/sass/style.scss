@@ -51,7 +51,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "mixins";
 
 // CSS included in style.css.
-@import "wedding-album";
 @import "normalize";
 @import "fonts";
 @import "typography";
@@ -64,6 +63,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 @import "front-page";
+@import "wedding-album";
 @import "about";
 @import "header";
 @import "footer";
