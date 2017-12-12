@@ -1124,10 +1124,19 @@ object {
         font-size: 20px;
         letter-spacing: 1.2px; } }
 
+.tab {
+  display: none; }
+
+.tab.active {
+  display: block; }
+
 .site-footer {
   border-top: 1px solid #CC9785;
   width: 66vw;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 1.2px; }
   .site-footer .site-info p {
     color: #CC9785; }

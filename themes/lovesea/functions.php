@@ -84,12 +84,14 @@ add_filter( 'stylesheet_uri', 'lovesea_minified_css', 10, 2 );
  */
 function lovesea() {
 	wp_enqueue_style( 'lovesea', get_stylesheet_uri() );
+
+
 	wp_enqueue_style( 'lovesea-owl', 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css');
 
 	wp_enqueue_script( 'jquery');
-	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), false);
+	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), false, true);
 
-	// wp_enqueue_scripts('  <script src="js/smoothscroll.js"></script>');
+	wp_enqueue_script('smoothscroll', get_template_directory_uri() . '/build/js/smoothscroll.min.js', array('jquery'), false, true);
 
 	wp_enqueue_script( 'lovesea-spectra', 'https://cdnjs.cloudflare.com/ajax/libs/spectragram/1.0.3/spectragram.min.js', array('jquery'), false, false );
 	wp_enqueue_script( 'lovesea-owl', 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js', array('jquery', 'lovesea-spectra'), false, true );
@@ -129,6 +131,5 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
 
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="348px" height="375px" viewBox="0 0 348 375" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Web-home" transform="translate(-545.000000, -139.000000)">
+            <g id="Group" transform="translate(545.000000, 135.000000)">
+                <g id="LoveSea_LOGO_color" transform="translate(70.000000, 0.000000)" stroke="#CC9785" stroke-width="3">
+                    <g id="Layer_4" transform="translate(45.000000, 6.000000)">
+                        <path d="M61.3843972,75.6406926 C64.0666667,80.2753247 77.6978723,104.235498 84.6893617,119.057576 C91.4170213,133.311255 86.1404255,145.11645 77.5219858,151.587446 C73.6085106,154.516883 68.9914894,156.265801 64.4624113,156.484416 C47.7971631,157.227706 32.5390071,141.006494 40.9375887,120.631602 C49.9078014,98.682684 59.0539007,80.3190476 61.3843972,75.6406926 Z" id="Shape"></path>
+                        <path d="M40.1460993,178.695671 C57.6028369,179.613853 66.9248227,166.584416 65.7375887,146.122078 C64.4184397,123.298701 51.1390071,103.273593 49.8198582,102.574026" id="Shape"></path>
+                        <path d="M60.1092199,120.369264 C57.4269504,115.734632 43.7957447,91.7744589 36.8042553,76.952381 C30.0765957,62.6987013 35.3531915,50.8935065 43.9716312,44.4225108 C47.8851064,41.4930736 52.5021277,39.7441558 57.0312057,39.5255411 C73.6964539,38.7822511 88.9546099,55.0034632 80.5560284,75.378355 C71.5858156,97.3272727 62.4397163,115.690909 60.1092199,120.369264" id="Shape"></path>
+                        <path d="M83.0624113,18.625974 C65.6056738,17.7077922 56.2836879,30.7372294 57.470922,51.1995671 C58.7900709,74.0229437 72.0695035,94.0480519 73.3886525,94.747619" id="Shape"></path>
+                        <ellipse id="Oval" cx="62.0439716" cy="100.956277" rx="61.9560284" ry="100.693939"></ellipse>
+                    </g>
+                </g>
+                <text id="lovesea" font-family="EBGaramond-SemiBold, EB Garamond" font-size="72" font-weight="500" letter-spacing="1" fill="#415468">
+                    <tspan x="71.348" y="283">lovesea</tspan>
+                </text>
+                <text id="photography" font-family="EBGaramond-Regular, EB Garamond" font-size="40" font-weight="normal" letter-spacing="1" fill="#415468">
+                    <tspan x="71.34" y="321">photography</tspan>
+                </text>
+                <text id="wedding-|-engagement" font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" letter-spacing="1" fill="#415468">
+                    <tspan x="0.468" y="372">wedding | engagement | elopement</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
