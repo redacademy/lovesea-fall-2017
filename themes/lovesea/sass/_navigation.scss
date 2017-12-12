@@ -72,8 +72,9 @@ a {
 		ul.menu-items {
 			display: flex;
 			width: 100vw;
-			margin: 1.5rem 0;
-			padding: 0 15vw;
+			margin: 0;
+			padding: 1.5rem 10rem;
+			background-color: $color__header-background;
 			justify-content: space-between;
 			li, a {
 			text-decoration: none;
@@ -92,6 +93,7 @@ a {
 	position: fixed;
 	top: 4rem;
 	left: 3rem;
+	// background-color: hsla(0,0%,100%,.85);
 
 	ul {
 		display: none;

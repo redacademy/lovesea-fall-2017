@@ -7,32 +7,29 @@
  */
 
 get_header(); ?>
+
 <div class="hero">
 	
 	<img class="front-center-logo"  src="<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>">
 	<img class="front-center-text"  src="<?php echo get_template_directory_uri() . '/images/lovesea-logo-text.svg' ?>">
 	<div class="scroll-arrow">
-					<button class="scroll"><h1><a href="#storyteller">╲╱</a></h1></button>
-							</div>
-
+		<button class="scroll"><h1><a href="#storyteller">╲╱</a></h1></button>
+	</div>
 </div>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<!-- <img class="front-center-logo" src='/images/Lovesea_logo_text.svg' alt="cool" > -->
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 
 		<?php if ( has_post_thumbnail() && is_front_page() ) : ?>
    		<?php the_post_thumbnail( 'large' ); ?>
    	<?php endif; ?>
 
-
 		<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
-						<ul>
+			<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+				<div class="widget widget_categories">
+					<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
+					<ul>
 						<?php
 							wp_list_categories( array(
 								'orderby'    => 'count',
@@ -42,23 +39,16 @@ get_header(); ?>
 								'number'     => 10,
 							) );
 						?>
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
-
-
-
-
+					</ul>
+				</div><!-- .widget -->
+			<?php endif; ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-
-
-				<section class="introduction-container">
+			<section class="introduction-container">
 				<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
 					<div id="storyteller" class="storyteller">
-
 
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'large' ); ?>
@@ -69,6 +59,7 @@ get_header(); ?>
 
 							foreach ( $loop as $row ) :
 						?> 
+
 						<div class="we-are-story-tellers"><img class="storytellers-image" src="<?php	echo $row['we_are_story_tellers_image']; ?>" alt="">
 
 							<h1>	<?php echo $row['we_are_story_tellers_title']; ?> </h1>
@@ -78,11 +69,10 @@ get_header(); ?>
 						<?php
 							endforeach;
 						?>
+
 						<button class="browse-weddings"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">
 						<?php echo $row['we_are_story_tellers_link']; ?>Browse Weddings</a></button> 
 					</div>
-
-
 
 					<div class="observer">
 						<?php if ( has_post_thumbnail() ) : ?>
@@ -105,7 +95,7 @@ get_header(); ?>
 
 						<button class="about-us"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">
 						<?php echo $row['we_are_observers_link']; ?>About Us</a></button> 
-					</div>
+					</div> 
 
 					<div class="friend">
 						<?php if ( has_post_thumbnail() ) : ?>
