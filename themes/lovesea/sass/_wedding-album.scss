@@ -111,7 +111,7 @@
 
 // portrait styling
 
-.portraits {
+.tab-portraits {
   -moz-column-width: 13em;
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
@@ -119,11 +119,62 @@
   width: 70vw;
   margin: 0 auto;
 }
-.portrait-gallery-image {
+.portrait-album {
   display: inline-block;
   margin:  0.25rem;
   width:  100%; 
 }
+// detail styling
+
+.tab-details {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em; 
+  width: 70vw;
+  margin: 0 auto;
+}
+
 
 // pop up modal styling
+.popup {
+  width:100%;
+  height:100%;
+  display: block;
+  position:fixed;
+  top:0px;
+  left:0px;
+}
 
+.popup-inner {
+  max-width:700px;
+  width:90%;
+  position: fixed;
+  padding:40px;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+}
+
+.gallery-modal-link {
+  display: inline-block;
+  margin:  0.25rem;
+  width:  100%;
+}
+
+// tab sections
+
+.wedding-page-content {
+
+
+
+
+}
+
+#label {
+  display: none;
+}
+.label.active {
+  display: block;
+}
