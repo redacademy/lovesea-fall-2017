@@ -45,6 +45,8 @@ get_header(); ?>
                 <?php echo CFS()->get( 'what_we_do_title' ); ?>
               </div>
 
+              <div class="what-we-do-wrapper">
+
               <div class="what-we-do-image-one"><img src="<?php
               echo CFS()->get( 'what_we_do_image_one' ); 
               ?>" alt="girl blowing confetti" class="what-we-do-image"></img>
@@ -54,13 +56,13 @@ get_header(); ?>
               <?php echo CFS()->get( 'what_we_do_text_one' ); ?>
               </div>
 
-              <div class="what-we-do-text-two">
-              <?php echo CFS()->get( 'what_we_do_text_two' ); ?>
-              </div>
-
               <div class="what-we-do-image-two"><img src="<?php
               echo CFS()->get( 'what_we_do_image_two' ); 
               ?>" alt="bridesmaids approach a wedding" class="what-we-do-image-two"></img>
+              </div>
+
+              <div class="what-we-do-text-two">
+              <?php echo CFS()->get( 'what_we_do_text_two' ); ?>
               </div>
 
               <div class="what-we-do-image-three"><img src="<?php
@@ -72,16 +74,16 @@ get_header(); ?>
               <?php echo CFS()->get( 'what_we_do_text_three' ); ?>
               </div>
 
-              <div class="what-we-do-text-four">
-              <?php echo CFS()->get( 'what_we_do_text_four' ); ?>
-              </div>
-
               <div class="what-we-do-image-four"><img src="<?php
               echo CFS()->get( 'what_we_do_image_four' ); 
               ?>" alt="a wooden just married sign rests on the bow of a canoe." class="what-we-do-image-four"></img>
               </div>
 
+              <div class="what-we-do-text-four">
+              <?php echo CFS()->get( 'what_we_do_text_four' ); ?>
+              </div>
             </div>
+          </div>
    
           <div id="tab3" class="tab">
             <div class="accordion">

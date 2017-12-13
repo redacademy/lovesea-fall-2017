@@ -948,7 +948,7 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  background-color: blue; }
+  background-color: #FFFFFF; }
   @media (min-width: 800px) {
     .follow-instagram {
       width: 30%;
@@ -962,7 +962,8 @@ object {
   padding-top: 5rem;
   border-top: 1px solid #CC9785;
   padding-bottom: 4rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  z-index: -1; }
 
 .owl-item {
   display: -webkit-box;
@@ -1207,9 +1208,10 @@ object {
   font-weight: 400; }
 
 @media (min-width: 800px) {
-  .what-we-do-tab {
+  .what-we-do-wrapper img {
     width: 400px;
-    height: auto; } }
+    height: auto;
+    max-height: 375px; } }
 
 /*----- Accordion -----*/
 .accordion, .accordion * {

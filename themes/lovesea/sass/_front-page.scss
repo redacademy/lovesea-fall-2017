@@ -106,7 +106,7 @@
 .follow-instagram {  
   flex-direction: column;
   margin: 0 auto;
-  background-color: blue;
+  background-color: $color__background-body;
   @include desktop {    
     width: 30%;  
     display: flex;
@@ -120,6 +120,7 @@
   border-top: $border__main-solid;
   padding-bottom: 4rem;
   margin-bottom: 1rem;
+  z-index: -1;
 }
   
 .owl-item {

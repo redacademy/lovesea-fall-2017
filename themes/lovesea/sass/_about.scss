@@ -107,12 +107,17 @@
   font-weight: 400;
 }
 
-.what-we-do-tab {
-  @include desktop {
-    width: 400px;
-    height: auto;
+.what-we-do-wrapper {
+  img {
+    @include desktop {
+      width: 400px;
+      height: auto;
+      max-height: 375px;
+    }
   }
 }
+
+
 
 /*----- Accordion -----*/
 .accordion, .accordion * {
