@@ -101,7 +101,7 @@ if ( ! $image ) {
 $connect_hero_css = ".page-template-connect .connect-hero {
 	background-image: url({$image});
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover;
 	min-height: 350px;
 }";
 

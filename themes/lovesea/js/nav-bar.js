@@ -8,20 +8,8 @@
   //   });
   // });
 
-
-  // $('.mobile-menu #toggle-mobile-menu').hide();
+    
   
-  
-  //   $('#toggle-mobile-menu').click(function() {
-  //     $('#mobile-menu-items').toggle( function(){
-
-  //     });
-  //   });
-  //   $('#toggle-mobile-menu').click(function() {
-  //       $('.front-center-logo').addClass('shrink');
-
-  //       $('.front-center-logo').removeClass('shrink');
-  //     })
 
     
     // $('#search-field').on('blur', function (){
@@ -29,8 +17,31 @@
     // });
   
 
-    $('.burger').click(function () {
-      $(this).toggleClass('open');
+    $('.toggle-mobile-menu').click(function () {
+      $('.fixed-menu').toggleClass('toggle-nav');
     });
 
+    // $('.burger').click(function () {
+    //   $(this).toggleClass('open');
+    // });
+
+    // $( '.toggle')
+
+    //   if ($(document).scrollTop() > 3) {
+    //     $('.front-center-logo').addClass('shrink');
+    //   } else {
+    //     $('.front-center-logo').removeClass('shrink');
+    //   }
+    // });
+
+    // $('.hamburger').on('click', function () {
+      
+    //   $('.menu').toggleClass('open');
+      
+    //   });
+      
+    //   $( '.menu a' ).on("click", function(){
+    //   $('.menu').hide();
+    //   });
+    
 })(jQuery);

@@ -34,22 +34,14 @@
 		//  wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); 
 		 ?>
 
-<nav class="desktop-menu">
-  <ul class="menu-items">
-    <li class="current-item"><a href="<?php echo get_home_url(); ?>">Home</a></li>
-    <li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">Weddings</a></li>
-    <li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">About</a></li>
-    <li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">Connect</a></li>
-  </ul>
-</nav>
 
-<input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
-<nav id="navigation1" class="navigation">
+<!-- <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label> -->
 
-<nav class="mobile-menu">
-		<!-- <button class="toggle-mobile-menu">&#9776;</button> -->
-		<ul id="mobile-menu-items" class="mobile-menu-items">
-        <li class="mobile-item"><a href="<?php echo get_home_url(); ?>">Home</a></li>
+
+<nav class="fixed-menu">
+		<button id="toggle-mobile-menu" class="toggle-mobile-menu">&#9776;</button>
+		<ul id="mobile-menu-items" class="menu-items">
+        <li id="mobile-item"><a href="<?php echo get_home_url(); ?>">Home</a></li>
         <li class="mobile-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">Weddings</a></li>
         <li class="mobile-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">About</a></li>
         <li class="mobile-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">Connect</a></li>
