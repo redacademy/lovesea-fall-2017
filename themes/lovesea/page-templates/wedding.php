@@ -27,8 +27,8 @@ get_header(); ?>
      </div> <!-- .wedding-logo -->
 		 
 		 <div class="wedding-page-content">
+		 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
 				<ul id="label1" class="weddings" class="label" class="active">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
 					<?php $wedding_gallery_args = array( 'posts_per_page' => 6, 
 																							 'post_type' => 'gallery', 
 																							 'order' => 'ASC' );
