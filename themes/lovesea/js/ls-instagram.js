@@ -4,7 +4,7 @@
     // https://github.com/adrianengine/jquery-spectragram/wiki/How-to-get-Instagram-API-access-token-and-fix-your-broken-feed
 
     var spectagramComplete = function () {
-
+        
         $(window).on('load', function () {
             createCarousel();
         });
@@ -73,5 +73,15 @@
     };
 
     Spectra.init();
+
+    var owl = $('#owl-demo');
+    
+  $('.next').click(function(){
+    owl.trigger('owl.next');
+  })
+  $('.prev').click(function(){
+    owl.trigger('owl.prev');
+  })
+
 
 })(jQuery);

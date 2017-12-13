@@ -76,7 +76,7 @@
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  margin-bottom: 89px;
+  margin-bottom: 2.5rem;
     li {
       padding: 0 1.25rem;
       font-style: italic;
@@ -96,3 +96,81 @@
   .tab.active {
       display:block;
   }
+
+/*----- what we do -----*/
+
+.what-we-do-title {
+  font-size: 2rem;
+  font-style: italic;
+  color: $color__text-main;
+  text-align: center;
+  font-weight: 400;
+}
+
+.what-we-do-wrapper {
+  img {
+    @include desktop {
+      width: 400px;
+      height: auto;
+      max-height: 375px;
+    }
+  }
+}
+
+
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+  -webkit-box-sizing:border-box; 
+  -moz-box-sizing:border-box; 
+  box-sizing:border-box;
+}
+
+.accordion {
+  overflow:hidden;
+  border-radius:3px;
+  background: $color__background-body;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+  width:100%;
+  padding:15px;
+  display:inline-block;
+  border-bottom:1px solid $color__text-secondary;
+  transition:all linear 0.15s;
+  /* Type */
+  font-size:1.8rem;
+  color: $color__text-main;
+  text-decoration: none;
+  font-style: italic;
+  text-align: center;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+  background:rgba(0,0,0,0.03);
+  /* Type */
+  text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+  border-bottom: 1px solid $color__text-secondary;
+}
+
+.accordion-section:first-child .accordion-section-title {
+  border-top: 1px solid $color__text-secondary;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+  padding:15px;
+  display:none;
+}
+
+.accordion-section-title.active {
+  display: inline-block;
+}
+
+.accordion-section-content.open {
+  border-bottom: 1px solid $color__text-secondary;
+}

@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 .page-template-wedding .page-header {
   width: 100%;
   height: 300px;
@@ -186,6 +187,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .label.active {
   display: block; }
 
+=======
+>>>>>>> be8a302026fcc506d85c4f42f41a188376455f53
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -646,57 +649,84 @@ a {
     outline: 0; }
 
 /* Menus */
-.menu-main-container {
-  display: none; }
-
 .site-header {
   position: absolute; }
 
-.mobile-nav {
-  position: fixed; }
-  @media (min-width: 800px) {
-    .mobile-nav {
-      display: none; } }
+.fixed-menu .toggle-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
-.mobile-menu-items {
+.menu-list {
   position: fixed;
   text-align: left;
   width: 100vw;
   margin: 0; }
-  .mobile-menu-items li, .mobile-menu-items a {
+  .menu-list li, .menu-list a {
     text-decoration: none;
     list-style-type: none; }
   @media (min-width: 800px) {
-    .mobile-menu-items {
+    .menu-list {
       display: none; } }
 
-/*----- Menu -----*/
 .sub-menu {
   display: none; }
 
-.desktop-menu {
-  display: none;
+.fixed-menu {
   width: 100vw;
-  position: fixed; }
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.85); }
+  .fixed-menu .toggle-menu-button {
+    display: block;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    -webkit-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out; }
+    @media (min-width: 800px) {
+      .fixed-menu .toggle-menu-button {
+        display: none; } }
+  .fixed-menu .menu-list {
+    display: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    line-height: 2;
+    background-color: rgba(255, 255, 255, 0.85); }
+    .fixed-menu .menu-list li {
+      font-family: "EB Garamond", Courier, serif;
+      font-style: italic; }
+    @media (min-width: 800px) {
+      .fixed-menu .menu-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
   @media (min-width: 800px) {
-    .desktop-menu {
+    .fixed-menu {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .desktop-menu ul.menu-items {
+      .fixed-menu ul.menu-list {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         width: 100vw;
         margin: 0;
-        padding: 1.5rem 10rem;
-        background-color: rgba(230, 230, 230, 0.65);
+        padding: 1rem 10rem;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
-        .desktop-menu ul.menu-items li, .desktop-menu ul.menu-items a {
+        .fixed-menu ul.menu-list li, .fixed-menu ul.menu-list a {
+          font-family: "EB Garamond", Courier, serif;
+          font-style: italic;
+          font-weight: 500;
           text-decoration: none;
           list-style-type: none; } }
+
+.toggle-nav {
+  display: inline !important;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
 
 .main-navigation {
   width: 100%;
@@ -725,45 +755,9 @@ a {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5rem;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -939,8 +933,13 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 /* Connect page */
-.page-id-61 header.site-header {
-  background-position-y: initial; }
+.page-id-61 .connect-hero {
+  width: 100vw; }
+  @media (min-width: 800px) {
+    .page-id-61 .connect-hero {
+      background-position-y: initial;
+      width: 100vw;
+      height: 10rem; } }
 
 .page-id-61 .entry-content {
   display: -webkit-box;
@@ -1011,8 +1010,7 @@ object {
   .home .hero .front-center-text {
     height: 200px;
     width: 350px;
-    margin: 0 auto;
-    text-align: center; }
+    margin: 18rem auto; }
     @media (min-width: 800px) {
       .home .hero .front-center-text {
         margin: 24% auto 0;
@@ -1024,7 +1022,9 @@ object {
     transition: all .4s ease-in-out;
     width: 125px;
     height: 205px;
-    margin: 5rem auto; }
+    margin: 10rem auto;
+    position: absolute;
+    left: 50%; }
     @media (min-width: 800px) {
       .home .hero .front-center-logo {
         margin: 5rem auto;
@@ -1094,7 +1094,7 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  background-color: blue; }
+  background-color: #FFFFFF; }
   @media (min-width: 800px) {
     .follow-instagram {
       width: 30%;
@@ -1108,7 +1108,8 @@ object {
   padding-top: 5rem;
   border-top: 1px solid #CC9785;
   padding-bottom: 4rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  z-index: -1; }
 
 .owl-item {
   display: -webkit-box;
@@ -1125,18 +1126,131 @@ object {
 .home .hero .shrink {
   max-width: 50px;
   position: fixed;
-  margin: -3% 0; }
+  margin: 1rem 0; }
+  @media (min-width: 800px) {
+    .home .hero .shrink {
+      margin: -3rem 0; } }
 
 .scroll-arrow {
   position: absolute;
   top: 80vh;
   left: 48%; }
   .scroll-arrow .scroll {
-    background-color: transparent;
-    border: none; }
-    .scroll-arrow .scroll h1 {
-      margin: 0 auto;
-      width: 64px; }
+    display: none; }
+    @media (min-width: 800px) {
+      .scroll-arrow .scroll {
+        background-color: transparent;
+        border: none; }
+        .scroll-arrow .scroll h1 {
+          margin: 0 auto;
+          width: 64px;
+          font-size: 2.5em; } }
+
+.page-template-wedding .page-header {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 2.5em; }
+
+.page-template-wedding .wedding-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-template-wedding .wedding-page-logo {
+  height: 50px;
+  width: 30px; }
+
+.page-template-wedding .entry-title {
+  text-align: center; }
+  @media (min-width: 800px) {
+    .page-template-wedding .entry-title {
+      font-size: 64px;
+      color: #BF8472;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: 2px;
+      margin: 0; } }
+
+.page-template-wedding ul.wedding-tab-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+  .page-template-wedding ul.wedding-tab-links li {
+    list-style: none;
+    padding: 0 1.25rem;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 1.2px; }
+    .page-template-wedding ul.wedding-tab-links li a {
+      text-decoration: none; }
+
+.page-template-wedding .weddings {
+  display: grid;
+  max-width: 1000px;
+  padding: 10px 10px;
+  margin: 1rem auto;
+  grid-gap: 20px;
+  grid-auto-rows: minmax(250px, auto);
+  grid-template-columns: 1fr 1fr 1fr; }
+  .page-template-wedding .weddings .wedding-album {
+    list-style: none; }
+  .page-template-wedding .weddings p {
+    text-align: center;
+    margin: 0;
+    color: #415468;
+    font-size: 14px; }
+  .page-template-wedding .weddings .album-name {
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500; }
+
+.wedding-album-gallery-pages {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  width: 70vw;
+  margin: 0 auto; }
+
+.wedding-gallery-image {
+  display: inline-block;
+  margin: 0.25rem;
+  width: 100%; }
+
+.single-gallery .entry-title {
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 500px; }
+
+.single-gallery .entry-content {
+  text-align: center;
+  font-size: 18px; }
+
+.portraits {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  width: 70vw;
+  margin: 0 auto; }
+
+.portrait-gallery-image {
+  display: inline-block;
+  margin: 0.25rem;
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # About
@@ -1214,7 +1328,7 @@ object {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  margin-bottom: 89px; }
+  margin-bottom: 2.5rem; }
   .about-sub-pages li {
     padding: 0 1.25rem;
     font-style: italic;
@@ -1230,6 +1344,67 @@ object {
 
 .tab.active {
   display: block; }
+
+/*----- what we do -----*/
+.what-we-do-title {
+  font-size: 2rem;
+  font-style: italic;
+  color: #415468;
+  text-align: center;
+  font-weight: 400; }
+
+@media (min-width: 800px) {
+  .what-we-do-wrapper img {
+    width: 400px;
+    height: auto;
+    max-height: 375px; } }
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.accordion {
+  overflow: hidden;
+  border-radius: 3px;
+  background: #FFFFFF; }
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border-bottom: 1px solid #BF8472;
+  -webkit-transition: all linear 0.15s;
+  transition: all linear 0.15s;
+  /* Type */
+  font-size: 1.8rem;
+  color: #415468;
+  text-decoration: none;
+  font-style: italic;
+  text-align: center; }
+
+.accordion-section-title.active, .accordion-section-title:hover {
+  background: rgba(0, 0, 0, 0.03);
+  /* Type */
+  text-decoration: none; }
+
+.accordion-section:last-child .accordion-section-title {
+  border-bottom: 1px solid #BF8472; }
+
+.accordion-section:first-child .accordion-section-title {
+  border-top: 1px solid #BF8472; }
+
+/*----- Section Content -----*/
+.accordion-section-content {
+  padding: 15px;
+  display: none; }
+
+.accordion-section-title.active {
+  display: inline-block; }
+
+.accordion-section-content.open {
+  border-bottom: 1px solid #BF8472; }
 
 .site-footer {
   border-top: 1px solid #CC9785;

@@ -17,20 +17,10 @@
       // position: absolute;
       height: 200px;
       width: 350px;
-      margin: 0 auto;
-      // position: absolute;
-      // top: 18rem;
-      // right: 50%;
-      text-align: center;
-      // top: 35%;
-      // left: 0%;
+      margin: 18rem auto;
       @include desktop { 
         margin: 24% auto 0;
         position: inherit;
-        // top: 44%;
-        // left: 38%;
-        // height: 200px;
-        // width: 350px;
       }
     }
     .front-center-logo {
@@ -38,7 +28,9 @@
       transition: all .4s ease-in-out;
       width: 125px;
       height: 205px;
-      margin: 5rem auto;
+      margin: 10rem auto;
+      position: absolute;
+      left: 50%;
       
       @include desktop {
         // width: 350px;
@@ -114,7 +106,7 @@
 .follow-instagram {  
   flex-direction: column;
   margin: 0 auto;
-  background-color: blue;
+  background-color: $color__background-body;
   @include desktop {    
     width: 30%;  
     display: flex;
@@ -128,6 +120,7 @@
   border-top: $border__main-solid;
   padding-bottom: 4rem;
   margin-bottom: 1rem;
+  z-index: -1;
 }
   
 .owl-item {
@@ -143,7 +136,10 @@
 .home .hero .shrink {
   max-width: 50px;
   position: fixed;
-  margin: -3% 0;
+  margin: 1rem 0;
+  @include desktop {    
+    margin: -3rem 0;
+  }    
 }
 
 .scroll-arrow {
@@ -151,11 +147,15 @@
   top: 80vh;
   left: 48%;
   .scroll {
-    background-color: transparent;
-    border: none;
-    h1 {
-      margin: 0 auto;
-      width: 64px;
+    display: none;
+    @include desktop {          
+      background-color: transparent;
+      border: none;
+      h1 {
+        margin: 0 auto;
+        width: 64px;
+        font-size: 2.5em;
+      }
     }
   }
 }
