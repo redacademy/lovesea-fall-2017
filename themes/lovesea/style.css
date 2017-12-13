@@ -1207,11 +1207,36 @@ object {
   text-align: center;
   font-weight: 400; }
 
-@media (min-width: 800px) {
+.what-we-do-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (min-width: 800px) {
+    .what-we-do-wrapper {
+      width: 960px;
+      margin: 0 auto; } }
   .what-we-do-wrapper img {
-    width: 400px;
-    height: auto;
-    max-height: 375px; } }
+    width: 95%;
+    margin: 0 auto; }
+    @media (min-width: 800px) {
+      .what-we-do-wrapper img {
+        width: 400px;
+        height: auto;
+        max-height: 375px; } }
+
+.what-we-do-text-one,
+.what-we-do-text-two,
+.what-we-do-text-three,
+.what-we-do-text-four {
+  width: 95%; }
+  @media (min-width: 800px) {
+    .what-we-do-text-one,
+    .what-we-do-text-two,
+    .what-we-do-text-three,
+    .what-we-do-text-four {
+      width: 55%; } }
 
 /*----- Accordion -----*/
 .accordion, .accordion * {

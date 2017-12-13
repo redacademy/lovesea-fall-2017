@@ -108,12 +108,30 @@
 }
 
 .what-we-do-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  @include desktop {
+    width: 960px;
+    margin: 0 auto;
+  }
   img {
+    width: 95%;
+    margin: 0 auto;
     @include desktop {
       width: 400px;
       height: auto;
       max-height: 375px;
     }
+  }
+}
+
+.what-we-do-text-one,
+.what-we-do-text-two,
+.what-we-do-text-three,
+.what-we-do-text-four {
+  width: 95%;
+  @include desktop {
+    width: 55%;
   }
 }
 
