@@ -531,7 +531,7 @@ a {
 .fixed-menu {
   width: 100vw;
   position: fixed;
-  background-color: rgba(222, 222, 222, 0.7); }
+  background-color: rgba(255, 255, 255, 0.85); }
   @media (min-width: 800px) {
     .fixed-menu .menu-items {
       display: -webkit-box;
@@ -1163,7 +1163,7 @@ object {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  margin-bottom: 89px; }
+  margin-bottom: 2.5rem; }
   .about-sub-pages li {
     padding: 0 1.25rem;
     font-style: italic;
@@ -1179,6 +1179,19 @@ object {
 
 .tab.active {
   display: block; }
+
+/*----- what we do -----*/
+.what-we-do-title {
+  font-size: 2rem;
+  font-style: italic;
+  color: #415468;
+  text-align: center;
+  font-weight: 400; }
+
+@media (min-width: 800px) {
+  .what-we-do-tab {
+    width: 400px;
+    height: auto; } }
 
 /*----- Accordion -----*/
 .accordion, .accordion * {
@@ -1220,6 +1233,9 @@ object {
 .accordion-section-content {
   padding: 15px;
   display: none; }
+
+.accordion-section-title.active {
+  display: inline-block; }
 
 .site-footer {
   border-top: 1px solid #CC9785;

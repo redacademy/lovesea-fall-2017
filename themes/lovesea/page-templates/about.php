@@ -96,7 +96,7 @@ get_header(); ?>
               <div class="accordion-section">
                 <a class="accordion-section-title" href="#accordion-2">FAQ</a>
         
-                <div id="accordion-1" class="accordion-section-content">
+                <div id="accordion-2" class="accordion-section-content">
                   <p>Heirloom godard truffaut meh wolf. Sustainable affogato raclette, lomo man bun adaptogen roof party selvage. Meditation readymade try-hard, plaid ethical tattooed swag four dollar toast. Ugh brooklyn street art, raw denim ennui shabby chic vexillologist lomo locavore YOLO roof party chicharrones sartorial vinyl green juice.</p>
                 </div><!--end .accordion-section-content-->
               </div><!--end .accordion-section-->
@@ -104,7 +104,7 @@ get_header(); ?>
               <div class="accordion-section">
                 <a class="accordion-section-title" href="#accordion-3">Testimonials</a>
         
-                <div id="accordion-1" class="accordion-section-content">
+                <div id="accordion-3" class="accordion-section-content">
                   <p>Heirloom godard truffaut meh wolf. Sustainable affogato raclette, lomo man bun adaptogen roof party selvage. Meditation readymade try-hard, plaid ethical tattooed swag four dollar toast. Ugh brooklyn street art, raw denim ennui shabby chic vexillologist lomo locavore YOLO roof party chicharrones sartorial vinyl green juice.</p>
                 </div><!--end .accordion-section-content-->
               </div><!--end .accordion-section-->

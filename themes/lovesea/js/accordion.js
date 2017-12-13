@@ -1,4 +1,6 @@
-jQuery(document).ready(function($) {
+(function($){
+
+
   function close_accordion_section() {
       $('.accordion .accordion-section-title').removeClass('active');
       $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
@@ -21,4 +23,8 @@ jQuery(document).ready(function($) {
 
       e.preventDefault();
   });
-});
+
+
+
+
+})(jQuery);

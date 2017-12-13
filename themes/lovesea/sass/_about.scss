@@ -76,7 +76,7 @@
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  margin-bottom: 89px;
+  margin-bottom: 2.5rem;
     li {
       padding: 0 1.25rem;
       font-style: italic;
@@ -96,6 +96,23 @@
   .tab.active {
       display:block;
   }
+
+/*----- what we do -----*/
+
+.what-we-do-title {
+  font-size: 2rem;
+  font-style: italic;
+  color: $color__text-main;
+  text-align: center;
+  font-weight: 400;
+}
+
+.what-we-do-tab {
+  @include desktop {
+    width: 400px;
+    height: auto;
+  }
+}
 
 /*----- Accordion -----*/
 .accordion, .accordion * {
@@ -143,4 +160,8 @@
 .accordion-section-content {
   padding:15px;
   display:none;
+}
+
+.accordion-section-title.active {
+  display: inline-block;
 }
