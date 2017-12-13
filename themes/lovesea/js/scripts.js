@@ -36,35 +36,34 @@ $(window).scroll(function() {
 
 // wedding page pop up modal
 
-  //----- OPEN
-  $('.wedding-photo').on('click', function(e)  {
-      var popup_image = jQuery(this).attr('data-popup-open');
-      $('[data-popup="' + popup_image + '"]').fadeIn(350);
-
-      e.preventDefault();
-  });
-
-  //----- CLOSE
-  $('[data-popup-close]').on('click', function(e)  {
-      var targeted_popup_class = jQuery(this).attr('data-popup-close');
-      $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
-
-      e.preventDefault();
-  });
-
-
-
-
+// OPEN
 $('.gallery-modal-link').on('click', function(event){
   event.preventDefault();
 
   var imageUrl = $(this).data("image-url");
 
-  console.log(imageUrl);
+  $('[data-image-url="' + imageUrl + '"]').addClass("popup popup-inner");
+   
+});
+
+// CLOSE
+$('.site-content').on('click', function(event){
+event.preventDefault();
+
+$('.portrait-album').addClass('gallery-modal-link');
 
 });
 
+$('.tab-gallery-wrapper .wedding-tab-links a').on('click', function(e)  {
+  var currentAttrValue = $(this).attr('href');
 
+  // Show/Hide Tabs
+  $('.tab-gallery-wrapper ' + currentAttrValue).show().siblings().hide();
 
+  // Change/remove current tab to active
+  $(this).parent('li').addClass('active').siblings().removeClass('active');
+
+  e.preventDefault();
+});
 
 })(jQuery);
