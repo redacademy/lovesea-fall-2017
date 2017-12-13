@@ -127,10 +127,12 @@ get_header(); ?>
 
 
 <?php	foreach ( $portrait_gallery as $post ) : setup_postdata( $post ); ?>
-<a class="gallery-modal-link" href="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" 
-							 data-image-url="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
 
-							<div class="detail-album">
+<
+<a class="gallery-modal-link"  href="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" 
+							 data-image-url="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
+							
+							 <div class="detail-album">
 									<?php if ( has_post_thumbnail() ) :
 									the_post_thumbnail( $post->ID, 'large' );
 									endif; ?>
