@@ -531,12 +531,16 @@ a {
   position: fixed;
   background-color: rgba(222, 222, 222, 0.7); }
   .fixed-menu .toggle-menu-button {
-    display: block; }
+    display: block;
+    -webkit-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out; }
     @media (min-width: 800px) {
       .fixed-menu .toggle-menu-button {
         display: none; } }
   .fixed-menu .menu-list {
-    display: none; }
+    display: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
     @media (min-width: 800px) {
       .fixed-menu .menu-list {
         display: -webkit-box;
@@ -564,7 +568,9 @@ a {
           list-style-type: none; } }
 
 .toggle-nav {
-  display: inline !important; }
+  display: inline !important;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
 
 .main-navigation {
   width: 100%;

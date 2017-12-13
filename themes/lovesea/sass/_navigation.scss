@@ -66,12 +66,16 @@ a {
 	background-color: $color__header-background;
 	.toggle-menu-button {
 		display: block;
+		transition: all 0.9s ease-in-out; 
+		
 		@include desktop {    			
 			display: none;
 		}			
 	}
 	.menu-list {
 		display: none;
+		        transition: all 0.4s ease-in-out; 
+
 		@include desktop {    			
 		display: flex;
 		}
@@ -95,6 +99,7 @@ a {
 }
 .toggle-nav {
 	display: inline !important;
+	transition: all 0.4s ease-in-out; 
 }
 
 .main-navigation {
@@ -103,8 +108,6 @@ a {
 	position: fixed;
 	top: 4rem;
 	left: 3rem;
-	// background-color: hsla(0,0%,100%,.85);
-
 	ul {
 		display: none;
 		list-style: none;
