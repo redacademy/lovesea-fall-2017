@@ -532,6 +532,10 @@ a {
   background-color: rgba(222, 222, 222, 0.7); }
   .fixed-menu .toggle-menu-button {
     display: block;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
     -webkit-transition: all 0.9s ease-in-out;
     transition: all 0.9s ease-in-out; }
     @media (min-width: 800px) {
@@ -540,7 +544,12 @@ a {
   .fixed-menu .menu-list {
     display: none;
     -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out; }
+    transition: all 0.4s ease-in-out;
+    line-height: 2;
+    background-color: rgba(222, 222, 222, 0.7); }
+    .fixed-menu .menu-list li {
+      font-family: "EB Garamond", Courier, serif;
+      font-style: italic; }
     @media (min-width: 800px) {
       .fixed-menu .menu-list {
         display: -webkit-box;
@@ -563,6 +572,7 @@ a {
                 justify-content: space-between; }
         .fixed-menu ul.menu-list li, .fixed-menu ul.menu-list a {
           font-family: "EB Garamond", Courier, serif;
+          font-style: italic;
           font-weight: 500;
           text-decoration: none;
           list-style-type: none; } }

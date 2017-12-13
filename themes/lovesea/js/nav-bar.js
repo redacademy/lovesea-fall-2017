@@ -4,8 +4,8 @@
       $('.menu-list').toggleClass('toggle-nav');
     });
 
-    $('.toggle-menu-button').on('blur', function () {
-      $('.menu-list').toggleClass('toggle-nav');
+    $('.site-content').on('click', function () {
+      $('.menu-list').removeClass('toggle-nav');
     });
     
 })(jQuery);
