@@ -1187,32 +1187,34 @@ object {
 
 .accordion {
   overflow: hidden;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
-  background: #f7f7f7; }
+  background: #FFFFFF; }
 
 /*----- Section Titles -----*/
 .accordion-section-title {
   width: 100%;
   padding: 15px;
   display: inline-block;
-  border-bottom: 1px solid #1a1a1a;
-  background: #333;
+  border-bottom: 1px solid #BF8472;
   -webkit-transition: all linear 0.15s;
   transition: all linear 0.15s;
   /* Type */
-  font-size: 1.200em;
-  text-shadow: 0px 1px 0px #1a1a1a;
-  color: #fff; }
+  font-size: 1.8rem;
+  color: #415468;
+  text-decoration: none;
+  font-style: italic;
+  text-align: center; }
 
 .accordion-section-title.active, .accordion-section-title:hover {
-  background: #4c4c4c;
+  background: rgba(0, 0, 0, 0.08);
   /* Type */
   text-decoration: none; }
 
 .accordion-section:last-child .accordion-section-title {
-  border-bottom: none; }
+  border-bottom: 1px solid #BF8472; }
+
+.accordion-section:first-child .accordion-section-title {
+  border-top: 1px solid #BF8472; }
 
 /*----- Section Content -----*/
 .accordion-section-content {
