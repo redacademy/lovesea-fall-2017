@@ -12,13 +12,13 @@
   
 
     
-    // $('#search-field').on('blur', function (){
-    //   $('.search-field').toggle()
+    // $('#toggle-menu-button').on('blur', function (){
+    //   $('.menulist').toggle()
     // });
   
 
-    $('.toggle-mobile-menu').click(function () {
-      $('.fixed-menu').toggleClass('toggle-nav');
+    $('.toggle-menu-button').on('click', function () {
+      $('.menu-list').toggleClass('toggle-nav');
     });
 
     // $('.burger').click(function () {

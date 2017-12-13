@@ -32,16 +32,16 @@ a {
 .site-header {
 	position: absolute;
 }
-.toggle-nav {
-	// display:none;
+.fixed-menu .toggle-nav ul {
+	display:flex;
 }
-.mobile-nav {
-	position: fixed;
-	@include desktop {    
-		display: none;
-	}		
-}
-.mobile-menu-items {
+// .mobile-nav {
+// 	position: fixed;
+// 	@include desktop {    
+// 		display: none;
+// 	}		
+// }
+.menu-list {
 	position: fixed;
 	text-align: left;
 	width: 100vw;
@@ -55,7 +55,6 @@ a {
 	}
 }
 
-/*----- Menu -----*/
 
 .sub-menu {
 	display: none;
@@ -65,14 +64,21 @@ a {
 	width: 100vw;
 	position: fixed;
 	background-color: $color__header-background;
-	.menu-items {
+	.toggle-menu-button {
+		display: block;
+		@include desktop {    			
+			display: none;
+		}			
+	}
+	.menu-list {
+		display: none;
 		@include desktop {    			
 		display: flex;
 		}
 	}
   @include desktop {    
 		display: flex;
-		ul.menu-items {
+		ul.menu-list {
 			display: flex;
 			width: 100vw;
 			margin: 0;
@@ -85,13 +91,10 @@ a {
 			list-style-type: none;
 			}
 		}
-		.toggle-mobile-menu {
-			display: none;
-		}
 	}
 }
 .toggle-nav {
-	display: none;
+	display: inline !important;
 }
 
 .main-navigation {
