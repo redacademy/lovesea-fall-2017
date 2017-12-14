@@ -963,8 +963,7 @@ object {
   font-size: 1.3rem;
   outline-offset: -14px;
   background-color: #CC9785;
-  outline: 2px solid #FFFFFF;
-  position: absolute; }
+  outline: 2px solid #FFFFFF; }
   .home .browse-weddings a,
   .home .about-us a,
   .home .connect a {
@@ -1474,6 +1473,9 @@ object {
   text-decoration: none;
   color: #FFFFFF;
   font-style: italic; }
+  .about-contact-us a {
+    text-decoration: none;
+    color: #FFFFFF; }
 
 .site-footer {
   border-top: 1px solid #CC9785;

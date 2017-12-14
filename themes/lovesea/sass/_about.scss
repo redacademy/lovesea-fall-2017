@@ -248,12 +248,7 @@
 }
 
 .about-contact-us {
-  width: 300px;
-  height: 100px;
-  font-size: 1.3rem;
-  outline-offset: -14px;
-  background-color: $color__accent;
-  outline: 2px solid $color__background-body;
+  @include pink-button;
   display: block;
   margin: 1.5rem auto 5rem auto;
   text-decoration: none;
