@@ -963,7 +963,8 @@ object {
   font-size: 1.3rem;
   outline-offset: -14px;
   background-color: #CC9785;
-  outline: 2px solid #FFFFFF; }
+  outline: 2px solid #FFFFFF;
+  position: absolute; }
   .home .browse-weddings a,
   .home .about-us a,
   .home .connect a {
@@ -1230,6 +1231,11 @@ object {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.page-id-54 .site-content .content-area .entry-header.custom-hero img {
+  height: 300px;
+  max-width: 100%;
+  width: 100%; }
+
 .page-id-54 .site-content .content-area .entry-title {
   text-align: center; }
   @media (min-width: 800px) {

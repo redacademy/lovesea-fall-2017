@@ -5,6 +5,14 @@
 .page-id-54 {
   .site-content {
     .content-area {
+
+      .entry-header.custom-hero {
+        img {
+          height: 300px;
+          max-width: 100%;
+          width: 100%;
+        }
+      }
       .entry-title {
         text-align: center;
         @include desktop {
@@ -18,6 +26,7 @@
     }
   }
 }
+
   .who-we-are-wrapper {
     display: flex;
     flex-direction: column;
