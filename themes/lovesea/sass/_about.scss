@@ -130,9 +130,21 @@
 .what-we-do-text-three,
 .what-we-do-text-four {
   width: 95%;
+  text-align: justify;
   @include desktop {
     width: 55%;
+    text-align: justify;
   }
+}
+
+.block-one-wrapper {
+  display: flex;
+
+}
+
+.block-two-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 
