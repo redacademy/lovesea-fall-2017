@@ -105,6 +105,10 @@
   color: $color__text-main;
   text-align: center;
   font-weight: 400;
+  @include desktop {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .what-we-do-wrapper {
@@ -131,20 +135,51 @@
 .what-we-do-text-four {
   width: 95%;
   text-align: justify;
+  letter-spacing:1.1px;
+  line-height: 120%;
+  font-weight: lighter;
   @include desktop {
     width: 55%;
     text-align: justify;
+    font-size: 18px;
+  }
+}
+
+.what-we-do-text-one,
+.what-we-do-text-three {
+  
+  @include desktop {
+    padding: 0 0 1.5rem 2.5rem;
+  }
+}
+
+.what-we-do-text-two,
+.what-we-do-text-four {
+  
+  @include desktop {
+    padding-right: 2.5rem;
+  }
+}
+
+.what-we-do-text-one{
+  
+  @include desktop {
+    padding-top: 0.5rem;
   }
 }
 
 .block-one-wrapper {
   display: flex;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .block-two-wrapper {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 
