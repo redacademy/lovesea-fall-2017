@@ -53,17 +53,18 @@ get_header(); ?>
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'large' ); ?>
 						<?php endif; ?>
+						<div class="we-are-story-tellers">
 
 						<?php $loop = CFS()->get( 'we_are_story_tellers' ); foreach ( $loop as $row ) :?>  
 
-						<div class="we-are-story-tellers">
 							<img class="storytellers-image" src="<?php	echo $row['we_are_story_tellers_image']; ?>" alt="">
 							<div class="storytellers-text">
 								<h1>	<?php echo $row['we_are_story_tellers_title']; ?> </h1>
 								<?php echo $row['we_are_story_tellers_link']; ?> 
 							</div>
-						</div>
 						<?php endforeach; ?>
+						</div>
+
 
 						<button class="browse-weddings"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">
 						<?php echo $row['we_are_story_tellers_link']; ?>Browse Weddings</a></button> 
@@ -76,21 +77,18 @@ get_header(); ?>
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'large' ); ?>
 						<?php endif; ?>
+						<div class="we-are-observer">
 
-						<?php $loop = CFS()->get( 'we_are_observers' ); foreach ( $loop as $row ) : ?> 
+							<?php $loop = CFS()->get( 'we_are_observers' ); foreach ( $loop as $row ) : ?> 
 
-							<img class="front-observer-image" src="<?php	echo $row['we_are_observers_image']; ?>" alt="">
+								<img class="front-observer-image" src="<?php	echo $row['we_are_observers_image']; ?>" alt="">
 
-								<h1 class="observer-title">	<?php echo $row['we_are_observers_title']; ?> </h1>
-								
-								<?php echo $row['we_are_observers_link']; ?> 
+									<h1 class="observer-title">	<?php echo $row['we_are_observers_title']; ?> </h1>
+									
+									<?php echo $row['we_are_observers_link']; ?> 
 
-
-
-						<?php
-							endforeach;
-						?>
-
+							<?php endforeach; ?>
+						</div>
 						<button class="about-us"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">
 						<?php echo $row['we_are_observers_link']; ?>About Us</a></button> 
 					</div> 
@@ -102,23 +100,19 @@ get_header(); ?>
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'large' ); ?>
 						<?php endif; ?>
-
-						<?php
-							$loop = CFS()->get( 'we_are_your_friend' );
-							foreach ( $loop as $row ) :
-						?> 
-
 						<div class="we-are-your-friend">
-							<img class="friend-image" src="<?php echo $row['we_are_your_friend_image']; ?>" alt="">
-							<div class="friend-text">
-								<h1>	<?php echo $row['we_are_your_friend_title']; ?> </h1>
-								<?php echo $row['we_are_your_friend_link']; ?> 
-							</div>
+
+							<?php $loop = CFS()->get( 'we_are_your_friend' ); foreach ( $loop as $row ) : ?> 
+
+								<img class="friend-image" src="<?php echo $row['we_are_your_friend_image']; ?>" alt="">
+								<div class="friend-text">
+									<h1>	<?php echo $row['we_are_your_friend_title']; ?> </h1>
+									<?php echo $row['we_are_your_friend_link']; ?> 
+								</div>
+
+							<?php endforeach; ?>
 						</div>	
 
-						<?php
-							endforeach;
-						?>
 
 						<button class="connect"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">
 						<?php echo $row['we_are_your_friend_link']; ?>Let's Talk</a></button> 
