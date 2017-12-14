@@ -36,13 +36,14 @@
     }
 
     .who-we-are-image {
-      margin-left: auto;
 
       @include desktop {
         max-height: 516px;
         max-width: 400px;
         height: auto;
         width: auto;
+        margin: 0 1rem;
+        padding-right: 1rem;
       }
 
       img {
@@ -50,21 +51,18 @@
         height: auto;
         margin: 0 auto;
         width: 90%;
+        float: left;
       }
     }
     .who-we-are-text {
       text-align: justify;
-      margin: 0 0 0 auto;
+      margin: 0 1.5rem 0 0;
       color: $color__text-main;
       letter-spacing: 1.1px;
       font-weight: lighter;
       line-height: 120%;
 
       @include desktop {
-        max-width: 600px;
-        max-height: 529px;
-        width: auto;
-        height: auto;
         font-size: 18px;
       }
     }
@@ -238,4 +236,13 @@
 
 .accordion-section-content.open {
   border-bottom: 1px solid $color__text-secondary;
+}
+
+/*----- Logo -----*/
+
+.monogram-logo {
+  width: 42px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
 }

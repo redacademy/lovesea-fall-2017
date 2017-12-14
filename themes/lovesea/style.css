@@ -1256,32 +1256,29 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .who-we-are-wrapper .who-we-are-image {
-    margin-left: auto; }
-    @media (min-width: 800px) {
-      .who-we-are-wrapper .who-we-are-image {
-        max-height: 516px;
-        max-width: 400px;
-        height: auto;
-        width: auto; } }
-    .who-we-are-wrapper .who-we-are-image img {
-      max-width: 800px;
+  @media (min-width: 800px) {
+    .who-we-are-wrapper .who-we-are-image {
+      max-height: 516px;
+      max-width: 400px;
       height: auto;
-      margin: 0 auto;
-      width: 90%; }
+      width: auto;
+      margin: 0 1rem;
+      padding-right: 1rem; } }
+  .who-we-are-wrapper .who-we-are-image img {
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    width: 90%;
+    float: left; }
   .who-we-are-wrapper .who-we-are-text {
     text-align: justify;
-    margin: 0 0 0 auto;
+    margin: 0 1.5rem 0 0;
     color: #415468;
     letter-spacing: 1.1px;
     font-weight: lighter;
     line-height: 120%; }
     @media (min-width: 800px) {
       .who-we-are-wrapper .who-we-are-text {
-        max-width: 600px;
-        max-height: 529px;
-        width: auto;
-        height: auto;
         font-size: 18px; } }
 
 .about-sub-pages {
@@ -1447,6 +1444,13 @@ object {
 
 .accordion-section-content.open {
   border-bottom: 1px solid #BF8472; }
+
+/*----- Logo -----*/
+.monogram-logo {
+  width: 42px;
+  height: 70px;
+  display: block;
+  margin: 0 auto; }
 
 .site-footer {
   border-top: 1px solid #CC9785;
