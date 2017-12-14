@@ -121,6 +121,7 @@
   .about-us,
   .connect {
    @include pink-button;
+   position: absolute;   
   }
 }
 
