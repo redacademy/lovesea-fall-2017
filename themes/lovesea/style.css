@@ -1011,6 +1011,10 @@ object {
   margin-bottom: 1rem;
   z-index: -1; }
 
+
+
+
+
 .instagram-carousel-container .owl-prev {
   font-size: 1.5rem;
   position: absolute;
@@ -1036,6 +1040,45 @@ object {
   background-color: transparent;
   border: none;
   outline: none; }
+
+/* //merge conflict TBD_____________________________ */
+
+
+
+/* .instagram-carousel-container {
+  z-index: -1; }
+  .instagram-carousel-container .fa-angle-left {
+    position: absolute;
+    bottom: 8rem;
+    left: -3rem;
+    font-size: 7rem;
+    width: 38px;
+    z-index: 3;
+    color: #CC9785;
+    background-color: transparent;
+    border: none;
+    outline: none; }
+  .instagram-carousel-container .fa-angle-right {
+    position: absolute;
+    bottom: 8rem;
+    right: -2rem;
+    font-size: 7rem;
+    width: 38px;
+    z-index: 3;
+    color: #CC9785;
+    background-color: transparent;
+    border: none;
+    outline: none; }
+
+
+
+
+
+
+ */
+
+
+
 
 .owl-item {
   display: -webkit-box;
