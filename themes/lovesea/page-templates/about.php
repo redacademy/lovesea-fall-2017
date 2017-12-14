@@ -124,6 +124,9 @@ get_header(); ?>
           </div>
         </div>
       </article>
+      <div class="website-logo">
+				<img class="monogram-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
+     </div> <!-- .wedding-logo -->
     </main>
   </div>
 <?php get_footer(); ?>
