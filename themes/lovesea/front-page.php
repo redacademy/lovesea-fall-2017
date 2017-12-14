@@ -123,9 +123,11 @@ get_header(); ?>
 					<div class="instagram-carousel-container"> 
 						<div class="follow-instagram-header">
 							<h2 class="follow-instagram">follow along on <span class="instagram"> Instagram</span> </h2>
+							<button class="fa fa-angle-left"><i></i></button>
+							<button class="fa fa-angle-right"><i></i></button>
 						</div>
 						<div class="owl-carousel">
-		
+				
 						</div>
 
 

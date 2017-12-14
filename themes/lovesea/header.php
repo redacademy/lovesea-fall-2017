@@ -14,6 +14,8 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 
+
+
 	<?php wp_head(); ?>
 	</head>
 

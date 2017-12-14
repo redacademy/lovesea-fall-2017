@@ -948,7 +948,10 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  background-color: blue; }
+  font-weight: 100;
+  background-color: white; }
+  .follow-instagram span {
+    font-weight: bold; }
   @media (min-width: 800px) {
     .follow-instagram {
       width: 30%;
@@ -964,6 +967,30 @@ object {
   padding-bottom: 4rem;
   margin-bottom: 1rem; }
 
+.instagram-carousel-container .fa-angle-left {
+  position: absolute;
+  bottom: 8rem;
+  left: -3rem;
+  font-size: 7rem;
+  width: 38px;
+  z-index: 3;
+  color: #CC9785;
+  background-color: transparent;
+  border: none;
+  outline: none; }
+
+.instagram-carousel-container .fa-angle-right {
+  position: absolute;
+  bottom: 8rem;
+  right: -2rem;
+  font-size: 7rem;
+  width: 38px;
+  z-index: 3;
+  color: #CC9785;
+  background-color: transparent;
+  border: none;
+  outline: none; }
+
 .owl-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -972,9 +999,9 @@ object {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
   .owl-item img {
-    padding: 8px;
     height: 200px;
-    width: 200px; }
+    width: 200px;
+    border: 2px solid rgba(222, 222, 222, 0.7); }
 
 .home .hero .shrink {
   max-width: 50px;

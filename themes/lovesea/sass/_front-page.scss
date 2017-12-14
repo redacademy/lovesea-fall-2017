@@ -106,7 +106,12 @@
 .follow-instagram {  
   flex-direction: column;
   margin: 0 auto;
-  background-color: blue;
+  font-weight: 100;
+  background-color: white; 
+  // background-color: blue;
+  span {
+    font-weight: bold;
+  }
   @include desktop {    
     width: 30%;  
     display: flex;
@@ -120,17 +125,47 @@
   border-top: $border__main-solid;
   padding-bottom: 4rem;
   margin-bottom: 1rem;
+  
+}
+.instagram-carousel-container{
+  .fa-angle-left {
+    position: absolute;
+    bottom: 8rem;
+    left: -3rem;
+    font-size: 7rem;
+    width: 38px;
+    z-index: 3;
+    color: $color__accent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .fa-angle-right {
+    position: absolute;
+    bottom: 8rem;    
+    right: -2rem;
+    font-size: 7rem;
+    width: 38px;
+    z-index: 3;
+    color: $color__accent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
 }
   
 .owl-item {
   display: flex;
   justify-content: space-evenly;    
   img {
-    padding: 8px;
     height: 200px;
     width: 200px;
+    border: $border__instagram-image;
   }
 }
+
+
 
 .home .hero .shrink {
   max-width: 50px;
