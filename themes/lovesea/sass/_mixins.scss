@@ -17,3 +17,17 @@
   }
 }
 
+@mixin pink-button {
+	width: 300px;
+	height: 100px;
+	font-size: 1.3rem;
+	outline-offset: -14px;      
+	background-color: $color__accent;
+	outline: $border__white-solid;
+	position: absolute;
+	a {
+		text-decoration: none;
+		color: $color__background-body;
+	}
+}
+

@@ -549,7 +549,9 @@ a {
     background-color: rgba(222, 222, 222, 0.7); }
     .fixed-menu .menu-list li {
       font-family: "EB Garamond", Courier, serif;
-      font-style: italic; }
+      font-style: italic;
+      font-size: 1.5rem;
+      font-weight: 200; }
     @media (min-width: 800px) {
       .fixed-menu .menu-list {
         display: -webkit-box;
@@ -573,7 +575,8 @@ a {
         .fixed-menu ul.menu-list li, .fixed-menu ul.menu-list a {
           font-family: "EB Garamond", Courier, serif;
           font-style: italic;
-          font-weight: 500;
+          font-weight: 200;
+          font-size: 1.5rem;
           text-decoration: none;
           list-style-type: none; } }
 
@@ -908,10 +911,12 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-bottom: 5rem; }
+      margin: 5rem 0;
+      position: relative; }
       .home .introduction-container .storyteller img,
       .home .introduction-container .friend img {
-        height: 100vh; }
+        height: 100vh;
+        width: 55%; }
     .home .introduction-container .storytellers-text, .home .introduction-container .observer-text, .home .introduction-container .friend-text {
       position: absolute;
       font-family: "EB Garamond", Courier, serif;
@@ -935,9 +940,13 @@ object {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
           -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse; }
+              flex-direction: row-reverse;
+      position: relative; }
       .home .introduction-container .observer img {
-        height: 100vh; } }
+        height: 100vh;
+        width: 50vw; }
+      .home .introduction-container .observer .about-us {
+        left: 0; } }
 
 @media (min-width: 800px) {
   .home .observer-title {
@@ -954,7 +963,8 @@ object {
   font-size: 1.3rem;
   outline-offset: -14px;
   background-color: #CC9785;
-  outline: 2px solid #FFFFFF; }
+  outline: 2px solid #FFFFFF;
+  position: absolute; }
   .home .browse-weddings a,
   .home .about-us a,
   .home .connect a {
