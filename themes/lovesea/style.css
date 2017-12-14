@@ -948,10 +948,10 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  font-weight: 100; }
+  font-weight: 100;
+  background-color: #FFFFFF; }
   .follow-instagram span {
     font-weight: bold; }
-  background-color: #FFFFFF; }
   @media (min-width: 800px) {
     .follow-instagram {
       width: 30%;
@@ -968,29 +968,30 @@ object {
   margin-bottom: 1rem;
   z-index: -1; }
 
-.instagram-carousel-container .fa-angle-left {
-  position: absolute;
-  bottom: 8rem;
-  left: -3rem;
-  font-size: 7rem;
-  width: 38px;
-  z-index: 3;
-  color: #CC9785;
-  background-color: transparent;
-  border: none;
-  outline: none; }
-
-.instagram-carousel-container .fa-angle-right {
-  position: absolute;
-  bottom: 8rem;
-  right: -2rem;
-  font-size: 7rem;
-  width: 38px;
-  z-index: 3;
-  color: #CC9785;
-  background-color: transparent;
-  border: none;
-  outline: none; }
+.instagram-carousel-container {
+  z-index: -1; }
+  .instagram-carousel-container .fa-angle-left {
+    position: absolute;
+    bottom: 8rem;
+    left: -3rem;
+    font-size: 7rem;
+    width: 38px;
+    z-index: 3;
+    color: #CC9785;
+    background-color: transparent;
+    border: none;
+    outline: none; }
+  .instagram-carousel-container .fa-angle-right {
+    position: absolute;
+    bottom: 8rem;
+    right: -2rem;
+    font-size: 7rem;
+    width: 38px;
+    z-index: 3;
+    color: #CC9785;
+    background-color: transparent;
+    border: none;
+    outline: none; }
 
 .owl-item {
   display: -webkit-box;
@@ -1136,37 +1137,6 @@ object {
 
 .tab-details {
   display: none;
-  -moz-column-width: 13em;
-  -webkit-column-width: 13em;
-  -moz-column-gap: 1em;
-  -webkit-column-gap: 1em;
-  width: 70vw;
-  margin: 0 auto; }
-
-.popup {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: fixed;
-  top: 0px;
-  left: 0px; }
-
-.popup-inner {
-  max-width: 700px;
-  width: 90%;
-  position: fixed;
-  padding: 40px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.gallery-modal-link {
-  display: inline-block;
-  margin: 0.25rem;
-  width: 100%; }
-
-.tab-details {
   -moz-column-width: 13em;
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
