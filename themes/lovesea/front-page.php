@@ -47,47 +47,45 @@ get_header(); ?>
 
 			<section class="introduction-container">
 				<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
+<!-- _____storyteller_______________ -->
 					<div id="storyteller" class="storyteller">
 
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'large' ); ?>
 						<?php endif; ?>
 
-						<?php
-							$loop = CFS()->get( 'we_are_story_tellers' );
+						<?php $loop = CFS()->get( 'we_are_story_tellers' ); foreach ( $loop as $row ) :?>  
 
-							foreach ( $loop as $row ) :
-						?> 
-
-						<div class="we-are-story-tellers"><img class="storytellers-image" src="<?php	echo $row['we_are_story_tellers_image']; ?>" alt="">
-
-							<h1>	<?php echo $row['we_are_story_tellers_title']; ?> </h1>
-							<?php echo $row['we_are_story_tellers_link']; ?> 
+						<div class="we-are-story-tellers">
+							<img class="storytellers-image" src="<?php	echo $row['we_are_story_tellers_image']; ?>" alt="">
+							<div class="storytellers-text">
+								<h1>	<?php echo $row['we_are_story_tellers_title']; ?> </h1>
+								<?php echo $row['we_are_story_tellers_link']; ?> 
+							</div>
 						</div>
-
-						<?php
-							endforeach;
-						?>
+						<?php endforeach; ?>
 
 						<button class="browse-weddings"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">
 						<?php echo $row['we_are_story_tellers_link']; ?>Browse Weddings</a></button> 
+
 					</div>
 
+
+<!-- _________observer______________ -->
 					<div class="observer">
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'large' ); ?>
 						<?php endif; ?>
 
-						<?php
-							$loop = CFS()->get( 'we_are_observers' );
-							foreach ( $loop as $row ) :
-						?> 
+						<?php $loop = CFS()->get( 'we_are_observers' ); foreach ( $loop as $row ) : ?> 
 
-						<div class="we-are-observer"><img class="observer-image" src="<?php	echo $row['we_are_observers_image']; ?>" alt="">
-							<h1>	<?php echo $row['we_are_observers_title']; ?> </h1>
-							<?php echo $row['we_are_observers_link']; ?> 
-						</div>	
+							<img class="front-observer-image" src="<?php	echo $row['we_are_observers_image']; ?>" alt="">
+
+								<h1 class="observer-title">	<?php echo $row['we_are_observers_title']; ?> </h1>
+								
+								<?php echo $row['we_are_observers_link']; ?> 
+
+
 
 						<?php
 							endforeach;
@@ -97,6 +95,9 @@ get_header(); ?>
 						<?php echo $row['we_are_observers_link']; ?>About Us</a></button> 
 					</div> 
 
+
+
+<!-- ____________friend_______________ -->
 					<div class="friend">
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'large' ); ?>
@@ -107,9 +108,12 @@ get_header(); ?>
 							foreach ( $loop as $row ) :
 						?> 
 
-						<div class="we-are-your-friend"><img class="friend-image" src="<?php echo $row['we_are_your_friend_image']; ?>" alt="">
-							<h1>	<?php echo $row['we_are_your_friend_title']; ?> </h1>
-							<?php echo $row['we_are_your_friend_link']; ?> 
+						<div class="we-are-your-friend">
+							<img class="friend-image" src="<?php echo $row['we_are_your_friend_image']; ?>" alt="">
+							<div class="friend-text">
+								<h1>	<?php echo $row['we_are_your_friend_title']; ?> </h1>
+								<?php echo $row['we_are_your_friend_link']; ?> 
+							</div>
 						</div>	
 
 						<?php
@@ -120,11 +124,13 @@ get_header(); ?>
 						<?php echo $row['we_are_your_friend_link']; ?>Let's Talk</a></button> 
 					</div>
 
+
+<!-- _________carousel_________ -->
 					<div class="instagram-carousel-container"> 
 						<div class="follow-instagram-header">
 							<h2 class="follow-instagram">follow along on <span class="instagram"> Instagram</span> </h2>
-							<button class="fa fa-angle-left"><i></i></button>
-							<button class="fa fa-angle-right"><i></i></button>
+							<!-- <button class="fa fa-angle-left"><i></i></button>
+							<button class="fa fa-angle-right"><i></i></button> -->
 						</div>
 						<div class="owl-carousel">
 				

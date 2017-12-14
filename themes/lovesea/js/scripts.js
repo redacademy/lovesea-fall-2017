@@ -40,7 +40,7 @@ $(window).scroll(function() {
 $('.gallery-modal-link').on('click', function(event){
   event.preventDefault();
 
-  var imageUrl = $(this).data("image-url");
+  var imageUrl = $(this).data('image-url');
 
   $('[data-image-url="' + imageUrl + '"]').addClass("popup popup-inner");
    

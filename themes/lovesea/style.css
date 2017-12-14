@@ -529,7 +529,7 @@ a {
 .fixed-menu {
   width: 100vw;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.85); }
+  background-color: rgba(222, 222, 222, 0.7); }
   .fixed-menu .toggle-menu-button {
     display: block;
     border: none;
@@ -546,7 +546,7 @@ a {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     line-height: 2;
-    background-color: rgba(255, 255, 255, 0.85); }
+    background-color: rgba(222, 222, 222, 0.7); }
     .fixed-menu .menu-list li {
       font-family: "EB Garamond", Courier, serif;
       font-style: italic; }
@@ -844,10 +844,15 @@ object {
     width: 620px;
     margin-bottom: 4%; } }
 
+.home .site-main {
+  width: 65vw;
+  margin: 0 auto; }
+
 .home .site-content {
   text-align: center; }
   .home .site-content a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #BF8472; }
 
 .home .hero {
   min-height: 50vh; }
@@ -863,11 +868,11 @@ object {
       min-height: 90vh; } }
   .home .hero .front-center-text {
     height: 200px;
-    width: 350px;
+    width: 100vw;
     margin: 18rem auto; }
     @media (min-width: 800px) {
       .home .hero .front-center-text {
-        margin: 24% auto 0;
+        margin: 30% auto 0;
         position: inherit; } }
   .home .hero .front-center-logo {
     -webkit-transform: translate(-50%, -50%);
@@ -896,12 +901,50 @@ object {
     .home .introduction-container .storyteller,
     .home .introduction-container .friend {
       text-align: left;
-      width: 23rem;
-      margin-left: 30rem; }
+      height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 5rem; }
+      .home .introduction-container .storyteller img,
+      .home .introduction-container .friend img {
+        height: 100vh; }
+    .home .introduction-container .storytellers-text, .home .introduction-container .observer-text, .home .introduction-container .friend-text {
+      position: absolute;
+      font-family: "EB Garamond", Courier, serif;
+      font-style: italic; }
+    .home .introduction-container .we-are-observer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 5rem; }
     .home .introduction-container .observer {
-      height: 50vh;
-      width: 29.5rem;
-      text-align: right; } }
+      height: 100vh;
+      width: 29.5rem; } }
+  @media (min-width: 800px) and (min-width: 800px) {
+    .home .introduction-container .observer {
+      text-align: right;
+      margin-left: 19rem;
+      margin-bottom: 5rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+      .home .introduction-container .observer img {
+        height: 100vh; } }
+
+@media (min-width: 800px) {
+  .home .observer-title {
+    position: absolute;
+    left: 0;
+    bottom: -75rem;
+    width: 54%; } }
 
 .home .browse-weddings,
 .home .about-us,
@@ -948,10 +991,10 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  font-weight: 100; }
+  font-weight: 100;
+  background-color: #FFFFFF; }
   .follow-instagram span {
     font-weight: bold; }
-  background-color: #FFFFFF; }
   @media (min-width: 800px) {
     .follow-instagram {
       width: 30%;
@@ -968,7 +1011,8 @@ object {
   margin-bottom: 1rem;
   z-index: -1; }
 
-.instagram-carousel-container .fa-angle-left {
+.instagram-carousel-container .owl-prev {
+  font-size: 1.5rem;
   position: absolute;
   bottom: 8rem;
   left: -3rem;
@@ -980,7 +1024,8 @@ object {
   border: none;
   outline: none; }
 
-.instagram-carousel-container .fa-angle-right {
+.instagram-carousel-container .owl-next {
+  font-size: 1.5rem;
   position: absolute;
   bottom: 8rem;
   right: -2rem;
@@ -1020,6 +1065,7 @@ object {
     display: none; }
     @media (min-width: 800px) {
       .scroll-arrow .scroll {
+        display: inline;
         background-color: transparent;
         border: none; }
         .scroll-arrow .scroll h1 {
@@ -1136,37 +1182,6 @@ object {
 
 .tab-details {
   display: none;
-  -moz-column-width: 13em;
-  -webkit-column-width: 13em;
-  -moz-column-gap: 1em;
-  -webkit-column-gap: 1em;
-  width: 70vw;
-  margin: 0 auto; }
-
-.popup {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: fixed;
-  top: 0px;
-  left: 0px; }
-
-.popup-inner {
-  max-width: 700px;
-  width: 90%;
-  position: fixed;
-  padding: 40px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.gallery-modal-link {
-  display: inline-block;
-  margin: 0.25rem;
-  width: 100%; }
-
-.tab-details {
   -moz-column-width: 13em;
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
