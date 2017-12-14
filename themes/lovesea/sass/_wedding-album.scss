@@ -112,6 +112,7 @@
 // portrait styling
 
 .tab-portraits {
+  display: none;
   -moz-column-width: 13em;
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
@@ -127,6 +128,7 @@
 // detail styling
 
 .tab-details {
+  display: none;
   -moz-column-width: 13em;
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
@@ -166,9 +168,6 @@
 // tab sections
 
 .wedding-page-content {
-
-
-
 
 }
 

@@ -41,7 +41,7 @@ get_header(); ?>
 
     </div>
 		<button class="about-us">
-			<a href ="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
 		</button> <!-- .about-us button -->
 
    

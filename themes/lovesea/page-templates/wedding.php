@@ -51,9 +51,9 @@ get_header(); ?>
 								// the_title('<p class="album-name">', '</p>'); 
 								?>
 								<?php the_content('<p class="album-location">', '</p>'); ?>
-								</a> <!-- .wedding-album -->
+								</a> 
 							</div>
-							</li>
+							</li> <!-- .wedding-album -->
             <?php 
 							endforeach; 
 							wp_reset_postdata();
@@ -61,8 +61,9 @@ get_header(); ?>
 				</ul><!-- .weddings  -->
 
 <!-- TODO tabs -->
-        <h1 class="tab-section-title">Portrait</h1>
+       
 				<div id="label2" class="tab-portraits" class="label">
+				<div><h1 class="tab-section-title">Portrait</h1></div>
 				 <?php 
 				 
 				 $portrait_gallery_args = array(
@@ -104,12 +105,16 @@ get_header(); ?>
 							endforeach; 
 							wp_reset_postdata();
 						 ?>
-						 
+		<button class="about-us">
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
+		</button> <!-- .about-us button -->
+
 			 </div> <!-- .portraits  -->
 			 
 			 <!-- TODO add TABS  -->
-       <h1 class="tab-section-title">details</h1>
+       
 			 <div id="label3" class="tab-details" class="label">
+			 <h1 class="tab-section-title">details</h1>
 				 <?php 
 				 
 				 $portrait_gallery_args = array(
@@ -128,7 +133,7 @@ get_header(); ?>
 
 <?php	foreach ( $portrait_gallery as $post ) : setup_postdata( $post ); ?>
 
-<
+
 <a class="gallery-modal-link"  href="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" 
 							 data-image-url="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
 							
@@ -142,6 +147,11 @@ get_header(); ?>
 <?php
 		endforeach; 
 		wp_reset_postdata(); ?>
+
+		<button class="about-us">
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
+		</button> <!-- .about-us button -->
+
 			    </div> <!-- .tab-details  -->
 				</div> <!-- .wedding-page-content -->
 			</div><!-- .tab-gallery-wrapper -->
