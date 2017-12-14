@@ -45,6 +45,8 @@ get_header(); ?>
                 <?php echo CFS()->get( 'what_we_do_title' ); ?>
               </div>
 
+              <div class="what-we-do-wrapper">
+              <div class="block-one-wrapper">
               <div class="what-we-do-image-one"><img src="<?php
               echo CFS()->get( 'what_we_do_image_one' ); 
               ?>" alt="girl blowing confetti" class="what-we-do-image"></img>
@@ -53,16 +55,20 @@ get_header(); ?>
               <div class="what-we-do-text-one">
               <?php echo CFS()->get( 'what_we_do_text_one' ); ?>
               </div>
-
-              <div class="what-we-do-text-two">
-              <?php echo CFS()->get( 'what_we_do_text_two' ); ?>
               </div>
 
+              <div class="block-two-wrapper">
               <div class="what-we-do-image-two"><img src="<?php
               echo CFS()->get( 'what_we_do_image_two' ); 
               ?>" alt="bridesmaids approach a wedding" class="what-we-do-image-two"></img>
               </div>
 
+              <div class="what-we-do-text-two">
+              <?php echo CFS()->get( 'what_we_do_text_two' ); ?>
+              </div>
+              </div>
+
+              <div class="block-one-wrapper">
               <div class="what-we-do-image-three"><img src="<?php
               echo CFS()->get( 'what_we_do_image_three' ); 
               ?>" alt="Newly married couple standing on a dock, the girl is holding a canoe." class="what-we-do-image-three"></img>
@@ -71,17 +77,20 @@ get_header(); ?>
               <div class="what-we-do-text-three">
               <?php echo CFS()->get( 'what_we_do_text_three' ); ?>
               </div>
-
-              <div class="what-we-do-text-four">
-              <?php echo CFS()->get( 'what_we_do_text_four' ); ?>
               </div>
 
+              <div class="block-two-wrapper">
               <div class="what-we-do-image-four"><img src="<?php
               echo CFS()->get( 'what_we_do_image_four' ); 
               ?>" alt="a wooden just married sign rests on the bow of a canoe." class="what-we-do-image-four"></img>
               </div>
 
+              <div class="what-we-do-text-four">
+              <?php echo CFS()->get( 'what_we_do_text_four' ); ?>
+              </div>
+              </div>
             </div>
+          </div>
    
           <div id="tab3" class="tab">
             <div class="accordion">
@@ -89,23 +98,23 @@ get_header(); ?>
                 <a class="accordion-section-title" href="#accordion-1">Our Philosophy</a>
         
                 <div id="accordion-1" class="accordion-section-content">
-                  <p>Heirloom godard truffaut meh wolf. Sustainable affogato raclette, lomo man bun adaptogen roof party selvage. Meditation readymade try-hard, plaid ethical tattooed swag four dollar toast. Ugh brooklyn street art, raw denim ennui shabby chic vexillologist lomo locavore YOLO roof party chicharrones sartorial vinyl green juice.</p>
+                  <?php echo CFS()->get( 'philosophy' ); ?>
                 </div><!--end .accordion-section-content-->
               </div><!--end .accordion-section-->
 
               <div class="accordion-section">
                 <a class="accordion-section-title" href="#accordion-2">FAQ</a>
         
-                <div id="accordion-1" class="accordion-section-content">
-                  <p>Heirloom godard truffaut meh wolf. Sustainable affogato raclette, lomo man bun adaptogen roof party selvage. Meditation readymade try-hard, plaid ethical tattooed swag four dollar toast. Ugh brooklyn street art, raw denim ennui shabby chic vexillologist lomo locavore YOLO roof party chicharrones sartorial vinyl green juice.</p>
+                <div id="accordion-2" class="accordion-section-content">
+                  <?php echo CFS()->get( 'frequently_asked_questions' ); ?>
                 </div><!--end .accordion-section-content-->
               </div><!--end .accordion-section-->
 
               <div class="accordion-section">
                 <a class="accordion-section-title" href="#accordion-3">Testimonials</a>
         
-                <div id="accordion-1" class="accordion-section-content">
-                  <p>Heirloom godard truffaut meh wolf. Sustainable affogato raclette, lomo man bun adaptogen roof party selvage. Meditation readymade try-hard, plaid ethical tattooed swag four dollar toast. Ugh brooklyn street art, raw denim ennui shabby chic vexillologist lomo locavore YOLO roof party chicharrones sartorial vinyl green juice.</p>
+                <div id="accordion-3" class="accordion-section-content">
+                  <?php echo CFS()->get( 'testimonials' ); ?>
                 </div><!--end .accordion-section-content-->
               </div><!--end .accordion-section-->
             </div><!--end .accordion-->

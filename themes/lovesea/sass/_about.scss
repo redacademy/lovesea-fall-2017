@@ -76,7 +76,7 @@
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  margin-bottom: 89px;
+  margin-bottom: 2.5rem;
     li {
       padding: 0 1.25rem;
       font-style: italic;
@@ -96,6 +96,58 @@
   .tab.active {
       display:block;
   }
+
+/*----- what we do -----*/
+
+.what-we-do-title {
+  font-size: 2rem;
+  font-style: italic;
+  color: $color__text-main;
+  text-align: center;
+  font-weight: 400;
+}
+
+.what-we-do-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  @include desktop {
+    width: 960px;
+    margin: 0 auto;
+  }
+  img {
+    width: 95%;
+    margin: 0 auto;
+    @include desktop {
+      width: 400px;
+      height: auto;
+      max-height: 375px;
+    }
+  }
+}
+
+.what-we-do-text-one,
+.what-we-do-text-two,
+.what-we-do-text-three,
+.what-we-do-text-four {
+  width: 95%;
+  text-align: justify;
+  @include desktop {
+    width: 55%;
+    text-align: justify;
+  }
+}
+
+.block-one-wrapper {
+  display: flex;
+
+}
+
+.block-two-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
 
 /*----- Accordion -----*/
 .accordion, .accordion * {
@@ -126,7 +178,7 @@
 }
 
 .accordion-section-title.active, .accordion-section-title:hover {
-  background:rgba(0,0,0,0.08);
+  background:rgba(0,0,0,0.03);
   /* Type */
   text-decoration:none;
 }
@@ -143,4 +195,12 @@
 .accordion-section-content {
   padding:15px;
   display:none;
+}
+
+.accordion-section-title.active {
+  display: inline-block;
+}
+
+.accordion-section-content.open {
+  border-bottom: 1px solid $color__text-secondary;
 }

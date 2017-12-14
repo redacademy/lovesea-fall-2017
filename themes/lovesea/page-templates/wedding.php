@@ -12,20 +12,23 @@ get_header(); ?>
 		<?php echo CFS()->get( 'wedding_hero_image' );?>
 	</header><!-- .page-header -->
 
-		<ul class="wedding-tab-links">
-				<li class="active"><a href="#galleries">galleries</a></li>
-				<li><a href="#portraits">portraits</a></li>
-				<li><a href="#details">details</a></li>
+			
+<div class="tab-gallery-wrapper">
+     
+		 <ul class="wedding-tab-links">
+				<li class="active"><a href="#label1">galleries</a></li>
+				<li><a href="#label2">portraits</a></li>
+				<li><a href="#label3">details</a></li>
 			</ul><!-- .tab-links -->
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
 			
 			<div class="wedding-logo">
 				<img class="wedding-page-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
      </div> <!-- .wedding-logo -->
-			
-		 <div class="gallery-wrapper">
-				
-				<ul id="weddings" class="weddings" class="active">
+		 
+		 <div class="wedding-page-content">
+		 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
+				<ul id="label1" class="weddings" class="label" class="active">
 					<?php $wedding_gallery_args = array( 'posts_per_page' => 6, 
 																							 'post_type' => 'gallery', 
 																							 'order' => 'ASC' );
@@ -48,18 +51,19 @@ get_header(); ?>
 								// the_title('<p class="album-name">', '</p>'); 
 								?>
 								<?php the_content('<p class="album-location">', '</p>'); ?>
-								</a> <!-- .wedding-album -->
+								</a> 
 							</div>
-							</li>
+							</li> <!-- .wedding-album -->
             <?php 
 							endforeach; 
 							wp_reset_postdata();
 						 ?>
 				</ul><!-- .weddings  -->
 
-
-
-				<div id="portraits" class="portraits">
+<!-- TODO tabs -->
+       
+				<div id="label2" class="tab-portraits" class="label">
+				<div><h1 class="tab-section-title">Portrait</h1></div>
 				 <?php 
 				 
 				 $portrait_gallery_args = array(
@@ -75,32 +79,42 @@ get_header(); ?>
 
 					$portrait_gallery = get_posts( $portrait_gallery_args );?>
 
-<h1>Portrait</h1>
+
 <?php	foreach ( $portrait_gallery as $post ) : setup_postdata( $post ); ?>
 
-						<a class="gallery-modal-link" href="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" 
+<a class="gallery-modal-link"  href="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" 
 							 data-image-url="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
+			
 
-							<div class="portrait-album">
+
+							<div class="portrait-album" data-image-url="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" >
 									<?php if ( has_post_thumbnail() ) :
 									
-									
-
+					
 									the_post_thumbnail( $post->ID, 'large' );
 									
 									endif; ?>
 							
 						
 						</div> <!-- .portrait-album -->
-							</a>
+							</a> <!-- .gallery-modal-link -->
+					
+				
 
 						 <?php
 							endforeach; 
 							wp_reset_postdata();
 						 ?>
-       </div> <!-- .portraits  -->
+		<button class="about-us">
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
+		</button> <!-- .about-us button -->
 
-			 <div id="details" class="details">
+			 </div> <!-- .portraits  -->
+			 
+			 <!-- TODO add TABS  -->
+       
+			 <div id="label3" class="tab-details" class="label">
+			 <h1 class="tab-section-title">details</h1>
 				 <?php 
 				 
 				 $portrait_gallery_args = array(
@@ -116,37 +130,37 @@ get_header(); ?>
 
 					$portrait_gallery = get_posts( $portrait_gallery_args );?>
 
-<h1>details</h1>
+
 <?php	foreach ( $portrait_gallery as $post ) : setup_postdata( $post ); ?>
 
-						<a class="gallery-modal-link" href="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" 
+
+<a class="gallery-modal-link"  href="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" 
 							 data-image-url="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
-
-							<div class="detail-album">
-									<?php if ( has_post_thumbnail() ) :
-									
-									
-
-									the_post_thumbnail( $post->ID, 'large' );
-									
-									endif; ?>
 							
-						
-						</div> <!-- .details-album -->
-							</a>
+							 <div class="detail-album">
+									<?php if ( has_post_thumbnail() ) :
+									the_post_thumbnail( $post->ID, 'large' );
+									endif; ?>
+						  </div> <!-- .details-album -->
+							</a> <!-- .gallery-modal-link -->
 
-						 <?php
-							endforeach; 
-							wp_reset_postdata();
-						 ?>
-			 </div> <!-- .details  -->
-			 
-			</div><!-- .gallery-wrapper -->
+<?php
+		endforeach; 
+		wp_reset_postdata(); ?>
+
+		<button class="about-us">
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
+		</button> <!-- .about-us button -->
+
+			    </div> <!-- .tab-details  -->
+				</div> <!-- .wedding-page-content -->
+			</div><!-- .tab-gallery-wrapper -->
 			
 			<div class="wedding-logo">
 				<img class="wedding-page-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
 		 </div> <!-- .wedding-logo -->
 		 
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
