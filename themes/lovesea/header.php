@@ -43,10 +43,10 @@
 	<nav class="fixed-menu">
 		<button id="toggle-menu-button" class="toggle-menu-button">&#9776;</button>
 		<ul id="menu-list" class="menu-list">
-			<li id="menu-item"><a href="<?php echo get_home_url(); ?>">Home</a></li>
-			<li class="menu-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">Weddings</a></li>
-			<li class="menu-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">About</a></li>
-			<li class="menu-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">Connect</a></li>
+			<li id="menu-item"><a href="<?php echo get_home_url(); ?>">home</a></li>
+			<li class="menu-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">weddings</a></li>
+			<li class="menu-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">about</a></li>
+			<li class="menu-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">connect</a></li>
 		</ul>	
 	</nav>
 
