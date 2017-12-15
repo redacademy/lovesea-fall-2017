@@ -30,3 +30,16 @@
 	}
 }
 
+@mixin pink-button-mobile {
+	width: 45vw;
+	height: 50px;
+	font-size: 1rem;
+	outline-offset: -8px;      
+	background-color: $color__accent;
+	outline: $border__white-solid;
+	a {
+		text-decoration: none;
+		color: $color__background-body;
+	}
+}
+

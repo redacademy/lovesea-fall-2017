@@ -95,9 +95,9 @@ function lovesea() {
 
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), false, true);
 
-	wp_enqueue_script('smoothscroll', get_template_directory_uri() . '/build/js/smoothscroll.min.js', array('jquery'), false, true);
+	wp_enqueue_script( 'smoothscroll', get_template_directory_uri() . '/build/js/smoothscroll.min.js', array('jquery'), false, true);
 
-	wp_enqueue_script('lovesea-accordion', get_template_directory_uri() . '/build/js/accordion.min.js', array('jquery'), false, true);
+	wp_enqueue_script( 'lovesea-accordion', get_template_directory_uri() . '/build/js/accordion.min.js', array('jquery'), false, true);
 
 	wp_enqueue_script( 'lovesea-spectra', 'https://cdnjs.cloudflare.com/ajax/libs/spectragram/1.0.3/spectragram.min.js', array('jquery'), false, false );
 	wp_enqueue_script( 'lovesea-owl', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js', array('jquery', 'lovesea-spectra'), false, true );

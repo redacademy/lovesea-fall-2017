@@ -14,10 +14,9 @@
 
         $('.owl-carousel').owlCarousel({
             //not responsive for new version__JS?
-            items: 1,
-            itemsDesktop: [2000,4], // 4 items between 1000px and 901px
-            itemsDesktopSmall: [800,4], // 3 items betweem 900px and 601px
-            itemsMobile: [600,1], // 1 items between 600 and 0
+            // itemsDesktop: [2000,4], // 4 items between 1000px and 901px
+            // itemsDesktopSmall: [800,4], // 3 items betweem 900px and 601px
+            // itemsMobile: [600,1], // 1 items between 600 and 0
             loop: true,
             margin: 10,
             autoplay: true,
@@ -26,6 +25,18 @@
             nav: true,
             navText: ['<', '>'],
             lazyLoad: true,
+            resonsiveClass:true,
+            responsive:{
+                0:{
+                    items: 1,
+                },
+                600:{
+                    items: 3,
+                },
+                1000:{
+                    items: 4,
+                },
+            }
         });
     }
     

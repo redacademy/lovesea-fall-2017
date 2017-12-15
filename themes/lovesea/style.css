@@ -514,7 +514,7 @@ a {
 .menu-list {
   position: fixed;
   text-align: left;
-  width: 100vw;
+  width: 38vw;
   margin: 0; }
   .menu-list li, .menu-list a {
     text-decoration: none;
@@ -529,7 +529,8 @@ a {
 .fixed-menu {
   width: 100vw;
   position: fixed;
-  background-color: rgba(222, 222, 222, 0.7); }
+  background-color: rgba(222, 222, 222, 0.7);
+  z-index: 5; }
   .fixed-menu .toggle-menu-button {
     display: block;
     border: none;
@@ -543,8 +544,6 @@ a {
         display: none; } }
   .fixed-menu .menu-list {
     display: none;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
     line-height: 2;
     background-color: rgba(222, 222, 222, 0.7); }
     .fixed-menu .menu-list li {
@@ -886,7 +885,8 @@ object {
     height: 205px;
     margin: 10rem auto;
     position: absolute;
-    left: 50%; }
+    left: 50%;
+    z-index: 6; }
     @media (min-width: 800px) {
       .home .hero .front-center-logo {
         margin: 5rem auto;
@@ -896,75 +896,94 @@ object {
         top: 7rem;
         left: 50%; } }
 
-.home .introduction-container {
-  height: 100%;
-  width: 65vw;
-  margin: 0 auto; }
+.home .introduction-container .we-are-story-tellers, .home .introduction-container .we-are-observer, .home .introduction-container .we-are-your-friend {
+  list-style: none; }
   @media (min-width: 800px) {
-    .home .introduction-container .storyteller,
-    .home .introduction-container .friend {
-      text-align: left;
-      height: 100vh;
+    .home .introduction-container .we-are-story-tellers, .home .introduction-container .we-are-observer, .home .introduction-container .we-are-your-friend {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      margin: 5rem 0;
-      position: relative; }
-      .home .introduction-container .storyteller img,
-      .home .introduction-container .friend img {
-        height: 100vh;
-        width: 55%; }
-    .home .introduction-container .storytellers-text, .home .introduction-container .observer-text, .home .introduction-container .friend-text {
-      position: absolute;
-      font-family: "EB Garamond", Courier, serif;
-      font-style: italic; }
-    .home .introduction-container .we-are-observer {
+              align-items: center; }
+      .home .introduction-container .we-are-story-tellers .storytellers-image, .home .introduction-container .we-are-story-tellers .friend-image, .home .introduction-container .we-are-observer .storytellers-image, .home .introduction-container .we-are-observer .friend-image, .home .introduction-container .we-are-your-friend .storytellers-image, .home .introduction-container .we-are-your-friend .friend-image {
+        width: 50vw; } }
+
+.home .introduction-container ul {
+  height: 100%;
+  width: 70vw;
+  margin: 0 auto;
+  padding: 0; }
+
+@media (min-width: 800px) {
+  .home .introduction-container ul:nth-child(odd) {
+    text-align: left;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5rem 0; }
+    .home .introduction-container ul:nth-child(odd) img {
+      height: 100vh;
+      width: 55%; }
+  .home .introduction-container .storytellers-text, .home .introduction-container .friend-text {
+    font-family: "EB Garamond", Courier, serif;
+    font-style: italic; } }
+  @media (min-width: 800px) and (min-width: 800px) {
+    .home .introduction-container .storytellers-text, .home .introduction-container .friend-text {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin-bottom: 5rem; }
-    .home .introduction-container .observer {
-      height: 100vh;
-      width: 29.5rem; } }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+@media (min-width: 800px) {
+  .home .introduction-container .observer-text {
+    font-family: "EB Garamond", Courier, serif;
+    font-style: italic; }
+  .home .introduction-container .we-are-observer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .home .introduction-container .observer {
+    height: 100vh; } }
   @media (min-width: 800px) and (min-width: 800px) {
     .home .introduction-container .observer {
       text-align: right;
-      margin-left: 19rem;
       margin-bottom: 5rem;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse;
-      position: relative; }
+      display: flex; }
       .home .introduction-container .observer img {
         height: 100vh;
         width: 50vw; }
       .home .introduction-container .observer .about-us {
         left: 0; } }
 
-@media (min-width: 800px) {
-  .home .observer-title {
-    position: absolute;
-    left: 0;
-    bottom: -75rem;
-    width: 54%; } }
-
 .home .browse-weddings,
 .home .about-us,
 .home .connect {
-  width: 300px;
-  height: 100px;
-  font-size: 1.3rem;
-  outline-offset: -14px;
+  width: 45vw;
+  height: 50px;
+  font-size: 1rem;
+  outline-offset: -8px;
   background-color: #CC9785;
-  outline: 2px solid #FFFFFF;
-  position: absolute; }
+  outline: 2px solid #FFFFFF; }
   .home .browse-weddings a,
   .home .about-us a,
   .home .connect a {
