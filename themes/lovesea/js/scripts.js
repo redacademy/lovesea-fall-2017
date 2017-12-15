@@ -47,12 +47,7 @@ $('.gallery-modal-link').on('click', function(event){
 });
 
 // CLOSE
-$('.site-content').on('click', function(event){
-event.preventDefault();
 
-$('.portrait-album').addClass('gallery-modal-link');
-
-});
 
 $('.tab-gallery-wrapper .wedding-tab-links a').on('click', function(e)  {
   var currentAttrValue = $(this).attr('href');
