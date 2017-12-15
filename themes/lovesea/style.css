@@ -529,7 +529,7 @@ a {
 .fixed-menu {
   width: 100vw;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.85); }
+  background-color: rgba(222, 222, 222, 0.7); }
   .fixed-menu .toggle-menu-button {
     display: block;
     border: none;
@@ -546,10 +546,12 @@ a {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     line-height: 2;
-    background-color: rgba(255, 255, 255, 0.85); }
+    background-color: rgba(222, 222, 222, 0.7); }
     .fixed-menu .menu-list li {
       font-family: "EB Garamond", Courier, serif;
-      font-style: italic; }
+      font-style: italic;
+      font-size: 1.5rem;
+      font-weight: 200; }
     @media (min-width: 800px) {
       .fixed-menu .menu-list {
         display: -webkit-box;
@@ -573,7 +575,8 @@ a {
         .fixed-menu ul.menu-list li, .fixed-menu ul.menu-list a {
           font-family: "EB Garamond", Courier, serif;
           font-style: italic;
-          font-weight: 500;
+          font-weight: 200;
+          font-size: 1.5rem;
           text-decoration: none;
           list-style-type: none; } }
 
@@ -844,10 +847,15 @@ object {
     width: 620px;
     margin-bottom: 4%; } }
 
+.home .site-main {
+  width: 65vw;
+  margin: 0 auto; }
+
 .home .site-content {
   text-align: center; }
   .home .site-content a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #BF8472; }
 
 .home .hero {
   min-height: 50vh; }
@@ -863,11 +871,11 @@ object {
       min-height: 90vh; } }
   .home .hero .front-center-text {
     height: 200px;
-    width: 350px;
+    width: 100vw;
     margin: 18rem auto; }
     @media (min-width: 800px) {
       .home .hero .front-center-text {
-        margin: 24% auto 0;
+        margin: 30% auto 0;
         position: inherit; } }
   .home .hero .front-center-logo {
     -webkit-transform: translate(-50%, -50%);
@@ -896,12 +904,56 @@ object {
     .home .introduction-container .storyteller,
     .home .introduction-container .friend {
       text-align: left;
-      width: 23rem;
-      margin-left: 30rem; }
+      height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 5rem 0;
+      position: relative; }
+      .home .introduction-container .storyteller img,
+      .home .introduction-container .friend img {
+        height: 100vh;
+        width: 55%; }
+    .home .introduction-container .storytellers-text, .home .introduction-container .observer-text, .home .introduction-container .friend-text {
+      position: absolute;
+      font-family: "EB Garamond", Courier, serif;
+      font-style: italic; }
+    .home .introduction-container .we-are-observer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 5rem; }
     .home .introduction-container .observer {
-      height: 50vh;
-      width: 29.5rem;
-      text-align: right; } }
+      height: 100vh;
+      width: 29.5rem; } }
+  @media (min-width: 800px) and (min-width: 800px) {
+    .home .introduction-container .observer {
+      text-align: right;
+      margin-left: 19rem;
+      margin-bottom: 5rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      position: relative; }
+      .home .introduction-container .observer img {
+        height: 100vh;
+        width: 50vw; }
+      .home .introduction-container .observer .about-us {
+        left: 0; } }
+
+@media (min-width: 800px) {
+  .home .observer-title {
+    position: absolute;
+    left: 0;
+    bottom: -75rem;
+    width: 54%; } }
 
 .home .browse-weddings,
 .home .about-us,
@@ -911,7 +963,8 @@ object {
   font-size: 1.3rem;
   outline-offset: -14px;
   background-color: #CC9785;
-  outline: 2px solid #FFFFFF; }
+  outline: 2px solid #FFFFFF;
+  position: absolute; }
   .home .browse-weddings a,
   .home .about-us a,
   .home .connect a {
@@ -948,7 +1001,10 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
+  font-weight: 100;
   background-color: #FFFFFF; }
+  .follow-instagram span {
+    font-weight: bold; }
   @media (min-width: 800px) {
     .follow-instagram {
       width: 30%;
@@ -965,6 +1021,32 @@ object {
   margin-bottom: 1rem;
   z-index: -1; }
 
+.instagram-carousel-container .owl-prev {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 8rem;
+  left: -3rem;
+  font-size: 7rem;
+  width: 38px;
+  z-index: 3;
+  color: #CC9785;
+  background-color: transparent;
+  border: none;
+  outline: none; }
+
+.instagram-carousel-container .owl-next {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 8rem;
+  right: -2rem;
+  font-size: 7rem;
+  width: 38px;
+  z-index: 3;
+  color: #CC9785;
+  background-color: transparent;
+  border: none;
+  outline: none; }
+
 .owl-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -973,9 +1055,9 @@ object {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
   .owl-item img {
-    padding: 8px;
     height: 200px;
-    width: 200px; }
+    width: 200px;
+    border: 2px solid rgba(222, 222, 222, 0.7); }
 
 .home .hero .shrink {
   max-width: 50px;
@@ -993,6 +1075,7 @@ object {
     display: none; }
     @media (min-width: 800px) {
       .scroll-arrow .scroll {
+        display: inline;
         background-color: transparent;
         border: none; }
         .scroll-arrow .scroll h1 {
@@ -1094,10 +1177,7 @@ object {
   font-size: 18px; }
 
 .tab-portraits {
-<<<<<<< HEAD
   display: none;
-=======
->>>>>>> 419ba47b2d0121a7bd07d159cc15c08e9869e3e6
   -moz-column-width: 13em;
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
@@ -1106,7 +1186,6 @@ object {
   margin: 0 auto; }
 
 .portrait-album {
-<<<<<<< HEAD
   display: inline-block;
   margin: 0.25rem;
   width: 100%; }
@@ -1139,46 +1218,10 @@ object {
   transform: translate(-50%, -50%); }
 
 .gallery-modal-link {
-=======
->>>>>>> 419ba47b2d0121a7bd07d159cc15c08e9869e3e6
   display: inline-block;
   margin: 0.25rem;
   width: 100%; }
 
-<<<<<<< HEAD
-=======
-.tab-details {
-  -moz-column-width: 13em;
-  -webkit-column-width: 13em;
-  -moz-column-gap: 1em;
-  -webkit-column-gap: 1em;
-  width: 70vw;
-  margin: 0 auto; }
-
-.popup {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: fixed;
-  top: 0px;
-  left: 0px; }
-
-.popup-inner {
-  max-width: 700px;
-  width: 90%;
-  position: fixed;
-  padding: 40px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.gallery-modal-link {
-  display: inline-block;
-  margin: 0.25rem;
-  width: 100%; }
-
->>>>>>> 419ba47b2d0121a7bd07d159cc15c08e9869e3e6
 #label {
   display: none; }
 
@@ -1188,6 +1231,11 @@ object {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.page-id-54 .site-content .content-area .entry-header.custom-hero img {
+  height: 300px;
+  max-width: 100%;
+  width: 100%; }
+
 .page-id-54 .site-content .content-area .entry-title {
   text-align: center; }
   @media (min-width: 800px) {
@@ -1223,32 +1271,29 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .who-we-are-wrapper .who-we-are-image {
-    margin-left: auto; }
-    @media (min-width: 800px) {
-      .who-we-are-wrapper .who-we-are-image {
-        max-height: 516px;
-        max-width: 400px;
-        height: auto;
-        width: auto; } }
-    .who-we-are-wrapper .who-we-are-image img {
-      max-width: 800px;
+  @media (min-width: 800px) {
+    .who-we-are-wrapper .who-we-are-image {
+      max-height: 516px;
+      max-width: 400px;
       height: auto;
-      margin: 0 auto;
-      width: 90%; }
+      width: auto;
+      margin: 0 1rem;
+      padding-right: 1rem; } }
+  .who-we-are-wrapper .who-we-are-image img {
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    width: 90%;
+    float: left; }
   .who-we-are-wrapper .who-we-are-text {
     text-align: justify;
-    margin: 0 0 0 auto;
+    margin: 0 1.5rem 0 0;
     color: #415468;
     letter-spacing: 1.1px;
     font-weight: lighter;
     line-height: 120%; }
     @media (min-width: 800px) {
       .who-we-are-wrapper .who-we-are-text {
-        max-width: 600px;
-        max-height: 529px;
-        width: auto;
-        height: auto;
         font-size: 18px; } }
 
 .about-sub-pages {
@@ -1285,6 +1330,10 @@ object {
   color: #415468;
   text-align: center;
   font-weight: 400; }
+  @media (min-width: 800px) {
+    .what-we-do-title {
+      font-size: 3rem;
+      margin-bottom: 4rem; } }
 
 .what-we-do-wrapper {
   display: -webkit-box;
@@ -1310,19 +1359,43 @@ object {
 .what-we-do-text-three,
 .what-we-do-text-four {
   width: 95%;
-  text-align: justify; }
+  text-align: justify;
+  letter-spacing: 1.1px;
+  line-height: 120%;
+  font-weight: lighter; }
   @media (min-width: 800px) {
     .what-we-do-text-one,
     .what-we-do-text-two,
     .what-we-do-text-three,
     .what-we-do-text-four {
       width: 55%;
-      text-align: justify; } }
+      text-align: justify;
+      font-size: 18px; } }
+
+@media (min-width: 800px) {
+  .what-we-do-text-one,
+  .what-we-do-text-three {
+    padding: 0 0 1.5rem 2.5rem; } }
+
+@media (min-width: 800px) {
+  .what-we-do-text-two,
+  .what-we-do-text-four {
+    padding-right: 2.5rem; } }
+
+@media (min-width: 800px) {
+  .what-we-do-text-one {
+    padding-top: 0.5rem; } }
 
 .block-one-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .block-two-wrapper {
   display: -webkit-box;
@@ -1331,7 +1404,14 @@ object {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; }
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem; }
 
 /*----- Accordion -----*/
 .accordion, .accordion * {
@@ -1379,6 +1459,29 @@ object {
 
 .accordion-section-content.open {
   border-bottom: 1px solid #BF8472; }
+
+/*----- Branding -----*/
+.monogram-logo {
+  width: 42px;
+  height: 70px;
+  display: block;
+  margin: 0 auto; }
+
+.about-contact-us {
+  width: 300px;
+  height: 100px;
+  font-size: 1.3rem;
+  outline-offset: -14px;
+  background-color: #CC9785;
+  outline: 2px solid #FFFFFF;
+  display: block;
+  margin: 1.5rem auto 5rem auto;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-style: italic; }
+  .about-contact-us a {
+    text-decoration: none;
+    color: #FFFFFF; }
 
 .site-footer {
   border-top: 1px solid #CC9785;

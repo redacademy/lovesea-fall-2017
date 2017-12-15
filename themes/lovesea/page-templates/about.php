@@ -5,7 +5,7 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
       <header class="entry-header custom-hero">
-      <?php echo CFS()->get( 'about_header_image' );	?>
+      <img src= '<?php echo CFS()->get( 'about_header_image' );	?>'>
       </header>
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="container">
@@ -124,6 +124,10 @@ get_header(); ?>
           </div>
         </div>
       </article>
+      <div class="website-logo">
+        <img class="monogram-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
+        <button class="about-contact-us"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">Let's Talk</a></button> 
+     </div> <!-- .wedding-logo -->
     </main>
   </div>
 <?php get_footer(); ?>

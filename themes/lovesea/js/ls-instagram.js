@@ -8,46 +8,27 @@
         $(window).on('load', function () {
             createCarousel();
         });
-
     };
 
     var createCarousel = function () {
 
         $('.owl-carousel').owlCarousel({
-            // stagePadding: 10,
-            loop:true,
-            // margin:10,
-            autoplay:true,
-            autoplayTimeout:1000,
-            autoplayHoverPause:true,
+            //not responsive for new version__JS?
+            items: 1,
+            itemsDesktop: [2000,4], // 4 items between 1000px and 901px
+            itemsDesktopSmall: [800,4], // 3 items betweem 900px and 601px
+            itemsMobile: [600,1], // 1 items between 600 and 0
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
             nav: true,
-
-            itemsDesktop : [1000,3], //5 items between 1000px and 901px
-            itemsDesktopSmall : [800,3], // betweem 900px and 601px
-            itemsMobile: [600,1], //2 items between 600 and 0
-            // itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-                
-            
+            navText: ['<', '>'],
+            lazyLoad: true,
         });
-
     }
- 
-//   Custom Navigation Events
-//   $(".next").click(function(){
-//     owl.trigger('owl.next');
-//   })
-//   $(".prev").click(function(){
-//     owl.trigger('owl.prev');
-//   })
-//   $(".play").click(function(){
-//     owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
-//   })
-//   $(".stop").click(function(){
-//     owl.trigger('owl.stop');
-//   })
-
-// });
-
+    
     var Spectra = {
         instaToken: '1443206686.4186d71.7b4c8a64377e4f31ad1b76e7ef649fb9',
         instaID: '4186d71dabda40669358e3260812ee53',
@@ -58,8 +39,6 @@
                 clientID: this.instaID
             };
 
-            // $('.site-header').append('<div class="owl-carousel"></div>');
-
             $('.owl-carousel').spectragram('getUserFeed', {
                 // max: 12,
                 query: 'btrischuk',
@@ -67,21 +46,12 @@
                 wrapEachWith: '<div class="item"></div>',
                 complete: spectagramComplete()
             });
-
-
         }
     };
 
     Spectra.init();
 
-    var owl = $('#owl-demo');
-    
-  $('.next').click(function(){
-    owl.trigger('owl.next');
-  })
-  $('.prev').click(function(){
-    owl.trigger('owl.prev');
-  })
+
 
 
 })(jQuery);

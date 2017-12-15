@@ -5,6 +5,14 @@
 .page-id-54 {
   .site-content {
     .content-area {
+
+      .entry-header.custom-hero {
+        img {
+          height: 300px;
+          max-width: 100%;
+          width: 100%;
+        }
+      }
       .entry-title {
         text-align: center;
         @include desktop {
@@ -18,6 +26,7 @@
     }
   }
 }
+
   .who-we-are-wrapper {
     display: flex;
     flex-direction: column;
@@ -36,13 +45,14 @@
     }
 
     .who-we-are-image {
-      margin-left: auto;
 
       @include desktop {
         max-height: 516px;
         max-width: 400px;
         height: auto;
         width: auto;
+        margin: 0 1rem;
+        padding-right: 1rem;
       }
 
       img {
@@ -50,21 +60,18 @@
         height: auto;
         margin: 0 auto;
         width: 90%;
+        float: left;
       }
     }
     .who-we-are-text {
       text-align: justify;
-      margin: 0 0 0 auto;
+      margin: 0 1.5rem 0 0;
       color: $color__text-main;
       letter-spacing: 1.1px;
       font-weight: lighter;
       line-height: 120%;
 
       @include desktop {
-        max-width: 600px;
-        max-height: 529px;
-        width: auto;
-        height: auto;
         font-size: 18px;
       }
     }
@@ -105,6 +112,10 @@
   color: $color__text-main;
   text-align: center;
   font-weight: 400;
+  @include desktop {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .what-we-do-wrapper {
@@ -131,20 +142,51 @@
 .what-we-do-text-four {
   width: 95%;
   text-align: justify;
+  letter-spacing:1.1px;
+  line-height: 120%;
+  font-weight: lighter;
   @include desktop {
     width: 55%;
     text-align: justify;
+    font-size: 18px;
+  }
+}
+
+.what-we-do-text-one,
+.what-we-do-text-three {
+  
+  @include desktop {
+    padding: 0 0 1.5rem 2.5rem;
+  }
+}
+
+.what-we-do-text-two,
+.what-we-do-text-four {
+  
+  @include desktop {
+    padding-right: 2.5rem;
+  }
+}
+
+.what-we-do-text-one{
+  
+  @include desktop {
+    padding-top: 0.5rem;
   }
 }
 
 .block-one-wrapper {
   display: flex;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .block-two-wrapper {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -203,4 +245,22 @@
 
 .accordion-section-content.open {
   border-bottom: 1px solid $color__text-secondary;
+}
+
+/*----- Branding -----*/
+
+.monogram-logo {
+  width: 42px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-contact-us {
+  @include pink-button;
+  display: block;
+  margin: 1.5rem auto 5rem auto;
+  text-decoration: none;
+  color: $color__background-body;
+  font-style: italic;
 }

@@ -37,6 +37,7 @@ function slug_masonry_init() { ?>
         });
     });
 </script>
+
 <?php }
 //add to wp_footer
 add_action( 'wp_footer', 'slug_masonry_init' );
