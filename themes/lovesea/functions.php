@@ -108,6 +108,16 @@ function lovesea() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// if(function_exists('rest_url')) {
+	// 	wp_enqueue_script( 'scripts', 'postdata',
+	// 	array(
+	// 		'post_id' => get_the_ID(),
+	// 		'theme uri' => get_stylesheet_directory_uri(),
+	// 		'rest_url' => rest_url('wp/v2/'), 
+	// 	)
+	// 	)
+	
 }
 
 

@@ -22,8 +22,7 @@ get_header(); ?>
 		</main><!-- #main -->
   </div><!-- #primary -->
   
-  <!-- TODO create a function similar to inhabitent extras.php for inline style -->
-  
+ 
 
 
 <?php get_footer(); ?>

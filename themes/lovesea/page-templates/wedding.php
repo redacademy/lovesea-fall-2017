@@ -16,9 +16,17 @@ get_header(); ?>
 <div class="tab-gallery-wrapper">
      
 		 <ul class="wedding-tab-links">
-				<li class="active"><a href="#label1">galleries</a></li>
-				<li><a href="#label2">portraits</a></li>
-				<li><a href="#label3">details</a></li>
+				<li class="active"><a class="categories"href="#label1"><?php
+              $props = CFS()->get_field_info( 'wedding_tab_one' );
+              echo $props['label'];
+              ?></a></li>
+				<li><a class="categories" href="#label2"><?php
+              $props = CFS()->get_field_info( 'wedding_tab_two' );
+              echo $props['label'];
+              ?></a></li>
+				<li><a class="categories" href="#label3"><?php
+              $props = CFS()->get_field_info( 'details_label' );
+              echo $props['label'];?></a></li>
 			</ul><!-- .tab-links -->
 		
 			
@@ -41,7 +49,7 @@ get_header(); ?>
 
 							<li class="wedding-album">
 									<div>
-										<a href="<?php the_permalink(); ?>">
+										<a class="wedding-image" href="<?php the_permalink(); ?>">
 								  <?php if ( has_post_thumbnail($post->ID) ) : ?>
 									<?php the_post_thumbnail( $post->ID, 'large' ); ?>
 									<?php endif; ?>
