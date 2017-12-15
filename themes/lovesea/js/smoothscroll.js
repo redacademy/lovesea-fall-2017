@@ -1,13 +1,13 @@
 (function($){
 
-
+  if($('.home').length){
 // Select all links with hashes
 $('a[href*="#"]')
 // $('a href="#storyteller"')
 
 // Remove links that don't actually link to anything
-// .not('[href="#"]')
-// .not('[href="#0"]')
+.not('[href="#"]')
+.not('[href="#0"]')
 .click(function(event) {
   // On-page links
   if (
@@ -23,7 +23,7 @@ $('a[href*="#"]')
       // Only prevent default if animation is actually gonna happen
       event.preventDefault();
       $('.home, html').animate({
-        scrollTop: target.offset().top -96
+        scrollTop: target.offset().top +120
       }, 1000)
       
       // , function() {
@@ -43,5 +43,5 @@ $('a[href*="#"]')
     }
   }
 });
-
+  }
 })(jQuery);
