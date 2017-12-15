@@ -1589,7 +1589,8 @@ object {
   display: block; }
   .about-section-one p {
     color: #BF8472;
-    letter-spacing: 1.05px; }
+    letter-spacing: 1.05px;
+    line-height: 125%; }
   .about-section-one p:last-child {
     border-bottom: 1px solid #BF8472;
     padding-bottom: 4rem; }
@@ -1615,7 +1616,10 @@ object {
   font-size: 3rem;
   font-style: italic;
   letter-spacing: 1.2px;
-  font-weight: lighter; }
+  font-weight: 500; }
+
+.about-section-title:first-child {
+  margin-top: 5rem; }
 
 /*----- Accordion -----*/
 .accordion, .accordion * {
