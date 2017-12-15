@@ -141,13 +141,11 @@
 .what-we-do-text-three,
 .what-we-do-text-four {
   width: 95%;
-  text-align: justify;
   letter-spacing:1.1px;
   line-height: 120%;
   font-weight: lighter;
   @include desktop {
     width: 55%;
-    text-align: justify;
     font-size: 18px;
   }
 }
@@ -228,12 +226,33 @@
     color: $color__text-secondary;
     letter-spacing: 1.05px;
   }
+  p:last-child {
+    border-bottom:1px solid $color__text-secondary;
+    padding-bottom: 4rem;
+  }
+}
+
+.about-section-two {
+  font-size: 18px;
+  .faq-question {
+    margin-bottom: 0.25rem;
+  }
+  .faq-answer {
+    margin-top: 0;
+  }
+
+  .faq-answer:last-child {
+    border-bottom: 1px solid $color__accent;
+    padding-bottom: 4rem;
+  }
 }
 
 .about-section-three {
+  text-align: justify;
   em {
     color: $color__text-secondary;
   }
+
 }
 
 .about-section-title {

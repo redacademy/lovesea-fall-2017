@@ -1503,7 +1503,6 @@ object {
 .what-we-do-text-three,
 .what-we-do-text-four {
   width: 95%;
-  text-align: justify;
   letter-spacing: 1.1px;
   line-height: 120%;
   font-weight: lighter; }
@@ -1513,7 +1512,6 @@ object {
     .what-we-do-text-three,
     .what-we-do-text-four {
       width: 55%;
-      text-align: justify;
       font-size: 18px; } }
 
 @media (min-width: 800px) {
@@ -1592,9 +1590,24 @@ object {
   .about-section-one p {
     color: #BF8472;
     letter-spacing: 1.05px; }
+  .about-section-one p:last-child {
+    border-bottom: 1px solid #BF8472;
+    padding-bottom: 4rem; }
 
-.about-section-three em {
-  color: #BF8472; }
+.about-section-two {
+  font-size: 18px; }
+  .about-section-two .faq-question {
+    margin-bottom: 0.25rem; }
+  .about-section-two .faq-answer {
+    margin-top: 0; }
+  .about-section-two .faq-answer:last-child {
+    border-bottom: 1px solid #CC9785;
+    padding-bottom: 4rem; }
+
+.about-section-three {
+  text-align: justify; }
+  .about-section-three em {
+    color: #BF8472; }
 
 .about-section-title {
   font-size: 3rem;
