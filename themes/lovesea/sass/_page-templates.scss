@@ -8,7 +8,11 @@
 
 .page-id-61 {
   .connect-hero {
-    width: 100vw;
+    height: 300px;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 75%;
 
     @include desktop {
       background-position-y: initial;

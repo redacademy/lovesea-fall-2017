@@ -792,7 +792,13 @@ object {
 /* Front page */
 /* Connect page */
 .page-id-61 .connect-hero {
-  width: 100vw; }
+  height: 300px;
+  max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 75%;
+     object-position: 0 75%; }
   @media (min-width: 800px) {
     .page-id-61 .connect-hero {
       background-position-y: initial;
