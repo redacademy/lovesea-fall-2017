@@ -8,7 +8,6 @@
     a {
       text-decoration: none;
       color: $color__text-secondary;
-      
     }
   }
 
@@ -24,7 +23,7 @@
       width: 100vw;
       margin: 18rem auto;
       @include desktop { 
-        margin: 30% auto 0;
+        margin: auto;
         position: inherit;
       }
     }
@@ -53,15 +52,35 @@
     .we-are-story-tellers, 
     .we-are-observer,
     .we-are-your-friend {
-      list-style: none;      
+      position: relative;
+      list-style: none;     
+      img {
+        margin-top: 13rem;
+      } 
       @include desktop {
+        position: inherit;
         display: flex;
         justify-content: center;
         align-items: center;
         .storytellers-image, .friend-image {
-          width: 50vw;
+          height: 810px;
+          width: 540px;        }
+      }
+      p { 
+        position: absolute;
+        top: 7rem;        
+        @include desktop {
+        position: static;
         }
       }
+      h1 {
+        position: absolute;        
+        top: 0;
+        margin: 10% 5%;
+        @include desktop {
+          position: static;
+          }
+        }
     }
     ul {
     height: 100%;
@@ -75,10 +94,10 @@
         height: 100vh;
         display: flex;
         align-items: center;
-        margin: 5rem 0;
-        img {
-          height: 100vh;
-          width: 55%;
+        margin: 5rem 0 12rem;
+          img {
+          height: 810px;
+          width: 540px;
         }
       }
       .storytellers-text,
@@ -88,17 +107,27 @@
         @include desktop {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: left;
+          position: absolute;
+          right: 7rem;
         } 
       }
       .observer-text {
         font-family: $font__main;
         font-style: italic;
+        align-items: right;
+        position: absolute;
+        left: 7rem;
+        @include desktop {
+          
+        left: -25rem;
+        }
       }
      
       .we-are-observer {
         display: flex;
         flex-direction: row-reverse;
+        position: relative;
       }
 
       .observer {
@@ -107,9 +136,11 @@
         text-align: right;
         margin-bottom: 5rem;
         display: flex;
+        justify-content: flex-end;
+        
           img {
-            height: 100vh;
-            width: 50vw;
+            height: 810px;
+            width: 540px;
           }
           .about-us {
             left: 0;
@@ -123,7 +154,13 @@
   .about-us,
   .connect {
     @include pink-button-mobile;
+    position: absolute;
+    left: 50%;
+    bottom: -1rem;
+    transform: translateX(-50%);
     @include desktop {
+      position: static;
+      top: 13rem;
       @include pink-button;
     }    
   }
@@ -138,7 +175,7 @@
 }
 
 .site-main .instagram-carousel-container {
-  margin: 10rem auto 0;
+  margin: 4rem auto 0;
   display: flex;
   flex-direction: column;
   width: 100%;
