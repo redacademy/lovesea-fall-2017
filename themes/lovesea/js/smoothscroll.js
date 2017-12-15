@@ -3,9 +3,11 @@
 
 // Select all links with hashes
 $('a[href*="#"]')
+// $('a href="#storyteller"')
+
 // Remove links that don't actually link to anything
-.not('[href="#"]')
-.not('[href="#0"]')
+// .not('[href="#"]')
+// .not('[href="#0"]')
 .click(function(event) {
   // On-page links
   if (
@@ -20,8 +22,8 @@ $('a[href*="#"]')
     if (target.length) {
       // Only prevent default if animation is actually gonna happen
       event.preventDefault();
-      $('body, html').animate({
-        scrollTop: target.offset().top - 96
+      $('.home, html').animate({
+        scrollTop: target.offset().top -96
       }, 1000)
       
       // , function() {
