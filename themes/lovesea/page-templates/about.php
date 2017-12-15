@@ -28,7 +28,8 @@ get_header(); ?>
             </ul>
             <div class="tab-content">
               <div id='tab1' class="who-we-are-wrapper">
-                <div class="who-are-we-image"><img src="<?php
+                <div class="who-are-we-image">
+                <img src="<?php
                   echo CFS()->get( 'who_we_are_image' ); 
                   ?>" alt="image of a man and woman walking" class="who-we-are-image"></img>
                 </div>
@@ -118,6 +119,30 @@ get_header(); ?>
                 </div><!--end .accordion-section-content-->
               </div><!--end .accordion-section-->
             </div><!--end .accordion-->
+
+            <div class="faq-desktop">
+              <div class="about-section-one">
+              <h2 class='about-section-title'><?php
+              $props = CFS()->get_field_info( 'philosophy' );
+              echo $props['label'];
+              ?></h2>
+              <?php echo CFS()->get( 'philosophy' ); ?>
+              </div>
+              <div class="about-section-two">
+              <h2 class='about-section-title'><?php
+              $props = CFS()->get_field_info( 'frequently_asked_questions' );
+              echo $props['label'];
+              ?></h2>
+              <?php echo CFS()->get( 'frequently_asked_questions' ); ?>
+              </div>
+              <div class="about-section-three">
+              <h2 class='about-section-title'><?php
+              $props = CFS()->get_field_info( 'testimonials' );
+              echo $props['label'];
+              ?></h2>
+              <?php echo CFS()->get( 'testimonials' ); ?>
+              </div>
+            </div><!--end .faq-desktop-->
           </div>
   
           </div>

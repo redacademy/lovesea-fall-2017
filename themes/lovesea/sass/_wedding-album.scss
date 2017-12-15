@@ -60,10 +60,14 @@
     grid-gap: 20px;
     grid-auto-rows: minmax(250px, auto);
     grid-template-columns: 1fr 1fr 1fr;
+    @mixin desktop {
+      grid-template-columns: 1fr;
+  
+    }
     .wedding-album {
       list-style: none;
     }
-    p {
+    .album-location {
       text-align: center;
       margin: 0;
       color: $color__text-main;
@@ -97,14 +101,14 @@
 
 // wedding gallery title
 .single-gallery {
-  .entry-title {
+  .h2 {
     text-align: center;
     font-style: italic;
     font-size: 24px;
     letter-spacing: $font_letter_spacing_main;
     font-weight: 500px;
   }
-  .entry-content {
+  .p {
     text-align: center;
     font-size: $font__base-size;
   }

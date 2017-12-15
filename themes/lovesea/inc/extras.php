@@ -109,6 +109,31 @@ wp_add_inline_style( 'lovesea', $connect_hero_css);
 }
 add_action( 'wp_enqueue_scripts', 'lovesea_load_connect_hero_css' );
 
+//Thank you hero image
+
+function thank_you_hero_image() {
+	if (! is_page_template('page-templates/connect.php' ) ) {
+		return;
+	}
+
+
+$image = CFS()->get('	thank_you_hero_image');
+
+if ( ! $image ) {
+	return;
+}
+
+$thankyou_hero_css = ".page-template-thankyou .thankyou-hero {
+	background-image: url({$image});
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 350px;
+}";
+
+wp_add_inline_style( 'lovesea', $thankyou_hero_css);
+}
+add_action( 'wp_enqueue_scripts', 'thank_you_hero_image' );
+
 // wedding page hero image
 
 

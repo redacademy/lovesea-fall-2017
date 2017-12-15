@@ -850,6 +850,15 @@ object {
 
 .home .nav-logo {
   display: none; }
+/* Thank you Page */
+.thank_you_hero_image img {
+  height: 300px;
+  max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 75%;
+     object-position: 0 75%; }
 
 .home .site-main {
   width: 65vw;
@@ -1067,7 +1076,8 @@ object {
       font-size: 1.3rem;
       outline-offset: -15px;
       background-color: #CC9785;
-      outline: 2px solid #FFFFFF; }
+      outline: 2px solid #FFFFFF;
+      border: none; }
       .home .browse-weddings a,
       .home .connect a {
         text-decoration: none;
@@ -1276,7 +1286,7 @@ object {
   grid-template-columns: 1fr 1fr 1fr; }
   .page-template-wedding .weddings .wedding-album {
     list-style: none; }
-  .page-template-wedding .weddings p {
+  .page-template-wedding .weddings .album-location {
     text-align: center;
     margin: 0;
     color: #415468;
@@ -1301,14 +1311,14 @@ object {
   margin: 0.25rem;
   width: 100%; }
 
-.single-gallery .entry-title {
+.single-gallery .h2 {
   text-align: center;
   font-style: italic;
   font-size: 24px;
   letter-spacing: 1px;
   font-weight: 500px; }
 
-.single-gallery .entry-content {
+.single-gallery .p {
   text-align: center;
   font-size: 18px; }
 
@@ -1530,7 +1540,6 @@ object {
 .what-we-do-text-three,
 .what-we-do-text-four {
   width: 95%;
-  text-align: justify;
   letter-spacing: 1.1px;
   line-height: 120%;
   font-weight: lighter; }
@@ -1540,7 +1549,6 @@ object {
     .what-we-do-text-three,
     .what-we-do-text-four {
       width: 55%;
-      text-align: justify;
       font-size: 18px; } }
 
 @media (min-width: 800px) {
@@ -1584,6 +1592,72 @@ object {
           align-items: center;
   margin-bottom: 1.5rem; }
 
+/*----- About Desktop -----*/
+.about-section-one,
+.about-section-two,
+.about-section-three {
+  width: 95%;
+  display: block;
+  margin: 0 auto; }
+  .about-section-one h3,
+  .about-section-two h3,
+  .about-section-three h3 {
+    font-size: 30px;
+    margin: 0 auto;
+    display: block;
+    font-weight: lighter; }
+  .about-section-one p,
+  .about-section-two p,
+  .about-section-three p {
+    max-width: 95%;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    font-weight: lighter; }
+    @media (min-width: 800px) {
+      .about-section-one p,
+      .about-section-two p,
+      .about-section-three p {
+        margin: 20px auto;
+        width: 85%; } }
+
+.about-section-one {
+  text-align: center;
+  display: block; }
+  .about-section-one p {
+    color: #BF8472;
+    letter-spacing: 1.05px;
+    line-height: 125%; }
+  .about-section-one p:last-child {
+    border-bottom: 1px solid #BF8472;
+    padding-bottom: 4rem; }
+
+.about-section-two {
+  font-size: 18px; }
+  .about-section-two .faq-question {
+    margin-bottom: 0.25rem; }
+  .about-section-two .faq-answer {
+    margin-top: 0; }
+  .about-section-two .faq-answer:last-child {
+    border-bottom: 1px solid #CC9785;
+    padding-bottom: 4rem; }
+
+.about-section-three {
+  text-align: justify; }
+  .about-section-three em {
+    color: #BF8472; }
+
+.about-section-title {
+  font-size: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  letter-spacing: 1.2px;
+  font-weight: 500; }
+
+.about-section-title:first-child {
+  margin-top: 5rem; }
+
 /*----- Accordion -----*/
 .accordion, .accordion * {
   -webkit-box-sizing: border-box;
@@ -1593,6 +1667,17 @@ object {
   overflow: hidden;
   border-radius: 3px;
   background: #FFFFFF; }
+  @media (min-width: 800px) {
+    .accordion {
+      display: none; } }
+
+.faq-desktop {
+  display: none;
+  letter-spacing: 1.1px; }
+  @media (min-width: 800px) {
+    .faq-desktop {
+      display: block;
+      font-weight: lighter; } }
 
 /*----- Section Titles -----*/
 .accordion-section-title {
@@ -1645,6 +1730,7 @@ object {
   outline-offset: -15px;
   background-color: #CC9785;
   outline: 2px solid #FFFFFF;
+  border: none;
   display: block;
   margin: 1.5rem auto 5rem auto;
   text-decoration: none;
