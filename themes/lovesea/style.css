@@ -844,6 +844,16 @@ object {
     width: 620px;
     margin-bottom: 4%; } }
 
+/* Thank you Page */
+.thank_you_hero_image img {
+  height: 300px;
+  max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 75%;
+     object-position: 0 75%; }
+
 .home .site-main {
   width: 65vw;
   margin: 0 auto; }
@@ -872,7 +882,7 @@ object {
     margin: 18rem auto; }
     @media (min-width: 800px) {
       .home .hero .front-center-text {
-        margin: 30% auto 0;
+        margin: auto;
         position: inherit; } }
   .home .hero .front-center-logo {
     -webkit-transform: translate(-50%, -50%);
@@ -897,11 +907,17 @@ object {
 .home .introduction-container .we-are-story-tellers,
 .home .introduction-container .we-are-observer,
 .home .introduction-container .we-are-your-friend {
+  position: relative;
   list-style: none; }
+  .home .introduction-container .we-are-story-tellers img,
+  .home .introduction-container .we-are-observer img,
+  .home .introduction-container .we-are-your-friend img {
+    margin-top: 13rem; }
   @media (min-width: 800px) {
     .home .introduction-container .we-are-story-tellers,
     .home .introduction-container .we-are-observer,
     .home .introduction-container .we-are-your-friend {
+      position: inherit;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -916,7 +932,29 @@ object {
       .home .introduction-container .we-are-observer .friend-image,
       .home .introduction-container .we-are-your-friend .storytellers-image,
       .home .introduction-container .we-are-your-friend .friend-image {
-        width: 50vw; } }
+        height: 810px;
+        width: 540px; } }
+  .home .introduction-container .we-are-story-tellers p,
+  .home .introduction-container .we-are-observer p,
+  .home .introduction-container .we-are-your-friend p {
+    position: absolute;
+    top: 7rem; }
+    @media (min-width: 800px) {
+      .home .introduction-container .we-are-story-tellers p,
+      .home .introduction-container .we-are-observer p,
+      .home .introduction-container .we-are-your-friend p {
+        position: static; } }
+  .home .introduction-container .we-are-story-tellers h1,
+  .home .introduction-container .we-are-observer h1,
+  .home .introduction-container .we-are-your-friend h1 {
+    position: absolute;
+    top: 0;
+    margin: 10% 5%; }
+    @media (min-width: 800px) {
+      .home .introduction-container .we-are-story-tellers h1,
+      .home .introduction-container .we-are-observer h1,
+      .home .introduction-container .we-are-your-friend h1 {
+        position: static; } }
 
 .home .introduction-container ul {
   height: 100%;
@@ -934,10 +972,10 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 5rem 0; }
+    margin: 5rem 0 12rem; }
     .home .introduction-container ul:nth-child(odd) img {
-      height: 100vh;
-      width: 55%; }
+      height: 810px;
+      width: 540px; }
   .home .introduction-container .storytellers-text,
   .home .introduction-container .friend-text {
     font-family: "EB Garamond", Courier, serif;
@@ -952,14 +990,26 @@ object {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; } }
+      -webkit-box-align: left;
+          -ms-flex-align: left;
+              align-items: left;
+      position: absolute;
+      right: 7rem; } }
 
 @media (min-width: 800px) {
   .home .introduction-container .observer-text {
     font-family: "EB Garamond", Courier, serif;
-    font-style: italic; }
+    font-style: italic;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+    position: absolute;
+    left: 7rem; } }
+  @media (min-width: 800px) and (min-width: 800px) {
+    .home .introduction-container .observer-text {
+      left: -25rem; } }
+
+@media (min-width: 800px) {
   .home .introduction-container .we-are-observer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -967,7 +1017,8 @@ object {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse; }
+            flex-direction: row-reverse;
+    position: relative; }
   .home .introduction-container .observer {
     height: 100vh; } }
   @media (min-width: 800px) and (min-width: 800px) {
@@ -976,22 +1027,30 @@ object {
       margin-bottom: 5rem;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
       .home .introduction-container .observer img {
-        height: 100vh;
-        width: 50vw; }
+        height: 810px;
+        width: 540px; }
       .home .introduction-container .observer .about-us {
         left: 0; } }
 
 .home .browse-weddings,
 .home .about-us,
 .home .connect {
-  width: 45vw;
-  height: 50px;
+  width: 200px;
+  height: 55px;
   font-size: 1rem;
   outline-offset: -8px;
   background-color: #CC9785;
-  outline: 2px solid #FFFFFF; }
+  outline: 2px solid #FFFFFF;
+  position: absolute;
+  left: 50%;
+  bottom: -1rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
   .home .browse-weddings a,
   .home .about-us a,
   .home .connect a {
@@ -1001,10 +1060,12 @@ object {
     .home .browse-weddings,
     .home .about-us,
     .home .connect {
+      position: static;
+      top: 13rem;
       width: 300px;
       height: 100px;
       font-size: 1.3rem;
-      outline-offset: -14px;
+      outline-offset: -15px;
       background-color: #CC9785;
       outline: 2px solid #FFFFFF; }
       .home .browse-weddings a,
@@ -1020,7 +1081,7 @@ object {
   width: 750px; }
 
 .site-main .instagram-carousel-container {
-  margin: 10rem auto 0;
+  margin: 4rem auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1504,6 +1565,15 @@ object {
   overflow: hidden;
   border-radius: 3px;
   background: #FFFFFF; }
+  @media (min-width: 800px) {
+    .accordion {
+      display: none; } }
+
+.faq-desktop {
+  display: none; }
+  @media (min-width: 800px) {
+    .faq-desktop {
+      display: inline-block; } }
 
 /*----- Section Titles -----*/
 .accordion-section-title {
@@ -1553,7 +1623,7 @@ object {
   width: 300px;
   height: 100px;
   font-size: 1.3rem;
-  outline-offset: -14px;
+  outline-offset: -15px;
   background-color: #CC9785;
   outline: 2px solid #FFFFFF;
   display: block;
