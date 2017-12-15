@@ -1067,7 +1067,8 @@ object {
       font-size: 1.3rem;
       outline-offset: -15px;
       background-color: #CC9785;
-      outline: 2px solid #FFFFFF; }
+      outline: 2px solid #FFFFFF;
+      border: none; }
       .home .browse-weddings a,
       .home .about-us a,
       .home .connect a {
@@ -1626,6 +1627,7 @@ object {
   outline-offset: -15px;
   background-color: #CC9785;
   outline: 2px solid #FFFFFF;
+  border: none;
   display: block;
   margin: 1.5rem auto 5rem auto;
   text-decoration: none;
