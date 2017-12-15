@@ -50,7 +50,9 @@
   }
 
   .introduction-container {
-    .we-are-story-tellers, .we-are-observer, .we-are-your-friend {
+    .we-are-story-tellers, 
+    .we-are-observer,
+    .we-are-your-friend {
       list-style: none;      
       @include desktop {
         display: flex;
@@ -79,7 +81,8 @@
           width: 55%;
         }
       }
-      .storytellers-text, .friend-text {
+      .storytellers-text,
+      .friend-text {
         font-family: $font__main;
         font-style: italic;
         @include desktop {
@@ -99,18 +102,18 @@
       }
 
       .observer {
-      height: 100vh;
-      @include desktop {
-      text-align: right;
-      margin-bottom: 5rem;
-      display: flex;
-        img {
-          height: 100vh;
-          width: 50vw;
-        }
-        .about-us {
-          left: 0;
-        }
+        height: 100vh;
+        @include desktop {
+        text-align: right;
+        margin-bottom: 5rem;
+        display: flex;
+          img {
+            height: 100vh;
+            width: 50vw;
+          }
+          .about-us {
+            left: 0;
+          }
         }
       }      
     }
@@ -201,7 +204,6 @@
     border: none;
     outline: none;
   }
-  // z-index: -1;
 }
   
 .owl-item {

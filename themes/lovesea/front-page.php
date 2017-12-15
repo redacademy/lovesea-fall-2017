@@ -76,6 +76,7 @@ get_header(); ?>
 
 							<div class="storytellers-text">
 								<h1>	<?php echo $row['we_are_story_tellers_title']; ?> </h1>
+								<p> <?php echo $row['we_are_story_tellers_text']; ?> </p>
 								<?php echo $row['we_are_story_tellers_link']; ?> 
 
 								<button class="browse-weddings"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">
@@ -112,6 +113,8 @@ get_header(); ?>
 
 								<div class="observer-text">
 									<h1 class="observer-title"><?php echo $row['we_are_observers_title']; ?></h1>
+									<p> <?php echo $row['we_are_observers_text']; ?> </p>
+
 									<?php echo $row['we_are_observers_link']; ?> 
 
 									<button class="about-us"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">
@@ -147,6 +150,7 @@ get_header(); ?>
 
 								<div class="friend-text">
 									<h1 class="friend-title"><?php echo $row['we_are_your_friend_title']; ?></h1>
+									<p> <?php echo $row['we_are_your_friend_text']; ?> </p>
 									<?php echo $row['we_are_your_friend_link']; ?> 
 
 									<button class="connect"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">
