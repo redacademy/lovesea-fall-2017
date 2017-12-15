@@ -226,9 +226,11 @@
 }
 
 .scroll-arrow {
-  width: 90px;
-  margin: 5rem auto 1rem;
-  .scroll {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  // margin: 5rem auto 1rem;
+ 
     display: none;
     @include desktop {      
       display: inline;    
@@ -236,8 +238,10 @@
       border: none;
       h1 {
         font-size: 2.5em;
+        left: 50%;
+        transform: translateX(-50%);
       }
-    }
+    
   }
 }
 

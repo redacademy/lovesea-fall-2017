@@ -1110,17 +1110,20 @@ object {
       margin: -3rem 0; } }
 
 .scroll-arrow {
-  width: 90px;
-  margin: 5rem auto 1rem; }
-  .scroll-arrow .scroll {
-    display: none; }
-    @media (min-width: 800px) {
-      .scroll-arrow .scroll {
-        display: inline;
-        background-color: transparent;
-        border: none; }
-        .scroll-arrow .scroll h1 {
-          font-size: 2.5em; } }
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  display: none; }
+  @media (min-width: 800px) {
+    .scroll-arrow {
+      display: inline;
+      background-color: transparent;
+      border: none; }
+      .scroll-arrow h1 {
+        font-size: 2.5em;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); } }
 
 .page-template-wedding .page-header {
   width: 100%;
