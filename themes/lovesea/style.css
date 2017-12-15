@@ -844,6 +844,16 @@ object {
     width: 620px;
     margin-bottom: 4%; } }
 
+/* Thank you Page */
+.thank_you_hero_image img {
+  height: 300px;
+  max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 75%;
+     object-position: 0 75%; }
+
 .home .site-main {
   width: 65vw;
   margin: 0 auto; }
@@ -1502,6 +1512,15 @@ object {
   overflow: hidden;
   border-radius: 3px;
   background: #FFFFFF; }
+  @media (min-width: 800px) {
+    .accordion {
+      display: none; } }
+
+.faq-desktop {
+  display: none; }
+  @media (min-width: 800px) {
+    .faq-desktop {
+      display: inline-block; } }
 
 /*----- Section Titles -----*/
 .accordion-section-title {
