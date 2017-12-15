@@ -25,7 +25,7 @@ get_header(); ?>
               echo $props['label'];
               ?></a></li>
 				<li><a class="categories" href="#label3"><?php
-              $props = CFS()->get_field_info( 'details_label' );
+              $props = CFS()->get_field_info( 'wedding_tab_three' );
               echo $props['label'];?></a></li>
 			</ul><!-- .tab-links -->
 		
@@ -89,25 +89,22 @@ get_header(); ?>
 
 
 <?php	foreach ( $portrait_gallery as $post ) : setup_postdata( $post ); ?>
+<?php $popup_image = "popup-". get_the_ID(); ?>
 
-<a class="gallery-modal-link"  href="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" 
-							 data-image-url="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
+<a class="btn"  href="#" data-popup-open="<?php echo $popup_image?>">
 			
-
-
-							<div class="portrait-album" data-image-url="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" >
-									<?php if ( has_post_thumbnail() ) :
-									
-					
-									the_post_thumbnail( $post->ID, 'large' );
-									
-									endif; ?>
-							
-						
-						</div> <!-- .portrait-album -->
-							</a> <!-- .gallery-modal-link -->
-					
-				
+	<div class="portrait-album">
+		<?php if ( has_post_thumbnail() ) :
+			the_post_thumbnail( $post->ID, 'large' );
+		endif; ?>
+	</div> <!-- .portrait-album -->
+</a> <!-- .btn-->
+					<div class="popup" data-popup="<?php echo $popup_image?>">
+					<div class="popup-inner">
+             <img class="popup-image" src="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
+							<a class="popup-close" data-popup-close="<?php echo $popup_image?>" href="#">x</a>
+								</div>
+							</div>
 
 						 <?php
 							endforeach; 
