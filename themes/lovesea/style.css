@@ -1557,6 +1557,53 @@ object {
           align-items: center;
   margin-bottom: 1.5rem; }
 
+/*----- About Desktop -----*/
+.about-section-one,
+.about-section-two,
+.about-section-three {
+  width: 95%;
+  display: block;
+  margin: 0 auto; }
+  .about-section-one h3,
+  .about-section-two h3,
+  .about-section-three h3 {
+    font-size: 30px;
+    margin: 0 auto;
+    display: block;
+    font-weight: lighter; }
+  .about-section-one p,
+  .about-section-two p,
+  .about-section-three p {
+    max-width: 95%;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    font-weight: lighter; }
+    @media (min-width: 800px) {
+      .about-section-one p,
+      .about-section-two p,
+      .about-section-three p {
+        margin: 20px auto;
+        width: 85%; } }
+
+.about-section-one {
+  text-align: center;
+  display: block; }
+  .about-section-one p {
+    color: #BF8472;
+    letter-spacing: 1.05px; }
+
+.about-section-three em {
+  color: #BF8472; }
+
+.about-section-title {
+  font-size: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  letter-spacing: 1.2px;
+  font-weight: lighter; }
+
 /*----- Accordion -----*/
 .accordion, .accordion * {
   -webkit-box-sizing: border-box;
@@ -1571,10 +1618,12 @@ object {
       display: none; } }
 
 .faq-desktop {
-  display: none; }
+  display: none;
+  letter-spacing: 1.1px; }
   @media (min-width: 800px) {
     .faq-desktop {
-      display: inline-block; } }
+      display: block;
+      font-weight: lighter; } }
 
 /*----- Section Titles -----*/
 .accordion-section-title {

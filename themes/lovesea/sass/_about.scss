@@ -189,6 +189,61 @@
   margin-bottom: 1.5rem;
 }
 
+/*----- About Desktop -----*/
+.about-section-one,
+.about-section-two,
+.about-section-three {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  @include desktop {
+    
+   }
+  h3 {
+    font-size: 30px;
+    margin: 0 auto;
+    display: block;
+    font-weight: lighter;
+    @include desktop {
+      
+     }
+  }
+  p {
+    max-width: 95%;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    font-weight: lighter;
+    @include desktop {
+      margin: 20px auto;
+      width: 85%;
+     }
+  }
+}
+
+.about-section-one {
+  text-align: center;
+  display: block;
+  p {
+    color: $color__text-secondary;
+    letter-spacing: 1.05px;
+  }
+}
+
+.about-section-three {
+  em {
+    color: $color__text-secondary;
+  }
+}
+
+.about-section-title {
+  font-size: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  letter-spacing: 1.2px;
+  font-weight: lighter;
+}
 
 
 /*----- Accordion -----*/
@@ -209,8 +264,10 @@
 
 .faq-desktop {
   display: none;
+  letter-spacing: 1.1px;
   @include desktop {
-    display: inline-block;
+    display: block;
+    font-weight: lighter;
    }
 }
 
