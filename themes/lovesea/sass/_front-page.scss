@@ -20,7 +20,6 @@
       min-height:90vh;
     }
     .front-center-text {
-      // position: absolute;
       height: 200px;
       width: 100vw;
       margin: 18rem auto;
@@ -40,8 +39,6 @@
       z-index: 6;
       
       @include desktop {
-        // width: 350px;
-        // margin: 10% auto;
         margin: 5rem auto;
         width: 350px;
         margin-top: 150px;
@@ -118,24 +115,14 @@
       }      
     }
   }
-  .we-are-story-teller .storytellers-text {
-    // display: flex;
-    // justify-content: center;
-  }
-  .observer-title {
-    @include desktop {
-    // position: absolute;
-    // left: 0;
-    // bottom: -75rem;
-    // width: 54%;
-    }
-  }
+
   .browse-weddings,
   .about-us,
   .connect {
-    
-   @include pink-button-mobile;
-
+    @include pink-button-mobile;
+    @include desktop {
+      @include pink-button;
+    }    
   }
 }
 
