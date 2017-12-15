@@ -42,7 +42,7 @@ get_header(); ?>
 
 		<div class="wedding-gallery-image">
 
-		<?php $popup_image = "popup-". get_the_ID(); ?>
+		<?php $popup_image = "popup-". get_the_post_thumbnail_url( $post->ID, 'large' ); ?>
 		<a class="btn"  href="#" data-popup-open="<?php echo $popup_image?>">
 
 			<img class="wedding-photo" src="<?php echo $row['wedding_album_single_image']; ?>" alt="">
@@ -51,7 +51,8 @@ get_header(); ?>
 			<div class="popup" data-popup="<?php echo $popup_image?>">
 					<div class="popup-inner">
              <img class="popup-image" src="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
-							<a class="popup-close" data-popup-close="<?php echo $popup_image?>" href="#">x</a>
+							
+						 <a class="popup-close" data-popup-close="<?php echo $popup_image?>" href="#">x</a>
 								</div> <!-- .popup-inner -->
 							</div> <!-- .popup -->
 
