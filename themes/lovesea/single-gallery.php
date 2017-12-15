@@ -15,10 +15,11 @@ get_header(); ?>
 		<div class="tab-gallery-wrapper">
      
 		 <ul class="wedding-tab-links">
-				<li class="active"><a class="categories"href="#label1"><?php
+				<li class="active"><a class="categories"href="<?php echo esc_url( get_permalink( get_page_by_title( 'wedding' ) ) ); ?>"><?php
               $props = CFS()->get_field_info( 'wedding_tab_one' );
               echo $props['label'];
-              ?></a></li>
+							?></a></li>
+							
 				<li><a class="categories" href="#label2"><?php
               $props = CFS()->get_field_info( 'wedding_tab_two' );
               echo $props['label'];
@@ -27,7 +28,7 @@ get_header(); ?>
               $props = CFS()->get_field_info( 'wedding_tab_three' );
               echo $props['label'];?></a></li>
 			</ul>
-</div> <!-- .tab-gallery-wrapper -->
+			</div><!-- .tab-gallery-wrapper -->
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
