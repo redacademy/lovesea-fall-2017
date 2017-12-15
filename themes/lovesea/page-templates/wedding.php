@@ -12,7 +12,8 @@ get_header(); ?>
 		<?php echo CFS()->get( 'wedding_hero_image' );?>
 	</header><!-- .page-header -->
 
-			
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
+	
 <div class="tab-gallery-wrapper">
      
 		 <ul class="wedding-tab-links">
@@ -29,13 +30,9 @@ get_header(); ?>
               echo $props['label'];?></a></li>
 			</ul><!-- .tab-links -->
 		
-			
-			<div class="wedding-logo">
-				<img class="wedding-page-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
-     </div> <!-- .wedding-logo -->
 		 
 		 <div class="wedding-page-content">
-		 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
+		 
 				<ul id="label1" class="weddings" class="label" class="active">
 					<?php $wedding_gallery_args = array( 'posts_per_page' => 6, 
 																							 'post_type' => 'gallery', 
@@ -54,11 +51,9 @@ get_header(); ?>
 									<?php the_post_thumbnail( $post->ID, 'large' ); ?>
 									<?php endif; ?>
 									
-								<h2><?php echo $post->post_title; ?></h2>
-								<?php
-								// the_title('<p class="album-name">', '</p>'); 
-								?>
+								<h2 class="album-name"><?php echo $post->post_title; ?></h2>
 								<?php the_content('<p class="album-location">', '</p>'); ?>
+		
 								</a> 
 							</div>
 							</li> <!-- .wedding-album -->
@@ -67,11 +62,11 @@ get_header(); ?>
 							wp_reset_postdata();
 						 ?>
 				</ul><!-- .weddings  -->
-
-<!-- TODO tabs -->
-       
+			 
+				<div class="portrait-container" id="label2" class="label">
+				<h2>portrait</h2>	
 				<div id="label2" class="tab-portraits" class="label">
-				<div><h1 class="tab-section-title">Portrait</h1></div>
+				
 				 <?php 
 				 
 				 $portrait_gallery_args = array(
@@ -110,17 +105,13 @@ get_header(); ?>
 							endforeach; 
 							wp_reset_postdata();
 						 ?>
-		<button class="about-us">
-			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
-		</button> <!-- .about-us button -->
 
-			 </div> <!-- .portraits  -->
+			 				</div> <!-- .portraits  -->
+						</div> <!-- portrait container --> 
 			 
-			 
-       
+       <h2>details</h2>
 			 <div id="label3" class="tab-details" class="label">
-			 <h1 class="tab-section-title">details</h1>
-				 <?php 
+			 <?php 
 				 
 				 $portrait_gallery_args = array(
 					 'post_type' => 'gallery',
@@ -158,14 +149,18 @@ get_header(); ?>
 		endforeach; 
 		wp_reset_postdata(); ?>
 
-		<button class="about-us">
+		<!-- <button class="about-us">
 			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
-		</button> <!-- .about-us button -->
+		</button> .about-us button -->
 
 			    </div> <!-- .tab-details  -->
 				</div> <!-- .wedding-page-content -->
 			</div><!-- .tab-gallery-wrapper -->
 			
+			<button class="about-us">
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
+		</button> <!-- .about-us button -->
+
 			<div class="wedding-logo">
 				<img class="wedding-page-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
 		 </div> <!-- .wedding-logo -->

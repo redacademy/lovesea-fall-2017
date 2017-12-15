@@ -1249,7 +1249,7 @@ object {
   grid-template-columns: 1fr 1fr 1fr; }
   .page-template-wedding .weddings .wedding-album {
     list-style: none; }
-  .page-template-wedding .weddings p {
+  .page-template-wedding .weddings .album-location {
     text-align: center;
     margin: 0;
     color: #415468;
@@ -1274,14 +1274,14 @@ object {
   margin: 0.25rem;
   width: 100%; }
 
-.single-gallery .entry-title {
+.single-gallery .h2 {
   text-align: center;
   font-style: italic;
   font-size: 24px;
   letter-spacing: 1px;
   font-weight: 500px; }
 
-.single-gallery .entry-content {
+.single-gallery .p {
   text-align: center;
   font-size: 18px; }
 
