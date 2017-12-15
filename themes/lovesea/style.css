@@ -493,8 +493,6 @@ label {
 /* Links */
 a {
   color: #415468; }
-  a:visited {
-    color: #415468; }
   a:hover, a:focus, a:active {
     color: #232d38; }
   a:focus {
@@ -1100,10 +1098,12 @@ object {
   height: 50px;
   width: 30px; }
 
-.page-template-wedding .entry-title {
+.page-template-wedding .entry-title,
+.single-gallery .entry-title {
   text-align: center; }
   @media (min-width: 800px) {
-    .page-template-wedding .entry-title {
+    .page-template-wedding .entry-title,
+    .single-gallery .entry-title {
       font-size: 64px;
       color: #BF8472;
       font-weight: 500;
@@ -1111,7 +1111,8 @@ object {
       letter-spacing: 2px;
       margin: 0; } }
 
-.page-template-wedding ul.wedding-tab-links {
+.page-template-wedding ul.wedding-tab-links,
+.single-gallery ul.wedding-tab-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1121,13 +1122,15 @@ object {
   list-style: none;
   margin-left: 0;
   padding-left: 0; }
-  .page-template-wedding ul.wedding-tab-links li {
+  .page-template-wedding ul.wedding-tab-links li,
+  .single-gallery ul.wedding-tab-links li {
     list-style: none;
     padding: 0 1.25rem;
     font-style: italic;
     font-weight: lighter;
     letter-spacing: 1.2px; }
-    .page-template-wedding ul.wedding-tab-links li a {
+    .page-template-wedding ul.wedding-tab-links li a,
+    .single-gallery ul.wedding-tab-links li a {
       text-decoration: none; }
 
 .page-template-wedding .weddings {
@@ -1212,7 +1215,8 @@ object {
 /* Inner */
 .popup-inner {
   max-width: 700px;
-  width: 90%;
+  height: 80vh;
+  width: auto;
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -1221,8 +1225,10 @@ object {
   transform: translate(-50%, -50%);
   -webkit-box-shadow: 0px 2px 6px black;
           box-shadow: 0px 2px 6px black;
-  border-radius: 3px;
   background: #fff; }
+
+.popup-inner img {
+  height: 100%; }
 
 /* Close Button */
 .popup-close {
@@ -1240,6 +1246,7 @@ object {
   border-radius: 1000px;
   background: rgba(0, 0, 0, 0.8);
   font-family: Arial, Sans-Serif;
+  text-decoration: none;
   font-size: 20px;
   text-align: center;
   line-height: 100%;
@@ -1248,7 +1255,7 @@ object {
 .popup-close:hover {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
   transform: translate(50%, -50%) rotate(180deg);
-  background: black;
+  background: #CC9785;
   text-decoration: none; }
 
 #label {

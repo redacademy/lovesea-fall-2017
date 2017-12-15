@@ -103,8 +103,8 @@ get_header(); ?>
 					<div class="popup-inner">
              <img class="popup-image" src="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
 							<a class="popup-close" data-popup-close="<?php echo $popup_image?>" href="#">x</a>
-								</div>
-							</div>
+								</div> <!-- .popup-inner -->
+							</div> <!-- .popup -->
 
 						 <?php
 							endforeach; 
@@ -116,7 +116,7 @@ get_header(); ?>
 
 			 </div> <!-- .portraits  -->
 			 
-			 <!-- TODO add TABS  -->
+			 
        
 			 <div id="label3" class="tab-details" class="label">
 			 <h1 class="tab-section-title">details</h1>
@@ -138,17 +138,22 @@ get_header(); ?>
 
 <?php	foreach ( $portrait_gallery as $post ) : setup_postdata( $post ); ?>
 
-
-<a class="gallery-modal-link"  href="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" 
-							 data-image-url="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
+<?php $popup_image = "popup-". get_the_ID(); ?>
+<a class="btn"  href="#" data-popup-open="<?php echo $popup_image?>">
 							
 							 <div class="detail-album">
 									<?php if ( has_post_thumbnail() ) :
 									the_post_thumbnail( $post->ID, 'large' );
 									endif; ?>
 						  </div> <!-- .details-album -->
-							</a> <!-- .gallery-modal-link -->
-
+							</a> <!-- .btn-->
+							
+							<div class="popup" data-popup="<?php echo $popup_image?>">
+					<div class="popup-inner">
+             <img class="popup-image" src="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
+							<a class="popup-close" data-popup-close="<?php echo $popup_image?>" href="#">x</a>
+								</div> <!-- .popup-inner -->
+							</div> <!-- .popup -->
 <?php
 		endforeach; 
 		wp_reset_postdata(); ?>

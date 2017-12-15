@@ -18,7 +18,8 @@
  }
 }
 // Style for wedding page title and tabs
-.page-template-wedding {
+.page-template-wedding,
+.single-gallery {
   .entry-title {
     text-align: center;
     @include desktop {
@@ -151,23 +152,27 @@
 /* Inner */
 .popup-inner {
   max-width:700px;
-  width:90%;
-  padding:40px;
-  position:absolute;
-  top:50%;
-  left:50%;
+  height: 80vh;
+  width: auto;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   -webkit-transform:translate(-50%, -50%);
   transform:translate(-50%, -50%);
   box-shadow:0px 2px 6px rgba(0,0,0,1);
-  border-radius:3px;
   background:#fff;
+}
+
+.popup-inner img {
+  height: 100%;
 }
 
 /* Close Button */
 .popup-close {
-  width:30px;
-  height:30px;
-  padding-top:4px;
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
   display:inline-block;
   position:absolute;
   top:0px;
@@ -178,6 +183,7 @@
   border-radius:1000px;
   background:rgba(0,0,0,0.8);
   font-family:Arial, Sans-Serif;
+  text-decoration: none;
   font-size:20px;
   text-align:center;
   line-height:100%;
@@ -187,14 +193,10 @@
 .popup-close:hover {
   -webkit-transform:translate(50%, -50%) rotate(180deg);
   transform:translate(50%, -50%) rotate(180deg);
-  background:rgba(0,0,0,1);
+  background:$color__accent;
   text-decoration:none;
 }
 // tab sections
-
-.wedding-page-content {
-
-}
 
 #label {
   display: none;
