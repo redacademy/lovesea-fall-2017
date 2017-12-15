@@ -1,4 +1,7 @@
 .home {
+  .nav-logo {
+    display: none;
+  }
   .site-main {
     width: 65vw;
     margin: 0 auto;
@@ -23,7 +26,7 @@
       width: 100vw;
       margin: 18rem auto;
       @include desktop { 
-        margin: auto;
+        margin: 20rem auto 0;
         position: inherit;
       }
     }
@@ -36,7 +39,6 @@
       position: absolute;
       left: 50%;
       z-index: 6;
-      
       @include desktop {
         margin: 5rem auto;
         width: 350px;
@@ -47,7 +49,9 @@
       }
     }
   }
-
+.we-are-story-tellers {
+  margin-top: 5rem;
+}
   .introduction-container {
     .we-are-story-tellers, 
     .we-are-observer,
@@ -56,6 +60,9 @@
       list-style: none;     
       img {
         margin-top: 13rem;
+        @include desktop {
+        margin-top: 5rem;
+        }          
       } 
       @include desktop {
         position: inherit;
@@ -64,7 +71,8 @@
         align-items: center;
         .storytellers-image, .friend-image {
           height: 810px;
-          width: 540px;        }
+          width: 540px;        
+        }
       }
       p { 
         position: absolute;
@@ -78,9 +86,10 @@
         top: 0;
         margin: 10% 5%;
         @include desktop {
+          margin: 0;
           position: static;
-          }
         }
+      }
     }
     ul {
     height: 100%;
@@ -91,10 +100,11 @@
     @include desktop {
       ul:nth-child(odd) {
         text-align: left;
-        height: 100vh;
+        height: 100%;
         display: flex;
         align-items: center;
-        margin: 5rem 0 12rem;
+        position: relative;
+        // margin: 5rem 0 0;
           img {
           height: 810px;
           width: 540px;
@@ -109,7 +119,7 @@
           flex-direction: column;
           align-items: left;
           position: absolute;
-          right: 7rem;
+          right: -26rem;
         } 
       }
       .observer-text {
@@ -134,7 +144,7 @@
         height: 100vh;
         @include desktop {
         text-align: right;
-        margin-bottom: 5rem;
+        // margin-bottom: 5rem;
         display: flex;
         justify-content: flex-end;
         
@@ -143,7 +153,7 @@
             width: 540px;
           }
           .about-us {
-            left: 0;
+            // left: 0;
           }
         }
       }      
@@ -151,18 +161,31 @@
   }
 
   .browse-weddings,
-  .about-us,
   .connect {
     @include pink-button-mobile;
     position: absolute;
-    left: 50%;
+    left: 35%;
     bottom: -1rem;
     transform: translateX(-50%);
     @include desktop {
-      position: static;
-      top: 13rem;
+      left: 30%;
+      
+      // position: static;
+      top: 8rem;
       @include pink-button;
     }    
+  }
+  .about-us {
+    @include pink-button-mobile;
+    position: absolute;
+    right: -31%;
+    bottom: -1rem;
+    transform: translateX(-50%);
+    @include desktop {
+      // position: static;
+      top: 8rem;
+      @include pink-button;
+    }
   }
 }
 
@@ -175,10 +198,11 @@
 }
 
 .site-main .instagram-carousel-container {
-  margin: 4rem auto 0;
+  margin: 10rem auto 0;
   display: flex;
   flex-direction: column;
   width: 100%;
+  z-index: 1;
 } 
 
 .instagram-carousel-container {
@@ -204,8 +228,8 @@
   }
 }
   
-.owl-carousel {
-  width: 80%;
+.instagram-carousel-container .owl-carousel {
+  width: 100%;
   margin: 0 auto;
   padding-top: 5rem;    
   border-top: $border__main-solid;
