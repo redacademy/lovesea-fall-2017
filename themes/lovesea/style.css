@@ -854,8 +854,6 @@ object {
     width: 620px;
     margin-bottom: 4%; } }
 
-.home .nav-logo {
-  display: none; }
 /* Thank you Page */
 .thank_you_hero_image img {
   height: 300px;
@@ -865,6 +863,9 @@ object {
      object-fit: cover;
   -o-object-position: 0 75%;
      object-position: 0 75%; }
+
+.home .nav-logo {
+  display: none; }
 
 .home .site-main {
   width: 65vw;
@@ -1112,7 +1113,8 @@ object {
       font-size: 1.3rem;
       outline-offset: -15px;
       background-color: #CC9785;
-      outline: 2px solid #FFFFFF; }
+      outline: 2px solid #FFFFFF;
+      border: none; }
       .home .about-us a {
         text-decoration: none;
         color: #FFFFFF; } }
@@ -1662,7 +1664,7 @@ object {
   font-weight: 500; }
 
 .about-section-title:first-child {
-  margin-top: 5rem; }
+  margin-top: 3rem; }
 
 /*----- Accordion -----*/
 .accordion, .accordion * {
