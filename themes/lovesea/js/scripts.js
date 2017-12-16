@@ -13,6 +13,15 @@ if($('.home').length){
   });
 }
 
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 3) {  
+    $('.menu-list').addClass('fade-background');
+  } else {
+    $('.menu-list').removeClass('fade-background');
+  }
+});
+
+
 //About Page Functionality
 
   $('.tabs .about-sub-pages a').on('click', function(e)  {

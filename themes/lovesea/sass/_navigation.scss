@@ -58,6 +58,7 @@ a {
 .nav-logo {
 	display: none;	
 	@include desktop {    
+	display: inline-block;
 	height: 50px;
 	width: 50px;
 	}

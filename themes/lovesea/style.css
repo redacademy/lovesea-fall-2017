@@ -525,6 +525,7 @@ a {
   display: none; }
   @media (min-width: 800px) {
     .nav-logo {
+      display: inline-block;
       height: 50px;
       width: 50px; } }
 
