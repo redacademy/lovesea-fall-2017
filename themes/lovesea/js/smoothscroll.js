@@ -1,9 +1,10 @@
 (function($){
 
-  if($('.home').length){
+
 // Select all links with hashes
-$('a[href*="#"]')
-// $('a href="#storyteller"')
+
+$('a[href="#storyteller"]')
+
 
 // Remove links that don't actually link to anything
 .not('[href="#"]')
@@ -22,8 +23,8 @@ $('a[href*="#"]')
     if (target.length) {
       // Only prevent default if animation is actually gonna happen
       event.preventDefault();
-      $('.home, html').animate({
-        scrollTop: target.offset().top +120
+      $('body, html').animate({
+        scrollTop: target.offset().top +100
       }, 1000)
       
       // , function() {
@@ -43,5 +44,5 @@ $('a[href*="#"]')
     }
   }
 });
-  }
+
 })(jQuery);

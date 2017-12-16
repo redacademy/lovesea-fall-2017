@@ -38,7 +38,7 @@
       margin: 10rem auto;
       position: absolute;
       left: 50%;
-      z-index: 6;
+      z-index: 1;
       @include desktop {
         margin: 5rem auto;
         width: 350px;
@@ -280,7 +280,8 @@
 .home .hero .shrink {
   max-width: 50px;
   position: fixed;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
+  z-index: 5;
   @include desktop {    
     margin: -3rem 0;
   }    
