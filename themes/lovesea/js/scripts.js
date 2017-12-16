@@ -4,8 +4,11 @@ if($('.home').length){
   $(window).scroll(function() {
     if ($(document).scrollTop() > 3) {  
       $('.front-center-logo').addClass('shrink');
+      $('.menu-list').addClass('fade-background');
     } else {
       $('.front-center-logo').removeClass('shrink');  
+      $('.menu-list').removeClass('fade-background');
+      
     }
   });
 }

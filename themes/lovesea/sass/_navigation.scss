@@ -67,6 +67,11 @@ a {
 .sub-menu {
 	display: none;
 }
+.site-header .fixed-menu .fade-background {
+	background-color: $color__header-transparent-background;
+	transition: all 0.9s ease-in-out; 
+	transition-duration: 1s, 0.5s, 0.3s, 0.3s, 0.3s, 0.3s, 0.3s;
+}
 
 .fixed-menu {
 	width: 100vw;
@@ -102,6 +107,8 @@ a {
   @include desktop {    
 		display: flex;
 		ul.menu-list {
+			transition: all 0.9s ease-in-out; 
+			transition-duration: 1s, 0.5s, 0.3s, 0.3s, 0.3s, 0.3s, 0.3s;			
 			display: flex;
 			width: 100vw;
 			margin: 0;
