@@ -9,24 +9,15 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<div class="single-album-hero-image"><?php echo CFS()->get( 'single_wedding_hero_image' ); ?></div>
-		
+    <header class=".page-header">
+   <!-- <img src="<?php echo CFS()->get( 'single_wedding_hero_image' ); ?>"> -->
+    </header>
 		<div class="tab-gallery-wrapper">
      
 		 <ul class="wedding-tab-links">
-				<li class="active"><a class="categories"href="<?php echo esc_url( get_permalink( get_page_by_title( 'wedding' ) ) ); ?>"><?php
-              $props = CFS()->get_field_info( 'wedding_tab_one' );
-              echo $props['label'];
-							?></a></li>
+				<li class="active"><a class="categories"href="<?php echo esc_url( get_permalink( get_page_by_title( 'wedding' ) ) ); ?>">
+				</a></li>
 							
-				<li><a class="categories" href="#label2"><?php
-              $props = CFS()->get_field_info( 'wedding_tab_two' );
-              echo $props['label'];
-              ?></a></li>
-				<li><a class="categories" href="#label3"><?php
-              $props = CFS()->get_field_info( 'wedding_tab_three' );
-              echo $props['label'];?></a></li>
 			</ul>
 			</div><!-- .tab-gallery-wrapper -->
 

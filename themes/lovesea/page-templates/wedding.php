@@ -9,7 +9,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 	
 	<header class="page-header">
-		<?php echo CFS()->get( 'wedding_hero_image' );?>
+
 	</header><!-- .page-header -->
 
 	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
@@ -71,7 +71,7 @@ get_header(); ?>
 				foreach ( $loop as $row ) :
 			?> 
   
-	<img class="portrait-photo" src="<?php echo $row['portrait_album_image']; ?>" alt="">
+	<img class="portrait-photo" src="<?php echo $row['portrait_album_image']; ?>" alt="portrait">
 		<?php
 				endforeach;
 			endif;
@@ -80,49 +80,21 @@ get_header(); ?>
 			 				</div> <!-- .portraits  -->
 						</div> <!-- portrait container --> 
 			 
-       <h2>details</h2>
+  
 			 <div id="label3" class="tab-details" class="label">
-			 <?php 
-				 
-				 $portrait_gallery_args = array(
-					 'post_type' => 'gallery',
-					'tax_query' => array(
-							array(
-								'taxonomy' => 'gallery-type',
-								'field' => 'slug',
-								'terms' => 'details'
-							)
-							)
-						);
 
-					$portrait_gallery = get_posts( $portrait_gallery_args );?>
+			 <?php
+			$loop = CFS()->get( 'detail_album' );
+			if(isset($loop)):
+				foreach ( $loop as $row ) :
+			?> 
+  
+	<img class="portrait-photo" src="<?php echo $row['detail_album_images']; ?>" alt="portrait">
+		<?php
+				endforeach;
+			endif;
+			?>
 
-
-<?php	foreach ( $portrait_gallery as $post ) : setup_postdata( $post ); ?>
-
-<?php $popup_image = "popup-". get_the_ID(); ?>
-<a class="btn"  href="#" data-popup-open="<?php echo $popup_image?>">
-							
-							 <div class="detail-album">
-									<?php if ( has_post_thumbnail() ) :
-									the_post_thumbnail( $post->ID, 'large' );
-									endif; ?>
-						  </div> <!-- .details-album -->
-							</a> <!-- .btn-->
-							
-							<div class="popup" data-popup="<?php echo $popup_image?>">
-					<div class="popup-inner">
-             <img class="popup-image" src="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
-							<a class="popup-close" data-popup-close="<?php echo $popup_image?>" href="#">x</a>
-								</div> <!-- .popup-inner -->
-							</div> <!-- .popup -->
-<?php
-		endforeach; 
-		wp_reset_postdata(); ?>
-
-		<!-- <button class="about-us">
-			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
-		</button> .about-us button -->
 
 			    </div> <!-- .tab-details  -->
 				</div> <!-- .wedding-page-content -->

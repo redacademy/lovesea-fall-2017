@@ -1342,6 +1342,9 @@ object {
   margin: 0.25rem;
   width: 100%; }
 
+.single-gallery .entry-header img {
+  display: none; }
+
 .single-gallery .h2 {
   text-align: center;
   font-style: italic;

@@ -99,7 +99,15 @@
   width:  100%; 
 }
 
-// wedding gallery title
+// single gallery wedding gallery title
+
+.single-gallery {
+  .entry-header {
+    img {
+      display: none;
+    }
+  }
+}
 .single-gallery {
   .h2 {
     text-align: center;

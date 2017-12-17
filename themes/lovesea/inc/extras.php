@@ -137,27 +137,53 @@ add_action( 'wp_enqueue_scripts', 'thank_you_hero_image' );
 // wedding page hero image
 
 
-function wedding_hero_css() {
-
-	if (! is_page_template('page-templates/wedding.php' ) ) {
+function wedding_hero_image() {
+	
+		if (! is_page_template('page-templates/wedding.php' ) ) {
+			return;
+		}
+	
+	$image = CFS()->get('wedding_hero_image');
+	
+	if ( ! $image ) {
 		return;
 	}
+	
+	$wedding_hero_css = ".page-template-wedding .page-header {
+		background-image: url({$image});
+		min-height: 350px;
+		background-position: center;
+		background-size: cover;
+	}";
+	
+	wp_add_inline_style( 'lovesea', $wedding_hero_css);
+	
+	}
+	add_action( 'wp_enqueue_scripts', 'wedding_hero_image' );
+	// wedding_hero_css
 
-$image = CFS()->get('wedding_hero_image');
+	// wedding page hero image
 
-if ( ! $image ) {
-	return;
-}
+	function album_hero_css() {
+		
+			if (! is_page('single-gallery.php' ) ) {
+				return;
+			}
+		
+		$image = CFS()->get('single_wedding_hero_image');
+		
+		if ( ! $image ) {
+			return;
+		}
+		
+		$album_hero_css = ".single-gallery .page-header {
+			background-image: url({$image});
+			min-height: 350px;
+			background-position: center;
+			background-size: cover;
+		}";
+		
+		wp_add_inline_style( 'lovesea', $album_hero_css);
+		}
+		add_action( 'wp_enqueue_scripts', 'album_hero_css' );
 
-$wedding_hero_css = ".page-template-wedding .page-header {
-	background-image: url({$image});
-	min-height: 350px;
-	background-position: center;
-	background-size: cover;
-}";
-
-wp_add_inline_style( 'lovesea', $wedding_hero_css);
-
-}// wedding_hero_css
-
-add_action( 'wp_enqueue_scripts', 'wedding_hero_css' );
