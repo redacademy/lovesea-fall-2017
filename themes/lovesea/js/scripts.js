@@ -72,12 +72,20 @@ $('.wedding-tab-links .categories').on('click', function(e)  {
 // $('.wedding-album .wedding-image').on('click', function(event) {
 //   event.preventDefault();
 
+  
 //   $.ajax({
-//     method: 'POST',
+//     method: 'GET',
 //     url: 'http://localhost:3000/lovesea/wp-json/wp/v2/gallery/',
+  
 // })
-//  .done( function (event) {
-    
+//  .done( function (data) {
+ 
+//   var renderedPost = data.shift();
+
+//   $('.wedding-page-content').html(renderedPost.title.rendered);
+//   $('.wedding-page-content').html(renderedPost.content.rendered);
+ 
+
 //   console.log(event);
 
 //  })
