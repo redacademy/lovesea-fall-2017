@@ -2,7 +2,10 @@
 
 
 // Select all links with hashes
-$('a[href*="#"]')
+
+$('a[href="#storyteller"]')
+
+
 // Remove links that don't actually link to anything
 .not('[href="#"]')
 .not('[href="#0"]')
@@ -21,7 +24,7 @@ $('a[href*="#"]')
       // Only prevent default if animation is actually gonna happen
       event.preventDefault();
       $('body, html').animate({
-        scrollTop: target.offset().top - 96
+        scrollTop: target.offset().top +100
       }, 1000)
       
       // , function() {

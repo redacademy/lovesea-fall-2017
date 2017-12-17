@@ -121,22 +121,22 @@ get_header(); ?>
             </div><!--end .accordion-->
 
             <div class="faq-desktop">
-              <div class="about-section-1">
-              <h2><?php
+              <div class="about-section-one">
+              <h2 class='about-section-title'><?php
               $props = CFS()->get_field_info( 'philosophy' );
               echo $props['label'];
               ?></h2>
               <?php echo CFS()->get( 'philosophy' ); ?>
               </div>
-              <div class="about-section-2">
-              <h2><?php
+              <div class="about-section-two">
+              <h2 class='about-section-title'><?php
               $props = CFS()->get_field_info( 'frequently_asked_questions' );
               echo $props['label'];
               ?></h2>
               <?php echo CFS()->get( 'frequently_asked_questions' ); ?>
               </div>
-              <div class="about-section-3">
-              <h2><?php
+              <div class="about-section-three">
+              <h2 class='about-section-title'><?php
               $props = CFS()->get_field_info( 'testimonials' );
               echo $props['label'];
               ?></h2>

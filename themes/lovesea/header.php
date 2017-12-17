@@ -13,9 +13,6 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-
-
-
 	<?php wp_head(); ?>
 	</head>
 
@@ -45,6 +42,7 @@
 		<ul id="menu-list" class="menu-list">
 			<li id="menu-item"><a href="<?php echo get_home_url(); ?>">home</a></li>
 			<li class="menu-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">weddings</a></li>
+			<img class="nav-logo"  src="<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>">
 			<li class="menu-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">about</a></li>
 			<li class="menu-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">connect</a></li>
 		</ul>	

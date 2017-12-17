@@ -85,41 +85,30 @@ add_filter( 'stylesheet_uri', 'lovesea_minified_css', 10, 2 );
 function lovesea() {
 	wp_enqueue_style( 'lovesea', get_stylesheet_uri() );
 
-	wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-	
 
 	wp_enqueue_style( 'lovesea-owl', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css');
 
 	wp_enqueue_script( 'jquery');
+
 	wp_enqueue_script( 'menu-toggle', get_template_directory_uri() . '/build/js/nav-bar.min.js', array('jquery'), false, true);
 
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), false, true);
 
-	wp_enqueue_script( 'smoothscroll', get_template_directory_uri() . '/build/js/smoothscroll.min.js', array('jquery'), false, true);
+	wp_enqueue_script('smoothscroll', get_template_directory_uri() . '/build/js/smoothscroll.min.js', array('jquery'), false, true);
 
-	wp_enqueue_script( 'lovesea-accordion', get_template_directory_uri() . '/build/js/accordion.min.js', array('jquery'), false, true);
+	wp_enqueue_script('lovesea-accordion', get_template_directory_uri() . '/build/js/accordion.min.js', array('jquery'), false, true);
 
 	wp_enqueue_script( 'lovesea-spectra', 'https://cdnjs.cloudflare.com/ajax/libs/spectragram/1.0.3/spectragram.min.js', array('jquery'), false, false );
+	
 	wp_enqueue_script( 'lovesea-owl', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js', array('jquery', 'lovesea-spectra'), false, true );
 	
 	wp_enqueue_script( 'lovesea-instagram', get_template_directory_uri() . '/build/js/ls-instagram.min.js', array('jquery', 'lovesea-spectra', 'lovesea-owl',), false, true );
-
 	
 	wp_enqueue_script( 'lovesea-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
-	// if(function_exists('rest_url')) {
-	// 	wp_enqueue_script( 'scripts', 'postdata',
-	// 	array(
-	// 		'post_id' => get_the_ID(),
-	// 		'theme uri' => get_stylesheet_directory_uri(),
-	// 		'rest_url' => rest_url('wp/v2/'), 
-	// 	)
-	// 	)
-	
 }
 
 

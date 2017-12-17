@@ -13,17 +13,16 @@
     var createCarousel = function () {
 
         $('.owl-carousel').owlCarousel({
-            //not responsive for new version__JS?
-            // itemsDesktop: [2000,4], // 4 items between 1000px and 901px
-            // itemsDesktopSmall: [800,4], // 3 items betweem 900px and 601px
-            // itemsMobile: [600,1], // 1 items between 600 and 0
             loop: true,
+            mouseDrag: false,
+            touchDrag: false,
             margin: 10,
             autoplay: true,
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
             nav: true,
-            navText: ['<', '>'],
+            navText: ['<img src="/left-arrow.png">', '>'],
+            // navText: ["<img src='myprevimage.png'>","<img src='mynextimage.png'>"]
             lazyLoad: true,
             resonsiveClass:true,
             responsive:{
