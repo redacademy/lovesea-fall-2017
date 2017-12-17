@@ -507,7 +507,12 @@ a {
 .fixed-menu .toggle-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-transform: translateY(-1em);
+          transform: translateY(-1em);
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; }
 
 .menu-list {
   position: fixed;
@@ -533,7 +538,7 @@ a {
   display: none; }
 
 .site-header .fixed-menu .fade-background {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.4);
   -webkit-transition: all 0.9s ease-in-out;
   transition: all 0.9s ease-in-out;
   -webkit-transition-duration: 1s, 0.5s, 0.3s, 0.3s, 0.3s, 0.3s, 0.3s;
@@ -584,17 +589,21 @@ a {
         display: flex;
         width: 100vw;
         margin: 0;
-        padding: .3rem 10rem;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; }
+        padding: .3rem 20rem;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly; }
         .fixed-menu ul.menu-list li, .fixed-menu ul.menu-list a {
           font-family: "EB Garamond", Courier, serif;
           font-style: italic;
           font-weight: 200;
           font-size: 1.5rem;
           text-decoration: none;
-          list-style-type: none; } }
+          list-style-type: none; }
+        .fixed-menu ul.menu-list li:nth-child(2) {
+          padding-right: 4rem; }
+        .fixed-menu ul.menu-list li:nth-last-child(2) {
+          padding-left: 4rem; } }
 
 .toggle-nav {
   display: inline !important;
@@ -1233,20 +1242,18 @@ object {
       margin: -3rem 0; } }
 
 .scroll-arrow {
-  position: absolute;
-  bottom: 5rem;
-  left: 50%;
   display: none; }
   @media (min-width: 800px) {
     .scroll-arrow {
       display: inline;
       background-color: transparent;
-      border: none; }
-      .scroll-arrow h1 {
-        font-size: 2.5em;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%); } }
+      border: none;
+      position: absolute;
+      bottom: 5rem;
+      left: 50%;
+      font-size: 2.5em;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); } }
 
 .page-template-wedding .page-header {
   width: 100%;

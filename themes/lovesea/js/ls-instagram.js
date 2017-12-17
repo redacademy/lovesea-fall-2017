@@ -14,12 +14,15 @@
 
         $('.owl-carousel').owlCarousel({
             loop: true,
+            mouseDrag: false,
+            touchDrag: false,
             margin: 10,
             autoplay: true,
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
             nav: true,
-            navText: ['<', '>'],
+            navText: ['<img src="/left-arrow.png">', '>'],
+            // navText: ["<img src='myprevimage.png'>","<img src='mynextimage.png'>"]
             lazyLoad: true,
             resonsiveClass:true,
             responsive:{

@@ -13,9 +13,11 @@ get_header(); ?>
 	<img class="front-center-logo"  src="<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>">
 	<img class="front-center-text"  src="<?php echo get_template_directory_uri() . '/images/lovesea-logo-text.svg' ?>">
 	<div class="scroll-arrow">
-		<h1><a href="#storyteller">╲╱</a></h1>
+		<a href="#storyteller">╲╱</a>
 	</div>
 </div>
+<!--  -->
+<!-- <img src="/../images/arrows/down-arrow.png"> -->
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">

@@ -34,6 +34,9 @@ a {
 }
 .fixed-menu .toggle-nav ul {
 	display:flex;
+	transform: translateY(-1em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 // .mobile-nav {
 // 	position: fixed;
@@ -113,15 +116,21 @@ a {
 			display: flex;
 			width: 100vw;
 			margin: 0;
-			padding: .3rem 10rem;
-			justify-content: space-between;
+			padding: .3rem 20rem;
+			justify-content: space-evenly;
 			li, a {
 			font-family: $font__main;
 			font-style: italic;
 			font-weight: 200;
 			font-size: 1.5rem;
 			text-decoration: none;
-			list-style-type: none;
+			list-style-type: none; 
+			}
+			li:nth-child(2) {
+				padding-right: 4rem;
+			}
+			li:nth-last-child(2) {
+				padding-left: 4rem;
 			}
 		}
 	}
