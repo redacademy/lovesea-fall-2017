@@ -15,12 +15,12 @@ get_header(); ?>
 			</div>
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( '404' ); ?></h1>
+					<h1 class="page-title">404<span>Page Not Found</span></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
 					<p><?php echo esc_html( 'We&#039;re so sorry! Something must have gone wrong.' ); ?></p>
-					
+					<p>Go back to</p>
 					<button class="browse-weddings"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">Browse Weddings</a></button> 
 
 

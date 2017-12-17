@@ -1,22 +1,20 @@
 .error404 { 
-  // background-color: blue; 
-  .browse-weddings {
-    @include pink-button-mobile;
-    // position: absolute;
-    // left: 35%;
-    // bottom: -1rem;
-    // transform: translateX(-50%);
-    @include desktop {
-      // left: 30%;
-      
-      // position: static;
-      // top: 8rem;
-      @include pink-button;
-    }    
-  }
+  text-align: center;
   .hero {
     height: 50vh;
     width: 100vw;
   }
-
+  .page-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .browse-weddings {
+    @include pink-button-mobile;
+    @include desktop {
+      @include pink-button;
+    }    
+  }
+  .site-footer {
+    margin-top: 5rem;
+  }
 }
