@@ -164,9 +164,9 @@ function wedding_hero_image() {
 
 	// wedding page hero image
 
-	function album_hero_css() {
+	function album_hero_image() {
 		
-			if (! is_page('single-gallery.php' ) ) {
+			if (! is_singular( 'gallery' ) ) {
 				return;
 			}
 		
@@ -176,7 +176,7 @@ function wedding_hero_image() {
 			return;
 		}
 		
-		$album_hero_css = ".single-gallery .site-content {
+		$album_hero_css = ".single-gallery .page-header {
 			background-image: url({$image});
 			min-height: 350px;
 			background-position: center;
@@ -185,5 +185,5 @@ function wedding_hero_image() {
 		
 		wp_add_inline_style( 'lovesea', $album_hero_css);
 		}
-		add_action( 'wp_enqueue_scripts', 'album_hero_css' );
+		add_action( 'wp_enqueue_scripts', 'album_hero_image' );
 

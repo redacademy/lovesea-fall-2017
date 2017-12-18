@@ -9,8 +9,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-    <header>
-   <!-- <img src="<?php echo CFS()->get( 'single_wedding_hero_image' ); ?>"> -->
+    <header class="page-header">
+		
+	 <!-- <img src="<?php echo CFS()->get( 'single_wedding_hero_image' ); ?>"> -->
+  
     </header>
 		<div class="tab-gallery-wrapper">
      
