@@ -72,12 +72,25 @@ get_header(); ?>
 			if(isset($loop)):
 				foreach ( $loop as $row ) :
 			?> 
-  
-	<img class="portrait-photo" src="<?php echo $row['portrait_album_image']; ?>" alt="portrait">
+	
+	<a class="btn"  href="#" data-popup-open="<?php echo $row['portrait_album_image']; ?>">
+			<img class="wedding-photo" src="<?php echo $row['portrait_album_image']; ?>" alt="">
+		</a> <!-- .btn -->
+
+			<div class="popup" data-popup="<?php echo $row['portrait_album_image']; ?>">
+					<div class="popup-inner">
+             <img class="popup-image" src="<?php echo $row['portrait_album_image']; ?>">
+							
+						 <a class="popup-close" data-popup-close="<?php echo $row['portrait_album_image']; ?>" href="#">x</a>
+								</div> <!-- .popup-inner -->
+							</div> <!-- .popup -->
+	
 		<?php
 				endforeach;
 			endif;
 			?>
+
+
 
 			 				</div> <!-- .portraits  -->
 						</div> <!-- portrait container --> 
@@ -91,7 +104,17 @@ get_header(); ?>
 				foreach ( $loop as $row ) :
 			?> 
   
-	<img class="portrait-photo" src="<?php echo $row['detail_album_images']; ?>" alt="portrait">
+	<a class="btn"  href="#" data-popup-open="<?php echo $row['detail_album_images']; ?>">
+			<img class="wedding-photo" src="<?php echo $row['detail_album_images']; ?>" alt="">
+		</a> <!-- .btn -->
+
+			<div class="popup" data-popup="<?php echo $row['detail_album_images']; ?>">
+					<div class="popup-inner">
+             <img class="popup-image" src="<?php echo $row['detail_album_images']; ?>">
+							
+						 <a class="popup-close" data-popup-close="<?php echo $row['detail_album_images']; ?>" href="#">x</a>
+								</div> <!-- .popup-inner -->
+							</div> <!-- .popup -->
 		<?php
 				endforeach;
 			endif;
