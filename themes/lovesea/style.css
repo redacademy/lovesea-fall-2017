@@ -1383,27 +1383,30 @@ object {
     z-index: 4;
     position: absolute;
     top: 25%;
-    left: 33%;
+    left: 27%;
     font-size: 24px;
     letter-spacing: 1px;
     text-align: center;
     font-style: italic;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #FFF; }
     @media (min-width: 800px) {
       .page-template-wedding .weddings .album-name {
-        position: initial; } }
+        position: initial;
+        color: #415468; } }
   .page-template-wedding .weddings .wedding-location {
     z-index: 4;
     position: absolute;
     top: 45%;
-    left: 40%;
+    left: 36%;
     text-align: center;
     margin: 0;
-    color: #415468;
+    color: #fff;
     font-size: 14px; }
     @media (min-width: 800px) {
       .page-template-wedding .weddings .wedding-location {
-        position: initial; } }
+        position: initial;
+        color: #415468; } }
 
 .wedding-album a {
   text-decoration: none; }
@@ -1411,8 +1414,8 @@ object {
 .image-gradient::after {
   display: block;
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(0), color-stop(1%, #DCDCDC));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), 0, #DCDCDC 1%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(0), color-stop(1%, #5E5959));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), 0, #5E5959 1%);
   top: 0;
   opacity: 0.6;
   height: 90%;
@@ -1687,7 +1690,8 @@ object {
   padding-left: 0;
   margin-bottom: 2.5rem; }
   .about-sub-pages li {
-    padding: 0 1.25rem;
+    padding: 0 0.25rem;
+    margin: 0 1.25rem;
     font-style: italic;
     font-weight: lighter;
     letter-spacing: 1.2px; }
@@ -1697,9 +1701,16 @@ object {
         letter-spacing: 1.2px; } }
     .about-sub-pages li a {
       text-decoration: none; }
+    .about-sub-pages li a:hover {
+      padding-bottom: 0.5rem;
+      color: #232d38; }
 
 .tab {
   display: none; }
+
+li.active {
+  padding-bottom: 0.5rem;
+  border-bottom: 2.5px solid #BF8472; }
 
 .tab.active {
   display: block; }
@@ -1965,29 +1976,39 @@ object {
   margin: 0 auto; }
 
 .about-contact-us {
-  width: 300px;
-  height: 100px;
+  width: 224px;
+  height: 75px;
   font-size: 1.3rem;
   outline-offset: -15px;
   background-color: #CC9785;
   outline: 2px solid #FFFFFF;
   border: none;
+<<<<<<< HEAD
   text-decoration: none;
   color: #FFFFFF;
   display: block;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+>>>>>>> de1a7eab1aab97416dde82415c35148f1a19f392
   margin: 1.5rem auto 5rem auto;
   text-decoration: none;
   color: #FFFFFF;
   font-style: italic;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
+<<<<<<< HEAD
           align-items: center; }
+=======
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .about-contact-us a {
+    text-decoration: none;
+    color: #FFFFFF; }
+>>>>>>> de1a7eab1aab97416dde82415c35148f1a19f392
 
 .site-footer {
   border-top: 1px solid #CC9785;

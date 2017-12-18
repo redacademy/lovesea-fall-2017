@@ -10,25 +10,33 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
     <header class="page-header">
-		
-	 <!-- <img src="<?php echo CFS()->get( 'single_wedding_hero_image' ); ?>"> -->
-  
-    </header>
-		<div class="tab-gallery-wrapper">
+		</header>
+
+
+		<div id="back-to-top" class="tab-gallery-wrapper">
      
-		 <ul id="back-to-top" class="wedding-tab-links">
-				<li class="active"><a class="categories" href="<?php echo esc_url( get_permalink( get_page_by_title( 'wedding' ) ) ); ?>">galleries</a></li>
+		 <ul class="wedding-tab-links">
+			 
+				<li class="active"><a class="categories" href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">galleries</a></li>
+				<li><a class="categories" href="#label2"><?php
+              $props = CFS()->get_field_info( 'wedding_tab_two', 74 );
+              echo $props['label'];
+              ?></a></li>
+				<li><a class="categories" href="#label3"><?php
+              $props = CFS()->get_field_info( 'wedding_tab_three', 74 );
+              echo $props['label'];?></a></li>
 							
-			</ul>
-			</div><!-- .tab-gallery-wrapper -->
+			</ul> <!-- .wedding-tab-links -->
+			
+    <div class="single-album-page-content">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 			
 		
-
-		<div class="wedding-album-gallery-pages">	
+   <!-- TODO add tab here -->
+		<div id="label1" class="wedding-album-gallery-pages" class="active">	
 			<?php
 			$loop = CFS()->get( 'wedding_albums_images' );
 			if(isset($loop)):
@@ -61,18 +69,17 @@ get_header(); ?>
 		</div>
 
 <!-- TODO add tabs -->
+<div class="portrait-container" id="label2" class="label">
+			
+				<div id="label2" class="tab-portraits" class="label">
+
 <?php
 			$loop = CFS()->get( 'portrait_album_', 74 );
-
-			// d($loop);
-
 			if(isset($loop)):
 				foreach ( $loop as $row ) :
 
 ?> 
 
-
-	<h1>hi</h1>
 	<a class="btn"  href="#" data-popup-open="<?php echo $row['portrait_album_image']; ?>">
 			<img class="wedding-photo" src="<?php echo $row['portrait_album_image']; ?>" alt="">
 		</a> <!-- .btn -->
@@ -89,8 +96,14 @@ get_header(); ?>
 				endforeach;
 			endif;
 			?>
-<!-- TODO add tabs -->
 
+
+ 							</div> <!-- .portraits  -->
+						</div> <!-- portrait container --> 
+
+
+<!-- TODO add tabs -->
+<div id="label3" class="tab-details" class="label">
 <?php
 			$loop = CFS()->get( 'detail_album', 74 );
 			if(isset($loop)):
@@ -113,23 +126,10 @@ get_header(); ?>
 			endif;
 			?>
 
-  				<div class="portrait-container" id="label2" class="label">
-			
-				<div id="label2" class="tab-portraits" class="label">
-			
-			
+				</div> <!-- .tab-details  -->	
+		  </div> <!-- .single-album-page-content -->
+		</div><!-- .tab-gallery-wrapper -->
 
-			 				</div> <!-- .portraits  -->
-						</div> <!-- portrait container --> 
-			 
-  
-			 <div id="label3" class="tab-details" class="label">
-
-
-			    </div> <!-- .tab-details  -->
-
-		</div>
-		
 		<div class="back-to-top">
 			<a href="#back-to-top">back to top</a>
 		</div>
