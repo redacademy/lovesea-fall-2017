@@ -1789,6 +1789,15 @@ object {
 .error404 {
   text-align: center; }
   .error404 .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 50vh;
     width: 100vw; }
   .error404 .page-title {
@@ -1798,7 +1807,15 @@ object {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    font-family: "EB Garamond", Courier, serif;
+    font-style: italic; }
+    .error404 .page-title span {
+      font-weight: 100;
+      font-size: 1.5rem; }
+  .error404 .sorry p {
+    font-size: 1.5rem;
+    font-style: italic; }
   .error404 .browse-weddings {
     width: 200px;
     height: 55px;

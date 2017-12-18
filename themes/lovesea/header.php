@@ -25,18 +25,6 @@
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
 
-
-				<!-- <nav class="desktop-nav"> -->
- 
-		
-		<?php
-		//  wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); 
-		 ?>
-
-
-<!-- <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label> -->
-
-
 	<nav class="fixed-menu">
 		<button id="toggle-menu-button" class="toggle-menu-button">&#9776;</button>
 		<ul id="menu-list" class="menu-list">
