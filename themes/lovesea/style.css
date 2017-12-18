@@ -491,12 +491,9 @@ label {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-<<<<<<< HEAD
-=======
 .active-page {
   color: green; }
 
->>>>>>> f5836f3827ffc4a2241945bee42772b1db732130
 a {
   color: #415468; }
   a:hover, a:focus, a:active {
@@ -1389,27 +1386,30 @@ object {
     z-index: 4;
     position: absolute;
     top: 25%;
-    left: 33%;
+    left: 27%;
     font-size: 24px;
     letter-spacing: 1px;
     text-align: center;
     font-style: italic;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #FFF; }
     @media (min-width: 800px) {
       .page-template-wedding .weddings .album-name {
-        position: initial; } }
+        position: initial;
+        color: #415468; } }
   .page-template-wedding .weddings .wedding-location {
     z-index: 4;
     position: absolute;
     top: 45%;
-    left: 40%;
+    left: 36%;
     text-align: center;
     margin: 0;
-    color: #415468;
+    color: #fff;
     font-size: 14px; }
     @media (min-width: 800px) {
       .page-template-wedding .weddings .wedding-location {
-        position: initial; } }
+        position: initial;
+        color: #415468; } }
 
 .wedding-album a {
   text-decoration: none; }
@@ -1417,8 +1417,8 @@ object {
 .image-gradient::after {
   display: block;
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(0), color-stop(1%, #DCDCDC));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), 0, #DCDCDC 1%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(0), color-stop(1%, #5E5959));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), 0, #5E5959 1%);
   top: 0;
   opacity: 0.6;
   height: 90%;

@@ -17,7 +17,7 @@ get_header(); ?>
      
 		 <ul class="wedding-tab-links">
 			 
-				<li class="active"><a class="categories" href="<?php echo esc_url( get_permalink( get_page_by_title( 'wedding' ) ) ); ?>">galleries</a></li>
+				<li class="active"><a class="categories" href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">galleries</a></li>
 				<li><a class="categories" href="#label2"><?php
               $props = CFS()->get_field_info( 'wedding_tab_two', 74 );
               echo $props['label'];
