@@ -1309,11 +1309,11 @@ object {
 
 .page-template-wedding .weddings {
   display: grid;
-  max-width: 1000px;
-  padding: 10px 10px;
-  margin: 1rem auto;
-  grid-gap: 20px;
-  grid-auto-rows: minmax(250px, auto);
+  max-width: 25em;
+  padding: 1em;
+  margin: 1em auto;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(25em, auto);
   grid-template-columns: 1fr; }
   @media (min-width: 800px) {
     .page-template-wedding .weddings {
@@ -1330,8 +1330,8 @@ object {
   .page-template-wedding .weddings .album-name {
     z-index: 4;
     position: absolute;
-    top: 300px;
-    left: 300px;
+    top: 25%;
+    left: 33%;
     font-size: 24px;
     letter-spacing: 1px;
     text-align: center;
@@ -1343,8 +1343,8 @@ object {
   .page-template-wedding .weddings .wedding-location {
     z-index: 4;
     position: absolute;
-    top: 350px;
-    left: 300px;
+    top: 45%;
+    left: 40%;
     text-align: center;
     margin: 0;
     color: #415468;
@@ -1359,8 +1359,8 @@ object {
 .image-gradient::after {
   display: block;
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(220, 220, 220, 0.2)), to(#DCDCDC));
-  background-image: linear-gradient(rgba(220, 220, 220, 0.2) 0, #DCDCDC 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(0), color-stop(1%, #DCDCDC));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), 0, #DCDCDC 1%);
   top: 0;
   height: 100%;
   width: 100%;
@@ -1418,6 +1418,11 @@ object {
   margin: 0.25rem;
   width: 100%; }
 
+.single-gallery .wedding-location {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1px; }
+
 .single-gallery .entry-header img {
   display: none; }
 
@@ -1439,6 +1444,8 @@ object {
   margin: 1.5em 1em;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  .nav-links a {
+    text-decoration: none; }
 
 .tab-portraits {
   display: none;

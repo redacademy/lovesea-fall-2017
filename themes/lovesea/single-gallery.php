@@ -9,8 +9,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-    <header class=".page-header">
-   <img src="<?php echo CFS()->get( 'single_wedding_hero_image' ); ?>">
+    <header>
+   <!-- <img src="<?php echo CFS()->get( 'single_wedding_hero_image' ); ?>"> -->
     </header>
 		<div class="tab-gallery-wrapper">
      
@@ -35,17 +35,16 @@ get_header(); ?>
 
 		<div class="wedding-gallery-image">
 
-		<?php $popup_image = "popup-". get_the_post_thumbnail_url( $post->ID, 'large' ); ?>
-		<a class="btn"  href="#" data-popup-open="<?php echo $popup_image?>">
 
+		<a class="btn"  href="#" data-popup-open="<?php echo $row['wedding_album_single_image']; ?>">
 			<img class="wedding-photo" src="<?php echo $row['wedding_album_single_image']; ?>" alt="">
-			</a> <!-- .btn -->
+		</a> <!-- .btn -->
 
-			<div class="popup" data-popup="<?php echo $popup_image?>">
+			<div class="popup" data-popup="<?php echo $row['wedding_album_single_image']; ?>">
 					<div class="popup-inner">
-             <img class="popup-image" src="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>">
+             <img class="popup-image" src="<?php echo $row['wedding_album_single_image']; ?>">
 							
-						 <a class="popup-close" data-popup-close="<?php echo $popup_image?>" href="#">x</a>
+						 <a class="popup-close" data-popup-close="<?php echo $row['wedding_album_single_image']; ?>" href="#">x</a>
 								</div> <!-- .popup-inner -->
 							</div> <!-- .popup -->
 
@@ -107,7 +106,7 @@ get_header(); ?>
 
 		<div class="nav-links">
 	<?php previous_post_link('%link', '&lt; previous album'); ?> 
-<?php next_post_link('%link', 'next album &gt;'); ?>
+  <?php next_post_link('%link', 'next album &gt;'); ?>
 		</div>
 		<?php endwhile; // End of the loop. ?>
 

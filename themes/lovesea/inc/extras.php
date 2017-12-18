@@ -176,7 +176,7 @@ function wedding_hero_image() {
 			return;
 		}
 		
-		$album_hero_css = ".single-gallery .page-header {
+		$album_hero_css = ".single-gallery .site-content {
 			background-image: url({$image});
 			min-height: 350px;
 			background-position: center;
