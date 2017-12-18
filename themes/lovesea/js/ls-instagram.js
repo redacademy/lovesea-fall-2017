@@ -21,7 +21,7 @@
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
             nav: true,
-            navText: ['<img src="/left-arrow.png">', '>'],
+            navText: ["<img src='/images/arrows/left_arrow.png'>", '>'],
             // navText: ["<img src='myprevimage.png'>","<img src='mynextimage.png'>"]
             lazyLoad: true,
             resonsiveClass:true,
