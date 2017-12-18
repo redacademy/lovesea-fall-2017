@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
-  * Template Name: 404
+  * Template Name: error404
 
  * @package Lovesea_Theme
  */
@@ -25,8 +25,11 @@ get_header(); ?>
 						<p><?php echo esc_html( 'We&#039;re so sorry!' ); ?></p>
 						<p><?php echo esc_html( 'Something must have gone wrong.' ); ?></p>
 					</div>
-					<p>Go back to</p>
-					<button class="browse-weddings"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">Browse Weddings</a></button> 
+					<p class="go-back">Go back to</p>
+					<div class="browse-weddings">
+						<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">Browse Weddings</a>
+					</div> 
+					
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 

@@ -25,10 +25,8 @@
 	background-color: $color__accent;
 	outline: $border__white-solid;
 	border: none;
-	a {
-		text-decoration: none;
-		color: $color__background-body;
-	}
+	text-decoration: none;
+	color: $color__background-body;
 }
 
 @mixin pink-button-mobile {
