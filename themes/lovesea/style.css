@@ -491,13 +491,6 @@ label {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-.current ul li a {
-  border-bottom: 1px solid blue; }
-
-#main-navigation ul li.active-link > a {
-  text-decoration: underline;
-  color: YOUR-LINK-COLOR; }
-
 a {
   color: #415468; }
   a:hover, a:focus, a:active {
@@ -1704,6 +1697,9 @@ object {
         letter-spacing: 1.2px; } }
     .about-sub-pages li a {
       text-decoration: none; }
+    .about-sub-pages li a:hover {
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #BF8472; }
 
 .tab {
   display: none; }
@@ -1972,18 +1968,26 @@ object {
   margin: 0 auto; }
 
 .about-contact-us {
-  width: 300px;
-  height: 100px;
+  width: 224px;
+  height: 75px;
   font-size: 1.3rem;
   outline-offset: -15px;
   background-color: #CC9785;
   outline: 2px solid #FFFFFF;
   border: none;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 1.5rem auto 5rem auto;
   text-decoration: none;
   color: #FFFFFF;
-  font-style: italic; }
+  font-style: italic;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .about-contact-us a {
     text-decoration: none;
     color: #FFFFFF; }
