@@ -113,8 +113,11 @@
   position: absolute;
   background-image: linear-gradient( hsla(0,0%,0%,.2), 0, #DCDCDC 1%);
   top: 0;
-  height: 100%;
+  opacity: 0.6;
+  height: 90%;
   width: 100%;
+  outline-offset: -15px;
+  outline: $border__white-solid;
   content: '';
   @include desktop {
     display: none;

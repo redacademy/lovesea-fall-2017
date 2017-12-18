@@ -1362,8 +1362,11 @@ object {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(0), color-stop(1%, #DCDCDC));
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), 0, #DCDCDC 1%);
   top: 0;
-  height: 100%;
+  opacity: 0.6;
+  height: 90%;
   width: 100%;
+  outline-offset: -15px;
+  outline: 2px solid #FFFFFF;
   content: ''; }
   @media (min-width: 800px) {
     .image-gradient::after {
