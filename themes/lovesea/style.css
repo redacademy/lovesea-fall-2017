@@ -817,16 +817,10 @@ object {
 /* Front page */
 /* Connect page */
 .page-id-61 .connect-hero {
-  height: 300px;
-  max-width: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 75%;
-     object-position: 0 75%; }
+  width: 100vw; }
   @media (min-width: 800px) {
     .page-id-61 .connect-hero {
-      background-position-y: -28rem;
+      background-position-y: initial;
       width: 100vw;
       height: 10rem; } }
 
@@ -888,6 +882,29 @@ object {
      object-fit: cover;
   -o-object-position: 0 75%;
      object-position: 0 75%; }
+
+.page-id-234 .entry-content {
+  text-align: center;
+  letter-spacing: 1.1px; }
+  .page-id-234 .entry-content h2 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 1.1px;
+    color: #BF8472;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 1.25rem; }
+    @media (min-width: 800px) {
+      .page-id-234 .entry-content h2 {
+        font-size: 4rem; } }
+  @media (min-width: 800px) {
+    .page-id-234 .entry-content p {
+      font-size: 1.25rem; } }
+  .page-id-234 .entry-content .thankyou-message {
+    text-align: center; }
+    @media (min-width: 800px) {
+      .page-id-234 .entry-content .thankyou-message {
+        font-size: 1.5rem; } }
 
 .home .nav-logo {
   display: none; }
