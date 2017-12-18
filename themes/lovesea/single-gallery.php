@@ -98,15 +98,17 @@ get_header(); ?>
 		<div class="back-to-top">
 			<a href="#back-to-top">back to top</a>
 		</div>
-    <div class="single-gallery-about">
+    <div class="about-us-button-wrapper">
 		<button class="about-us">
 			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
 		</button> <!-- .about-us button -->
     </div>
-   
-		
-			<?php the_post_navigation(); ?>
+	 
 
+		<div class="nav-links">
+	<?php previous_post_link('%link', '&lt; previous album'); ?> 
+<?php next_post_link('%link', 'next album &gt;'); ?>
+		</div>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

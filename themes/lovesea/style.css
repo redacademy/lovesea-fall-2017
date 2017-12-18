@@ -1358,11 +1358,11 @@ object {
 
 .image-gradient::after {
   display: block;
-  position: relative;
+  position: absolute;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(220, 220, 220, 0.2)), to(#DCDCDC));
   background-image: linear-gradient(rgba(220, 220, 220, 0.2) 0, #DCDCDC 100%);
-  margin-top: -48.10em;
-  height: 48.10em;
+  top: 0;
+  height: 100%;
   width: 100%;
   content: ''; }
   @media (min-width: 800px) {
@@ -1407,8 +1407,11 @@ object {
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
-  width: 70vw;
+  width: 50vw;
   margin: 0 auto; }
+  @media (min-width: 800px) {
+    .wedding-album-gallery-pages {
+      width: 60vw; } }
 
 .wedding-gallery-image {
   display: inline-block;
@@ -1428,6 +1431,14 @@ object {
 .single-gallery .p {
   text-align: center;
   font-size: 18px; }
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5em 1em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .tab-portraits {
   display: none;
