@@ -824,16 +824,10 @@ object {
 /* Front page */
 /* Connect page */
 .page-id-61 .connect-hero {
-  height: 300px;
-  max-width: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 75%;
-     object-position: 0 75%; }
+  width: 100vw; }
   @media (min-width: 800px) {
     .page-id-61 .connect-hero {
-      background-position-y: -28rem;
+      background-position-y: initial;
       width: 100vw;
       height: 10rem; } }
 
@@ -895,6 +889,29 @@ object {
      object-fit: cover;
   -o-object-position: 0 75%;
      object-position: 0 75%; }
+
+.page-id-234 .entry-content {
+  text-align: center;
+  letter-spacing: 1.1px; }
+  .page-id-234 .entry-content h2 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 1.1px;
+    color: #BF8472;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 1.25rem; }
+    @media (min-width: 800px) {
+      .page-id-234 .entry-content h2 {
+        font-size: 4rem; } }
+  @media (min-width: 800px) {
+    .page-id-234 .entry-content p {
+      font-size: 1.25rem; } }
+  .page-id-234 .entry-content .thankyou-message {
+    text-align: center; }
+    @media (min-width: 800px) {
+      .page-id-234 .entry-content .thankyou-message {
+        font-size: 1.5rem; } }
 
 .home .nav-logo {
   display: none; }
@@ -1588,11 +1605,15 @@ object {
   width: 100%; }
 
 .page-id-54 .site-content .content-area .entry-title {
-  text-align: center; }
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  color: #BF8472;
+  font-weight: lighter;
+  letter-spacing: 1.1px; }
   @media (min-width: 800px) {
     .page-id-54 .site-content .content-area .entry-title {
       font-size: 64px;
-      color: #BF8472;
       font-weight: 500;
       font-style: italic;
       letter-spacing: 2px; } }
@@ -1623,7 +1644,7 @@ object {
     display: -ms-flexbox;
     display: flex; }
   .who-we-are-wrapper .who-we-are-image {
-    padding: 1rem; }
+    padding: 1rem 2.25rem; }
     @media (min-width: 800px) {
       .who-we-are-wrapper .who-we-are-image {
         max-height: 516px;
@@ -1644,11 +1665,13 @@ object {
     letter-spacing: 1.1px;
     margin: 0 1rem;
     font-weight: lighter;
-    line-height: 120%; }
+    line-height: 120%;
+    padding: 0 1.25rem; }
     @media (min-width: 800px) {
       .who-we-are-wrapper .who-we-are-text {
         font-size: 18px;
-        margin: 0 1.5rem 0 0; } }
+        margin: 0 1.5rem 0 0;
+        padding: 0; } }
 
 .about-sub-pages {
   display: -webkit-box;
@@ -1685,11 +1708,12 @@ object {
   font-style: italic;
   color: #415468;
   text-align: center;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-bottom: 2rem; }
   @media (min-width: 800px) {
     .what-we-do-title {
       font-size: 3rem;
-      margin-bottom: 4rem; } }
+      margin-bottom: 2rem; } }
 
 .what-we-do-wrapper {
   display: -webkit-box;
@@ -1721,7 +1745,8 @@ object {
   letter-spacing: 1.1px;
   line-height: 120%;
   font-weight: lighter;
-  padding: 1rem 1rem 0 1rem; }
+  padding: 1rem 1rem 0 1rem;
+  text-align: justify; }
   @media (min-width: 800px) {
     .what-we-do-text-one,
     .what-we-do-text-two,
@@ -1733,12 +1758,13 @@ object {
 @media (min-width: 800px) {
   .what-we-do-text-one,
   .what-we-do-text-three {
-    padding: 0 0 1.5rem 2.5rem; } }
+    padding: 0 0 1.5rem 2rem; } }
 
 @media (min-width: 800px) {
   .what-we-do-text-two,
   .what-we-do-text-four {
-    padding-right: 2.5rem; } }
+    padding-right: 2.5rem;
+    padding-left: 0; } }
 
 @media (min-width: 800px) {
   .what-we-do-text-one {
@@ -1757,6 +1783,9 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; } }
+
+.block-one-wrapper:first-of-type {
+  margin-bottom: 0; }
 
 .block-two-wrapper {
   margin: 1rem 0; }
@@ -1777,6 +1806,10 @@ object {
               align-items: center;
       margin-bottom: 1.5rem; } }
 
+@media (min-width: 800px) {
+  .block-two-wrapper:first-of-type {
+    margin-top: 0; } }
+
 /*----- About Desktop -----*/
 .about-section-one,
 .about-section-two,
@@ -1787,10 +1820,13 @@ object {
   .about-section-one h3,
   .about-section-two h3,
   .about-section-three h3 {
-    font-size: 30px;
-    margin: 0 auto;
     display: block;
     font-weight: lighter; }
+    @media (min-width: 800px) {
+      .about-section-one h3,
+      .about-section-two h3,
+      .about-section-three h3 {
+        font-size: 30px; } }
   .about-section-one p,
   .about-section-two p,
   .about-section-three p {
@@ -1816,11 +1852,15 @@ object {
   .about-section-one p:last-child {
     border-bottom: 1px solid #BF8472;
     padding-bottom: 4rem; }
+  .about-section-one h3 {
+    line-height: 125%;
+    margin: 0.75rem 0; }
 
 .about-section-two {
   font-size: 18px; }
   .about-section-two .faq-question {
-    margin-bottom: 0.25rem; }
+    margin-bottom: 0.25rem;
+    font-weight: 500; }
   .about-section-two .faq-answer {
     margin-top: 0; }
   .about-section-two .faq-answer:last-child {
@@ -1892,8 +1932,22 @@ object {
 
 /*----- Section Content -----*/
 .accordion-section-content {
-  padding: 15px;
+  padding: 1rem 1rem 2rem 1rem;
   display: none; }
+  .accordion-section-content h3 {
+    text-align: center;
+    font-style: italic; }
+  .accordion-section-content p {
+    width: 92%;
+    margin: 1rem auto;
+    text-align: justify; }
+  .accordion-section-content .faq-question {
+    font-weight: 500; }
+  .accordion-section-content .faq-answer {
+    margin-bottom: 0.75rem; }
+
+.testimonial-source {
+  color: #BF8472; }
 
 .accordion-section-title.active {
   display: inline-block; }
