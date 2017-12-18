@@ -491,13 +491,6 @@ label {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-.current ul li a {
-  border-bottom: 1px solid blue; }
-
-#main-navigation ul li.active-link > a {
-  text-decoration: underline;
-  color: YOUR-LINK-COLOR; }
-
 a {
   color: #415468; }
   a:hover, a:focus, a:active {
