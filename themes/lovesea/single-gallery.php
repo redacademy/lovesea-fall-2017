@@ -57,59 +57,74 @@ get_header(); ?>
 				endforeach;
 			endif;
 			?>
+
+		</div>
+
+<!-- TODO add tabs -->
+<?php
+			$loop = CFS()->get( 'portrait_album_', 74 );
+
+			// d($loop);
+
+			if(isset($loop)):
+				foreach ( $loop as $row ) :
+
+?> 
+
+
+	<h1>hi</h1>
+	<a class="btn"  href="#" data-popup-open="<?php echo $row['portrait_album_image']; ?>">
+			<img class="wedding-photo" src="<?php echo $row['portrait_album_image']; ?>" alt="">
+		</a> <!-- .btn -->
+
+			<div class="popup" data-popup="<?php echo $row['portrait_album_image']; ?>">
+					<div class="popup-inner">
+             <img class="popup-image" src="<?php echo $row['portrait_album_image']; ?>">
+							
+						 <a class="popup-close" data-popup-close="<?php echo $row['portrait_album_image']; ?>" href="#">x</a>
+								</div> <!-- .popup-inner -->
+							</div> <!-- .popup -->
+	
+		<?php
+				endforeach;
+			endif;
+			?>
+<!-- TODO add tabs -->
+
+<?php
+			$loop = CFS()->get( 'detail_album', 74 );
+			if(isset($loop)):
+				foreach ( $loop as $row ) :
+			?> 
+  
+	<a class="btn"  href="#" data-popup-open="<?php echo $row['detail_album_images']; ?>">
+			<img class="wedding-photo" src="<?php echo $row['detail_album_images']; ?>" alt="">
+		</a> <!-- .btn -->
+
+			<div class="popup" data-popup="<?php echo $row['detail_album_images']; ?>">
+					<div class="popup-inner">
+             <img class="popup-image" src="<?php echo $row['detail_album_images']; ?>">
+							
+						 <a class="popup-close" data-popup-close="<?php echo $row['detail_album_images']; ?>" href="#">x</a>
+								</div> <!-- .popup-inner -->
+							</div> <!-- .popup -->
+		<?php
+				endforeach;
+			endif;
+			?>
+
   				<div class="portrait-container" id="label2" class="label">
 			
 				<div id="label2" class="tab-portraits" class="label">
-				
-		
+			
+			
 
 			 				</div> <!-- .portraits  -->
 						</div> <!-- portrait container --> 
 			 
   
 			 <div id="label3" class="tab-details" class="label">
-<!-- 
-	<?php
- 
- $meta_query_args = array(
-	'relation' => 'OR', 
-	array(
-		'key'     => 'detail_album_images',
-		'value'   => 'detail_album_images',
-	)
-);
- 
-// Custom query.
-$meta_query = new WP_Meta_Query( $meta_query_args );
- 
-// Check that we have query results.
-if ( $query->have_posts() ) {
- 
-    // Start looping over the query results.
-    while ( $query->have_posts() ) {
- 
-        $query->the_post();
- 
-				$loop = CFS()->get( 'portrait_album_' );
-				if(isset($loop)):
-					foreach ( $loop as $row ) :
-				?> 
-		
-		<img class="portrait-photo" src="<?php echo $row['portrait_album_image']; ?>" alt="portrait">
-			<?php
-					endforeach;
-				endif;
-				
-			
- 
-    }
- 
-}
- 
-// Restore original post data.
-wp_reset_postdata();
- 
-?> -->
+
 
 			    </div> <!-- .tab-details  -->
 
