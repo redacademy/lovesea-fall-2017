@@ -1663,7 +1663,9 @@ object {
       margin: 0 auto; } }
   .what-we-do-wrapper img {
     width: 95%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: block; }
     @media (min-width: 800px) {
       .what-we-do-wrapper img {
         width: 400px;
@@ -1675,9 +1677,11 @@ object {
 .what-we-do-text-three,
 .what-we-do-text-four {
   width: 95%;
+  margin: 0 auto;
   letter-spacing: 1.1px;
   line-height: 120%;
-  font-weight: lighter; }
+  font-weight: lighter;
+  padding: 1rem 1rem 0 1rem; }
   @media (min-width: 800px) {
     .what-we-do-text-one,
     .what-we-do-text-two,
@@ -1701,31 +1705,37 @@ object {
     padding-top: 0.5rem; } }
 
 .block-one-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  margin: 1rem 0; }
+  @media (min-width: 800px) {
+    .block-one-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .block-two-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1.5rem; }
+  margin: 1rem 0; }
+  @media (min-width: 800px) {
+    .block-two-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 1.5rem; } }
 
 /*----- About Desktop -----*/
 .about-section-one,
