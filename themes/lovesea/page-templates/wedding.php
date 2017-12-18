@@ -130,9 +130,9 @@ get_header(); ?>
 	</div>
 
 	<div class="about-us-button-wrapper">
-			<button class="about-us">
+			<div class="about-us">
 			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
-			</button> <!-- .about-us button -->
+		</div> <!-- .about-us button -->
 	</div>
 		
 	<div class="wedding-logo">

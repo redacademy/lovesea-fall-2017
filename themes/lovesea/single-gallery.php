@@ -61,36 +61,55 @@ get_header(); ?>
 			
 				<div id="label2" class="tab-portraits" class="label">
 				
-				<?php
-			$loop = CFS()->get( 'portrait_album_' );
-			if(isset($loop)):
-				foreach ( $loop as $row ) :
-			?> 
-  
-	<img class="portrait-photo" src="<?php echo $row['portrait_album_image']; ?>" alt="portrait">
-		<?php
-				endforeach;
-			endif;
-			?>
+		
 
 			 				</div> <!-- .portraits  -->
 						</div> <!-- portrait container --> 
 			 
   
 			 <div id="label3" class="tab-details" class="label">
-
-			 <?php
-			$loop = CFS()->get( 'detail_album' );
-			if(isset($loop)):
-				foreach ( $loop as $row ) :
-			?> 
-  
-	<img class="portrait-photo" src="<?php echo $row['detail_album_images']; ?>" alt="portrait">
-		<?php
-				endforeach;
-			endif;
-			?>
-
+<!-- 
+	<?php
+ 
+ $meta_query_args = array(
+	'relation' => 'OR', 
+	array(
+		'key'     => 'detail_album_images',
+		'value'   => 'detail_album_images',
+	)
+);
+ 
+// Custom query.
+$meta_query = new WP_Meta_Query( $meta_query_args );
+ 
+// Check that we have query results.
+if ( $query->have_posts() ) {
+ 
+    // Start looping over the query results.
+    while ( $query->have_posts() ) {
+ 
+        $query->the_post();
+ 
+				$loop = CFS()->get( 'portrait_album_' );
+				if(isset($loop)):
+					foreach ( $loop as $row ) :
+				?> 
+		
+		<img class="portrait-photo" src="<?php echo $row['portrait_album_image']; ?>" alt="portrait">
+			<?php
+					endforeach;
+				endif;
+				
+			
+ 
+    }
+ 
+}
+ 
+// Restore original post data.
+wp_reset_postdata();
+ 
+?> -->
 
 			    </div> <!-- .tab-details  -->
 
@@ -100,9 +119,9 @@ get_header(); ?>
 			<a href="#back-to-top">back to top</a>
 		</div>
     <div class="about-us-button-wrapper">
-		<button class="about-us">
+		<div class="about-us">
 			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
-		</button> <!-- .about-us button -->
+</div> <!-- .about-us button -->
     </div>
 	 
 
