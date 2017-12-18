@@ -12,9 +12,9 @@ get_header(); ?>
 
 	</header><!-- .page-header -->
 
-	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
 	
-<div class="tab-gallery-wrapper">
+	
+<div id="back-to-top" class="tab-gallery-wrapper">
      
 		 <ul class="wedding-tab-links">
 				<li class="active"><a class="categories"href="#label1">
@@ -28,6 +28,7 @@ get_header(); ?>
               echo $props['label'];?></a></li>
 			</ul><!-- .tab-links -->
 		
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
 		 
 		 <div class="wedding-page-content">
 		 
@@ -43,14 +44,15 @@ get_header(); ?>
 							?>
 
 							<li class="wedding-album">
-									<div>
+									<div class="image-gradient">
 										<a class="wedding-image" href="<?php the_permalink(); ?>">
 								  <?php if ( has_post_thumbnail($post->ID) ) : ?>
 									<?php the_post_thumbnail( $post->ID, 'large' ); ?>
 									<?php endif; ?>
 									
 								<h2 class="album-name"><?php echo $post->post_title; ?></h2>
-								<?php the_content('<p class="album-location">', '</p>'); ?>
+								<?php echo the_content('<p class="album-location">', '</p>'); ?>
+								
 		
 								</a> 
 							</div>
@@ -100,11 +102,17 @@ get_header(); ?>
 				</div> <!-- .wedding-page-content -->
 			</div><!-- .tab-gallery-wrapper -->
 			
+	<div class="back-to-top">
+		<a href="#back-to-top">back to top</a>
+	</div>
+
+	<div class="about-us-button-wrapper">
 			<button class="about-us">
 			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
-		</button> <!-- .about-us button -->
-
-			<div class="wedding-logo">
+			</button> <!-- .about-us button -->
+	</div>
+		
+	<div class="wedding-logo">
 				<img class="wedding-page-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
 		 </div> <!-- .wedding-logo -->
 		 

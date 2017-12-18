@@ -59,30 +59,97 @@
     margin: 1rem auto;
     grid-gap: 20px;
     grid-auto-rows: minmax(250px, auto);
-    grid-template-columns: 1fr 1fr 1fr;
-    @mixin desktop {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    @include desktop {
+      display: grid;
+      max-width: 1000px;
+      padding: 10px 10px;
+      margin: 1rem auto;
+      grid-gap: 20px;
+      grid-auto-rows: minmax(250px, auto);
+      grid-template-columns: 1fr 1fr 1fr;
   
     }
     .wedding-album {
       list-style: none;
-    }
-    .album-location {
-      text-align: center;
-      margin: 0;
-      color: $color__text-main;
-      font-size: 14px;
+      position: relative;
     }
     .album-name {
+      z-index: 4;
+      position: absolute;
+      top: 300px;
+      left: 300px;
       font-size: 24px;
       letter-spacing: 1px;
       text-align: center;
       font-style: italic; 
       font-weight: 500; 
+      @include desktop {
+        position: initial;
+      }
+    }
+    .wedding-location {
+      z-index:4;
+      position: absolute;
+      top: 350px;
+      left: 300px;
+      text-align: center;
+      margin: 0;
+      color: $color__text-main;
+      font-size: 14px;
+      @include desktop {
+        position: initial;
+      }
     }
   }
 }
+.wedding-album {
+  a {
+    text-decoration: none;
+  }
+}
+.image-gradient::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient( rgba(220, 220, 220, 0.2) 0, #DCDCDC 100%);
+  margin-top: -48.10em;
+  height: 48.10em;
+  width: 100%;
+  content: '';
+  @include desktop {
+    display: none;
+  }
+}
+// about us button
+.about-us-button-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.about-us {
+  width: 200px;
+  height: 75px;
+  font-size: 1.3rem;
+  outline-offset: -15px;
+  background-color: #cc9785;
+  outline: 2px solid #fff;
+  border: none;
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+}
+// back to top link
 
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  a {
+    text-decoration: none;
+  }
+}
 // style for masonry gallery pages
 
 .wedding-album-gallery-pages {
