@@ -598,6 +598,7 @@ a {
           font-style: italic;
           font-weight: 200;
           font-size: 1.5rem;
+          padding-right: 1rem;
           text-decoration: none;
           list-style-type: none; }
         .fixed-menu ul.menu-list li:nth-child(2) {

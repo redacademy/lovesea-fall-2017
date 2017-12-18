@@ -187,3 +187,28 @@ function wedding_hero_image() {
 		}
 		add_action( 'wp_enqueue_scripts', 'album_hero_image' );
 
+
+// 404 page
+		function error_hero_image() {
+			
+				if (! is_404() ) {
+					return;
+				}
+			
+			$image = CFS()->get('404_hero_image');
+			
+			if ( ! $image ) {
+				return;
+			}
+			
+			$error_hero_css = ".error404 .hero {
+				background-image: url({$image});
+				min-height: 350px;
+				background-position: center;
+				background-size: cover;
+			}";
+			
+			wp_add_inline_style( 'lovesea', $error_hero_css);
+			}
+			add_action( 'wp_enqueue_scripts', 'error_hero_image' );
+	
