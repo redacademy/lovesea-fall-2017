@@ -164,6 +164,9 @@
     left: 50%;
     bottom: -1rem;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include desktop {
       left: 39%;
       top: 10rem;
@@ -176,6 +179,9 @@
     left: 50%;
     bottom: -1rem;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include desktop {
       left: 62%;
       top: 10rem;
@@ -244,6 +250,17 @@
     right: -2rem;
   }
 }
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  width:31px;
+  height:90px;
+}
+.owl-carousel .owl-nav .owl-prev{
+  background: url('../../images/arrows/left_arrow.png') no-repeat;
+}
+.owl-carousel .owl-nav .owl-next{
+  background: url('../../images/arrows/right_arrow.png') no-repeat;
+}
   
 .owl-item {
   display: flex;
@@ -272,7 +289,7 @@
     background-color: transparent;
     border: none;
     position: absolute;
-    bottom: 5rem;
+    top: 85vh;
     left: 50%;  
     font-size: 2.5em;
     transform: translateX(-50%);

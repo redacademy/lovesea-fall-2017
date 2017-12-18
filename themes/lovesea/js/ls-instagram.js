@@ -21,10 +21,7 @@
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
             nav: true,
-            navText: ["<img src='<?php echo get_template_directory_uri() . '/../images/arrows/down_arrow.png'?>", '>'],
-            // navText: ["<img src='myprevimage.png'>","<img src='mynextimage.png'>"]
-            // <a href="#storyteller"><img src="<?php echo get_template_directory_uri() . '/images/arrows/down_arrow.png'?>"></a>
-            
+            navText: ['', ''],
             lazyLoad: true,
             resonsiveClass:true,
             responsive:{
@@ -62,8 +59,5 @@
     };
 
     Spectra.init();
-
-
-
-
+    
 })(jQuery);
