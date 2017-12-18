@@ -44,3 +44,16 @@
 	}
 }
 
+@mixin owl-nav-arrow {
+	font-size: 1.5rem;    
+	position: absolute;
+	bottom: 8rem;
+	font-size: 7rem;
+	width: 38px;
+	z-index: 3;
+	color: $color__accent;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+

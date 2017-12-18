@@ -1040,7 +1040,9 @@ object {
           -ms-flex-align: left;
               align-items: left;
       position: absolute;
-      right: -26rem; } }
+      right: -22rem;
+      width: 24rem;
+      font-size: 1.2rem; } }
 
 @media (min-width: 800px) {
   .home .introduction-container .observer-text {
@@ -1053,7 +1055,9 @@ object {
     left: 7rem; } }
   @media (min-width: 800px) and (min-width: 800px) {
     .home .introduction-container .observer-text {
-      left: -25rem; } }
+      left: -21rem;
+      width: 24rem;
+      font-size: 1.2rem; } }
 
 @media (min-width: 800px) {
   .home .introduction-container .we-are-observer {
@@ -1089,7 +1093,7 @@ object {
   background-color: #CC9785;
   outline: 2px solid #FFFFFF;
   position: absolute;
-  left: 35%;
+  left: 50%;
   bottom: -1rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
@@ -1100,8 +1104,8 @@ object {
   @media (min-width: 800px) {
     .home .browse-weddings,
     .home .connect {
-      left: 30%;
-      top: 8rem;
+      left: 39%;
+      top: 10rem;
       width: 300px;
       height: 100px;
       font-size: 1.3rem;
@@ -1122,7 +1126,7 @@ object {
   background-color: #CC9785;
   outline: 2px solid #FFFFFF;
   position: absolute;
-  right: -31%;
+  left: 50%;
   bottom: -1rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
@@ -1131,7 +1135,8 @@ object {
     color: #FFFFFF; }
   @media (min-width: 800px) {
     .home .about-us {
-      top: 8rem;
+      left: 62%;
+      top: 10rem;
       width: 300px;
       height: 100px;
       font-size: 1.3rem;
@@ -1198,27 +1203,27 @@ object {
   font-size: 1.5rem;
   position: absolute;
   bottom: 8rem;
-  left: -3rem;
   font-size: 7rem;
   width: 38px;
   z-index: 3;
   color: #CC9785;
   background-color: transparent;
   border: none;
-  outline: none; }
+  outline: none;
+  left: -2rem; }
 
 .instagram-carousel-container .owl-next {
   font-size: 1.5rem;
   position: absolute;
   bottom: 8rem;
-  right: -2rem;
   font-size: 7rem;
   width: 38px;
   z-index: 3;
   color: #CC9785;
   background-color: transparent;
   border: none;
-  outline: none; }
+  outline: none;
+  right: -2rem; }
 
 .owl-item {
   display: -webkit-box;
@@ -1580,30 +1585,33 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  @media (min-width: 800px) {
-    .who-we-are-wrapper .who-we-are-image {
-      max-height: 516px;
-      max-width: 400px;
+  .who-we-are-wrapper .who-we-are-image {
+    padding: 1rem; }
+    @media (min-width: 800px) {
+      .who-we-are-wrapper .who-we-are-image {
+        max-height: 516px;
+        max-width: 400px;
+        height: auto;
+        width: auto;
+        margin: 0 1rem;
+        padding-right: 1rem; } }
+    .who-we-are-wrapper .who-we-are-image img {
+      max-width: 95%;
       height: auto;
-      width: auto;
-      margin: 0 1rem;
-      padding-right: 1rem; } }
-  .who-we-are-wrapper .who-we-are-image img {
-    max-width: 800px;
-    height: auto;
-    margin: 0 auto;
-    width: 90%;
-    float: left; }
+      margin: 0 auto;
+      width: 90%;
+      float: left; }
   .who-we-are-wrapper .who-we-are-text {
     text-align: justify;
-    margin: 0 1.5rem 0 0;
     color: #415468;
     letter-spacing: 1.1px;
+    margin: 0 1rem;
     font-weight: lighter;
     line-height: 120%; }
     @media (min-width: 800px) {
       .who-we-are-wrapper .who-we-are-text {
-        font-size: 18px; } }
+        font-size: 18px;
+        margin: 0 1.5rem 0 0; } }
 
 .about-sub-pages {
   display: -webkit-box;
@@ -1625,6 +1633,8 @@ object {
       .about-sub-pages li {
         font-size: 20px;
         letter-spacing: 1.2px; } }
+    .about-sub-pages li a {
+      text-decoration: none; }
 
 .tab {
   display: none; }

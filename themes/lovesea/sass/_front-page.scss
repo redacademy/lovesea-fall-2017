@@ -104,7 +104,6 @@
         display: flex;
         align-items: center;
         position: relative;
-        // margin: 5rem 0 0;
           img {
           height: 810px;
           width: 540px;
@@ -119,7 +118,9 @@
           flex-direction: column;
           align-items: left;
           position: absolute;
-          right: -26rem;
+          right: -22rem;
+          width: 24rem;
+          font-size: 1.2rem;
         } 
       }
       .observer-text {
@@ -129,8 +130,9 @@
         position: absolute;
         left: 7rem;
         @include desktop {
-          
-        left: -25rem;
+        left: -21rem;
+        width: 24rem;
+        font-size: 1.2rem;
         }
       }
      
@@ -144,16 +146,11 @@
         height: 100vh;
         @include desktop {
         text-align: right;
-        // margin-bottom: 5rem;
         display: flex;
         justify-content: flex-end;
-        
           img {
             height: 810px;
             width: 540px;
-          }
-          .about-us {
-            // left: 0;
           }
         }
       }      
@@ -164,26 +161,24 @@
   .connect {
     @include pink-button-mobile;
     position: absolute;
-    left: 35%;
+    left: 50%;
     bottom: -1rem;
     transform: translateX(-50%);
     @include desktop {
-      left: 30%;
-      
-      // position: static;
-      top: 8rem;
+      left: 39%;
+      top: 10rem;
       @include pink-button;
     }    
   }
   .about-us {
     @include pink-button-mobile;
     position: absolute;
-    right: -31%;
+    left: 50%;
     bottom: -1rem;
     transform: translateX(-50%);
     @include desktop {
-      // position: static;
-      top: 8rem;
+      left: 62%;
+      top: 10rem;
       @include pink-button;
     }
   }
@@ -240,30 +235,13 @@
 
 .instagram-carousel-container {
   .owl-prev {
-    font-size: 1.5rem;    
-    position: absolute;
-    bottom: 8rem;
-    left: -3rem;
-    font-size: 7rem;
-    width: 38px;
-    z-index: 3;
-    color: $color__accent;
-    background-color: transparent;
-    border: none;
-    outline: none;
+    @include owl-nav-arrow;
+    left: -2rem;
+    
   }
   .owl-next {
-    font-size: 1.5rem;
-    position: absolute;
-    bottom: 8rem;    
+    @include owl-nav-arrow;
     right: -2rem;
-    font-size: 7rem;
-    width: 38px;
-    z-index: 3;
-    color: $color__accent;
-    background-color: transparent;
-    border: none;
-    outline: none;
   }
 }
   
