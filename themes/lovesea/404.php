@@ -4,6 +4,8 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
+  * Template Name: 404
+
  * @package Lovesea_Theme
  */
 
