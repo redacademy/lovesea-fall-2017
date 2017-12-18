@@ -69,7 +69,6 @@ $('.wedding-tab-links .categories').on('click', function(e)  {
   e.preventDefault();
 });
 
-
 // wedding page api
 
 // $('.wedding-album .wedding-image').on('click', function(event) {

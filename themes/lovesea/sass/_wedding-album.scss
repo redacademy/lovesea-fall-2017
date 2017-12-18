@@ -160,7 +160,7 @@
   width: 50vw;
   margin: 0 auto;
   @include desktop {
-    width: 60vw;
+    width: 70vw;
   }
 }
 .wedding-gallery-image {
@@ -303,4 +303,6 @@
 }
 .label.active {
   display: block;
+
 }
+
