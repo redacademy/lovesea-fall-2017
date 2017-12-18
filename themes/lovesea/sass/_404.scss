@@ -1,0 +1,34 @@
+.error404 { 
+  text-align: center;
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+  }
+  .page-title {
+    display: flex;
+    flex-direction: column;
+    font-family: $font__main;
+    font-style: italic;
+    span{
+      font-weight: 100;
+      font-size: 1.5rem;
+    }
+  }
+  .sorry p {
+    font-size: 1.5rem;
+
+    font-style: italic;
+  }
+  .browse-weddings {
+    @include pink-button-mobile;
+    @include desktop {
+      @include pink-button;
+    }    
+  }
+  .site-footer {
+    margin-top: 5rem;
+  }
+}

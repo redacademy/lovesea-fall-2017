@@ -14,10 +14,11 @@ get_header(); ?>
 	<img class="front-center-text"  src="<?php echo get_template_directory_uri() . '/images/lovesea-logo-text.svg' ?>">
 	<div class="scroll-arrow">
 		<a href="#storyteller">╲╱</a>
+		<!-- <img src="/images/arrows/down-arrow.png"> -->
+
 	</div>
 </div>
 <!--  -->
-<!-- <img src="/../images/arrows/down-arrow.png"> -->
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
