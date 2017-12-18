@@ -28,7 +28,7 @@
 	<nav class="fixed-menu">
 		<button id="toggle-menu-button" class="toggle-menu-button">&#9776;</button>
 		<ul id="menu-list" class="menu-list">
-			<li id="menu-item"><a class="test" href="<?php echo get_home_url(); ?>">home</a></li>
+			<li id="menu-item"><a class="active-menu" href="<?php echo get_home_url(); ?>">home</a></li>
 			<li class="menu-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">weddings</a></li>
 			<img class="nav-logo"  src="<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>">
 			<li class="menu-item"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">about</a></li>

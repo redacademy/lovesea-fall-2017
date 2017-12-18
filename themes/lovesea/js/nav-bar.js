@@ -15,6 +15,13 @@
     //       $(this).addClass('current');
     //     }
     //   });
+ 
+      // var url = window.location.href;   
+      // var page = url.substr(url.lastIndexOf('/')+1);   
+      //  target = $('.active-menu a[href*="'+home+'"]');   
+      //  $(target).addClass('active-page');
+
+    
 
     
 })(jQuery);

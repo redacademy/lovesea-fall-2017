@@ -424,6 +424,7 @@
   text-decoration: none;
   color: $color__background-body;
   font-style: italic;
+<<<<<<< HEAD
   align-items: center;
   justify-content: center;
   a {
@@ -431,4 +432,9 @@
 		color: $color__background-body;
 	}
 
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> dcafd09ce3a4886c4a01678d91773849792f5c72
 }
