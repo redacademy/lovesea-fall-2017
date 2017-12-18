@@ -4,8 +4,6 @@
 // Select all links with hashes
 
 $('a[href="#storyteller"]')
-// $('a[href="#back-to-top"]')
-
 
 // Remove links that don't actually link to anything
 .not('[href="#"]')
@@ -33,9 +31,8 @@ $('a[href="#storyteller"]')
 
 
 
-
+// Back to top
 $('a[href="#back-to-top"]')
-
 
 // Remove links that don't actually link to anything
 .not('[href="#"]')
