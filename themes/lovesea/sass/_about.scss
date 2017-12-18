@@ -413,4 +413,7 @@
   text-decoration: none;
   color: $color__background-body;
   font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -491,12 +491,8 @@ label {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-.current ul li a {
-  border-bottom: 1px solid blue; }
-
-#main-navigation ul li.active-link > a {
-  text-decoration: underline;
-  color: YOUR-LINK-COLOR; }
+.active-page {
+  color: green; }
 
 a {
   color: #415468; }
@@ -1983,7 +1979,16 @@ object {
   margin: 1.5rem auto 5rem auto;
   text-decoration: none;
   color: #FFFFFF;
-  font-style: italic; }
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .about-contact-us a {
     text-decoration: none;
     color: #FFFFFF; }
