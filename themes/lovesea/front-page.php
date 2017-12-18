@@ -79,9 +79,10 @@ get_header(); ?>
 								<h1>	<?php echo $row['we_are_story_tellers_title']; ?> </h1>
 								<p> <?php echo $row['we_are_story_tellers_text']; ?> </p>
 								<?php echo $row['we_are_story_tellers_link']; ?> 
-
-								<button class="browse-weddings"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">
-								<?php echo $row['we_are_story_tellers_link']; ?>Browse Weddings</a></button> 
+								<div class="browse-weddings">
+									<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">
+									<?php echo $row['we_are_story_tellers_link']; ?>Browse Weddings</a>
+								</div>
 								<?php endforeach; ?>
 
 							</div>
@@ -117,9 +118,10 @@ get_header(); ?>
 									<p> <?php echo $row['we_are_observers_text']; ?> </p>
 
 									<?php echo $row['we_are_observers_link']; ?> 
-
-									<button class="about-us"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">
-									<?php echo $row['we_are_observers_link']; ?>About Us</a></button> 
+									<div class="about-us">
+										<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">
+										<?php echo $row['we_are_observers_link']; ?>About Us</a>
+									</div> 
 									<?php endforeach; ?>
 								</div>
 							</li>
@@ -154,8 +156,10 @@ get_header(); ?>
 									<p> <?php echo $row['we_are_your_friend_text']; ?> </p>
 									<?php echo $row['we_are_your_friend_link']; ?> 
 
-									<button class="connect"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">
-									<?php echo $row['we_are_your_friend_link']; ?>Let's Talk</a></button> 
+									<div class="connect">
+										<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">
+										<?php echo $row['we_are_your_friend_link']; ?>Let's Talk</a>
+									</div> 
 									<?php endforeach; ?>
 
 								</div>

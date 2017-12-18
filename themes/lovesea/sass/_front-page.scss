@@ -164,6 +164,9 @@
     left: 50%;
     bottom: -1rem;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include desktop {
       left: 39%;
       top: 10rem;
@@ -176,6 +179,9 @@
     left: 50%;
     bottom: -1rem;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include desktop {
       left: 62%;
       top: 10rem;
