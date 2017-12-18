@@ -15,7 +15,7 @@
     object-position: 0 75%;
 
     @include desktop {
-      background-position-y: initial;
+      background-position-y: -28rem;
       width: 100vw;
       height: 10rem;
     }

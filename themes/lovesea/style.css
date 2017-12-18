@@ -825,7 +825,7 @@ object {
      object-position: 0 75%; }
   @media (min-width: 800px) {
     .page-id-61 .connect-hero {
-      background-position-y: initial;
+      background-position-y: -28rem;
       width: 100vw;
       height: 10rem; } }
 
