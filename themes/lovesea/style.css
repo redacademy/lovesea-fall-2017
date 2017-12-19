@@ -1145,7 +1145,9 @@ object {
   .home .introduction-container .we-are-your-friend h1 {
     position: absolute;
     top: 0;
-    margin: 10% 5%; }
+    margin: 10% 5%;
+    font-style: italic;
+    font-weight: 400; }
     @media (min-width: 800px) {
       .home .introduction-container .we-are-story-tellers h1,
       .home .introduction-container .we-are-observer h1,
@@ -1266,6 +1268,7 @@ object {
     .home .connect {
       left: 39%;
       top: 10rem;
+      font-size: 1.5rem;
       width: 300px;
       height: 100px;
       font-size: 1.3rem;
@@ -1328,7 +1331,7 @@ object {
   width: 750px; }
 
 .site-main .instagram-carousel-container {
-  margin: 10rem auto 0;
+  margin: 5rem auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1338,6 +1341,9 @@ object {
           flex-direction: column;
   width: 100%;
   z-index: 1; }
+  @media (min-width: 800px) {
+    .site-main .instagram-carousel-container {
+      margin: 10rem auto 0; } }
 
 .instagram-carousel-container {
   position: relative; }
@@ -1353,6 +1359,8 @@ object {
           flex-direction: column;
   margin: 0 auto;
   font-weight: 100;
+  font-style: italic;
+  font-size: 30px;
   background-color: #FFFFFF; }
   .follow-instagram span {
     font-weight: bold; }
@@ -1455,11 +1463,25 @@ object {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin: 0.75rem auto; }
 
 .page-template-wedding .wedding-page-logo {
-  height: 50px;
-  width: 30px; }
+  height: 70px;
+  width: 42px; }
+
+.wedding-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.75rem auto; }
+
+.wedding-page-logo {
+  height: 70px;
+  width: 42px; }
 
 .page-template-wedding .entry-title,
 .single-gallery .entry-title {
@@ -1493,7 +1515,8 @@ object {
     font-style: italic;
     font-weight: lighter;
     font-size: 20px;
-    letter-spacing: 1.2px; }
+    letter-spacing: 1.2px;
+    padding: 0 0.25rem 0.5rem 0.25rem; }
     .page-template-wedding ul.wedding-tab-links li a,
     .single-gallery ul.wedding-tab-links li a {
       text-decoration: none;
@@ -1577,7 +1600,8 @@ object {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-bottom: 2rem; }
 
 .about-us {
   display: -webkit-box;
@@ -1606,7 +1630,8 @@ object {
     color: #fff;
     text-decoration: none;
     font-style: italic;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    font-size: 26px; }
 
 .back-to-top {
   display: -webkit-box;
@@ -1616,6 +1641,9 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 2em 0; }
+  @media (min-width: 800px) {
+    .back-to-top {
+      display: none; } }
   .back-to-top a {
     text-decoration: none;
     font-size: 20px;
@@ -2113,7 +2141,8 @@ li.active {
   display: none; }
   .accordion-section-content h3 {
     text-align: center;
-    font-style: italic; }
+    font-style: italic;
+    font-weight: 500; }
   .accordion-section-content p {
     width: 92%;
     margin: 1rem auto;
@@ -2137,7 +2166,7 @@ li.active {
   width: 42px;
   height: 70px;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto 1rem; }
 
 .contact-us-button-wrapper {
   display: -webkit-box;
