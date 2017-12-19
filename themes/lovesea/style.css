@@ -559,9 +559,8 @@ a {
       width: 50px; } }
 
 .fixed-menu .menu-list .active-page a {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #CC9785;
-          text-decoration-color: #CC9785; }
+  border-bottom: 2px solid #CC9785;
+  padding: 0; }
 
 .sub-menu {
   display: none; }
@@ -580,7 +579,7 @@ a {
   width: 100vw; }
   @media (min-width: 800px) {
     .fixed-menu {
-      background-color: rgba(255, 255, 255, 0.4); } }
+      background-color: rgba(255, 255, 255, 0); } }
   .fixed-menu .toggle-menu-button {
     background-color: transparent;
     display: block;
@@ -599,7 +598,7 @@ a {
     line-height: 2; }
     @media (min-width: 800px) {
       .fixed-menu .menu-list {
-        background-color: rgba(255, 255, 255, 0.4); } }
+        background-color: rgba(255, 255, 255, 0); } }
     .fixed-menu .menu-list li {
       font-family: "EB Garamond", Courier, serif;
       font-style: italic;
@@ -616,6 +615,10 @@ a {
       display: -ms-flexbox;
       display: flex; }
       .fixed-menu ul.menu-list {
+        -webkit-transition: all 0.9s ease-in-out;
+        transition: all 0.9s ease-in-out;
+        -webkit-transition-duration: 1s, 0.5s, 0.3s, 0.3s, 0.3s, 0.3s, 0.3s;
+                transition-duration: 1s, 0.5s, 0.3s, 0.3s, 0.3s, 0.3s, 0.3s;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;

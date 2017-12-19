@@ -11,7 +11,7 @@ $color__text-secondary: #BF8472;
 $color__accent: #CC9785;
 $color__black:#000;
 $color__header-background: hsla(0,0%,100%,1);
-$color__header-transparent-background: hsla(0,0%,100%,.4);
+$color__header-transparent-background: hsla(0,0%,100%,.0);
 
 
 
@@ -43,6 +43,7 @@ $color__text-screen: red;
 $border__white-solid: 2px solid #FFFFFF;
 $border__main-solid: 1px solid #CC9785;
 $border__instagram-image: 2px solid hsla(0,0%,87%,.7);
+$border__under-nav: 2px solid $color__accent;
 
 //screen sizes
 
