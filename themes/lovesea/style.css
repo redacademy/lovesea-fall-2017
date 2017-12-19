@@ -491,8 +491,8 @@ label {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-.active-page {
-  color: green; }
+.fixed-menu .menu-list .active-page {
+  text-decoration: underline !important; }
 
 a {
   color: #415468; }
@@ -823,7 +823,7 @@ object {
   width: 100vw; }
   @media (min-width: 800px) {
     .page-id-61 .connect-hero {
-      background-position-y: initial;
+      background-position-y: -28rem;
       width: 100vw;
       height: 10rem; } }
 
@@ -1142,11 +1142,9 @@ object {
       outline-offset: -15px;
       background-color: #CC9785;
       outline: 2px solid #FFFFFF;
-      border: none; }
-      .home .browse-weddings a,
-      .home .connect a {
-        text-decoration: none;
-        color: #FFFFFF; } }
+      border: none;
+      text-decoration: none;
+      color: #FFFFFF; } }
 
 .home .about-us {
   width: 200px;
@@ -1182,10 +1180,9 @@ object {
       outline-offset: -15px;
       background-color: #CC9785;
       outline: 2px solid #FFFFFF;
-      border: none; }
-      .home .about-us a {
-        text-decoration: none;
-        color: #FFFFFF; } }
+      border: none;
+      text-decoration: none;
+      color: #FFFFFF; } }
 
 .owl-wrapper {
   width: 30rem; }
@@ -1987,15 +1984,24 @@ li.active {
   background-color: #CC9785;
   outline: 2px solid #FFFFFF;
   border: none;
+<<<<<<< HEAD
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+>>>>>>> de1a7eab1aab97416dde82415c35148f1a19f392
   margin: 1.5rem auto 5rem auto;
   text-decoration: none;
   color: #FFFFFF;
   font-style: italic;
   -webkit-box-align: center;
       -ms-flex-align: center;
+<<<<<<< HEAD
+          align-items: center; }
+=======
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2003,6 +2009,7 @@ li.active {
   .about-contact-us a {
     text-decoration: none;
     color: #FFFFFF; }
+>>>>>>> de1a7eab1aab97416dde82415c35148f1a19f392
 
 .site-footer {
   border-top: 1px solid #CC9785;
@@ -2043,30 +2050,32 @@ li.active {
     .error404 .page-title span {
       font-weight: 100;
       font-size: 1.5rem; }
+  .error404 .go-back {
+    margin-bottom: 3.5rem; }
   .error404 .sorry p {
     font-size: 1.5rem;
     font-style: italic; }
-  .error404 .browse-weddings {
+  .error404 .browse-weddings a {
     width: 200px;
     height: 55px;
     font-size: 1rem;
     outline-offset: -8px;
     background-color: #CC9785;
     outline: 2px solid #FFFFFF; }
-    .error404 .browse-weddings a {
+    .error404 .browse-weddings a a {
       text-decoration: none;
       color: #FFFFFF; }
     @media (min-width: 800px) {
-      .error404 .browse-weddings {
+      .error404 .browse-weddings a {
         width: 300px;
         height: 100px;
         font-size: 1.3rem;
         outline-offset: -15px;
         background-color: #CC9785;
         outline: 2px solid #FFFFFF;
-        border: none; }
-        .error404 .browse-weddings a {
-          text-decoration: none;
-          color: #FFFFFF; } }
+        border: none;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 2.3rem 5rem; } }
   .error404 .site-footer {
     margin-top: 5rem; }

@@ -21,6 +21,11 @@
       //  target = $('.active-menu a[href*="'+home+'"]');   
       //  $(target).addClass('active-page');
 
+        $('#fixed-menu a').click(function () {
+          $('#fixed-menu a').removeClass('active-page');
+          $(this).addClass('active-page');
+        });
+
     
 
     

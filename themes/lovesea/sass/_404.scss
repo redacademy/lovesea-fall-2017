@@ -17,15 +17,19 @@
       font-size: 1.5rem;
     }
   }
+  .go-back {
+    margin-bottom: 3.5rem;
+  }
   .sorry p {
     font-size: 1.5rem;
 
     font-style: italic;
   }
-  .browse-weddings {
+  .browse-weddings a {
     @include pink-button-mobile;
     @include desktop {
       @include pink-button;
+      padding: 2.3rem 5rem;
     }    
   }
   .site-footer {
