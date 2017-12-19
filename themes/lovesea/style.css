@@ -936,9 +936,9 @@ object {
   margin-left: 0; }
   @media (min-width: 800px) {
     .partners-logo-list {
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
@@ -976,16 +976,21 @@ object {
             flex-direction: column;
     text-align: center;
     width: 280px;
-    margin: 0 1rem; }
+    margin: 0 auto; }
 
 .partner-logo-one {
-  width: 280px; }
+  width: 280px;
+  height: auto; }
 
 .partner-logo-two {
   width: 280px; }
 
 .partner-logo-three {
-  width: 200px; }
+  width: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto; }
 
 .home .nav-logo {
   display: none; }

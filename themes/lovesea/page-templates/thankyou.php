@@ -17,29 +17,16 @@ get_header(); ?>
 
 			<li><img src="<?php
 				echo CFS()->get( 'partner_one_logo' ); ?>" alt="logo for the central westcoast forest society" class="partner-logo-one"></img>
+				<p><?php echo CFS()->get( 'partner_one_text' ); ?></p>
 			</li>
 			<li><img src="<?php
 				echo CFS()->get( 'partner_two_logo' ); ?>" alt="logo for sea to cedar" class="partner-logo-two"></img>
+				<p><?php echo CFS()->get( 'partner_two_text' ); ?></p>
 			</li>
 			<li><img src="<?php
 				echo CFS()->get( 'partner_three_logo' ); ?>" alt="logo for the raincoast education society" class="partner-logo-three"></img>
-			</li>
-
-			</ul>
-
-			<ul class='partner-info-list'>
-			<li> 
-				<p><?php echo CFS()->get( 'partner_one_text' ); ?></p>
-			</li>
-			<li>
-				<p><?php echo CFS()->get( 'partner_two_text' ); ?></p>
-			</li>
-			<li>
 				<p><?php echo CFS()->get( 'partner_three_text' ); ?></p>
 			</li>
-			
-			</ul>
-								
 	</div>
 
 			<?php endwhile; // End of the loop. ?>

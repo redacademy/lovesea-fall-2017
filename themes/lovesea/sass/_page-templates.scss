@@ -102,7 +102,7 @@
   margin-left: 0;
 
   @include desktop {
-    align-items: flex-end;
+    align-items: baseline;
     justify-content: center;
   }
 
@@ -130,17 +130,20 @@
     flex-direction: column;
     text-align: center;
     width: 280px;
-    margin: 0 1rem;
+    margin: 0 auto;
   }
 }
 
 .partner-logo-one {
   width: 280px;
+  height: auto;
 }
 .partner-logo-two {
   width: 280px;
 }
 .partner-logo-three {
     width: 200px;
+    align-items: center;
+    margin: 0 auto;
 }
 
