@@ -475,19 +475,26 @@ label {
 .wedding-date-venue .wpcf7-form-control.wpcf7-text {
   width: 50%; }
 
-.first-name-last, .wedding-date-venue {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+@media (min-width: 800px) {
+  .first-name-last, .wedding-date-venue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 .first-name, .wedding-date {
-  width: 49.5%; }
+  width: 100%; }
+  @media (min-width: 800px) {
+    .first-name, .wedding-date {
+      width: 49.5%; } }
 
 .last-name, .wedding-venue {
-  width: 49.5%; }
+  width: 100; }
+  @media (min-width: 800px) {
+    .last-name, .wedding-venue {
+      width: 49.5%; } }
 
 .email {
   margin: 1em 0; }
@@ -1467,13 +1474,18 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 300px;
-  height: 100px;
+  width: 150px;
+  height: 50px;
   font-size: 1.3rem;
-  outline-offset: -15px;
+  outline-offset: -6px;
   background-color: #cc9785;
   outline: 2px solid #fff;
   border: none; }
+  @media (min-width: 800px) {
+    .about-us {
+      width: 300px;
+      height: 100px;
+      outline-offset: -15px; } }
   .about-us a {
     color: #fff;
     text-decoration: none;
@@ -1487,9 +1499,11 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 1em; }
+  margin: 2em 0; }
   .back-to-top a {
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500; }
 
 .wedding-album-gallery-pages {
   -moz-column-width: 13em;
@@ -1534,7 +1548,9 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   .nav-links a {
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500; }
 
 .tab-portraits {
   display: none;
@@ -1596,7 +1612,7 @@ object {
   height: initial; }
   @media (min-width: 800px) {
     .popup-inner img {
-      max-height: 32rem; } }
+      max-height: 25.8rem; } }
 
 /* Close Button */
 .popup-close {
