@@ -18,9 +18,9 @@ get_header(); ?>
 
 <ul class="wedding-tab-links">
 <li class="active"><a class="categories"href="#label1">
-galleries</a></li>
-<li><a class="categories" href="#label2"><?php
-$props = CFS()->get_field_info( 'wedding_tab_two' );
+	<?php $props = CFS()->get_field_info( 'wedding_tab_one', 133 ); echo $props['label'];?></a></li>
+
+<li><a class="categories" href="#label2"><?php $props = CFS()->get_field_info( 'wedding_tab_two' );
 echo $props['label'];
 ?></a></li>
 <li><a class="categories" href="#label3"><?php

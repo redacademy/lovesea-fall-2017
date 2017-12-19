@@ -88,6 +88,7 @@
 
   .thankyou-message {
     text-align: center;
+    font-weight: 400;
     @include desktop {
       font-size: 1.5rem;
     }
@@ -161,6 +162,10 @@
     font-size: 24px;
     letter-spacing: 1.2px;
   }
+}
+
+.confirmation-weddings:hover {
+  background-color: $color__button-hover;
 }
 
 

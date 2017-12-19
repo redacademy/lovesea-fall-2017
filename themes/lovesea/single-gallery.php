@@ -12,13 +12,11 @@ get_header(); ?>
     <header class="page-header">
 		</header>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
-
 		<div id="back-to-top" class="tab-gallery-wrapper">
      
 		 <ul class="wedding-tab-links">
 			 
-				<li class="active"><a class="categories" href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">galleries</a></li>
+				<li class="active"><a class="categories" href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>"><?php $props = CFS()->get_field_info( 'wedding_tab_one' ); echo $props['label'];?></a></li>
 				<li><a class="categories" href="#label2"><?php
               $props = CFS()->get_field_info( 'wedding_tab_two', 74 );
               echo $props['label'];

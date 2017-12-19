@@ -34,6 +34,12 @@ width: 42px;
 .single-gallery {
   .entry-title {
     text-align: center;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: $color__text-secondary;
+    font-weight: lighter;
+    letter-spacing: 1.1px;
     @include desktop {
       font-size: 64px;
       color: $color__text-secondary;
@@ -61,12 +67,21 @@ width: 42px;
        a {
          text-decoration: none;
          padding-bottom: .5rem;
+         text-transform: lowercase;
        }
        li.active {
          padding-bottom: 0.5rem;
        }
      }
    }
+}
+
+.single-gallery {
+  .entry-title {
+    @include desktop {
+      color: $color__text-main;
+    }
+  }
 }
 
 // Style for wedding page album gallery
@@ -177,6 +192,10 @@ width: 42px;
     font-size: 26px;
   }
 }
+
+.about-us:hover {
+  background-color: $color__button-hover;
+}
 // back to top link
 
 .back-to-top {
@@ -200,7 +219,7 @@ width: 42px;
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em; 
-  width: 50vw;
+  width: 70vw;
   margin: 0 auto;
   @include desktop {
     width: 60vw;

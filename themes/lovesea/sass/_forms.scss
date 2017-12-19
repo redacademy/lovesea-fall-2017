@@ -42,6 +42,10 @@ input[type="search"] {
 	padding: 3px;
 }
 
+.wpcf7-form-control.wpcf7-submit:hover {
+	background-color: $color__link-hover;
+}
+
 // input fields on desktop connect page
 form.wpcf7-form {
 	width: 100vw;

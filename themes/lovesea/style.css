@@ -444,6 +444,9 @@ input[type="password"],
 input[type="search"] {
   padding: 3px; }
 
+.wpcf7-form-control.wpcf7-submit:hover {
+  background-color: #232d38; }
+
 form.wpcf7-form {
   width: 100vw;
   padding: 2em; }
@@ -913,7 +916,8 @@ object {
     .page-id-234 .entry-content p {
       font-size: 1.25rem; } }
   .page-id-234 .entry-content .thankyou-message {
-    text-align: center; }
+    text-align: center;
+    font-weight: 400; }
     @media (min-width: 800px) {
       .page-id-234 .entry-content .thankyou-message {
         font-size: 1.5rem; } }
@@ -1002,6 +1006,9 @@ object {
     font-style: italic;
     font-size: 24px;
     letter-spacing: 1.2px; }
+
+.confirmation-weddings:hover {
+  background-color: #BF8472; }
 
 .partner-logo-one {
   width: 300px;
@@ -1272,6 +1279,12 @@ object {
         color: #FFFFFF;
         font-style: italic; } }
 
+.home .connect:hover {
+  background-color: #BF8472; }
+
+.home .browse-weddings:hover {
+  background-color: #BF8472; }
+
 .home .about-us {
   width: 200px;
   height: 55px;
@@ -1313,6 +1326,9 @@ object {
         text-decoration: none;
         color: #FFFFFF;
         font-style: italic; } }
+
+.about-us:hover {
+  background-color: #BF8472; }
 
 .owl-wrapper {
   width: 30rem; }
@@ -1475,7 +1491,13 @@ object {
 
 .page-template-wedding .entry-title,
 .single-gallery .entry-title {
-  text-align: center; }
+  text-align: center;
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  color: #BF8472;
+  font-weight: lighter;
+  letter-spacing: 1.1px; }
   @media (min-width: 800px) {
     .page-template-wedding .entry-title,
     .single-gallery .entry-title {
@@ -1510,10 +1532,15 @@ object {
     .page-template-wedding ul.wedding-tab-links li a,
     .single-gallery ul.wedding-tab-links li a {
       text-decoration: none;
-      padding-bottom: .5rem; }
+      padding-bottom: .5rem;
+      text-transform: lowercase; }
     .page-template-wedding ul.wedding-tab-links li li.active,
     .single-gallery ul.wedding-tab-links li li.active {
       padding-bottom: 0.5rem; }
+
+@media (min-width: 800px) {
+  .single-gallery .entry-title {
+    color: #415468; } }
 
 .page-template-wedding .weddings {
   display: grid;
@@ -1623,6 +1650,9 @@ object {
     letter-spacing: 1px;
     font-size: 26px; }
 
+.about-us:hover {
+  background-color: #BF8472; }
+
 .back-to-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1644,7 +1674,7 @@ object {
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
-  width: 50vw;
+  width: 70vw;
   margin: 0 auto; }
   @media (min-width: 800px) {
     .wedding-album-gallery-pages {
@@ -2202,6 +2232,8 @@ li.active {
   text-align: center; }
   .home .site-content a {
     text-decoration: none; }
+.about-contact-us:hover {
+  background-color: #BF8472; }
 
 .site-footer {
   border-top: 1px solid #CC9785;
