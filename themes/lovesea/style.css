@@ -1006,7 +1006,10 @@ object {
           justify-content: center; }
   .confirmation-weddings a {
     color: #FFFFFF;
-    text-decoration: none; }
+    text-decoration: none;
+    font-style: italic;
+    font-size: 24px;
+    letter-spacing: 1.2px; }
 
 .partner-logo-one {
   width: 300px;
