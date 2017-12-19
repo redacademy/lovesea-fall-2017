@@ -927,13 +927,20 @@ object {
         font-size: 1.5rem; } }
 
 .partners-logo-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
   padding-left: 0;
   margin-left: 0;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (min-width: 800px) {
     .partners-logo-list {
       -webkit-box-align: baseline;
@@ -941,7 +948,18 @@ object {
               align-items: baseline;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; } }
+              justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .partners-logo-list p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
   .partners-logo-list li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -951,13 +969,22 @@ object {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    width: 25%;
+    width: 100%;
     margin: 0 1rem; }
+    @media (min-width: 800px) {
+      .partners-logo-list li {
+        width: 25%; } }
   .partners-logo-list p {
     font-size: 18px;
     letter-spacing: 1.2px;
     margin: 1rem 1rem 0rem 1rem;
+    display: none;
     color: #415468; }
+    @media (min-width: 800px) {
+      .partners-logo-list p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
 
 .confirmation-weddings {
   width: 300px;
@@ -982,23 +1009,32 @@ object {
     text-decoration: none; }
 
 .partner-logo-one {
-  width: 280px;
+  width: 300px;
   height: auto;
-  margin: 0 auto; }
+  margin: 1rem auto; }
+  @media (min-width: 800px) {
+    .partner-logo-one {
+      width: 280px; } }
 
 .partner-logo-two {
-  width: 280px;
+  width: 300px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto; }
+  margin: 1rem auto; }
+  @media (min-width: 800px) {
+    .partner-logo-two {
+      width: 280px; } }
 
 .partner-logo-three {
-  width: 200px;
+  width: 300px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto; }
+  margin: 1rem auto; }
+  @media (min-width: 800px) {
+    .partner-logo-three {
+      width: 200px; } }
 
 .home .nav-logo {
   display: none; }
