@@ -96,6 +96,7 @@ get_header(); ?>
           <div id="tab3" class="tab">
             <div class="accordion">
               <div class="accordion-section">
+                
                 <a class="accordion-section-title" href="#accordion-1">Our Philosophy</a>
         
                 <div id="accordion-1" class="accordion-section-content">

@@ -28,7 +28,9 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'partner_three_text' ); ?></p>
 			</li>
 	</div>
-
+	<div class="confirmation-weddings">
+            <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'weddings' ) ) ); ?>">Browse Weddings</a>
+          </div> 
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

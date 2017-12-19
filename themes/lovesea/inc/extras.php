@@ -73,7 +73,7 @@ function about_header_image() {
 	
 	$about_header_css = ".page-template-about .page-header {
 		background-image: url({$image});
-		min-height: 350px;
+		min-height: 300px;
 		background-position: center;
 		background-size: cover;
 	}";
@@ -102,7 +102,7 @@ $connect_hero_css = ".page-template-connect .connect-hero {
 	background-image: url({$image});
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 350px;
+	min-height: 300px;
 }";
 
 wp_add_inline_style( 'lovesea', $connect_hero_css);
@@ -127,7 +127,7 @@ $thankyou_hero_css = ".page-template-thankyou .thankyou-hero {
 	background-image: url({$image});
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 350px;
+	min-height: 300px;
 }";
 
 wp_add_inline_style( 'lovesea', $thankyou_hero_css);
@@ -151,7 +151,7 @@ function wedding_hero_image() {
 	
 	$wedding_hero_css = ".page-template-wedding .page-header {
 		background-image: url({$image});
-		min-height: 350px;
+		min-height: 300px;
 		background-position: center;
 		background-size: cover;
 	}";
@@ -178,7 +178,7 @@ function wedding_hero_image() {
 		
 		$album_hero_css = ".single-gallery .page-header {
 			background-image: url({$image});
-			min-height: 350px;
+			min-height: 300px;
 			background-position: center;
 			background-size: cover;
 		}";
