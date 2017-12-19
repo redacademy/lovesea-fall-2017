@@ -73,14 +73,22 @@ label {
 }
 
 .first-name-last {
-	display: flex;
-	justify-content: space-between;
+	@include desktop {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 .first-name {
-	width: 49.5%;
+	width: 100%;
+	@include desktop {
+  width: 49.5%;
+	}
 }
 .last-name {
-	width: 49.5%;
+	width: 100;
+	@include desktop {
+		width: 49.5%;
+	}
 }
 .wedding-date-venue {
 	@extend .first-name-last;
