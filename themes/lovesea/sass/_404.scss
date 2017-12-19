@@ -3,12 +3,14 @@
   .hero {
     background:
     url(../../images/404-hero.jpg) center no-repeat; 
-    background-size: contain;
+    background-size: cover;
+    background-position-y: -20rem;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50vh;
-    width: 100vw;
+    width: 90vw;
+    margin: 0 auto;
   }
   .page-title {
     display: flex;

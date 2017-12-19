@@ -35,7 +35,7 @@ a {
 	display:flex;
 	transform: translateY(-1em);
   z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  // transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 // .mobile-nav {
 // 	position: fixed;
@@ -83,17 +83,19 @@ a {
 }
 
 .fixed-menu {
-	width: 100vw;
 	position: fixed;
 	background-color: $color__header-background;
 	z-index: 5;	
+	width: 100vw;	
 	.toggle-menu-button {
+		background-color: transparent;
 		display: block;
 		border: none;
+		font-style: normal;
+		color:$color__black;		
 		width: 3rem;
 		height: 3rem;
-		background-color: transparent;
-		transition: all 0.9s ease-in-out; 
+		font-size: 1.5rem;
 		@include desktop {    			
 			display: none;
 		}			
@@ -116,8 +118,8 @@ a {
   @include desktop {    
 		display: flex;
 		ul.menu-list {
-			transition: all 0.9s ease-in-out; 
-			transition-duration: 1s, 0.5s, 0.3s, 0.3s, 0.3s, 0.3s, 0.3s;			
+			// transition: all 0.9s ease-in-out; 
+			// transition-duration: 1s, 0.5s, 0.3s, 0.3s, 0.3s, 0.3s, 0.3s;			
 			display: flex;
 			width: 100vw;
 			margin: 0;
@@ -141,9 +143,9 @@ a {
 		}
 	}
 }
-.toggle-nav {
-	display: inline !important;
-	transition: all 0.4s ease-in-out; 
+.fixed-menu .toggle-nav {
+	display: inline;
+	// transition: all 0.4s ease-in-out; 
 }
 
 .main-navigation {
