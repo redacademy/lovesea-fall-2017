@@ -30,7 +30,6 @@ $('a[href="#storyteller"]')
 });
 
 
-
 // Back to top
 $('a[href="#back-to-top"]')
 

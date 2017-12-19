@@ -329,27 +329,19 @@ address {
   margin: 0 0 1.5rem; }
 
 pre {
-  background: red;
-  font-family: blue;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
   margin-bottom: 1.6rem;
   max-width: 100%;
   overflow: auto;
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: green;
   font-size: 15px;
   font-size: 0.9375rem; }
 
 abbr, acronym {
-  border-bottom: 1px dotted brown;
   cursor: help; }
 
 mark, ins {
-  background: yellow;
   text-decoration: none; }
 
 big {
@@ -381,7 +373,6 @@ blockquote, q {
     content: ""; }
 
 hr {
-  background-color: orange;
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
@@ -686,12 +677,10 @@ a {
   width: 1px;
   overflow: hidden; }
   .screen-reader-text:focus {
-    background-color: blue;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: red;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -1041,19 +1030,6 @@ object {
   @media (min-width: 800px) {
     .partner-logo-three {
       width: 200px; } }
-
-.home .nav-logo {
-  display: none; }
-
-.home .site-main {
-  width: 65vw;
-  margin: 0 auto; }
-
-.home .site-content {
-  text-align: center; }
-  .home .site-content a {
-    text-decoration: none;
-    color: #BF8472; }
 
 .home .hero {
   min-height: 50vh; }
@@ -2207,6 +2183,18 @@ li.active {
     text-decoration: none;
     color: #FFFFFF;
     font-style: italic; }
+
+.home .nav-logo {
+  display: none; }
+
+.home .site-main {
+  width: 65vw;
+  margin: 0 auto; }
+
+.home .site-content {
+  text-align: center; }
+  .home .site-content a {
+    text-decoration: none; }
 
 .site-footer {
   border-top: 1px solid #CC9785;

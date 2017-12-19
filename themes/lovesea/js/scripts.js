@@ -82,6 +82,4 @@ $('.wedding-tab-links .categories').on('click', function(e)  {
   e.preventDefault();
 });
 
-
-
 })(jQuery);
