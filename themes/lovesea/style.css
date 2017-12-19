@@ -1195,7 +1195,8 @@ object {
       position: absolute;
       right: -22rem;
       width: 24rem;
-      font-size: 1.2rem; } }
+      font-size: 1.2rem;
+      font-style: normal; } }
 
 @media (min-width: 800px) {
   .home .introduction-container .observer-text {
@@ -1210,7 +1211,8 @@ object {
     .home .introduction-container .observer-text {
       left: -21rem;
       width: 24rem;
-      font-size: 1.2rem; } }
+      font-size: 1.2rem;
+      font-style: normal; } }
 
 @media (min-width: 800px) {
   .home .introduction-container .we-are-observer {
