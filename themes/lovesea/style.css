@@ -1360,8 +1360,10 @@ object {
   .single-gallery ul.wedding-tab-links li {
     list-style: none;
     padding: 0 1.25rem;
+    margin: 0 1.25rem;
     font-style: italic;
     font-weight: lighter;
+    font-size: 20px;
     letter-spacing: 1.2px; }
     .page-template-wedding ul.wedding-tab-links li a,
     .single-gallery ul.wedding-tab-links li a {
@@ -1529,7 +1531,7 @@ object {
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
-  width: 70vw;
+  width: 60vw;
   margin: 0 auto; }
 
 .portrait-album {
@@ -1543,7 +1545,7 @@ object {
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
-  width: 70vw;
+  width: 60vw;
   margin: 0 auto; }
 
 /* Outer */
@@ -1561,20 +1563,29 @@ object {
 .popup-inner {
   z-index: 99;
   max-width: 700px;
-  height: 80vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   width: auto;
   padding: 3px;
   position: absolute;
-  top: 50%;
+  top: 54%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-box-shadow: 0px 2px 6px black;
           box-shadow: 0px 2px 6px black;
   background: #fff; }
+  @media (min-width: 800px) {
+    .popup-inner {
+      max-height: 80vh;
+      top: 50%; } }
 
 .popup-inner img {
-  height: 100%; }
+  height: initial; }
+  @media (min-width: 800px) {
+    .popup-inner img {
+      max-height: 32rem; } }
 
 /* Close Button */
 .popup-close {

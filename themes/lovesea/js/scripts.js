@@ -82,4 +82,38 @@ $('.wedding-tab-links .categories').on('click', function(e)  {
   e.preventDefault();
 });
 
+
+function loadContent(   ){
+  
+  var holdLoad = false;
+  
+  if(!holdLoad){
+  
+      holdLoad = true;
+  
+      $.ajax({
+          url: "http://wordpress.testinggrounds.info/wp-json/wp/v2/posts",
+          type: "GET"
+       }).done(function(data){
+ 
+          console.log(data[num].title.rendered);
+          $('#content').append(data[num].title.rendered);
+      
+      }).fail(function(){
+      
+      }).always(function(){
+      
+          holdLoad = false;
+          
+      });
+  }// end if
+}
+
+$(window).scroll(function(){
+  if( $(window).scrollTop() >= $(document).height() - $(window).height() - 100 ){
+      loadContent(1);
+  }
+});
+
+
 })(jQuery);
