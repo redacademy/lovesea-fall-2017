@@ -83,37 +83,37 @@ $('.wedding-tab-links .categories').on('click', function(e)  {
 });
 
 
-function loadContent(   ){
+// function loadContent(   ){
   
-  var holdLoad = false;
+//   var holdLoad = false;
   
-  if(!holdLoad){
+//   if(!holdLoad){
   
-      holdLoad = true;
+//       holdLoad = true;
   
-      $.ajax({
-          url: "http://wordpress.testinggrounds.info/wp-json/wp/v2/posts",
-          type: "GET"
-       }).done(function(data){
+//       $.ajax({
+//           url: "http://wordpress.testinggrounds.info/wp-json/wp/v2/posts",
+//           type: "GET"
+//        }).done(function(data){
  
-          console.log(data[num].title.rendered);
-          $('#content').append(data[num].title.rendered);
+//           console.log(data[num].title.rendered);
+//           $('#content').append(data[num].title.rendered);
       
-      }).fail(function(){
+//       }).fail(function(){
       
-      }).always(function(){
+//       }).always(function(){
       
-          holdLoad = false;
+//           holdLoad = false;
           
-      });
-  }// end if
-}
+//       });
+//   }// end if
+// }
 
-$(window).scroll(function(){
-  if( $(window).scrollTop() >= $(document).height() - $(window).height() - 100 ){
-      loadContent(1);
-  }
-});
+// $(window).scroll(function(){
+//   if( $(window).scrollTop() >= $(document).height() - $(window).height() - 100 ){
+//       loadContent(1);
+//   }
+// });
 
 
 })(jQuery);

@@ -12,7 +12,7 @@ get_header(); ?>
 
 	</header><!-- .page-header -->
 
-	
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
 	
 <div id="back-to-top" class="tab-gallery-wrapper">
      
@@ -27,8 +27,6 @@ get_header(); ?>
               $props = CFS()->get_field_info( 'wedding_tab_three' );
               echo $props['label'];?></a></li>
 			</ul><!-- .tab-links -->
-		
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
 		 
 		 <div class="wedding-page-content">
 		 

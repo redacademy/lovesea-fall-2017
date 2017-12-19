@@ -41,14 +41,17 @@
     margin-top: 1em;
      li {
        list-style: none;
-       padding: 0 1.25rem;
-       margin: 0 1.25rem;
+       margin: 0 3rem;
        font-style: italic;
        font-weight: lighter;
        font-size: 20px;
        letter-spacing: 1.2px;
        a {
          text-decoration: none;
+         padding-bottom: .5rem;
+       }
+       li.active {
+         padding-bottom: 0.5rem;
        }
      }
    }
@@ -149,8 +152,9 @@
   outline: 2px solid #fff;
   border: none;
   @include desktop {
-    width: 300px;
-    height: 100px;
+    width: 215px;
+    height: 70px;
+    font-size: 25px;
     outline-offset: -15px;
   }
   a {
