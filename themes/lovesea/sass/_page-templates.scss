@@ -100,6 +100,7 @@
   list-style: none;
   padding-left: 0;
   margin-left: 0;
+  margin-bottom: 5rem;
 
   @include desktop {
     align-items: baseline;
@@ -113,33 +114,47 @@
     width: 25%;
     margin: 0 1rem;
   }
+
+  p {
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    margin: 1rem 1rem 0rem 1rem;
+    color: $color__text-main;
+
+  }
 }
 
-.partner-info-list {
-  margin-left: 0;
-  padding-left: 0;
-  list-style: none;
+.confirmation-weddings {
+  width: 300px;
+  height: 100px;
+  font-size: 1.3rem;
+  outline-offset: -15px;
   display: flex;
+  background-color: #cc9785;
+  outline: 2px solid #fff;
+  border: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto 4rem;
+  justify-content: center;
 
-  @include desktop {
-    justify-content: center;
-
-  }
-  li {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 280px;
-    margin: 0 auto;
+  a {
+    color: $color__background-body;
+    text-decoration: none; 
   }
 }
+
 
 .partner-logo-one {
   width: 280px;
   height: auto;
+  margin: 0 auto;
 }
 .partner-logo-two {
   width: 280px;
+  align-items: center;
+  margin: 0 auto;
 }
 .partner-logo-three {
     width: 200px;
