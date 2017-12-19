@@ -35,7 +35,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 			
 		
-   <!-- TODO add tab here -->
+   
 		<div id="label1" class="wedding-album-gallery-pages" class="active">	
 			<?php
 			$loop = CFS()->get( 'wedding_albums_images' );
@@ -68,7 +68,7 @@ get_header(); ?>
 
 		</div>
 
-<!-- TODO add tabs -->
+
 <div class="portrait-container" id="label2" class="label">
 			
 				<div id="label2" class="tab-portraits" class="label">
@@ -102,8 +102,9 @@ get_header(); ?>
 						</div> <!-- portrait container --> 
 
 
-<!-- TODO add tabs -->
+
 <div id="label3" class="tab-details" class="label">
+	
 <?php
 			$loop = CFS()->get( 'detail_album', 74 );
 			if(isset($loop)):

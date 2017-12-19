@@ -1344,7 +1344,7 @@ object {
       font-weight: 500;
       font-style: italic;
       letter-spacing: 2px;
-      margin: 0; } }
+      margin: .25em 0; } }
 
 .page-template-wedding ul.wedding-tab-links,
 .single-gallery ul.wedding-tab-links {
@@ -1356,7 +1356,8 @@ object {
           justify-content: center;
   list-style: none;
   margin-left: 0;
-  padding-left: 0; }
+  padding-left: 0;
+  margin-top: 1em; }
   .page-template-wedding ul.wedding-tab-links li,
   .single-gallery ul.wedding-tab-links li {
     list-style: none;
@@ -1402,7 +1403,8 @@ object {
     @media (min-width: 800px) {
       .page-template-wedding .weddings .album-name {
         position: initial;
-        color: #415468; } }
+        color: #415468;
+        margin: 0; } }
   .page-template-wedding .weddings .wedding-location {
     z-index: 4;
     position: absolute;
