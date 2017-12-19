@@ -11,25 +11,23 @@
     width: 100vw;
     @include desktop {
       background-position-y: -28rem;
-      width: 100vw;
+      width: 100%;
       height: 10rem;
     }
   }
-
-  .entry-content {
+.entry-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 55vw;
     margin: 0 auto;
-    
   }
   h2 {
     color: $color__text-secondary;
     font-size: 64px;
     font-weight: 500;
     font-style: italic;
-    margin: 8% 0 1% 0;
+    margin: 3% 0 1% 0;
   }
   .congrats {
     font-size: 24px;
@@ -42,8 +40,6 @@
     font-size: 18px;
     letter-spacing: $font_letter_spacing_main;
     text-align: center;
-    padding: 2em;
-    margin: 0;
   }
   .required {
     font-size: 14px;	
@@ -52,26 +48,7 @@
     margin: 3% 0 1% 0;
   }
 }
-.page-id-61 {
- @include desktop {
-  .entry-content {
-    width: 620px;
- }
-  h2 {
-   
-  }
-  p.congrats {
 
-  }
-  .hear-from-you {
-    height: 62px;
-    width: 620px;
-    margin-bottom: 4%;
-  }
-  p.required {
-  }
-}
-}
 
 /* Thank you Page */
 

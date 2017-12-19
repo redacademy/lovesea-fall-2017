@@ -47,7 +47,7 @@ form.wpcf7-form {
 	width: 100vw;
 	padding: 2em;
  	@include desktop {
-		 width: 620px;
+		 width: 60vw;
 	 }	 
 }
 
@@ -72,12 +72,34 @@ label {
 	}
 }
 
+.first-name-last {
+	display: flex;
+	justify-content: space-between;
+}
+.first-name {
+	width: 49.5%;
+}
+.last-name {
+	width: 49.5%;
+}
+.wedding-date-venue {
+	@extend .first-name-last;
+}
+.wedding-date {
+	@extend .first-name;
+}
+.wedding-venue {
+	@extend .last-name;
+}
 .email {
+	margin: 1em 0;
 	.wpcf7-form-control.wpcf7-text {
 		width: 100%;
 	}
 }
-
+.tell-us {
+	margin: 1em 0;
+}
 .submit {
 	display: flex;
 	justify-content: center;
