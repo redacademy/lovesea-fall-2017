@@ -1532,6 +1532,10 @@ object {
     .single-gallery ul.wedding-tab-links li li.active {
       padding-bottom: 0.5rem; }
 
+@media (min-width: 800px) {
+  .single-gallery .entry-title {
+    color: #415468; } }
+
 .page-template-wedding .weddings {
   display: grid;
   max-width: 25em;
@@ -1661,7 +1665,7 @@ object {
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
-  width: 50vw;
+  width: 70vw;
   margin: 0 auto; }
   @media (min-width: 800px) {
     .wedding-album-gallery-pages {

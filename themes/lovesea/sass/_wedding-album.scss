@@ -69,6 +69,14 @@ width: 42px;
    }
 }
 
+.single-gallery {
+  .entry-title {
+    @include desktop {
+      color: $color__text-main;
+    }
+  }
+}
+
 // Style for wedding page album gallery
 .page-template-wedding {
   .weddings {
@@ -200,7 +208,7 @@ width: 42px;
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em; 
-  width: 50vw;
+  width: 70vw;
   margin: 0 auto;
   @include desktop {
     width: 60vw;
