@@ -185,6 +185,10 @@ width: 42px;
     font-size: 26px;
   }
 }
+
+.about-us:hover {
+  background-color: $color__button-hover;
+}
 // back to top link
 
 .back-to-top {

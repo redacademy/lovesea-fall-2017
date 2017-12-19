@@ -178,6 +178,15 @@
       @include pink-button;
     }    
   }
+
+  .connect:hover {
+    background-color: $color__button-hover;
+  }
+
+.browse-weddings:hover {
+  background-color: $color__button-hover;
+}
+
   .about-us {
     @include pink-button-mobile;
     position: absolute;
@@ -193,6 +202,10 @@
       @include pink-button;
     }
   }
+}
+
+.about-us:hover {
+  background-color: $color__button-hover;
 }
 
 .owl-wrapper {
