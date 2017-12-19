@@ -3,19 +3,6 @@
 --------------------------------------------------------------*/
 
 /* Links */
-
-// .current ul li a {
-// 	border-bottom: 1px solid blue;
-// }
-// #main-navigation ul li.active-link>a{
-// 	text-decoration:underline;
-// 	color:YOUR-LINK-COLOR;
-// }
-
-.fixed-menu .menu-list .active-page  {
-	text-decoration: underline !important; 
-}
-
 a {
 	color: $color__link;
 
@@ -79,6 +66,12 @@ a {
 	}
 }
 
+.fixed-menu .menu-list .active-page  {
+	a {
+	text-decoration: underline;
+	text-decoration-color: $color__accent;
+	}
+}
 
 .sub-menu {
 	display: none;

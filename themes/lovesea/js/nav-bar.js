@@ -1,32 +1,28 @@
 (function ($) {
 
-    $('.toggle-menu-button').on('click', function () {
-      $('.menu-list').toggleClass('toggle-nav');
-    });
+  $('.toggle-menu-button').on('click', function () {
+    $('.menu-list').toggleClass('toggle-nav');
+  });
 
-    $('.site-content').on('click', function () {
-      $('.menu-list').removeClass('toggle-nav');
-    });
+  $('.site-content').on('click', function () {
+    $('.menu-list').removeClass('toggle-nav');
+  });
 
-    // var window=window;
+  //underline current page
+  if ($('body').hasClass('home')) {
+    $( '.menu-item--home' ).addClass( 'active-page' );
+  }
 
-    //   $('.test').each(function() {
-    //     if ($(this).prop('href') == window.location.href) {
-    //       $(this).addClass('current');
-    //     }
-    //   });
- 
-      // var url = window.location.href;   
-      // var page = url.substr(url.lastIndexOf('/')+1);   
-      //  target = $('.active-menu a[href*="'+home+'"]');   
-      //  $(target).addClass('active-page');
+  if ($('body').hasClass('page-id-74')) {
+    $( '.menu-items--weddings' ).addClass( 'active-page' );
+  }
 
-        $('#fixed-menu a').click(function () {
-          $('#fixed-menu a').removeClass('active-page');
-          $(this).addClass('active-page');
-        });
+  if ($('body').hasClass('page-id-54')) {
+    $( '.menu-item--about' ).addClass( 'active-page' );
+  }
 
-    
+  if ($('body').hasClass('page-id-61')) {
+    $( '.menu-item--connect' ).addClass( 'active-page' );
+  }
 
-    
 })(jQuery);

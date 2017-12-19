@@ -1,6 +1,9 @@
 .error404 { 
   text-align: center;
   .hero {
+    background:
+    url(../../images/404-hero.jpg) center no-repeat; 
+    background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +15,7 @@
     flex-direction: column;
     font-family: $font__main;
     font-style: italic;
-    span{
+    span {
       font-weight: 100;
       font-size: 1.5rem;
     }

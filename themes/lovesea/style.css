@@ -491,9 +491,6 @@ label {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-.fixed-menu .menu-list .active-page {
-  text-decoration: underline !important; }
-
 a {
   color: #415468; }
   a:hover, a:focus, a:active {
@@ -536,6 +533,11 @@ a {
       display: inline-block;
       height: 50px;
       width: 50px; } }
+
+.fixed-menu .menu-list .active-page a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #CC9785;
+          text-decoration-color: #CC9785; }
 
 .sub-menu {
   display: none; }
@@ -2030,6 +2032,8 @@ li.active {
 .error404 {
   text-align: center; }
   .error404 .hero {
+    background: url(../../images/404-hero.jpg) center no-repeat;
+    background-size: contain;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
