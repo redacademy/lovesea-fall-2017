@@ -12,6 +12,7 @@ get_header(); ?>
     <header class="page-header">
 		</header>
 
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
 
 		<div id="back-to-top" class="tab-gallery-wrapper">
      
