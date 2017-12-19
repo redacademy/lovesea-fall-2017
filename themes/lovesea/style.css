@@ -2165,7 +2165,7 @@ li.active {
   width: 42px;
   height: 70px;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto 1rem; }
 
 .contact-us-button-wrapper {
   display: -webkit-box;
