@@ -151,8 +151,12 @@ get_header(); ?>
       </article>
       <div class="website-logo">
         <img class="monogram-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
-        <div class="about-contact-us"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">Let's Talk</a></div> 
-     </div> <!-- .wedding-logo -->
+        </div> <!-- .wedding-logo -->
+        <div class="contact-us-button-wrapper">
+          <div class="about-contact-us">
+            <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'connect' ) ) ); ?>">Let's Talk</a>
+          </div> 
+        </div>
     </main>
   </div>
 <?php get_footer(); ?>

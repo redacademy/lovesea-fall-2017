@@ -27,6 +27,10 @@
 	border: none;
 	text-decoration: none;
 	color: $color__background-body;
+	a {
+		text-decoration: none;
+		color: $color__background-body;
+	}
 }
 
 @mixin pink-button-mobile {

@@ -416,25 +416,16 @@
   display: block;
   margin: 0 auto;
 }
+.contact-us-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom:5rem;
+}
 
 .about-contact-us {
-  width: 224px;
-  height: 75px;
-  font-size: 1.3rem;
-	outline-offset: -15px;      
-	background-color: $color__accent;
-	outline: $border__white-solid;
-	border: none;
+  @include pink-button;
   display: flex;
-  margin: 1.5rem auto 5rem auto;
-  text-decoration: none;
-  color: $color__background-body;
-  font-style: italic;
-  align-items: center;
   justify-content: center;
-  a {
-		text-decoration: none;
-		color: $color__background-body;
-	}
-
+  align-items: center;
 }
+
