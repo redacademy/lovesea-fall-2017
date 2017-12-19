@@ -170,6 +170,7 @@
     @include desktop {
       left: 39%;
       top: 10rem;
+      font-size: 1.5rem;
       @include pink-button;
     }    
   }
@@ -219,6 +220,8 @@
   flex-direction: column;
   margin: 0 auto;
   font-weight: 100;
+  font-style: italic;
+  font-size: 30px;
   span {
     font-weight: bold;
   }
