@@ -2141,7 +2141,8 @@ li.active {
   display: none; }
   .accordion-section-content h3 {
     text-align: center;
-    font-style: italic; }
+    font-style: italic;
+    font-weight: 500; }
   .accordion-section-content p {
     width: 92%;
     margin: 1rem auto;
