@@ -41,8 +41,10 @@
      li {
        list-style: none;
        padding: 0 1.25rem;
+       margin: 0 1.25rem;
        font-style: italic;
        font-weight: lighter;
+       font-size: 20px;
        letter-spacing: 1.2px;
        a {
          text-decoration: none;
@@ -137,13 +139,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 100px;
+  width: 150px;
+  height: 50px;
   font-size: 1.3rem;
-  outline-offset: -15px;
+  outline-offset: -6px;
   background-color: #cc9785;
   outline: 2px solid #fff;
   border: none;
+  @include desktop {
+    width: 300px;
+    height: 100px;
+    outline-offset: -15px;
+  }
   a {
     color: #fff;
     text-decoration: none;
@@ -156,9 +163,11 @@
 .back-to-top {
   display: flex;
   justify-content: center;
-  margin-bottom: 1em;
+  margin: 2em 0;
   a {
     text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
   }
 }
 // style for masonry gallery pages
@@ -216,6 +225,8 @@
   justify-content: space-around;
   a {
     text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
   }
 }
 
@@ -227,7 +238,7 @@
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em; 
-  width: 70vw;
+  width: 60vw;
   margin: 0 auto;
 }
 .portrait-album {
@@ -243,7 +254,7 @@
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em; 
-  width: 70vw;
+  width: 60vw;
   margin: 0 auto;
 }
 
@@ -263,20 +274,27 @@
 .popup-inner {
   z-index: 99;
   max-width:700px;
-  height: 80vh;
+  height: min-content;
   width: auto;
   padding: 3px;
   position: absolute;
-  top: 50%;
+  top: 54%;
   left: 50%;
   -webkit-transform:translate(-50%, -50%);
   transform:translate(-50%, -50%);
   box-shadow:0px 2px 6px rgba(0,0,0,1);
   background:#fff;
+  @include desktop {
+    max-height: 80vh;
+    top: 50%;
+  }
 }
 
 .popup-inner img {
-  height: 100%;
+  height: initial;
+  @include desktop {
+    max-height: 25.8rem;
+  }
 }
 
 /* Close Button */
