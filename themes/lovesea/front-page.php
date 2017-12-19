@@ -9,11 +9,12 @@
 get_header(); ?>
 
 <div class="hero">
-	
-	<img class="front-center-logo"  src="<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>">
-	<img class="front-center-text"  src="<?php echo get_template_directory_uri() . '/images/lovesea-logo-text.svg' ?>">
-	<div class="scroll-arrow">
-		<a href="#storyteller"><img src="<?php echo get_template_directory_uri() . '/images/arrows/down_arrow.png'?>"></a>
+	<div class="logos">
+		<img class="front-center-logo"  src="<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>">
+		<img class="front-center-text"  src="<?php echo get_template_directory_uri() . '/images/lovesea-logo-text.svg' ?>">
+		<div class="scroll-arrow">
+			<a href="#storyteller"><img src="<?php echo get_template_directory_uri() . '/images/arrows/down_arrow.png'?>"></a>
+		</div>
 	</div>
 </div>
 <!--  -->

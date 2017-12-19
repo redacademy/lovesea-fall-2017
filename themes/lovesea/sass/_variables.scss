@@ -13,10 +13,8 @@ $color__black:#000;
 $color__header-background: hsla(0,0%,100%,1);
 $color__header-transparent-background: hsla(0,0%,100%,0);
 
+//links
 $color__button-hover: #BF8472;
-
-
-
 $color__link: #415468;
 $color__link-visited: #415468;
 $color__link-hover: #232d38;
@@ -30,16 +28,6 @@ $font__line-height-pre: 1.6;
 $font__base-size: 18px;
 $font_letter_spacing_main: 1px;
 
-//usused variable to be changed
-$color__background-pre: red;
-$font__pre: blue;
-$font__code:green;
-$color__border-abbr: brown;
-$color__background-ins: yellow;
-$color__background-hr: orange;
-$color__background-screen: blue;
-$color__text-screen: red;
-
 // border
 $border__white-solid: 2px solid #FFFFFF;
 $border__main-solid: 1px solid #CC9785;
@@ -47,5 +35,5 @@ $border__instagram-image: 2px solid hsla(0,0%,87%,.7);
 $border__under-nav: 2px solid $color__accent;
 
 //screen sizes
-
 $desktop-width: 800px;
+
