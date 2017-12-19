@@ -1455,11 +1455,12 @@ object {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin: 0.75rem auto; }
 
 .page-template-wedding .wedding-page-logo {
-  height: 50px;
-  width: 30px; }
+  height: 70px;
+  width: 42px; }
 
 .page-template-wedding .entry-title,
 .single-gallery .entry-title {
@@ -1574,7 +1575,8 @@ object {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-bottom: 2rem; }
 
 .about-us {
   display: -webkit-box;
@@ -1602,7 +1604,8 @@ object {
     color: #fff;
     text-decoration: none;
     font-style: italic;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    font-size: 26px; }
 
 .back-to-top {
   display: -webkit-box;
@@ -1612,6 +1615,9 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 2em 0; }
+  @media (min-width: 800px) {
+    .back-to-top {
+      display: none; } }
   .back-to-top a {
     text-decoration: none;
     font-size: 20px;

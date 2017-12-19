@@ -129,16 +129,15 @@ get_header(); ?>
 		<a href="#back-to-top">back to top</a>
 	</div>
 
+	<div class="wedding-logo">
+				<img class="wedding-page-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
+		 </div> <!-- .wedding-logo -->
+
 	<div class="about-us-button-wrapper">
 			<div class="about-us">
 			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>" rel="About Us">About us</a>
 		</div> <!-- .about-us button -->
 	</div>
-		
-	<div class="wedding-logo">
-				<img class="wedding-page-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
-		 </div> <!-- .wedding-logo -->
-		 
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
