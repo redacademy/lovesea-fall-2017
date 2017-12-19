@@ -104,7 +104,7 @@ get_header(); ?>
 
 
 <div id="label3" class="tab-details" class="label">
-	
+
 <?php
 			$loop = CFS()->get( 'detail_album', 74 );
 			if(isset($loop)):
@@ -130,6 +130,10 @@ get_header(); ?>
 				</div> <!-- .tab-details  -->	
 		  </div> <!-- .single-album-page-content -->
 		</div><!-- .tab-gallery-wrapper -->
+
+		<div class="wedding-logo">
+				<img class="wedding-page-logo" src=<?php echo get_template_directory_uri() . '/images/lovesea_logo_monogram.svg' ?>>
+		 </div> <!-- .wedding-logo -->
 
 		<div class="back-to-top">
 			<a href="#back-to-top">back to top</a>

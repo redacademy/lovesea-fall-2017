@@ -1442,15 +1442,18 @@ object {
   .page-template-wedding ul.wedding-tab-links li,
   .single-gallery ul.wedding-tab-links li {
     list-style: none;
-    padding: 0 1.25rem;
-    margin: 0 1.25rem;
+    margin: 0 3rem;
     font-style: italic;
     font-weight: lighter;
     font-size: 20px;
     letter-spacing: 1.2px; }
     .page-template-wedding ul.wedding-tab-links li a,
     .single-gallery ul.wedding-tab-links li a {
-      text-decoration: none; }
+      text-decoration: none;
+      padding-bottom: .5rem; }
+    .page-template-wedding ul.wedding-tab-links li li.active,
+    .single-gallery ul.wedding-tab-links li li.active {
+      padding-bottom: 0.5rem; }
 
 .page-template-wedding .weddings {
   display: grid;
@@ -1548,8 +1551,9 @@ object {
   border: none; }
   @media (min-width: 800px) {
     .about-us {
-      width: 300px;
-      height: 100px;
+      width: 215px;
+      height: 70px;
+      font-size: 25px;
       outline-offset: -15px; } }
   .about-us a {
     color: #fff;
