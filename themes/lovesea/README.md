@@ -4,10 +4,10 @@
 Wordpress site for Love Sea Wedding Photography. We are making a site!
 
 # Project 
-This is multi-page website that represents the skills of Lovesea as a natural-light photographer in the Tofino area.
+This is multi-page website that showcases the skills of Lovesea as a natural-light photographer in the Tofino area.
 
 # Learning Experience
-This project required us to build on exsisting skills while learning many new ones. Each team member was able to to demonstrate strong communitcational skills and understanding while troubleshooting obstacles thoughout the entire process. Learning a basic understanding of the Designer's process was important while merging ideas and concepts. We have all expanded our knowloedge of how to optomize the Wordpress features and by the end of this we have become a lot more comfortable and confident with this open source website creation tool.
+This project required us to build on exsisting skills while learning many new ones. Each team member was able to to demonstrate strong communication skills and understanding while troubleshooting obstacles thoughout the entire process. Learning a basic understanding of the Designer's process was important while merging ideas and concepts. We have all expanded our knowloedge of how to optimize the Wordpress features and by the end of this we have become a lot more comfortable and confident with this open source website creation tool.
 
 
 # Technology
