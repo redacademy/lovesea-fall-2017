@@ -536,9 +536,7 @@ a {
   display: flex;
   -webkit-transform: translateY(-1em);
           transform: translateY(-1em);
-  z-index: -1;
-  -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; }
+  z-index: -1; }
 
 .menu-list {
   position: fixed;
@@ -569,32 +567,39 @@ a {
   display: none; }
 
 .site-header .fixed-menu .fade-background {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: white;
   -webkit-transition: all 0.9s ease-in-out;
   transition: all 0.9s ease-in-out;
   -webkit-transition-duration: 1s, 0.5s, 0.3s, 0.3s, 0.3s, 0.3s, 0.3s;
           transition-duration: 1s, 0.5s, 0.3s, 0.3s, 0.3s, 0.3s, 0.3s; }
 
 .fixed-menu {
-  width: 100vw;
   position: fixed;
   background-color: white;
-  z-index: 5; }
+  z-index: 5;
+  width: 100vw; }
+  @media (min-width: 800px) {
+    .fixed-menu {
+      background-color: rgba(255, 255, 255, 0.4); } }
   .fixed-menu .toggle-menu-button {
+    background-color: transparent;
     display: block;
     border: none;
+    font-style: normal;
+    color: #000;
     width: 3rem;
     height: 3rem;
-    background-color: transparent;
-    -webkit-transition: all 0.9s ease-in-out;
-    transition: all 0.9s ease-in-out; }
+    font-size: 1.5rem; }
     @media (min-width: 800px) {
       .fixed-menu .toggle-menu-button {
         display: none; } }
   .fixed-menu .menu-list {
+    background-color: white;
     display: none;
-    line-height: 2;
-    background-color: white; }
+    line-height: 2; }
+    @media (min-width: 800px) {
+      .fixed-menu .menu-list {
+        background-color: rgba(255, 255, 255, 0.4); } }
     .fixed-menu .menu-list li {
       font-family: "EB Garamond", Courier, serif;
       font-style: italic;
@@ -611,10 +616,6 @@ a {
       display: -ms-flexbox;
       display: flex; }
       .fixed-menu ul.menu-list {
-        -webkit-transition: all 0.9s ease-in-out;
-        transition: all 0.9s ease-in-out;
-        -webkit-transition-duration: 1s, 0.5s, 0.3s, 0.3s, 0.3s, 0.3s, 0.3s;
-                transition-duration: 1s, 0.5s, 0.3s, 0.3s, 0.3s, 0.3s, 0.3s;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -637,10 +638,8 @@ a {
         .fixed-menu ul.menu-list li:nth-last-child(2) {
           padding-left: 4rem; } }
 
-.toggle-nav {
-  display: inline !important;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
+.fixed-menu .toggle-nav {
+  display: inline; }
 
 .main-navigation {
   width: 100%;
@@ -928,12 +927,20 @@ object {
         font-size: 1.5rem; } }
 
 .partners-logo-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (min-width: 800px) {
     .partners-logo-list {
       -webkit-box-align: baseline;
@@ -941,7 +948,18 @@ object {
               align-items: baseline;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; } }
+              justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .partners-logo-list p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
   .partners-logo-list li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -951,46 +969,75 @@ object {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    width: 25%;
+    width: 100%;
     margin: 0 1rem; }
+    @media (min-width: 800px) {
+      .partners-logo-list li {
+        width: 25%; } }
+  .partners-logo-list p {
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    margin: 1rem 1rem 0rem 1rem;
+    display: none;
+    color: #415468; }
+    @media (min-width: 800px) {
+      .partners-logo-list p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
 
-.partner-info-list {
-  margin-left: 0;
-  padding-left: 0;
-  list-style: none;
+.confirmation-weddings {
+  width: 300px;
+  height: 100px;
+  font-size: 1.3rem;
+  outline-offset: -15px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  @media (min-width: 800px) {
-    .partner-info-list {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
-  .partner-info-list li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    width: 280px;
-    margin: 0 auto; }
+  display: flex;
+  background-color: #cc9785;
+  outline: 2px solid #fff;
+  border: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .confirmation-weddings a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 24px;
+    letter-spacing: 1.2px; }
 
 .partner-logo-one {
-  width: 280px;
-  height: auto; }
+  width: 300px;
+  height: auto;
+  margin: 1rem auto; }
+  @media (min-width: 800px) {
+    .partner-logo-one {
+      width: 280px; } }
 
 .partner-logo-two {
-  width: 280px; }
-
-.partner-logo-three {
-  width: 200px;
+  width: 300px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto; }
+  margin: 1rem auto; }
+  @media (min-width: 800px) {
+    .partner-logo-two {
+      width: 280px; } }
+
+.partner-logo-three {
+  width: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem auto; }
+  @media (min-width: 800px) {
+    .partner-logo-three {
+      width: 200px; } }
 
 .home .nav-logo {
   display: none; }
@@ -2140,7 +2187,8 @@ li.active {
   text-align: center; }
   .error404 .hero {
     background: url(../../images/404-hero.jpg) center no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position-y: -20rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2151,7 +2199,8 @@ li.active {
         -ms-flex-pack: center;
             justify-content: center;
     height: 50vh;
-    width: 100vw; }
+    width: 90vw;
+    margin: 0 auto; }
   .error404 .page-title {
     display: -webkit-box;
     display: -ms-flexbox;
