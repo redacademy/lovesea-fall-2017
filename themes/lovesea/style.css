@@ -1273,7 +1273,7 @@ object {
       font-size: 1.5rem;
       width: 300px;
       height: 100px;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       outline-offset: -15px;
       background-color: #CC9785;
       outline: 2px solid #FFFFFF;
@@ -1283,7 +1283,8 @@ object {
       .home .browse-weddings a,
       .home .connect a {
         text-decoration: none;
-        color: #FFFFFF; } }
+        color: #FFFFFF;
+        font-style: italic; } }
 
 .home .about-us {
   width: 200px;
@@ -1315,7 +1316,7 @@ object {
       top: 10rem;
       width: 300px;
       height: 100px;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       outline-offset: -15px;
       background-color: #CC9785;
       outline: 2px solid #FFFFFF;
@@ -1324,7 +1325,8 @@ object {
       color: #FFFFFF; }
       .home .about-us a {
         text-decoration: none;
-        color: #FFFFFF; } }
+        color: #FFFFFF;
+        font-style: italic; } }
 
 .owl-wrapper {
   width: 30rem; }
@@ -2182,7 +2184,7 @@ li.active {
 .about-contact-us {
   width: 300px;
   height: 100px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   outline-offset: -15px;
   background-color: #CC9785;
   outline: 2px solid #FFFFFF;
@@ -2200,7 +2202,8 @@ li.active {
           align-items: center; }
   .about-contact-us a {
     text-decoration: none;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    font-style: italic; }
 
 .site-footer {
   border-top: 1px solid #CC9785;
@@ -2264,7 +2267,7 @@ li.active {
       .error404 .browse-weddings a {
         width: 300px;
         height: 100px;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         outline-offset: -15px;
         background-color: #CC9785;
         outline: 2px solid #FFFFFF;
@@ -2274,6 +2277,7 @@ li.active {
         padding: 2.3rem 5rem; }
         .error404 .browse-weddings a a {
           text-decoration: none;
-          color: #FFFFFF; } }
+          color: #FFFFFF;
+          font-style: italic; } }
   .error404 .site-footer {
     margin-top: 5rem; }
