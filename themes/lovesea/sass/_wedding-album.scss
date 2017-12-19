@@ -18,6 +18,17 @@
   width: 42px;
  }
 }
+
+.wedding-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0.75rem auto;
+}
+.wedding-page-logo {
+height: 70px;
+width: 42px;
+}
+
 // Style for wedding page title and tabs
 .page-template-wedding,
 .single-gallery {
