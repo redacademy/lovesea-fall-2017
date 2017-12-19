@@ -934,6 +934,14 @@ object {
   list-style: none;
   padding-left: 0;
   margin-left: 0; }
+  @media (min-width: 800px) {
+    .partners-logo-list {
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .partners-logo-list li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -943,7 +951,32 @@ object {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    width: 25%; }
+    width: 25%;
+    margin: 0 1rem; }
+
+.partner-info-list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 800px) {
+    .partner-info-list {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .partner-info-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 280px;
+    margin: 0 1rem; }
 
 .partner-logo-one {
   width: 280px; }

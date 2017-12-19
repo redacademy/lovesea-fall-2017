@@ -27,11 +27,18 @@ get_header(); ?>
 
 			</ul>
 
+			<ul class='partner-info-list'>
 			<li> 
 				<p><?php echo CFS()->get( 'partner_one_text' ); ?></p>
+			</li>
+			<li>
 				<p><?php echo CFS()->get( 'partner_two_text' ); ?></p>
+			</li>
+			<li>
 				<p><?php echo CFS()->get( 'partner_three_text' ); ?></p>
 			</li>
+			
+			</ul>
 								
 	</div>
 
