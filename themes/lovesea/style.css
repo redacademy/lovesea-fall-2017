@@ -1508,7 +1508,13 @@ object {
 
 .page-template-wedding .entry-title,
 .single-gallery .entry-title {
-  text-align: center; }
+  text-align: center;
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  color: #BF8472;
+  font-weight: lighter;
+  letter-spacing: 1.1px; }
   @media (min-width: 800px) {
     .page-template-wedding .entry-title,
     .single-gallery .entry-title {
@@ -1543,7 +1549,8 @@ object {
     .page-template-wedding ul.wedding-tab-links li a,
     .single-gallery ul.wedding-tab-links li a {
       text-decoration: none;
-      padding-bottom: .5rem; }
+      padding-bottom: .5rem;
+      text-transform: lowercase; }
     .page-template-wedding ul.wedding-tab-links li li.active,
     .single-gallery ul.wedding-tab-links li li.active {
       padding-bottom: 0.5rem; }
