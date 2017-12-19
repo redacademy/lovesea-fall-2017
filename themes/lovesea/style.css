@@ -1145,7 +1145,9 @@ object {
   .home .introduction-container .we-are-your-friend h1 {
     position: absolute;
     top: 0;
-    margin: 10% 5%; }
+    margin: 10% 5%;
+    font-style: italic;
+    font-weight: 400; }
     @media (min-width: 800px) {
       .home .introduction-container .we-are-story-tellers h1,
       .home .introduction-container .we-are-observer h1,
@@ -1329,7 +1331,7 @@ object {
   width: 750px; }
 
 .site-main .instagram-carousel-container {
-  margin: 10rem auto 0;
+  margin: 5rem auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1339,6 +1341,9 @@ object {
           flex-direction: column;
   width: 100%;
   z-index: 1; }
+  @media (min-width: 800px) {
+    .site-main .instagram-carousel-container {
+      margin: 10rem auto 0; } }
 
 .instagram-carousel-container {
   position: relative; }
