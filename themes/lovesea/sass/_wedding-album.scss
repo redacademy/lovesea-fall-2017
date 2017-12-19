@@ -28,7 +28,7 @@
       font-weight: 500;
       font-style: italic;
       letter-spacing: 2px;
-      margin: 0;
+      margin: .25em 0;
     }
   }
   ul.wedding-tab-links {
@@ -37,6 +37,7 @@
     list-style: none;
     margin-left: 0;
     padding-left: 0;
+    margin-top: 1em;
      li {
        list-style: none;
        padding: 0 1.25rem;
@@ -88,6 +89,7 @@
       @include desktop {
         position: initial;
         color: $color__text-main;
+        margin: 0;
       }
     }
     .wedding-location {
