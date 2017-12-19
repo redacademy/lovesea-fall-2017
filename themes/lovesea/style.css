@@ -911,6 +911,33 @@ object {
       .page-id-234 .entry-content .thankyou-message {
         font-size: 1.5rem; } }
 
+.partners-logo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0; }
+  .partners-logo-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 25%; }
+
+.partner-logo-one {
+  width: 280px; }
+
+.partner-logo-two {
+  width: 280px; }
+
+.partner-logo-three {
+  width: 200px; }
+
 .home .nav-logo {
   display: none; }
 

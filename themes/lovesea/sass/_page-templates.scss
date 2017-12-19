@@ -117,3 +117,29 @@
   }
 }
 }
+
+.partners-logo-list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+
+  }
+}
+
+.partner-logo-one {
+  width: 280px;
+}
+.partner-logo-two {
+  width: 280px;
+}
+.partner-logo-three {
+    width: 200px;
+}
+
