@@ -1523,7 +1523,7 @@ object {
   .page-template-wedding ul.wedding-tab-links li,
   .single-gallery ul.wedding-tab-links li {
     list-style: none;
-    margin: 0 3rem;
+    margin: 0 1.5rem;
     font-style: italic;
     font-weight: lighter;
     font-size: 20px;
