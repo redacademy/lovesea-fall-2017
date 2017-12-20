@@ -1,6 +1,6 @@
 (function($){
 
-  function close_accordion_section() {
+  function closeAccordionSection() {
       $('.accordion .accordion-section-title').removeClass('active');
       $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
   }
@@ -10,9 +10,9 @@
       var currentAttrValue = $(this).attr('href');
 
       if($(e.target).is('.active')) {
-          close_accordion_section();
+          closeAccordionSection();
       }else {
-          close_accordion_section();
+          closeAccordionSection();
 
           // Add active class to section title
           $(this).addClass('active');
