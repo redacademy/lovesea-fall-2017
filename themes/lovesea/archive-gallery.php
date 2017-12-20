@@ -17,24 +17,14 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-
-
-<ul>
-	<li>Galleries</li>
-	<li>Portraits</li>
-	<li>Details</li>
-</ul>
-
-
 			</header><!-- .page-header -->
-
 
 			<div class="gallery-wrapper">
 				<div id="weddings" class="weddings">
-							<?php
-							 while ( have_posts() ) : the_post();
-									get_template_part( 'template-parts/content' );
-							 endwhile;
+						<?php
+							while ( have_posts() ) : the_post();
+								get_template_part( 'template-parts/content' );
+							endwhile;
 							
 							the_posts_navigation();
 							
@@ -42,14 +32,13 @@ get_header(); ?>
 							
 							get_template_part( 'template-parts/content', 'none' ); 
 				
-						endif;
-						 ?>
+							endif;
+						?>
 				</div><!-- .weddings  -->
 
 				<div id="portraits" class="portraits"></div>
 				<div id="details" class="details"></div>	
 			</div>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
