@@ -39,9 +39,9 @@
     }
     
     var Spectra = {
-        instaToken: '1443206686.4186d71.7b4c8a64377e4f31ad1b76e7ef649fb9',
-        instaID: '4186d71dabda40669358e3260812ee53',
-        
+        instaToken: '4179239652.184e83c.a38b4f72be5f4851be286fd9e1755280',
+        instaID: '184e83ce24d1430ca0dd089fbb533312',
+        // 4186d71dabda40669358e3260812ee53
         init: function () {
             $.fn.spectragram.accessData = {
                 accessToken: this.instaToken,
@@ -51,7 +51,7 @@
             // 184e83ce24d1430ca0dd089fbb533312
             $('.owl-carousel').spectragram('getUserFeed', {
                 // max: 12,
-                query: 'btrischuk',
+                query: 'loveseaphotography',
                 size: 'big',
                 wrapEachWith: '<div class="item"></div>',
                 complete: spectagramComplete()
