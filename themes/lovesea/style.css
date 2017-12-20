@@ -2221,6 +2221,9 @@ li.active {
     color: #FFFFFF;
     font-style: italic; }
 
+.about-contact-us:hover {
+  background-color: #BF8472; }
+
 .home .nav-logo {
   display: none; }
 
@@ -2232,8 +2235,6 @@ li.active {
   text-align: center; }
   .home .site-content a {
     text-decoration: none; }
-.about-contact-us:hover {
-  background-color: #BF8472; }
 
 .site-footer {
   border-top: 1px solid #CC9785;
