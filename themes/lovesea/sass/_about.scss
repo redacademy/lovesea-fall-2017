@@ -91,6 +91,7 @@
   margin-left: 0;
   padding-left: 0;
   margin-bottom: 2.5rem;
+  padding: 0 1.5rem;
     li {
       padding: 0 0.25rem;
       margin: 0 1.25rem;
@@ -103,6 +104,8 @@
       }
       a {
         text-decoration: none;
+        text-align: center;
+        display: inline-block;
       }
 
       a:hover {
