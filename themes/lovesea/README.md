@@ -1,6 +1,6 @@
 # Love Sea Wedding Photography
 ![Screen Shot Lovesea](images/screen-shot.png "lovesea")
-
+![Love Sea gallery](images/screen-shot-gallery.png "lovesea")
 Wordpress site for Love Sea Wedding Photography. We are making a site!
 
 # Project 
