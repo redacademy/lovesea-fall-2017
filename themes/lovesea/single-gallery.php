@@ -46,12 +46,12 @@ get_header(); ?>
 
 
 		<a class="btn"  href="#" data-popup-open="<?php echo $row['wedding_album_single_image']; ?>">
-			<img class="wedding-photo lazy" src="https://placekitten.com/g/300/300" data-src="<?php echo $row['wedding_album_single_image']; ?>" alt="">
+			<img class="wedding-photo lazy" src="https://i.stack.imgur.com/PpGz3.png" data-src="<?php echo $row['wedding_album_single_image']; ?>" alt="">
 		</a> <!-- .btn -->
 
 			<div class="popup" data-popup="<?php echo $row['wedding_album_single_image']; ?>">
 					<div class="popup-inner">
-						 <img class="popup-image lazy" src="https://placekitten.com/g/300/300" data-src="<?php echo $row['wedding_album_single_image']; ?>">
+						 <img class="popup-image lazy" src="https://i.stack.imgur.com/PpGz3.png" data-src="<?php echo $row['wedding_album_single_image']; ?>">
 							
 						 <a class="popup-close" data-popup-close="<?php echo $row['wedding_album_single_image']; ?>" href="#">x</a>
 								</div> <!-- .popup-inner -->
@@ -80,12 +80,12 @@ get_header(); ?>
 ?> 
 
 	<a class="btn"  href="#" data-popup-open="<?php echo $row['portrait_album_image']; ?>">
-			<img class="wedding-photo" src="<?php echo $row['portrait_album_image']; ?>" alt="">
+			<img class="wedding-photo lazy" src="https://i.stack.imgur.com/PpGz3.png" data-src="<?php echo $row['portrait_album_image']; ?>" alt="">
 		</a> <!-- .btn -->
 
 			<div class="popup" data-popup="<?php echo $row['portrait_album_image']; ?>">
 					<div class="popup-inner">
-             <img class="popup-image" src="<?php echo $row['portrait_album_image']; ?>">
+             <img class="popup-image lazy" src="https://i.stack.imgur.com/PpGz3.png" data-src="<?php echo $row['portrait_album_image']; ?>">
 							
 						 <a class="popup-close" data-popup-close="<?php echo $row['portrait_album_image']; ?>" href="#">x</a>
 								</div> <!-- .popup-inner -->
