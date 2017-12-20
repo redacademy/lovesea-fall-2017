@@ -41,13 +41,14 @@
     var Spectra = {
         instaToken: '1443206686.4186d71.7b4c8a64377e4f31ad1b76e7ef649fb9',
         instaID: '4186d71dabda40669358e3260812ee53',
-
+        
         init: function () {
             $.fn.spectragram.accessData = {
                 accessToken: this.instaToken,
                 clientID: this.instaID
             };
-
+            // loveseaphotography
+            // 184e83ce24d1430ca0dd089fbb533312
             $('.owl-carousel').spectragram('getUserFeed', {
                 // max: 12,
                 query: 'btrischuk',
