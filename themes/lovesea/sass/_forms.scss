@@ -32,6 +32,7 @@ textarea {
 	border-style: none;
 	height: 50px;
 	min-width: 100%;
+	width: 90%;
 	@include desktop {
 		height: 100px;
 	}

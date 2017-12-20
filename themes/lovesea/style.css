@@ -435,7 +435,8 @@ textarea {
   border-radius: 0px;
   border-style: none;
   height: 50px;
-  min-width: 100%; }
+  min-width: 100%;
+  width: 90%; }
   @media (min-width: 800px) {
     input[type="text"],
     input[type="email"],
@@ -868,15 +869,23 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 55vw;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 1.5rem; }
+  @media (min-width: 800px) {
+    .page-id-61 .entry-content {
+      width: 55vw; } }
 
 .page-id-61 h2 {
+  font-size: 3rem;
   color: #BF8472;
-  font-size: 64px;
-  font-weight: 500;
   font-style: italic;
-  margin: 3% 0 1% 0; }
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+  font-style: italic; }
+  @media (min-width: 800px) {
+    .page-id-61 h2 {
+      font-size: 4rem;
+      font-weight: 400; } }
 
 .page-id-61 .congrats {
   font-size: 24px;
@@ -908,7 +917,8 @@ object {
 
 .page-id-234 .entry-content {
   text-align: center;
-  letter-spacing: 1.1px; }
+  letter-spacing: 1.1px;
+  padding: 0 1rem; }
   .page-id-234 .entry-content h2 {
     font-size: 3rem;
     text-align: center;
