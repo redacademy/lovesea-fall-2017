@@ -445,6 +445,14 @@ textarea {
   border-style: none;
   height: 50px;
   min-width: 100%; }
+  @media (min-width: 800px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    textarea {
+      height: 100px; } }
 
 input[type="text"],
 input[type="email"],

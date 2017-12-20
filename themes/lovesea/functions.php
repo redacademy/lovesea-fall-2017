@@ -90,6 +90,7 @@ function lovesea() {
 
 	wp_enqueue_script( 'jquery');
 
+	wp_enqueue_script('lazy-load', 'https://cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js', array('jquery'), false, true);
 	wp_enqueue_script( 'menu-toggle', get_template_directory_uri() . '/build/js/nav-bar.min.js', array('jquery'), false, true);
 
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), false, true);

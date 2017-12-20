@@ -82,6 +82,57 @@ $('.wedding-tab-links .categories').on('click', function(e)  {
   e.preventDefault();
 });
 
+$(document).ready(function(){
+  $('.lazy').unveil();  
+});
+
+
+// function loadContent(){
+
+//       $.ajax({
+//           url: "http://localhost/lovesea/wp-json/wp/v2/gallery",
+//           async: true,
+//           type: "GET",
+//           dataType: "json"
+//        }).done(function(data){
+        
+//           $.each(data, function(i, val){
+
+//             var output = '<div class="wedding-gallery-image">';
+//             output += '<div class="image-gradient">';
+            
+//             output += '<h2 class="album-name">';
+//             output += val.title.rendered;
+//             output += '</h2>';
+
+//             output += '<img src="'; 
+//             output += val.better_featured_image.media_details.sizes.large.source_url;
+//             output += '">';
+
+//             output += '</div>';
+//             output += '</div>';
+
+//             $('.wedding-album-gallery-pages').append(output);
+
+//           });
+        
+      
+//       }).fail(function(){
+//         console.log('error');
+      
+//       }).always(function(){
+      
+//           // holdLoad = false;
+          
+//       });
+ 
+// }
+
+// $(window).scroll(function(){
+//   if( $(window).scrollTop() >= $(document).height() - $(window).height() - 100 ){
+//       loadContent();
+//   }
+// });
 
 
 })(jQuery);

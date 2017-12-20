@@ -32,6 +32,9 @@ textarea {
 	border-style: none;
 	height: 50px;
 	min-width: 100%;
+	@include desktop {
+		height: 100px;
+	}
 }
 
 input[type="text"],
