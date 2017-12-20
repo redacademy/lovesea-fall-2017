@@ -329,27 +329,19 @@ address {
   margin: 0 0 1.5rem; }
 
 pre {
-  background: red;
-  font-family: blue;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
   margin-bottom: 1.6rem;
   max-width: 100%;
   overflow: auto;
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: green;
   font-size: 15px;
   font-size: 0.9375rem; }
 
 abbr, acronym {
-  border-bottom: 1px dotted brown;
   cursor: help; }
 
 mark, ins {
-  background: yellow;
   text-decoration: none; }
 
 big {
@@ -381,7 +373,6 @@ blockquote, q {
     content: ""; }
 
 hr {
-  background-color: orange;
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
@@ -460,6 +451,9 @@ input[type="url"],
 input[type="password"],
 input[type="search"] {
   padding: 3px; }
+
+.wpcf7-form-control.wpcf7-submit:hover {
+  background-color: #232d38; }
 
 form.wpcf7-form {
   width: 100vw;
@@ -694,12 +688,10 @@ a {
   width: 1px;
   overflow: hidden; }
   .screen-reader-text:focus {
-    background-color: blue;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: red;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -932,7 +924,8 @@ object {
     .page-id-234 .entry-content p {
       font-size: 1.25rem; } }
   .page-id-234 .entry-content .thankyou-message {
-    text-align: center; }
+    text-align: center;
+    font-weight: 400; }
     @media (min-width: 800px) {
       .page-id-234 .entry-content .thankyou-message {
         font-size: 1.5rem; } }
@@ -1022,6 +1015,9 @@ object {
     font-size: 24px;
     letter-spacing: 1.2px; }
 
+.confirmation-weddings:hover {
+  background-color: #BF8472; }
+
 .partner-logo-one {
   width: 300px;
   height: auto;
@@ -1050,19 +1046,6 @@ object {
     .partner-logo-three {
       width: 200px; } }
 
-.home .nav-logo {
-  display: none; }
-
-.home .site-main {
-  width: 65vw;
-  margin: 0 auto; }
-
-.home .site-content {
-  text-align: center; }
-  .home .site-content a {
-    text-decoration: none;
-    color: #BF8472; }
-
 .home .hero {
   min-height: 50vh; }
   @media (min-width: 800px) {
@@ -1074,7 +1057,7 @@ object {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      min-height: 90vh; } }
+      height: 100vh; } }
   .home .hero .front-center-text {
     height: 200px;
     width: 100vw;
@@ -1105,6 +1088,13 @@ object {
 
 .home .we-are-story-tellers {
   margin-top: 5rem; }
+
+@media (max-height: 800px) {
+  .home .home .hero .front-center-logo {
+    margin-top: 50px; }
+  .home .home .hero .front-center-text {
+    width: 20px;
+    height: 20px; } }
 
 .home .introduction-container .we-are-story-tellers,
 .home .introduction-container .we-are-observer,
@@ -1204,7 +1194,7 @@ object {
           -ms-flex-align: left;
               align-items: left;
       position: absolute;
-      right: -22rem;
+      left: 30rem;
       width: 24rem;
       font-size: 1.2rem;
       font-style: normal; } }
@@ -1236,7 +1226,7 @@ object {
             flex-direction: row-reverse;
     position: relative; }
   .home .introduction-container .observer {
-    height: 100vh; } }
+    height: 100%; } }
   @media (min-width: 800px) and (min-width: 800px) {
     .home .introduction-container .observer {
       text-align: right;
@@ -1297,6 +1287,12 @@ object {
         color: #FFFFFF;
         font-style: italic; } }
 
+.home .connect:hover {
+  background-color: #BF8472; }
+
+.home .browse-weddings:hover {
+  background-color: #BF8472; }
+
 .home .about-us {
   width: 200px;
   height: 55px;
@@ -1338,6 +1334,9 @@ object {
         text-decoration: none;
         color: #FFFFFF;
         font-style: italic; } }
+
+.about-us:hover {
+  background-color: #BF8472; }
 
 .owl-wrapper {
   width: 30rem; }
@@ -1461,7 +1460,7 @@ object {
       background-color: transparent;
       border: none;
       position: absolute;
-      top: 85vh;
+      top: 80vh;
       left: 50%;
       font-size: 2.5em;
       -webkit-transform: translateX(-50%);
@@ -1500,7 +1499,13 @@ object {
 
 .page-template-wedding .entry-title,
 .single-gallery .entry-title {
-  text-align: center; }
+  text-align: center;
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  color: #BF8472;
+  font-weight: lighter;
+  letter-spacing: 1.1px; }
   @media (min-width: 800px) {
     .page-template-wedding .entry-title,
     .single-gallery .entry-title {
@@ -1526,7 +1531,7 @@ object {
   .page-template-wedding ul.wedding-tab-links li,
   .single-gallery ul.wedding-tab-links li {
     list-style: none;
-    margin: 0 3rem;
+    margin: 0 1.5rem;
     font-style: italic;
     font-weight: lighter;
     font-size: 20px;
@@ -1535,7 +1540,8 @@ object {
     .page-template-wedding ul.wedding-tab-links li a,
     .single-gallery ul.wedding-tab-links li a {
       text-decoration: none;
-      padding-bottom: .5rem; }
+      padding-bottom: .5rem;
+      text-transform: lowercase; }
     .page-template-wedding ul.wedding-tab-links li li.active,
     .single-gallery ul.wedding-tab-links li li.active {
       padding-bottom: 0.5rem; }
@@ -1651,6 +1657,9 @@ object {
     font-style: italic;
     letter-spacing: 1px;
     font-size: 26px; }
+
+.about-us:hover {
+  background-color: #BF8472; }
 
 .back-to-top {
   display: -webkit-box;
@@ -2219,6 +2228,21 @@ li.active {
     text-decoration: none;
     color: #FFFFFF;
     font-style: italic; }
+
+.about-contact-us:hover {
+  background-color: #BF8472; }
+
+.home .nav-logo {
+  display: none; }
+
+.home .site-main {
+  width: 65vw;
+  margin: 0 auto; }
+
+.home .site-content {
+  text-align: center; }
+  .home .site-content a {
+    text-decoration: none; }
 
 .site-footer {
   border-top: 1px solid #CC9785;

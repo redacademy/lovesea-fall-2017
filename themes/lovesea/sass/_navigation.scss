@@ -137,7 +137,6 @@ a {
 }
 .fixed-menu .toggle-nav {
 	display: inline;
-	// transition: all 0.4s ease-in-out; 
 }
 
 .main-navigation {
@@ -208,59 +207,3 @@ a {
 	.current_page_ancestor > a {
 	}
 }
-
-// // Burger menu button
-// .toggle-menu-button {
-
-	
-// 	border: 0;
-// 	background: none;
-// 	outline: 0;
-// 	padding: 0;
-// 	cursor: pointer;
-
-
-
-// 	transition: border-bottom 1s ease-in-out;
-// 	-webkit-transition: border-bottom 1s ease-in-out; 
-
-// 	&:before {
-// 		content: "";
-// 		display: block;
-
-// 		width: 100%;
-// 		margin-bottom: 5px;
-// 		transition: transform 0.5s ease-in-out;    
-// 		-webkit-transition: -webkit-transform 0.5s ease-in-out;        
-// 	}
-
-// 	&:after {
-// 		content: "";
-// 		display: block;
-
-// 		width: 100%;
-// 		margin-bottom: 5px;
-// 		transition: transform 0.5s ease-in-out;
-// 		-webkit-transition: -webkit-transform 0.5s ease-in-out;
-// 	}
-
-// 	&.open {
-
-// 		transition: border-bottom 0.8s ease-in-out;
-// 		-webkit-transition: border-bottom 0.8s ease-in-out;
-
-// 		&:before {
-// 			transform: rotate(-405deg) translateY(1px) translateX(-3px);
-// 			-webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);      
-// 			transition: transform 0.5s ease-in-out;
-// 			-webkit-transition: -webkit-transform 0.5s ease-in-out;
-// 		}
-
-// 		&:after {
-// 			transform: rotate(405deg) translateY(-4px) translateX(-5px); 
-// 			-webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);       
-// 			transition: transform 0.5s ease-in-out;
-// 			-webkit-transition: -webkit-transform 0.5s ease-in-out;
-// 		}
-// 	}
-// }

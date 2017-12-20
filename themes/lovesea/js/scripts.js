@@ -82,6 +82,7 @@ $('.wedding-tab-links .categories').on('click', function(e)  {
   e.preventDefault();
 });
 
+<<<<<<< HEAD
 $(document).ready(function(){
   $('.lazy').unveil();  
 });
@@ -135,4 +136,6 @@ $(document).ready(function(){
 // });
 
 
+=======
+>>>>>>> e6bfb4917a2e5aee38a1d93df35218f4425f38dc
 })(jQuery);

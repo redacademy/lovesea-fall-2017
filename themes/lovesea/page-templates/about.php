@@ -13,7 +13,7 @@ get_header(); ?>
           <div class="entry-content">
           <div class='tabs'>
             <ul class="about-sub-pages">
-              <li><a href='#tab1'><?php
+              <li class='active'><a href='#tab1'><?php
               $props = CFS()->get_field_info( 'who_we_are' );
               echo $props['label'];
               ?></a></li>

@@ -34,6 +34,12 @@ width: 42px;
 .single-gallery {
   .entry-title {
     text-align: center;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: $color__text-secondary;
+    font-weight: lighter;
+    letter-spacing: 1.1px;
     @include desktop {
       font-size: 64px;
       color: $color__text-secondary;
@@ -50,9 +56,10 @@ width: 42px;
     margin-left: 0;
     padding-left: 0;
     margin-top: 1em;
+    
      li {
        list-style: none;
-       margin: 0 3rem;
+       margin: 0 1.5rem;
        font-style: italic;
        font-weight: lighter;
        font-size: 20px;
@@ -61,6 +68,7 @@ width: 42px;
        a {
          text-decoration: none;
          padding-bottom: .5rem;
+         text-transform: lowercase;
        }
        li.active {
          padding-bottom: 0.5rem;
@@ -184,6 +192,10 @@ width: 42px;
     letter-spacing: 1px;
     font-size: 26px;
   }
+}
+
+.about-us:hover {
+  background-color: $color__button-hover;
 }
 // back to top link
 
