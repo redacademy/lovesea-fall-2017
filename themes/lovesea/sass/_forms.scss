@@ -64,6 +64,13 @@ label {
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 1px;
+	.wpcf7-date {
+		height: 50px;
+		width: 400px;
+		background-color: $color__background-input;
+		box-shadow: none;
+		border: none;
+	}
 }
 .wpcf7-form-control.wpcf7-text {
 	height: 50px;

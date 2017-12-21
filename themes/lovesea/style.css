@@ -468,6 +468,13 @@ label {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px; }
+  label .wpcf7-date {
+    height: 50px;
+    width: 400px;
+    background-color: #E4E2E2;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none; }
 
 .wpcf7-form-control.wpcf7-text {
   height: 50px; }
