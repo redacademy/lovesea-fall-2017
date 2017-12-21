@@ -471,6 +471,7 @@ label {
   label .wpcf7-date {
     height: 50px;
     width: 400px;
+    padding-left: .75rem;
     background-color: #E4E2E2;
     -webkit-box-shadow: none;
             box-shadow: none;
