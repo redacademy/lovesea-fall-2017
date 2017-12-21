@@ -13,12 +13,12 @@ function custom_post_type() {
   
     $labels = array(
       'name'                  => _x( 'Galleries', 'Post Type General Name', 'text_domain' ),
-      'singular_name'         => _x( 'gallery', 'Post Type Singular Name', 'text_domain' ),
-      'menu_name'             => __( 'gallery', 'text_domain' ),
-      'name_admin_bar'        => __( 'gallery', 'text_domain' ),
-      'archives'              => __( 'gallery Archives', 'text_domain' ),
-      'attributes'            => __( 'gallery Attributes', 'text_domain' ),
-      'parent_item_colon'     => __( 'Parent gallery:', 'text_domain' ),
+      'singular_name'         => _x( 'Gallery', 'Post Type Singular Name', 'text_domain' ),
+      'menu_name'             => __( 'Gallery', 'text_domain' ),
+      'name_admin_bar'        => __( 'Gallery', 'text_domain' ),
+      'archives'              => __( 'Gallery Archives', 'text_domain' ),
+      'attributes'            => __( 'Gallery Attributes', 'text_domain' ),
+      'parent_item_colon'     => __( 'Parent Gallery:', 'text_domain' ),
       'all_items'             => __( 'All Galleries', 'text_domain' ),
       'add_new_item'          => __( 'Add New gallery', 'text_domain' ),
       'add_new'               => __( 'Add New', 'text_domain' ),
@@ -41,7 +41,7 @@ function custom_post_type() {
       'filter_items_list'     => __( 'Filter Galleries list', 'text_domain' ),
     );
     $args = array(
-      'label'                 => __( 'gallery', 'text_domain' ),
+      'label'                 => __( 'Gallery', 'text_domain' ),
       'description'           => __( '', 'text_domain' ),
       'labels'                => $labels,
       'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
@@ -60,7 +60,7 @@ function custom_post_type() {
       'capability_type'       => 'page',
       'show_in_rest'          => true,
     );
-    register_post_type( 'gallery', $args );
+    register_post_type( 'Gallery', $args );
   
   }
   add_action( 'init', 'custom_post_type', 0 );
