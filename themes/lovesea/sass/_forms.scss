@@ -32,6 +32,7 @@ textarea {
 	border-style: none;
 	height: 50px;
 	min-width: 100%;
+	width: 90%;
 	@include desktop {
 		height: 100px;
 	}
@@ -63,6 +64,14 @@ label {
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 1px;
+	.wpcf7-date {
+		height: 50px;
+		width: 100%;
+		padding-left: .75rem;
+		background-color: $color__background-input;
+		box-shadow: none;
+		border: none;
+	}
 }
 label .wpcf7-date {
 	width: 30px;
