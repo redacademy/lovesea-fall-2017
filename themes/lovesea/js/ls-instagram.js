@@ -41,16 +41,13 @@
     var Spectra = {
         instaToken: '4179239652.184e83c.a38b4f72be5f4851be286fd9e1755280',
         instaID: '184e83ce24d1430ca0dd089fbb533312',
-        // 4186d71dabda40669358e3260812ee53
         init: function () {
             $.fn.spectragram.accessData = {
                 accessToken: this.instaToken,
                 clientID: this.instaID
             };
-            // loveseaphotography
-            // 184e83ce24d1430ca0dd089fbb533312
+
             $('.owl-carousel').spectragram('getUserFeed', {
-                // max: 12,
                 query: 'loveseaphotography',
                 size: 'big',
                 wrapEachWith: '<div class="item"></div>',

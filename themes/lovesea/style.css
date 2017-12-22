@@ -1371,10 +1371,14 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: none;
   width: 100%;
   z-index: 1; }
   @media (min-width: 800px) {
     .site-main .instagram-carousel-container {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
       margin: 10rem auto 0; } }
 
 .instagram-carousel-container {
