@@ -1290,8 +1290,8 @@ object {
       left: 39%;
       top: 10rem;
       font-size: 1.5rem;
-      width: 300px;
-      height: 100px;
+      width: 215px;
+      height: 72px;
       font-size: 1.5rem;
       outline-offset: -15px;
       background-color: #CC9785;
@@ -1339,8 +1339,8 @@ object {
     .home .about-us {
       left: 62%;
       top: 10rem;
-      width: 300px;
-      height: 100px;
+      width: 215px;
+      height: 72px;
       font-size: 1.5rem;
       outline-offset: -15px;
       background-color: #CC9785;
@@ -2098,7 +2098,7 @@ li.active {
       .about-section-two p,
       .about-section-three p {
         margin: 20px auto;
-        width: 85%; } }
+        width: 55%; } }
 
 .about-section-one {
   text-align: center;
@@ -2231,8 +2231,8 @@ li.active {
   margin-bottom: 5rem; }
 
 .about-contact-us {
-  width: 300px;
-  height: 100px;
+  width: 215px;
+  height: 72px;
   font-size: 1.5rem;
   outline-offset: -15px;
   background-color: #CC9785;
@@ -2329,8 +2329,8 @@ li.active {
       color: #FFFFFF; }
     @media (min-width: 800px) {
       .error404 .browse-weddings a {
-        width: 300px;
-        height: 100px;
+        width: 215px;
+        height: 72px;
         font-size: 1.5rem;
         outline-offset: -15px;
         background-color: #CC9785;
